@@ -1,0 +1,30 @@
+{
+  "schema": "h2s2r_clean3_c3p1r2_runtime_costs_v1",
+  "budget": {
+    "cpu_target_minutes": 60,
+    "physics_budget_minutes": 45,
+    "ppo_budget_minutes": 120,
+    "evaluation_budget_minutes": 45,
+    "physical_starts_remaining": 2
+  },
+  "actual": {
+    "cpu_active_minutes_approx_cumulative": 0.5,
+    "support_fix_minutes_approx": 0.3,
+    "parser_probe_minutes_approx": 0.1,
+    "physical_starts": 0,
+    "physics_controls": 0,
+    "physics_substeps": 0,
+    "video_frames": 0,
+    "raw_trajectories": 0,
+    "training_epochs": 0,
+    "transitions": 0,
+    "evaluation_episodes": 0
+  },
+  "evidence": {
+    "preflight_local_files": [
+      "c3p1r2_preflight_c3p2_v4.json",
+      "c3p1r2_preflight_c3p2_v5.json"
+    ],
+    "parser_probe": "c3p1r2_evidence/parser_probe_status.json"
+  }
+}

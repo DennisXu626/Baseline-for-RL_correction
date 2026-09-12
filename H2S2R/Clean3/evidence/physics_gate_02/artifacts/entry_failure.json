@@ -1,0 +1,6 @@
+{
+  "stage": "physics_gate_entry",
+  "type": "FileNotFoundError",
+  "message": "FileNotFoundError(\"Clean3 C3-P1R2 deployment incomplete: ['robot:/home/kailang/experiments/baselines/rl_correction_h2s2r_adapter_v12_training_pilot_20260912/world/vega_1p_sharpa_fixedtorso__RUNTIME_LOADED.usd']\")",
+  "traceback": "Traceback (most recent call last):\n  File \"/media/msc-auto/HDD/users/kailang/h2s2r_clean3_c3p1r2_20260912/deployment_v3/tasks/h2s2r_clean3/physics_gate.py\", line 214, in <module>\n    main()\n  File \"/media/msc-auto/HDD/users/kailang/h2s2r_clean3_c3p1r2_20260912/deployment_v3/tasks/h2s2r_clean3/physics_gate.py\", line 62, in main\n    cfg = build_cfg(runtime_root=args.runtime_root, v12_root=args.v12_root, num_envs=4, seed=42, external_eval=True, record_cameras=True)\n          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/media/msc-auto/HDD/users/kailang/h2s2r_clean3_c3p1r2_20260912/deployment_v3/tasks/h2s2r_clean3/cfg.py\", line 100, in build_cfg\n    raise FileNotFoundError(f\"Clean3 C3-P1R2 deployment incomplete: {missing}\")\nFileNotFoundError: Clean3 C3-P1R2 deployment incomplete: ['robot:/home/kailang/experiments/baselines/rl_correction_h2s2r_adapter_v12_training_pilot_20260912/world/vega_1p_sharpa_fixedtorso__RUNTIME_LOADED.usd']\n"
+}

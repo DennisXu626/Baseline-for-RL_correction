@@ -1,0 +1,58 @@
+{
+  "schema": "h2s2r_clean3_c3p1_validation_v1",
+  "timestamp_local": "2026-09-12T22:16:00+08:00",
+  "overall": "BLOCKED_PCA_INITIAL_STATE_JUMP",
+  "checks": {
+    "source_allowlist_and_sha": "PASS",
+    "rts_300_rows_and_30hz": "PASS",
+    "relative_first_frame_planar_motion": "PASS",
+    "constant_plate_pose_and_sponge_yaw": "PASS",
+    "current_18cm_mesh_support_without_pressure": "PASS",
+    "shared_static_row0_initialization_only": "PASS",
+    "right_static_2mm_ik": "PASS",
+    "reset_joint_order_and_58_limits": "PASS",
+    "right_pca_all_300_valid_rows": "PASS",
+    "left_pca_all_300_valid_rows": "PASS",
+    "pca_initial_target_jump_le_0p25_rad": "FAIL",
+    "bilateral_target_and_substep_cadence_support": "PASS_CPU_FAKE",
+    "external_eval_positive_contract": "PASS",
+    "external_eval_deep_penetration_negative": "PASS",
+    "external_eval_two_endpoint_travel_negative": "PASS",
+    "external_eval_late_instability_negative": "PASS",
+    "python_compile": "PASS",
+    "physical_gate": "NOT_RUN_MANDATORY_CPU_STOP",
+    "ppo_pilot": "NOT_RUN_MANDATORY_CPU_STOP",
+    "external_16_episode_evaluation": "NOT_RUN_MANDATORY_CPU_STOP"
+  },
+  "tests": {
+    "runner": "python tests/test_c3p1.py",
+    "passed": 10,
+    "failed": 0,
+    "note": "pytest was unavailable locally; no dependency was installed, and the same assertions were run with the file's dependency-free runner."
+  },
+  "geometry_only": {
+    "coverage": 0.5416666666666666,
+    "two_endpoint_contact_travel_m": 0.8684468566115738,
+    "contact_rows": 300,
+    "maximum_planar_step_m": 0.0331745898653626,
+    "maximum_center_radius_m": 0.07514859957652303,
+    "interpretation": "CPU sampled geometry only; not physical validity or task success."
+  },
+  "static_ik": {
+    "support_delta_m": 0.001999972688598625,
+    "position_error_m": 0.0000891297147719705,
+    "rotation_error_rad": 0.00021858340204083292,
+    "right_arm_at_limit": false,
+    "reset_limit_rows_checked": 58,
+    "reset_limit_violations": 0,
+    "numeric_boundary_note": "L_arm_j6 float32 is 2.77e-8 rad below the textual -1.396 bound; accepted only under the recorded 1e-6 rad representation tolerance."
+  },
+  "pca_gate": {
+    "threshold_rad": 0.25,
+    "right_clipped_max_abs_joint_error_rad": 0.6955245733261108,
+    "left_clipped_max_abs_joint_error_rad": 0.7682417035102844,
+    "right_unclipped_subspace_max_abs_joint_error_rad": 0.6367307305335999,
+    "left_unclipped_subspace_max_abs_joint_error_rad": 0.6200793981552124,
+    "interpretation": "Both frozen 5D subspaces fail even before percentile clipping; changing PCA corpus/dimension or initialization is outside implementation authority."
+  }
+}

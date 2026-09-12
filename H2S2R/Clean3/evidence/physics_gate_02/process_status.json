@@ -1,0 +1,27 @@
+{
+  "state": "failed",
+  "pid": 2526742,
+  "start_utc": "2026-09-12T16:28:27.652576+00:00",
+  "end_utc": "2026-09-12T16:28:42.655421+00:00",
+  "elapsed_seconds": 15.002870302647352,
+  "ready_at_seconds": null,
+  "return_code": 0,
+  "ready_marker_seen": false,
+  "success_marker_seen": false,
+  "failure_marker_seen": true,
+  "command": [
+    "/home/kailang/.local/miniconda3/envs/rl-correction-pour/bin/python",
+    "-u",
+    "/media/msc-auto/HDD/users/kailang/h2s2r_clean3_c3p1r2_20260912/deployment_v3/tasks/h2s2r_clean3/physics_gate.py",
+    "--runtime_root",
+    "/media/msc-auto/HDD/users/kailang/h2s2r_clean3_c3p1r2_20260912/deployment_v3",
+    "--v12_root",
+    "/home/kailang/experiments/baselines/rl_correction_h2s2r_adapter_v12_training_pilot_20260912",
+    "--output_root",
+    "/media/msc-auto/HDD/users/kailang/h2s2r_clean3_c3p1r2_20260912/physics_gate_02/artifacts",
+    "--device",
+    "cuda:0",
+    "--headless",
+    "--enable_cameras"
+  ]
+}

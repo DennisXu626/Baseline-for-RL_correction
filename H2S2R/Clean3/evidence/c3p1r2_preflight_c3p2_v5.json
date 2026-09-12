@@ -1,0 +1,423 @@
+{
+  "schema": "c3p1r2_preflight_v2",
+  "timestamp_utc": "2026-09-12T17:59:39.320180+00:00",
+  "status": "FAIL",
+  "runtime_root": "D:\\UCBP\\RL\\Baselines\\task_plate\\h2s2r_clean3_c3p1_20260912\\deployment_c3p1r2",
+  "v12_root": "\\home\\kailang\\experiments\\baselines\\rl_correction_h2s2r_adapter_v12_training_pilot_20260912",
+  "checks": [
+    {
+      "check": "runtime_v12_roots",
+      "runtime_root": "D:\\UCBP\\RL\\Baselines\\task_plate\\h2s2r_clean3_c3p1_20260912\\deployment_c3p1r2",
+      "v12_root": "\\home\\kailang\\experiments\\baselines\\rl_correction_h2s2r_adapter_v12_training_pilot_20260912",
+      "status": "PASS"
+    },
+    {
+      "check": "cfg_robot_asset_const",
+      "status": "PASS",
+      "expected": "/home/kailang/experiments/baselines/pour17_baseline_bundle_20260829/pour17/world/vega_1p_sharpa_fixedtorso__RUNTIME_LOADED.usd",
+      "snippet": "/home/kailang/experiments/baselines/pour17_baseline_bundle_20260829/pour17/world/vega_1p_sharpa_fixedtorso__RUNTIME_LOADED.usd",
+      "contains_expected": true
+    },
+    {
+      "check": "cfg_required_expr_inputs",
+      "status": "PASS",
+      "expr": "root / \"data/clean3_c3p1_runtime_inputs.npz\""
+    },
+    {
+      "check": "cfg_required_expr_sidecar",
+      "status": "PASS",
+      "expr": "root / \"data/clean3_action_calibration_c3p1r2.npz\""
+    },
+    {
+      "check": "cfg_required_expr_right_pca",
+      "status": "PASS",
+      "expr": "root / \"data/right_synergy_pca5.npz\""
+    },
+    {
+      "check": "cfg_required_expr_left_pca",
+      "status": "PASS",
+      "expr": "root / \"data/left_synergy_pca5.npz\""
+    },
+    {
+      "check": "cfg_required_expr_plate",
+      "status": "PASS",
+      "expr": "root / \"assets/retarget/object_0_textured.usd\""
+    },
+    {
+      "check": "cfg_required_expr_sponge",
+      "status": "PASS",
+      "expr": "root / \"assets/retarget/object_1_textured.usd\""
+    },
+    {
+      "check": "cfg_required_expr_robot",
+      "status": "PASS",
+      "expr": "ROBOT_ASSET_PATH"
+    },
+    {
+      "check": "cfg_required_expr_right_urdf",
+      "status": "PASS",
+      "expr": "v12 / \"rl_rebuild/baselines/h2s2r/assets/vega_sharpa_right_fabric.urdf\""
+    },
+    {
+      "check": "cfg_required_expr_left_urdf",
+      "status": "PASS",
+      "expr": "v12 / \"rl_rebuild/baselines/h2s2r/assets/vega_sharpa_left_fabric.urdf\""
+    },
+    {
+      "path": "D:\\UCBP\\RL\\Baselines\\task_plate\\h2s2r_clean3_c3p1_20260912\\deployment_c3p1r2\\data\\clean3_c3p1_runtime_inputs.npz",
+      "must_exist": true,
+      "exists": true,
+      "size": 7990,
+      "sha256": null,
+      "expected_sha256": null,
+      "status": "PASS"
+    },
+    {
+      "path": "D:\\UCBP\\RL\\Baselines\\task_plate\\h2s2r_clean3_c3p1_20260912\\deployment_c3p1r2\\data\\clean3_action_calibration_c3p1r2.npz",
+      "must_exist": true,
+      "exists": true,
+      "size": 3749,
+      "sha256": null,
+      "expected_sha256": null,
+      "status": "PASS"
+    },
+    {
+      "path": "D:\\UCBP\\RL\\Baselines\\task_plate\\h2s2r_clean3_c3p1_20260912\\deployment_c3p1r2\\data\\left_synergy_pca5.npz",
+      "must_exist": true,
+      "exists": true,
+      "size": 1826,
+      "sha256": null,
+      "expected_sha256": null,
+      "status": "PASS"
+    },
+    {
+      "path": "D:\\UCBP\\RL\\Baselines\\task_plate\\h2s2r_clean3_c3p1_20260912\\deployment_c3p1r2\\data\\right_synergy_pca5.npz",
+      "must_exist": true,
+      "exists": true,
+      "size": 1830,
+      "sha256": null,
+      "expected_sha256": null,
+      "status": "PASS"
+    },
+    {
+      "path": "D:\\UCBP\\RL\\Baselines\\task_plate\\h2s2r_clean3_c3p1_20260912\\deployment_c3p1r2\\assets\\retarget\\object_0_textured.usd",
+      "must_exist": true,
+      "exists": true,
+      "size": 5093470,
+      "sha256": null,
+      "expected_sha256": null,
+      "status": "PASS"
+    },
+    {
+      "path": "D:\\UCBP\\RL\\Baselines\\task_plate\\h2s2r_clean3_c3p1_20260912\\deployment_c3p1r2\\assets\\retarget\\object_1_textured.usd",
+      "must_exist": true,
+      "exists": true,
+      "size": 8005351,
+      "sha256": null,
+      "expected_sha256": null,
+      "status": "PASS"
+    },
+    {
+      "path": "D:\\UCBP\\RL\\Baselines\\task_plate\\h2s2r_clean3_c3p1_20260912\\deployment_c3p1r2\\assets\\objects\\object_0\\object_mesh_scaled_final.obj",
+      "must_exist": true,
+      "exists": true,
+      "size": 15876711,
+      "sha256": null,
+      "expected_sha256": null,
+      "status": "PASS"
+    },
+    {
+      "path": "D:\\UCBP\\RL\\Baselines\\task_plate\\h2s2r_clean3_c3p1_20260912\\deployment_c3p1r2\\assets\\objects\\object_1\\object_mesh_scaled_final.obj",
+      "must_exist": true,
+      "exists": true,
+      "size": 13431124,
+      "sha256": null,
+      "expected_sha256": null,
+      "status": "PASS"
+    },
+    {
+      "path": "\\home\\kailang\\experiments\\baselines\\pour17_baseline_bundle_20260829\\pour17\\world\\vega_1p_sharpa_fixedtorso__RUNTIME_LOADED.usd",
+      "must_exist": true,
+      "exists": false,
+      "size": 0,
+      "sha256": null,
+      "expected_sha256": "c2bba25aeb7b04b270df51d0c0efbe8eec95b499d8a7aef46834cefcfb71e347",
+      "status": "FAIL",
+      "reason": "missing_file"
+    },
+    {
+      "path": "\\home\\kailang\\experiments\\baselines\\rl_correction_h2s2r_adapter_v12_training_pilot_20260912\\rl_rebuild\\baselines\\h2s2r\\assets\\vega_sharpa_right_fabric.urdf",
+      "must_exist": true,
+      "exists": false,
+      "size": 0,
+      "sha256": null,
+      "expected_sha256": null,
+      "status": "FAIL",
+      "reason": "missing_file"
+    },
+    {
+      "path": "\\home\\kailang\\experiments\\baselines\\rl_correction_h2s2r_adapter_v12_training_pilot_20260912\\rl_rebuild\\baselines\\h2s2r\\assets\\vega_sharpa_left_fabric.urdf",
+      "must_exist": true,
+      "exists": false,
+      "size": 0,
+      "sha256": null,
+      "expected_sha256": null,
+      "status": "FAIL",
+      "reason": "missing_file"
+    },
+    {
+      "path": "D:\\UCBP\\RL\\Baselines\\task_plate\\h2s2r_clean3_c3p1_20260912\\deployment_c3p1r2\\data\\input_manifest.json",
+      "must_exist": true,
+      "exists": true,
+      "size": 10329,
+      "sha256": null,
+      "expected_sha256": null,
+      "status": "PASS"
+    },
+    {
+      "path": "D:\\UCBP\\RL\\Baselines\\task_plate\\h2s2r_clean3_c3p1_20260912\\deployment_c3p1r2\\data\\action_calibration_manifest.json",
+      "must_exist": true,
+      "exists": true,
+      "size": 5549,
+      "sha256": null,
+      "expected_sha256": null,
+      "status": "PASS"
+    },
+    {
+      "check": "cfg_contract_token_build_cfg(",
+      "status": "PASS",
+      "present": true
+    },
+    {
+      "check": "cfg_contract_token_runtime_inputs_npz",
+      "status": "PASS",
+      "present": true
+    },
+    {
+      "check": "cfg_contract_token_action_sidecar_npz",
+      "status": "PASS",
+      "present": true
+    },
+    {
+      "check": "cfg_contract_token_right_synergy_npz",
+      "status": "PASS",
+      "present": true
+    },
+    {
+      "check": "cfg_contract_token_left_synergy_npz",
+      "status": "PASS",
+      "present": true
+    },
+    {
+      "check": "cfg_contract_token_robot_usd",
+      "status": "PASS",
+      "present": true
+    },
+    {
+      "check": "cfg_required_expr_inputs",
+      "status": "PASS",
+      "expr": "root / \"data/clean3_c3p1_runtime_inputs.npz\""
+    },
+    {
+      "check": "cfg_required_path_inputs",
+      "status": "PASS",
+      "declared": "D:\\UCBP\\RL\\Baselines\\task_plate\\h2s2r_clean3_c3p1_20260912\\deployment_c3p1r2\\data\\clean3_c3p1_runtime_inputs.npz",
+      "expected": "D:\\UCBP\\RL\\Baselines\\task_plate\\h2s2r_clean3_c3p1_20260912\\deployment_c3p1r2\\data\\clean3_c3p1_runtime_inputs.npz",
+      "exists": true,
+      "sha256": "3da2b16f27d74be4898a00fc807e6993dc1915eadbaff2f9aa8539fd1a6a84ff"
+    },
+    {
+      "check": "cfg_required_expr_sidecar",
+      "status": "PASS",
+      "expr": "root / \"data/clean3_action_calibration_c3p1r2.npz\""
+    },
+    {
+      "check": "cfg_required_path_sidecar",
+      "status": "PASS",
+      "declared": "D:\\UCBP\\RL\\Baselines\\task_plate\\h2s2r_clean3_c3p1_20260912\\deployment_c3p1r2\\data\\clean3_action_calibration_c3p1r2.npz",
+      "expected": "D:\\UCBP\\RL\\Baselines\\task_plate\\h2s2r_clean3_c3p1_20260912\\deployment_c3p1r2\\data\\clean3_action_calibration_c3p1r2.npz",
+      "exists": true,
+      "sha256": "f878f87f61f218175292583b266f6150142c95dc3366a328c516383e58507747"
+    },
+    {
+      "check": "cfg_required_expr_right_pca",
+      "status": "PASS",
+      "expr": "root / \"data/right_synergy_pca5.npz\""
+    },
+    {
+      "check": "cfg_required_path_right_pca",
+      "status": "PASS",
+      "declared": "D:\\UCBP\\RL\\Baselines\\task_plate\\h2s2r_clean3_c3p1_20260912\\deployment_c3p1r2\\data\\right_synergy_pca5.npz",
+      "expected": "D:\\UCBP\\RL\\Baselines\\task_plate\\h2s2r_clean3_c3p1_20260912\\deployment_c3p1r2\\data\\right_synergy_pca5.npz",
+      "exists": true,
+      "sha256": "31c349ea79313a504b3a809a51bbf9fbc646922ae86c3363e0688c8475df36e2"
+    },
+    {
+      "check": "cfg_required_expr_left_pca",
+      "status": "PASS",
+      "expr": "root / \"data/left_synergy_pca5.npz\""
+    },
+    {
+      "check": "cfg_required_path_left_pca",
+      "status": "PASS",
+      "declared": "D:\\UCBP\\RL\\Baselines\\task_plate\\h2s2r_clean3_c3p1_20260912\\deployment_c3p1r2\\data\\left_synergy_pca5.npz",
+      "expected": "D:\\UCBP\\RL\\Baselines\\task_plate\\h2s2r_clean3_c3p1_20260912\\deployment_c3p1r2\\data\\left_synergy_pca5.npz",
+      "exists": true,
+      "sha256": "578ff0a8a9ada51cdf0ff7a442fa04d6ed22dd51e1130366f1936863fe7fd521"
+    },
+    {
+      "check": "cfg_required_expr_plate",
+      "status": "PASS",
+      "expr": "root / \"assets/retarget/object_0_textured.usd\""
+    },
+    {
+      "check": "cfg_required_path_plate",
+      "status": "PASS",
+      "declared": "D:\\UCBP\\RL\\Baselines\\task_plate\\h2s2r_clean3_c3p1_20260912\\deployment_c3p1r2\\assets\\retarget\\object_0_textured.usd",
+      "expected": "D:\\UCBP\\RL\\Baselines\\task_plate\\h2s2r_clean3_c3p1_20260912\\deployment_c3p1r2\\assets\\retarget\\object_0_textured.usd",
+      "exists": true,
+      "sha256": "828f4f1584f88e4cbe13d98d386e181de006042208c8e023f6b5c9c18a433029"
+    },
+    {
+      "check": "cfg_required_expr_sponge",
+      "status": "PASS",
+      "expr": "root / \"assets/retarget/object_1_textured.usd\""
+    },
+    {
+      "check": "cfg_required_path_sponge",
+      "status": "PASS",
+      "declared": "D:\\UCBP\\RL\\Baselines\\task_plate\\h2s2r_clean3_c3p1_20260912\\deployment_c3p1r2\\assets\\retarget\\object_1_textured.usd",
+      "expected": "D:\\UCBP\\RL\\Baselines\\task_plate\\h2s2r_clean3_c3p1_20260912\\deployment_c3p1r2\\assets\\retarget\\object_1_textured.usd",
+      "exists": true,
+      "sha256": "6c48e88f257f19fe56129eb71fc23f80df14fad528745ce22af37803d038686e"
+    },
+    {
+      "check": "cfg_required_expr_robot",
+      "status": "PASS",
+      "expr": "ROBOT_ASSET_PATH"
+    },
+    {
+      "check": "cfg_required_path_robot",
+      "status": "FAIL",
+      "declared": "\\home\\kailang\\experiments\\baselines\\pour17_baseline_bundle_20260829\\pour17\\world\\vega_1p_sharpa_fixedtorso__RUNTIME_LOADED.usd",
+      "expected": "\\home\\kailang\\experiments\\baselines\\pour17_baseline_bundle_20260829\\pour17\\world\\vega_1p_sharpa_fixedtorso__RUNTIME_LOADED.usd",
+      "exists": false
+    },
+    {
+      "check": "cfg_required_expr_right_urdf",
+      "status": "PASS",
+      "expr": "v12 / \"rl_rebuild/baselines/h2s2r/assets/vega_sharpa_right_fabric.urdf\""
+    },
+    {
+      "check": "cfg_required_path_right_urdf",
+      "status": "FAIL",
+      "declared": "D:\\home\\kailang\\experiments\\baselines\\rl_correction_h2s2r_adapter_v12_training_pilot_20260912\\rl_rebuild\\baselines\\h2s2r\\assets\\vega_sharpa_right_fabric.urdf",
+      "expected": "\\home\\kailang\\experiments\\baselines\\rl_correction_h2s2r_adapter_v12_training_pilot_20260912\\rl_rebuild\\baselines\\h2s2r\\assets\\vega_sharpa_right_fabric.urdf",
+      "exists": false
+    },
+    {
+      "check": "cfg_required_expr_left_urdf",
+      "status": "PASS",
+      "expr": "v12 / \"rl_rebuild/baselines/h2s2r/assets/vega_sharpa_left_fabric.urdf\""
+    },
+    {
+      "check": "cfg_required_path_left_urdf",
+      "status": "FAIL",
+      "declared": "D:\\home\\kailang\\experiments\\baselines\\rl_correction_h2s2r_adapter_v12_training_pilot_20260912\\rl_rebuild\\baselines\\h2s2r\\assets\\vega_sharpa_left_fabric.urdf",
+      "expected": "\\home\\kailang\\experiments\\baselines\\rl_correction_h2s2r_adapter_v12_training_pilot_20260912\\rl_rebuild\\baselines\\h2s2r\\assets\\vega_sharpa_left_fabric.urdf",
+      "exists": false
+    },
+    {
+      "check": "runtime_inputs_shape",
+      "status": "PASS",
+      "runtime_input_shapes": {
+        "plate_reference_pose_wxyz": [
+          300,
+          7
+        ],
+        "sponge_reference_pose_wxyz": [
+          300,
+          7
+        ],
+        "reference_valid": [
+          300
+        ],
+        "reset_q58": [
+          58
+        ],
+        "reset_object_0_pose_wxyz": [
+          7
+        ],
+        "reset_object_1_pose_wxyz": [
+          7
+        ],
+        "static_right_f_grasp": [
+          22
+        ],
+        "static_left_f_grasp": [
+          22
+        ],
+        "source_frame_ids": [
+          300
+        ],
+        "source_fps": [],
+        "control_hz": [],
+        "physics_hz": [],
+        "support_height_delta_m": [],
+        "footprint_xy": [
+          91,
+          2
+        ],
+        "plate_profile_r": [
+          18
+        ],
+        "plate_profile_z": [
+          18
+        ],
+        "sponge_face_offset": []
+      }
+    },
+    {
+      "check": "left_synergy_shape",
+      "status": "PASS",
+      "shape": [
+        5,
+        22
+      ]
+    },
+    {
+      "check": "right_synergy_shape",
+      "status": "PASS",
+      "shape": [
+        5,
+        22
+      ]
+    },
+    {
+      "check": "pxr_checks",
+      "status": "FAIL",
+      "details": {
+        "pxr_available": false,
+        "status": "FAIL",
+        "reason": "pxr import failed: ModuleNotFoundError(\"No module named 'pxr'\")",
+        "joint_count": 0,
+        "joint_names": [],
+        "fixed_torso_candidates": [],
+        "dependency_count": 0,
+        "dependencies": []
+      }
+    },
+    {
+      "check": "root_is_dir",
+      "status": "FAIL",
+      "runtime_root_dir": true,
+      "v12_root_dir": false
+    }
+  ],
+  "passed": false,
+  "environment": {
+    "pid": 51240,
+    "python": "unknown",
+    "torch_available": false
+  }
+}

@@ -1,0 +1,46 @@
+network:
+  separate_value_mlp: false
+  mlp:
+    units: [512, 512]
+  rnn:
+    name: lstm
+    units: 1024
+    layers: 1
+    before_mlp: false
+    layer_norm: true
+    concat_input: false
+    concat_output: true
+ppo:
+  multi_gpu: false
+  mixed_precision: false
+  normalize_input: true
+  normalize_value: true
+  value_bootstrap: false
+  reward_shaper:
+    scale_value: 1.0
+  normalize_advantage: true
+  gamma: 0.998
+  tau: 0.95
+  learning_rate: 0.0001
+  lr_schedule: linear
+  schedule_type: standard
+  kl_threshold: 0.01
+  max_epochs: 512
+  max_frames: -1
+  save_best_after: 100
+  save_frequency: 128
+  print_stats: true
+  grad_norm: 1.0
+  entropy_coef: 0.0
+  truncate_grads: true
+  e_clip: 0.2
+  horizon_length: 16
+  minibatch_size: 4096
+  mini_epochs: 4
+  critic_coef: 4.0
+  seq_length: 16
+  bound_loss_type: regularisation
+  bounds_loss_coef: 0.005
+  zero_rnn_on_done: true
+  asymmetric_critic: null
+

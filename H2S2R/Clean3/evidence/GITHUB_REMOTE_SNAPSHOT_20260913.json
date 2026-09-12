@@ -1,0 +1,42 @@
+{
+  "utc": "2026-09-12T19:02:17.385502+00:00",
+  "python": "3.11.15 | packaged by conda-forge | (main, Jun 11 2026, 03:34:02) [GCC 14.3.0]",
+  "pxr_spec": "None",
+  "versions": {
+    "torch": "2.7.0+cu128",
+    "numpy": "1.26.0",
+    "scipy": "1.15.3",
+    "isaaclab": "0.54.2",
+    "isaacsim": "5.1.0.0",
+    "warp-lang": "1.16.0",
+    "usd-core": "not_in_metadata"
+  },
+  "files": {
+    "deployment_v3/deployment_manifest.json": "0db73e94d6f70d428876851856adfdd54a98aa853c1de2cfb1a6dd245c5dfe5b",
+    "deployment_v3/README.md": "e7b68efff8207fdd4181f5f2a5d7acf871b1cf425ab946ac8394aca9581ea633",
+    "deployment_v3/launch_guard.py": "afdd807e83201c0bfbce5a56b298168dbee7d8f69e2b9ae7736f8228708e8bdf",
+    "deployment_v3/launch_commands.json": "e03c60e0b5a7743972190ee72844bd76b4013f4ceb01e7be95f439fc3348adc6",
+    "deployment_v3/tasks/__init__.py": "2241a89ae72eb3cc2799c297ad2439de263e0db57f53161d292858ccf1dfb6a0",
+    "deployment_v3/tasks/h2s2r_clean3/physics_gate.py": "a622a12c397263f28310ee2ed25b7d02d1375efe68a1dbecd6acaebd7af4d5f6",
+    "deployment_v3/tasks/h2s2r_clean3/env.py": "434ca28f5e56d3605b4b39c0a944ddebed1d7be7eb634f23659a4b767fad981c",
+    "deployment_v3/tasks/h2s2r_clean3/ppo_h2s2r_lstm.yaml": "a8a1b96692a5e9895f92fd3807aefe6412342937822747a6bd8c6f84d16fb361",
+    "deployment_v3/tasks/h2s2r_clean3/cfg.py": "4091ab75f00f6e2f992223a70d99f78764c9035ad7666d86954262a38f6d2281",
+    "deployment_v3/tasks/h2s2r_clean3/evaluate.py": "2e8ec36b4eb15f745d5804bc6b3fb320a8bd49f59eeeb1087c711eea9205a654",
+    "deployment_v3/tasks/h2s2r_clean3/__init__.py": "5d106df262c9c4c396aff036220701b7e3c27ba7334a411d8f088c08240e50e1",
+    "deployment_v3/tasks/h2s2r_clean3/train_lstm.py": "2d374b697adc5ca9c09f5819f21ddc0e5160f850056fcec8ac5399c0ab2a198e",
+    "deployment_v3/c3p1r/__init__.py": "a9187e8b30f80cdd8f5233eac8fe80373562217c4024dd49f094b5d8058949f4",
+    "deployment_v3/c3p1r/action_calibration.py": "04a00a5ba42d7ce9596bf4de5fa3405d17bca6bcdbddca373ce3bde91d44bbd2",
+    "deployment_v3/clean3_adapter/cadence.py": "64c1ea904d6dfdb4d6c46581426f6b6c6e7fbfd2f2f55cd51c6d0c57eeba1948",
+    "deployment_v3/clean3_adapter/__init__.py": "6ffe5f70a911ba3d8f560e669130a9709e4a7a21062769fb3ee3a9b76256402c",
+    "deployment_v3/clean3_adapter/external_eval.py": "2651903ac09ef6681119add9cbb6eab17846c1d7e58ca4e954efde42662d6e6f",
+    "deployment_v3/c3p1r2/__init__.py": "2ebb7bda00a35d609e5f65f4c35fb79821220ab213ceb30decb88ef1fc03aa65",
+    "deployment_v3/c3p1r2/action_calibration.py": "0b7e525b53313a8c15b41f3765b222c39cc982b1e1bfbd4face2ea8cec76d435",
+    "deployment_v3/data/input_manifest.json": "baaebbb7d8df3588327368195b1537bc3c6fc96d94ca32fbd76b87a9215d0756",
+    "deployment_v3/data/action_calibration_manifest.json": "ec4b884fb06270e195cb09a0db623abc6b2c40fcc06af0a6abb0bbb95e18e9b0"
+  },
+  "clean3_process_rows": [],
+  "statuses": {
+    "physics_gate_01/process_status.json": "{\n  \"state\": \"completed\",\n  \"pid\": 2513473,\n  \"start_utc\": \"2026-09-12T15:49:53.346718+00:00\",\n  \"end_utc\": \"2026-09-12T15:50:08.349954+00:00\",\n  \"elapsed_seconds\": 15.003268789034337,\n  \"ready_at_seconds\": null,\n  \"return_code\": 0,\n  \"command\": [\n    \"/home/kailang/.local/miniconda3/envs/rl-correction-pour/bin/python\",\n    \"-u\",\n    \"/media/msc-auto/HDD/users/kailang/h2s2r_clean3_c3p1r2_20260912/deployment/tasks/h2s2r_clean3/physics_gate.py\",\n    \"--runtime_root\",\n    \"/media/msc-auto/HDD/users/kailang/h2s2r_clean3_c3p1r2_20260912/deployment\",\n    \"--v12_root\",\n    \"/home/kailang/experiments/baselines/rl_correction_h2s2r_adapter_v12_training_pilot_20260912\",\n    \"--output_root\",\n    \"/media/msc-auto/HDD/users/kailang/h2s2r_clean3_c3p1r2_20260912/physics_gate_01/artifacts\",\n    \"--device\",\n    \"cuda:0\",\n    \"--headless\",\n    \"--enable_cameras\"\n  ]\n}\n",
+    "physics_gate_02/process_status.json": "{\n  \"state\": \"failed\",\n  \"pid\": 2526742,\n  \"start_utc\": \"2026-09-12T16:28:27.652576+00:00\",\n  \"end_utc\": \"2026-09-12T16:28:42.655421+00:00\",\n  \"elapsed_seconds\": 15.002870302647352,\n  \"ready_at_seconds\": null,\n  \"return_code\": 0,\n  \"ready_marker_seen\": false,\n  \"success_marker_seen\": false,\n  \"failure_marker_seen\": true,\n  \"command\": [\n    \"/home/kailang/.local/miniconda3/envs/rl-correction-pour/bin/python\",\n    \"-u\",\n    \"/media/msc-auto/HDD/users/kailang/h2s2r_clean3_c3p1r2_20260912/deployment_v3/tasks/h2s2r_clean3/physics_gate.py\",\n    \"--runtime_root\",\n    \"/media/msc-auto/HDD/users/kailang/h2s2r_clean3_c3p1r2_20260912/deployment_v3\",\n    \"--v12_root\",\n    \"/home/kailang/experiments/baselines/rl_correction_h2s2r_adapter_v12_training_pilot_20260912\",\n    \"--output_root\",\n    \"/media/msc-auto/HDD/users/kailang/h2s2r_clean3_c3p1r2_20260912/physics_gate_02/artifacts\",\n    \"--device\",\n    \"cuda:0\",\n    \"--headless\",\n    \"--enable_cameras\"\n  ]\n}\n"
+  }
+}

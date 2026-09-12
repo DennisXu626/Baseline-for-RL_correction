@@ -1,0 +1,24 @@
+{
+  "schema": "h2s2r_clean3_c3p1r2_decision_v2",
+  "status": "CLOSED_ATTEMPT02_MISSING_ROBOT_USD",
+  "cpu_gate": "PASS_NOT_REPEATED",
+  "deployment_v3": "30/30 PASS",
+  "frozen_dependency_identity": "5/5 PASS",
+  "physical_attempts_consumed": 2,
+  "physical_attempts_limit": 2,
+  "physical_attempt_02": "FAILED_BEFORE_ENV_CONSTRUCTION",
+  "failure": {
+    "type": "FileNotFoundError",
+    "missing_path": "/home/kailang/experiments/baselines/rl_correction_h2s2r_adapter_v12_training_pilot_20260912/world/vega_1p_sharpa_fixedtorso__RUNTIME_LOADED.usd",
+    "v12_declared_fixed_asset_also_missing": "/home/kailang/experiments/baselines/rl_correction_h2s2r_adapter_v12_training_pilot_20260912/rl_rebuild/assets/vega_1p_sharpa_fixedtorso.usd",
+    "v12_fallback_asset_also_missing": "/home/lyh/luhr/MagicSim/Assets/Robots/vega_1p_sharpa.usd"
+  },
+  "physics_validity": "NOT_TESTED",
+  "ppo": "NOT_STARTED",
+  "evaluation": "NOT_STARTED",
+  "valid_evaluation_denominator": 0,
+  "successes": null,
+  "success_rate": null,
+  "stop_rule": "Attempt02 failed and exhausted the two-start campaign limit. No path repair, attempt03, PPO, or evaluation is authorized.",
+  "reviewer_action_needed": "Identify and authorize a frozen 58-DOF fixed-torso robot USD with collision identity in a new work package; a new physical launch budget would also be required."
+}

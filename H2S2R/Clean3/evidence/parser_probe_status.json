@@ -1,0 +1,25 @@
+{
+  "state": "failed",
+  "pid": 73740,
+  "start_utc": "2026-09-12T18:01:27.649416+00:00",
+  "end_utc": "2026-09-12T18:01:32.690440+00:00",
+  "elapsed_seconds": 5.041044799960218,
+  "ready_at_seconds": 5.040951399947517,
+  "return_code": 0,
+  "ready_marker_seen": true,
+  "success_marker_seen": false,
+  "failure_marker_seen": true,
+  "ready_marker": "[READY]",
+  "success_marker": "[SUCCESS]",
+  "failure_marker": "[CLEAN3-ENTRY-FAILURE]",
+  "poll_count": 1,
+  "last_console_bytes": 31,
+  "status_poll_limit": 0,
+  "command": [
+    "python",
+    "-c",
+    "print('[READY]');print('[CLEAN3-ENTRY-FAILURE]'); raise SystemExit(0)"
+  ],
+  "log_read_errors": [],
+  "schema": "clean3_launch_guard_status_v1"
+}

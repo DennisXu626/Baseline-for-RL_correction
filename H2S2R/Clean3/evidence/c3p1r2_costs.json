@@ -1,0 +1,48 @@
+{
+  "schema": "h2s2r_clean3_c3p1r2_costs_v2",
+  "budget": {
+    "cpu_remaining_at_release_minutes": 110,
+    "physics_minutes": 45,
+    "ppo_minutes": 120,
+    "evaluation_delivery_minutes": 45,
+    "physical_starts_max": 2
+  },
+  "actual": {
+    "cpu_active_minutes_approx_cumulative": 80,
+    "physical_starts": 2,
+    "physical_process_wall_seconds_total": 30.00613909168169,
+    "attempt_01_wall_seconds": 15.003268789034337,
+    "attempt_02_wall_seconds": 15.002870302647352,
+    "physics_controls": 0,
+    "physics_substeps": 0,
+    "video_frames": 0,
+    "training_epochs": 0,
+    "transitions": 0,
+    "optimizer_updates": 0,
+    "evaluation_episodes": 0,
+    "local_v3_archive_bytes": 26448738,
+    "reviewer_v3_transfer_verified_bytes": 26448738,
+    "v2_prior_successful_transfer_bytes": 26442606,
+    "v1_historical_incomplete_transfer_bytes": 14581760
+  },
+  "attempt_02_preflight": {
+    "physical_gpu": 1,
+    "physical_gpu_uuid": "GPU-f2ad0deb-49d8-33d9-3b4a-186e9f95ca41",
+    "internal_device": "cuda:0",
+    "samples": 10,
+    "gpu1_total_mib": 49140,
+    "gpu1_used_mib": 476,
+    "gpu1_free_mib": 48063,
+    "gpu1_util_percent_min": 2,
+    "gpu1_util_percent_max": 3,
+    "minimum_mem_available_bytes": 253748428800,
+    "hdd_free_bytes": 2806195249152,
+    "root_free_bytes": 3437465600,
+    "rl_isaac_no_guard": 1
+  },
+  "attempt_02_runtime_peak": {
+    "peak_gpu_memory_mib": null,
+    "resource_samples": 0,
+    "reason": "The external monitor parser failed immediately after dispatch; the independently guarded child then exited before environment construction. Console confirms physical GPU1, but no runtime peak is claimed."
+  }
+}

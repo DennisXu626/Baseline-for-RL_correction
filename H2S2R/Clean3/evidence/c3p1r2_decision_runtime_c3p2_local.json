@@ -1,0 +1,29 @@
+{
+  "schema": "h2s2r_clean3_c3p1r2_runtime_decision_v1",
+  "decision": "BLOCKED_LOCAL_CPU_DEPENDENCY_AND_REMOTE_ASSET_SCOPE_MISMATCH",
+  "authority": "CLEAN3_REVIEWER_C3P2_20260913",
+  "timestamp_utc": "2026-09-13T00:00:00+00:00",
+  "phase": "C3-P2_PRECHECK",
+  "cpu_gate": "PASS_WITH_BLOCKERS",
+  "pxr_gate": "FAIL",
+  "local_pxr_available": false,
+  "cfg_resource_parsing": "PASS",
+  "remote_asset_visibility": "ABSENT",
+  "local_remote_dependency_missing": true,
+  "attempt02_launch": "NOT_STARTED",
+  "training_started": false,
+  "evaluation_started": false,
+  "valid_evaluation_denominator": 0,
+  "task_successes": null,
+  "task_success_rate": "N/A",
+  "stop_rule": "Local preflight and parser hardening completed; remote/local runtime dependency mismatch and pxr dependency prevent physics launch, so stop per C3-P2. No attempt03 or PPO/Eval.",
+  "blocking_evidence": {
+    "preflight_file": "c3p1r2_preflight_c3p2_v5.json",
+    "parser_probe_file": "c3p1r2_evidence/parser_probe_status.json",
+    "missing_paths": [
+      "/home/kailang/experiments/baselines/pour17_baseline_bundle_20260829/pour17/world/vega_1p_sharpa_fixedtorso__RUNTIME_LOADED.usd",
+      "/home/kailang/experiments/baselines/rl_correction_h2s2r_adapter_v12_training_pilot_20260912/rl_rebuild/baselines/h2s2r/assets/vega_sharpa_right_fabric.urdf",
+      "/home/kailang/experiments/baselines/rl_correction_h2s2r_adapter_v12_training_pilot_20260912/rl_rebuild/baselines/h2s2r/assets/vega_sharpa_left_fabric.urdf"
+    ]
+  }
+}

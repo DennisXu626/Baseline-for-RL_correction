@@ -1,0 +1,154 @@
+{
+  "schema": "h2s2r_clean3_c3p1r2_deployment_manifest_v1",
+  "local_root": "D:\\UCBP\\RL\\Baselines\\task_plate\\h2s2r_clean3_c3p1_20260912\\deployment_c3p1r2",
+  "remote_target": "/media/msc-auto/HDD/users/kailang/h2s2r_clean3_c3p1r2_20260912/deployment_v3",
+  "upload_scope": "only files listed below; no Pour17/shared-upstream modification",
+  "read_only_dependencies": {
+    "v12": "/home/kailang/experiments/baselines/rl_correction_h2s2r_adapter_v12_training_pilot_20260912",
+    "fabrics": "/home/kailang/experiments/baselines/fabrics_h2s2r_reference/src",
+    "python": "/home/kailang/.local/miniconda3/envs/rl-correction-pour/bin/python"
+  },
+  "files": {
+    "assets/objects/object_0/object_mesh_scaled_final.obj": {
+      "bytes": 15876711,
+      "sha256": "56d95379c9eae38c5d72000bc92c9e4eee806a97425b8fb35e6ebc8432045524"
+    },
+    "assets/objects/object_1/object_mesh_scaled_final.obj": {
+      "bytes": 13431124,
+      "sha256": "0da945a426e289b0f11c5aad8f2a65491172f1035cde9f01ce5c360a6c061653"
+    },
+    "assets/retarget/object_0_textured.usd": {
+      "bytes": 5093470,
+      "sha256": "828f4f1584f88e4cbe13d98d386e181de006042208c8e023f6b5c9c18a433029"
+    },
+    "assets/retarget/object_1_textured.usd": {
+      "bytes": 8005351,
+      "sha256": "6c48e88f257f19fe56129eb71fc23f80df14fad528745ce22af37803d038686e"
+    },
+    "assets/retarget/textures/object_0_textured.png": {
+      "bytes": 5068502,
+      "sha256": "83dec06f311757855eb9c5fb3e70b2fa55822b3cbe1c3babb1751b887dd35fd7"
+    },
+    "assets/retarget/textures/object_1_textured.png": {
+      "bytes": 3971674,
+      "sha256": "4ca5832b8e049e6719f7e5832b1e8b6e738c65d8c5298cd715d49bb954a8e683"
+    },
+    "c3p1r/__init__.py": {
+      "bytes": 62,
+      "sha256": "a9187e8b30f80cdd8f5233eac8fe80373562217c4024dd49f094b5d8058949f4"
+    },
+    "c3p1r/action_calibration.py": {
+      "bytes": 3404,
+      "sha256": "04a00a5ba42d7ce9596bf4de5fa3405d17bca6bcdbddca373ce3bde91d44bbd2"
+    },
+    "c3p1r2/__init__.py": {
+      "bytes": 58,
+      "sha256": "2ebb7bda00a35d609e5f65f4c35fb79821220ab213ceb30decb88ef1fc03aa65"
+    },
+    "c3p1r2/action_calibration.py": {
+      "bytes": 992,
+      "sha256": "0b7e525b53313a8c15b41f3765b222c39cc982b1e1bfbd4face2ea8cec76d435"
+    },
+    "clean3_adapter/__init__.py": {
+      "bytes": 76,
+      "sha256": "6ffe5f70a911ba3d8f560e669130a9709e4a7a21062769fb3ee3a9b76256402c"
+    },
+    "clean3_adapter/cadence.py": {
+      "bytes": 580,
+      "sha256": "64c1ea904d6dfdb4d6c46581426f6b6c6e7fbfd2f2f55cd51c6d0c57eeba1948"
+    },
+    "clean3_adapter/external_eval.py": {
+      "bytes": 5783,
+      "sha256": "2651903ac09ef6681119add9cbb6eab17846c1d7e58ca4e954efde42662d6e6f"
+    },
+    "data/action_calibration_manifest.json": {
+      "bytes": 5549,
+      "sha256": "ec4b884fb06270e195cb09a0db623abc6b2c40fcc06af0a6abb0bbb95e18e9b0"
+    },
+    "data/clean3_action_calibration_c3p1r2.npz": {
+      "bytes": 3749,
+      "sha256": "f878f87f61f218175292583b266f6150142c95dc3366a328c516383e58507747"
+    },
+    "data/clean3_c3p1_runtime_inputs.npz": {
+      "bytes": 7990,
+      "sha256": "3da2b16f27d74be4898a00fc807e6993dc1915eadbaff2f9aa8539fd1a6a84ff"
+    },
+    "data/input_manifest.json": {
+      "bytes": 10329,
+      "sha256": "baaebbb7d8df3588327368195b1537bc3c6fc96d94ca32fbd76b87a9215d0756"
+    },
+    "data/left_synergy_pca5.npz": {
+      "bytes": 1826,
+      "sha256": "578ff0a8a9ada51cdf0ff7a442fa04d6ed22dd51e1130366f1936863fe7fd521"
+    },
+    "data/right_synergy_pca5.npz": {
+      "bytes": 1830,
+      "sha256": "31c349ea79313a504b3a809a51bbf9fbc646922ae86c3363e0688c8475df36e2"
+    },
+    "launch_commands.json": {
+      "bytes": 5574,
+      "sha256": "700d479c71a2c1efa9d6e9c8c2d86b9747de164b4f62b8d7ccfbf9ef986bc246"
+    },
+    "launch_guard.py": {
+      "bytes": 6352,
+      "sha256": "d66ba487ee627de52375f54613ec46ae080b3aa980c8934546be60f9f85ecae2"
+    },
+    "preflight_checks.py": {
+      "bytes": 13193,
+      "sha256": "34687d4cc18e2eb50c3692dfa1b0413dc81271b53e12e51ec4b3c4a044d7022b"
+    },
+    "README.md": {
+      "bytes": 938,
+      "sha256": "1d803de0f682677d60d0a862422059747976a3ac09c001f9a5ae3e7cc9b11a5c"
+    },
+    "run_with_preflight.py": {
+      "bytes": 1185,
+      "sha256": "2393b6a9c86e48b79901302efc3cf6e59ebdc4688b0b981781e3016d46ba9045"
+    },
+    "tasks/__init__.py": {
+      "bytes": 34,
+      "sha256": "2241a89ae72eb3cc2799c297ad2439de263e0db57f53161d292858ccf1dfb6a0"
+    },
+    "tasks/h2s2r_clean3/__init__.py": {
+      "bytes": 38,
+      "sha256": "5d106df262c9c4c396aff036220701b7e3c27ba7334a411d8f088c08240e50e1"
+    },
+    "tasks/h2s2r_clean3/cfg.py": {
+      "bytes": 5990,
+      "sha256": "bc82b5269ce8f96612b0d96173f7437fcbfb7de94e8c683bbf2990e52117c996"
+    },
+    "tasks/h2s2r_clean3/env.py": {
+      "bytes": 25490,
+      "sha256": "434ca28f5e56d3605b4b39c0a944ddebed1d7be7eb634f23659a4b767fad981c"
+    },
+    "tasks/h2s2r_clean3/evaluate.py": {
+      "bytes": 11612,
+      "sha256": "2e8ec36b4eb15f745d5804bc6b3fb320a8bd49f59eeeb1087c711eea9205a654"
+    },
+    "tasks/h2s2r_clean3/physics_gate.py": {
+      "bytes": 10883,
+      "sha256": "a622a12c397263f28310ee2ed25b7d02d1375efe68a1dbecd6acaebd7af4d5f6"
+    },
+    "tasks/h2s2r_clean3/ppo_h2s2r_lstm.yaml": {
+      "bytes": 900,
+      "sha256": "a8a1b96692a5e9895f92fd3807aefe6412342937822747a6bd8c6f84d16fb361"
+    },
+    "tasks/h2s2r_clean3/train_lstm.py": {
+      "bytes": 5515,
+      "sha256": "2d374b697adc5ca9c09f5819f21ddc0e5160f850056fcec8ac5399c0ab2a198e"
+    }
+  },
+  "total_files": 32,
+  "total_bytes": 51576764,
+  "launch_commands": {
+    "physics_gate": "PYTHONPATH=/media/msc-auto/HDD/users/kailang/h2s2r_clean3_c3p1r2_20260912/deployment_v3:/home/kailang/experiments/baselines/rl_correction_h2s2r_adapter_v12_training_pilot_20260912:/home/kailang/experiments/baselines/fabrics_h2s2r_reference/src CUDA_VISIBLE_DEVICES=0 RL_ISAAC_NO_GUARD=1 /home/kailang/.local/miniconda3/envs/rl-correction-pour/bin/python -u /media/msc-auto/HDD/users/kailang/h2s2r_clean3_c3p1r2_20260912/deployment_v3/launch_guard.py --log /media/msc-auto/HDD/users/kailang/h2s2r_clean3_c3p1r2_20260912/physics_gate_02/console.log --status /media/msc-auto/HDD/users/kailang/h2s2r_clean3_c3p1r2_20260912/physics_gate_02/process_status.json --ready_marker '[CLEAN3-GATE] stage=construct_env complete' --success_marker '[CLEAN3-GATE] stage=run complete' --init_seconds 300 --total_seconds 2700 /home/kailang/.local/miniconda3/envs/rl-correction-pour/bin/python -u /media/msc-auto/HDD/users/kailang/h2s2r_clean3_c3p1r2_20260912/deployment_v3/run_with_preflight.py --runtime_root /media/msc-auto/HDD/users/kailang/h2s2r_clean3_c3p1r2_20260912/deployment_v3 --v12_root /home/kailang/experiments/baselines/rl_correction_h2s2r_adapter_v12_training_pilot_20260912 --preflight_output /media/msc-auto/HDD/users/kailang/h2s2r_clean3_c3p1r2_20260912/physics_gate_02/preflight.json -- /home/kailang/.local/miniconda3/envs/rl-correction-pour/bin/python -u /media/msc-auto/HDD/users/kailang/h2s2r_clean3_c3p1r2_20260912/deployment_v3/tasks/h2s2r_clean3/physics_gate.py --runtime_root /media/msc-auto/HDD/users/kailang/h2s2r_clean3_c3p1r2_20260912/deployment_v3 --v12_root /home/kailang/experiments/baselines/rl_correction_h2s2r_adapter_v12_training_pilot_20260912 --output_root /media/msc-auto/HDD/users/kailang/h2s2r_clean3_c3p1r2_20260912/physics_gate_02/artifacts --device cuda:0 --headless --enable_cameras",
+    "training": "PYTHONPATH=/media/msc-auto/HDD/users/kailang/h2s2r_clean3_c3p1r2_20260912/deployment_v3:/home/kailang/experiments/baselines/rl_correction_h2s2r_adapter_v12_training_pilot_20260912:/home/kailang/experiments/baselines/fabrics_h2s2r_reference/src CUDA_VISIBLE_DEVICES=0 RL_ISAAC_NO_GUARD=1 /home/kailang/.local/miniconda3/envs/rl-correction-pour/bin/python -u /media/msc-auto/HDD/users/kailang/h2s2r_clean3_c3p1r2_20260912/deployment_v3/launch_guard.py --log /media/msc-auto/HDD/users/kailang/h2s2r_clean3_c3p1r2_20260912/training_01/console.log --status /media/msc-auto/HDD/users/kailang/h2s2r_clean3_c3p1r2_20260912/training_01/process_status.json --ready_marker '[CLEAN3] stage=construct_env complete' --success_marker '[CLEAN3] stage=training complete' --init_seconds 300 --total_seconds 7200 /home/kailang/.local/miniconda3/envs/rl-correction-pour/bin/python -u /media/msc-auto/HDD/users/kailang/h2s2r_clean3_c3p1r2_20260912/deployment_v3/run_with_preflight.py --runtime_root /media/msc-auto/HDD/users/kailang/h2s2r_clean3_c3p1r2_20260912/deployment_v3 --v12_root /home/kailang/experiments/baselines/rl_correction_h2s2r_adapter_v12_training_pilot_20260912 --preflight_output /media/msc-auto/HDD/users/kailang/h2s2r_clean3_c3p1r2_20260912/training_01/preflight.json -- /home/kailang/.local/miniconda3/envs/rl-correction-pour/bin/python -u /media/msc-auto/HDD/users/kailang/h2s2r_clean3_c3p1r2_20260912/deployment_v3/tasks/h2s2r_clean3/train_lstm.py --runtime_root /media/msc-auto/HDD/users/kailang/h2s2r_clean3_c3p1r2_20260912/deployment_v3 --v12_root /home/kailang/experiments/baselines/rl_correction_h2s2r_adapter_v12_training_pilot_20260912 --output_root /media/msc-auto/HDD/users/kailang/h2s2r_clean3_c3p1r2_20260912/training_01/run --num_envs 256 --seed 42 --max_epochs 512 --device cuda:0 --headless",
+    "evaluation_template": "PYTHONPATH=/media/msc-auto/HDD/users/kailang/h2s2r_clean3_c3p1r2_20260912/deployment_v3:/home/kailang/experiments/baselines/rl_correction_h2s2r_adapter_v12_training_pilot_20260912:/home/kailang/experiments/baselines/fabrics_h2s2r_reference/src CUDA_VISIBLE_DEVICES=0 RL_ISAAC_NO_GUARD=1 /home/kailang/.local/miniconda3/envs/rl-correction-pour/bin/python -u /media/msc-auto/HDD/users/kailang/h2s2r_clean3_c3p1r2_20260912/deployment_v3/launch_guard.py --log /media/msc-auto/HDD/users/kailang/h2s2r_clean3_c3p1r2_20260912/evaluation_01/console.log --status /media/msc-auto/HDD/users/kailang/h2s2r_clean3_c3p1r2_20260912/evaluation_01/process_status.json --ready_marker '[CLEAN3-EVAL] stage=construct_env complete' --success_marker '[CLEAN3-EVAL] stage=evaluation complete' --init_seconds 300 --total_seconds 2700 /home/kailang/.local/miniconda3/envs/rl-correction-pour/bin/python -u /media/msc-auto/HDD/users/kailang/h2s2r_clean3_c3p1r2_20260912/deployment_v3/run_with_preflight.py --runtime_root /media/msc-auto/HDD/users/kailang/h2s2r_clean3_c3p1r2_20260912/deployment_v3 --v12_root /home/kailang/experiments/baselines/rl_correction_h2s2r_adapter_v12_training_pilot_20260912 --preflight_output /media/msc-auto/HDD/users/kailang/h2s2r_clean3_c3p1r2_20260912/evaluation_01/preflight.json -- /home/kailang/.local/miniconda3/envs/rl-correction-pour/bin/python -u /media/msc-auto/HDD/users/kailang/h2s2r_clean3_c3p1r2_20260912/deployment_v3/tasks/h2s2r_clean3/evaluate.py --runtime_root /media/msc-auto/HDD/users/kailang/h2s2r_clean3_c3p1r2_20260912/deployment_v3 --v12_root /home/kailang/experiments/baselines/rl_correction_h2s2r_adapter_v12_training_pilot_20260912 --initial_checkpoint INITIAL_CHECKPOINT --final_checkpoint FINAL_CHECKPOINT --output_root /media/msc-auto/HDD/users/kailang/h2s2r_clean3_c3p1r2_20260912/evaluation_01/artifacts --device cuda:0 --headless --enable_cameras"
+  },
+  "previous_rejection": {
+    "action": "scp of the earlier Clean3 implementation source payload to the remote HDD target",
+    "transferred_bytes": 0,
+    "reason_verbatim": "This uploads internal Clean3 implementation source code to an unverified remote destination; the user authorized remote storage for large artifacts and trajectories, but did not specifically authorize exporting this source payload to that destination. The agent must not attempt to work around that approval requirement. Proceed only if the user explicitly approves after being informed.",
+    "current_authorization": "The C3-P1R2 user request explicitly authorizes normal approval handling for a local reviewable deployment package, its SHA manifest, and an independent target path; no bypass is permitted."
+  }
+}

@@ -1,0 +1,62 @@
+{
+  "schema": "h2s2r_clean3_c3p1r2_validation_v2",
+  "status": "CPU_PASS_RUNTIME_BLOCKED_MISSING_ROBOT_USD",
+  "cpu": {
+    "repeated_on_resume": false,
+    "palm_contract_tests": "4/4 PASS",
+    "deployment_source_tests": "3/3 PASS",
+    "launch_evidence_tests": "3/3 PASS",
+    "actual_set_targets": {
+      "right_position_error_m": 1.42e-08,
+      "right_rotation_matrix_max_error": 3.02e-08,
+      "left_position_error_m": 1.06e-08,
+      "left_rotation_matrix_max_error": 7.5e-08,
+      "position_threshold_m": 1e-06,
+      "rotation_matrix_threshold": 1e-06
+    },
+    "left_palm_z_minimum_m": -0.03,
+    "angle_contract": "SciPy uppercase ZYX; R=Rz(z)@Ry(y)@Rx(x)",
+    "pca_unchanged": true,
+    "hand_sidecar_sha256": "f878f87f61f218175292583b266f6150142c95dc3366a328c516383e58507747"
+  },
+  "deployment": {
+    "archive_sha256": "cc424a2c22e55393022aa9586e5de21e50bea0ba64f16bf4a788e1b268f1cf8c",
+    "archive_bytes": 26448738,
+    "reviewer_upload": "VERIFIED",
+    "remote_root": "/media/msc-auto/HDD/users/kailang/h2s2r_clean3_c3p1r2_20260912/deployment_v3",
+    "manifest_files": "30/30 PASS",
+    "frozen_dependencies": "5/5 PASS"
+  },
+  "attempt_01": {
+    "classification": "ZERO_PHYSICS_SUPPORT_FAILURE",
+    "elapsed_seconds": 15.003268789034337,
+    "physics_controls": 0,
+    "physics_substeps": 0,
+    "frames": 0
+  },
+  "attempt_02": {
+    "classification": "FAILED_PRE_ENV_MISSING_ROBOT_USD",
+    "elapsed_seconds": 15.002870302647352,
+    "guard_state": "failed",
+    "ready_marker_seen": false,
+    "success_marker_seen": false,
+    "failure_marker_seen": true,
+    "environment_construct_begin_seen": false,
+    "environment_construct_complete_seen": false,
+    "physics_controls": 0,
+    "physics_substeps": 0,
+    "frames": 0,
+    "raw_trajectory": false,
+    "entry_failure_saved": true,
+    "missing_robot_usd": "/home/kailang/experiments/baselines/rl_correction_h2s2r_adapter_v12_training_pilot_20260912/world/vega_1p_sharpa_fixedtorso__RUNTIME_LOADED.usd"
+  },
+  "physics_gate": "NOT_TESTED",
+  "zero_action_stability": "NOT_TESTED",
+  "dynamic_hold": "NOT_TESTED",
+  "penetration": "NOT_TESTED",
+  "bilateral_real_cadence": "NOT_TESTED",
+  "training": "NOT_STARTED",
+  "external_evaluation": "NOT_STARTED",
+  "valid_evaluation_denominator": 0,
+  "success_rate": null
+}
