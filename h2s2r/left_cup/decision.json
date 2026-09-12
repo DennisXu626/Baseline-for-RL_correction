@@ -1,0 +1,19 @@
+{
+  "status": "D_DIAGNOSTIC_COMPLETE_PROCESS_TIMEOUT_A_TRANSFER_INELIGIBLE",
+  "support_implementation": "PASS",
+  "D_scientific_sample": "COMPLETE_ARTIFACTS_WITH_PROCESS_TIMEOUT",
+  "D_supervisor": "FAIL_TIMEOUT",
+  "left_cup_contact_observation": "OBSERVED",
+  "actual_cooked_collision_penetration": "NOT_DEMONSTRATED",
+  "A_environment_identity": "INCOMPLETE",
+  "A_single_item_transfer": "NOT_ELIGIBLE_NOT_RUN",
+  "shared_or_V12_integration": "NOT_PERFORMED",
+  "LEFT_PASS": false,
+  "baseline_fixed": false,
+  "training_or_policy": "NOT_RUN",
+  "reviewer_decision_required": [
+    "Whether the immediate positive-separation pinky/lower-cup contact plus prior input-mesh intersection warrants an initialization adaptation or collision-model study.",
+    "Whether to obtain the exact PMIN_P17s51 cache/collision/filter manifest before any A-derived transfer.",
+    "Whether the app.close timeout needs a separate support package; this package does not grant a retry."
+  ]
+}

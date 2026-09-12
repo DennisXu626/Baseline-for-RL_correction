@@ -1,0 +1,34 @@
+{
+  "remote_run": "/media/msc-auto/HDD/users/kailang/h2s2r_left_cup_a_env_transfer_20260912/D_replay02",
+  "local_run": "D:/UCBP/reports/H2S2R_LEFT_CUP_A_ENV_TRANSFER_20260912/remote_evidence/D_replay02",
+  "local_run_file_count": 337,
+  "local_run_bytes": 49343291,
+  "readability": {
+    "substeps_npz": "PASS: 1200 rows, allow_pickle=False",
+    "contacts_npz": "PASS: 261636 rows, allow_pickle=False",
+    "early_npz": "PASS: 12 independent files, indices 0..11, allow_pickle=False",
+    "state_writes_jsonl": "PASS: 14 valid JSON records",
+    "videos": "PASS: OpenCV decoded 101 frames/view at 640x480, 20 fps"
+  },
+  "major_files": [
+    {"relative": "substeps.npz", "bytes": 1806615, "sha256": "e61af2c24127e87d455df09208df24540c76af17abcda0a085780f5749db9a6d", "remote_local_match": true},
+    {"relative": "contacts.npz", "bytes": 4764851, "sha256": "18d903a177acbc7de62750a6a02822fdbba2580e083d3886a8541b707dd7dad3", "remote_local_match": true},
+    {"relative": "state_writes.jsonl", "bytes": 36697, "sha256": "5dee15a789780ee36c395ddc1fdd0df877567415f1dd1952845982e8b5efa0cd", "remote_local_match": true},
+    {"relative": "media/front.mp4", "bytes": 856144, "sha256": "4aa07337c983ada4f374a16bb1213c7acfe0ea771bdbbcf64cc06d51653ba01d", "remote_local_match": true},
+    {"relative": "media/top.mp4", "bytes": 691091, "sha256": "51972a041caf02bcbe56d1024121b5d3b773866ac4691e32114e89f72fff360c", "remote_local_match": true},
+    {"relative": "media/side.mp4", "bytes": 849118, "sha256": "2b5530194eedf54495df710001251534d0c52b624d08ade54ec2b45986a9622c", "remote_local_match": true}
+  ],
+  "early_substeps": {
+    "remote_directory": "/media/msc-auto/HDD/users/kailang/h2s2r_left_cup_a_env_transfer_20260912/D_replay02/early_substeps",
+    "local_directory": "D:/UCBP/reports/H2S2R_LEFT_CUP_A_ENV_TRANSFER_20260912/remote_evidence/D_replay02/early_substeps",
+    "files": 12,
+    "bytes": 136804,
+    "per_file_sha256": "delivery_validation.json"
+  },
+  "supervisor": {
+    "result_sha256": "3994b1d03d445c9f661c53a6096c87bc98edb026b39c2de4061e0ed1bdc68a4f",
+    "stdout_sha256": "152877954a9e21b7c324695fd56e530aa7c658472737a019397dc813f5304856",
+    "stderr_sha256": "6d2cffa1418e2f001e5d2cec23da450e969fe576725e967410182bb2c07b4003"
+  },
+  "attempt01": "preserved under remote_evidence/D_replay01 and D_replay01_launch; no controls or physics sample"
+}

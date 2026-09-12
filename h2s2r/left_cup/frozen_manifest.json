@@ -1,0 +1,85 @@
+{
+  "schema": "left_cup_a_env_transfer_frozen_v1",
+  "source_diagnostic": "D:\\UCBP\\reports\\h2s2r_run06_left_warmup_ab_20260905\\warmup0_retry3\\diagnostic.json",
+  "source_sha256": "1c1815bfa630a8bd6c36bc7c7c9fd301c3e14ba58d16b1ae0c4f22c4855bdbf0",
+  "trace_semantics": "trace0 initial; control k=1..100 uses trace[k].fabric_joint_target_29d",
+  "target_shape": [
+    100,
+    29
+  ],
+  "target_dtype": "float32",
+  "seed": 20260829,
+  "input_regime": "estimated",
+  "reference_start_index": 32,
+  "hold": 0,
+  "policy": false,
+  "ppo": false,
+  "fabrics_advance": false,
+  "control_dt_s": 0.05,
+  "D": {
+    "physics_dt_s": 0.004166666666666667,
+    "decimation": 12,
+    "controls": 100
+  },
+  "joint_names": [
+    "L_arm_j1",
+    "L_arm_j2",
+    "L_arm_j3",
+    "L_arm_j4",
+    "L_arm_j5",
+    "L_arm_j6",
+    "L_arm_j7",
+    "left_thumb_CMC_FE",
+    "left_thumb_CMC_AA",
+    "left_thumb_MCP_FE",
+    "left_thumb_MCP_AA",
+    "left_thumb_IP",
+    "left_index_MCP_FE",
+    "left_index_MCP_AA",
+    "left_index_PIP",
+    "left_index_DIP",
+    "left_middle_MCP_FE",
+    "left_middle_MCP_AA",
+    "left_middle_PIP",
+    "left_middle_DIP",
+    "left_ring_MCP_FE",
+    "left_ring_MCP_AA",
+    "left_ring_PIP",
+    "left_ring_DIP",
+    "left_pinky_CMC",
+    "left_pinky_MCP_FE",
+    "left_pinky_MCP_AA",
+    "left_pinky_PIP",
+    "left_pinky_DIP"
+  ],
+  "files": {
+    "D:\\UCBP\\reports\\h2s2r_run06_left_warmup_ab_20260905\\warmup0_retry3\\diagnostic.json": {
+      "bytes": 434967,
+      "sha256": "1c1815bfa630a8bd6c36bc7c7c9fd301c3e14ba58d16b1ae0c4f22c4855bdbf0"
+    },
+    "D:\\UCBP\\reports\\H2S2R_LEFT_CUP_A_ENV_TRANSFER_20260912\\command_inputs.npz": {
+      "bytes": 28770,
+      "sha256": "13a52b4a760bc5ac98e432055b1f50dda2c2e1e560dfd0ac147829e6e799425c"
+    }
+  },
+  "camera_contract": {
+    "views": ["front", "top", "side"],
+    "resolution": [640, 480],
+    "fps": 20,
+    "frames_per_view": 101,
+    "runtime_approval_file": false
+  },
+  "recording_contract": {
+    "contact_views": 34,
+    "capacity_each": 4096,
+    "first_atomic_substeps": 12,
+    "full_flush_minimum": "after every completed control",
+    "state_write_recorder_installed_before": "explicit reset",
+    "constructor_state_writes_observed": false
+  },
+  "A_transfer": {
+    "requires_A1_unique_collision_asset_assembly_or_filter_difference": true,
+    "eligible": false,
+    "run": false
+  }
+}

@@ -1,0 +1,957 @@
+{
+  "status": "PASS",
+  "checks": {
+    "substeps_1200": true,
+    "control_index_exact": true,
+    "within_index_exact": true,
+    "request_exact_frozen_targets": true,
+    "joint_names_unique": true,
+    "left_joint_order_present": true,
+    "contact_view_count_34": true,
+    "contact_counts_match_rows": true,
+    "all_core_arrays_finite": true,
+    "early_atomic_files_12": true,
+    "joint_target_exact_frozen_targets": true,
+    "processed_target_exact_frozen_targets": true,
+    "right_target_constant": true,
+    "right_processed_target_constant": true,
+    "drive_target_exact_frozen_targets": true,
+    "right_direct_drive_constant": true,
+    "contact_arrays_same_length": true,
+    "contact_indices_in_range": true
+  },
+  "source": {
+    "run": "D:\\UCBP\\reports\\H2S2R_LEFT_CUP_A_ENV_TRANSFER_20260912\\remote_evidence\\D_replay02",
+    "commands": "D:\\UCBP\\reports\\H2S2R_LEFT_CUP_A_ENV_TRANSFER_20260912\\command_inputs.npz",
+    "substeps_sha256": "e61af2c24127e87d455df09208df24540c76af17abcda0a085780f5749db9a6d",
+    "contacts_sha256": "18d903a177acbc7de62750a6a02822fdbba2580e083d3886a8541b707dd7dad3",
+    "state_writes_sha256": "5dee15a789780ee36c395ddc1fdd0df877567415f1dd1952845982e8b5efa0cd"
+  },
+  "shapes": {
+    "control": [
+      1200
+    ],
+    "within_substep": [
+      1200
+    ],
+    "global_substep": [
+      1200
+    ],
+    "sim_step_counter": [
+      1200
+    ],
+    "request_left": [
+      1200,
+      29
+    ],
+    "q": [
+      1200,
+      58
+    ],
+    "qd": [
+      1200,
+      58
+    ],
+    "target": [
+      1200,
+      58
+    ],
+    "processed": [
+      1200,
+      58
+    ],
+    "effort": [
+      1200,
+      58
+    ],
+    "body_pos": [
+      1200,
+      33,
+      3
+    ],
+    "body_quat": [
+      1200,
+      33,
+      4
+    ],
+    "cup": [
+      1200,
+      7
+    ],
+    "cup_vel": [
+      1200,
+      6
+    ],
+    "bottle": [
+      1200,
+      7
+    ],
+    "bottle_vel": [
+      1200,
+      6
+    ],
+    "root": [
+      1200,
+      7
+    ],
+    "drive": [
+      1200,
+      58
+    ],
+    "view_counts": [
+      1200,
+      34
+    ],
+    "left_body_names": [
+      33
+    ],
+    "contact_view_names": [
+      34
+    ],
+    "joint_names": [
+      58
+    ],
+    "drive_joint_names": [
+      58
+    ]
+  },
+  "contact_shapes": {
+    "contact_substep": [
+      261636
+    ],
+    "contact_sensor": [
+      261636
+    ],
+    "contact_pair": [
+      261636
+    ],
+    "contact_force": [
+      261636,
+      1
+    ],
+    "contact_point": [
+      261636,
+      3
+    ],
+    "contact_normal": [
+      261636,
+      3
+    ],
+    "contact_separation": [
+      261636,
+      1
+    ]
+  },
+  "key_sensors": {
+    "left_pinky_MP": {
+      "records": 5355,
+      "first_global_substep": 0,
+      "first_control": 1,
+      "first_within_substep": 0,
+      "min_separation_m": 5.6605786085128784e-05,
+      "max_separation_m": 0.005998895037919283,
+      "max_force_N": 13.858128547668457
+    },
+    "cup_to_table": {
+      "records": 0,
+      "first_global_substep": null,
+      "first_control": null,
+      "first_within_substep": null,
+      "min_separation_m": null,
+      "max_separation_m": null,
+      "max_force_N": null
+    }
+  },
+  "first_pinky_force_event": {
+    "global_substep": 0,
+    "control": 1,
+    "within_substep": 0,
+    "time_after_first_control_start_s": 0.004166666666666667,
+    "sensor": "left_pinky_MP",
+    "point_w_m": [
+      -0.10640054941177368,
+      0.17834575474262238,
+      0.898577868938446
+    ],
+    "force_N": 7.056977272033691,
+    "separation_m": 5.6605786085128784e-05,
+    "normal_w": [
+      0.9378199577331543,
+      0.342355877161026,
+      -0.057325221598148346
+    ],
+    "cup_center_m": [
+      -0.14051218330860138,
+      0.16430559754371643,
+      0.9377297163009644
+    ],
+    "point_minus_cup_center_m": [
+      0.0341116338968277,
+      0.014040157198905945,
+      -0.03915184736251831
+    ],
+    "cup_radial_xy_mm": 36.88806915283203,
+    "cup_relative_z_mm": -39.15184783935547,
+    "pinky_body_position_m": [
+      -0.09947061538696289,
+      0.1977773755788803,
+      0.9017730355262756
+    ],
+    "point_to_pinky_body_origin_mm": 20.876325607299805
+  },
+  "global_contact_separation": {
+    "records": 261636,
+    "negative": 0,
+    "zero": 0,
+    "positive": 261636,
+    "min_m": 5.6605786085128784e-05,
+    "max_m": 0.005999998189508915,
+    "positive_force_records": 14376
+  },
+  "trajectory_outcome": {
+    "final_cup_position_m": [
+      -0.05449938401579857,
+      0.232903391122818,
+      0.981657087802887
+    ],
+    "net_cup_displacement_from_reset_mm": 117.87638742495548,
+    "final_cup_z_change_from_reset_mm": 43.694257736206055,
+    "minimum_cup_z_change_from_reset_mm": -1.520991325378418,
+    "maximum_cup_z_change_from_reset_mm": 92.73403882980347,
+    "peak_cup_linear_speed_mps": 0.3807060420513153
+  },
+  "all_sensor_summary": {
+    "left_hand_C_MC": {
+      "records": 8652,
+      "first_global_substep": 0,
+      "first_control": 1,
+      "first_within_substep": 0,
+      "min_separation_m": 0.0010804780758917332,
+      "max_separation_m": 0.005999145098030567,
+      "max_force_N": 0.0
+    },
+    "left_thumb_CMC_VL": {
+      "records": 0,
+      "first_global_substep": null,
+      "first_control": null,
+      "first_within_substep": null,
+      "min_separation_m": null,
+      "max_separation_m": null,
+      "max_force_N": null
+    },
+    "left_thumb_MC": {
+      "records": 3391,
+      "first_global_substep": 0,
+      "first_control": 1,
+      "first_within_substep": 0,
+      "min_separation_m": 0.0020965933799743652,
+      "max_separation_m": 0.0059978594072163105,
+      "max_force_N": 0.0
+    },
+    "left_thumb_MCP_VL": {
+      "records": 0,
+      "first_global_substep": null,
+      "first_control": null,
+      "first_within_substep": null,
+      "min_separation_m": null,
+      "max_separation_m": null,
+      "max_force_N": null
+    },
+    "left_thumb_PP": {
+      "records": 26174,
+      "first_global_substep": 0,
+      "first_control": 1,
+      "first_within_substep": 0,
+      "min_separation_m": 0.0008552612271159887,
+      "max_separation_m": 0.005999823100864887,
+      "max_force_N": 23.685800552368164
+    },
+    "left_thumb_DP": {
+      "records": 18216,
+      "first_global_substep": 31,
+      "first_control": 3,
+      "first_within_substep": 7,
+      "min_separation_m": 0.0006474857800640166,
+      "max_separation_m": 0.005999458953738213,
+      "max_force_N": 12.035187721252441
+    },
+    "left_thumb_fingertip": {
+      "records": 0,
+      "first_global_substep": null,
+      "first_control": null,
+      "first_within_substep": null,
+      "min_separation_m": null,
+      "max_separation_m": null,
+      "max_force_N": null
+    },
+    "left_thumb_elastomer": {
+      "records": 20479,
+      "first_global_substep": 32,
+      "first_control": 3,
+      "first_within_substep": 8,
+      "min_separation_m": 0.0003072175313718617,
+      "max_separation_m": 0.005999901797622442,
+      "max_force_N": 9.731402397155762
+    },
+    "left_index_MCP_VL": {
+      "records": 8054,
+      "first_global_substep": 0,
+      "first_control": 1,
+      "first_within_substep": 0,
+      "min_separation_m": 0.00211431086063385,
+      "max_separation_m": 0.005998922046273947,
+      "max_force_N": 0.0
+    },
+    "left_index_PP": {
+      "records": 21763,
+      "first_global_substep": 0,
+      "first_control": 1,
+      "first_within_substep": 0,
+      "min_separation_m": 0.0005005821585655212,
+      "max_separation_m": 0.00599974999204278,
+      "max_force_N": 39.53059768676758
+    },
+    "left_index_MP": {
+      "records": 4850,
+      "first_global_substep": 0,
+      "first_control": 1,
+      "first_within_substep": 0,
+      "min_separation_m": 0.0013926401734352112,
+      "max_separation_m": 0.005999772809445858,
+      "max_force_N": 0.0
+    },
+    "left_index_DP": {
+      "records": 6851,
+      "first_global_substep": 0,
+      "first_control": 1,
+      "first_within_substep": 0,
+      "min_separation_m": 0.0009660676005296409,
+      "max_separation_m": 0.005999987479299307,
+      "max_force_N": 1.1739938259124756
+    },
+    "left_index_fingertip": {
+      "records": 0,
+      "first_global_substep": null,
+      "first_control": null,
+      "first_within_substep": null,
+      "min_separation_m": null,
+      "max_separation_m": null,
+      "max_force_N": null
+    },
+    "left_index_elastomer": {
+      "records": 18023,
+      "first_global_substep": 0,
+      "first_control": 1,
+      "first_within_substep": 0,
+      "min_separation_m": 0.0006098161684349179,
+      "max_separation_m": 0.0059999884106218815,
+      "max_force_N": 3.4965269565582275
+    },
+    "left_middle_MCP_VL": {
+      "records": 166,
+      "first_global_substep": 6,
+      "first_control": 1,
+      "first_within_substep": 6,
+      "min_separation_m": 0.004885789006948471,
+      "max_separation_m": 0.005996625870466232,
+      "max_force_N": 0.0
+    },
+    "left_middle_PP": {
+      "records": 23219,
+      "first_global_substep": 0,
+      "first_control": 1,
+      "first_within_substep": 0,
+      "min_separation_m": 0.0008596426923759282,
+      "max_separation_m": 0.005999998189508915,
+      "max_force_N": 12.447526931762695
+    },
+    "left_middle_MP": {
+      "records": 18739,
+      "first_global_substep": 0,
+      "first_control": 1,
+      "first_within_substep": 0,
+      "min_separation_m": 0.0008033799240365624,
+      "max_separation_m": 0.005999704357236624,
+      "max_force_N": 27.240873336791992
+    },
+    "left_middle_DP": {
+      "records": 13414,
+      "first_global_substep": 0,
+      "first_control": 1,
+      "first_within_substep": 0,
+      "min_separation_m": 0.0009799923282116652,
+      "max_separation_m": 0.005999820772558451,
+      "max_force_N": 0.1418776512145996
+    },
+    "left_middle_fingertip": {
+      "records": 0,
+      "first_global_substep": null,
+      "first_control": null,
+      "first_within_substep": null,
+      "min_separation_m": null,
+      "max_separation_m": null,
+      "max_force_N": null
+    },
+    "left_middle_elastomer": {
+      "records": 22709,
+      "first_global_substep": 0,
+      "first_control": 1,
+      "first_within_substep": 0,
+      "min_separation_m": 0.00045006509753875434,
+      "max_separation_m": 0.005999762564897537,
+      "max_force_N": 5.994120121002197
+    },
+    "left_ring_MCP_VL": {
+      "records": 0,
+      "first_global_substep": null,
+      "first_control": null,
+      "first_within_substep": null,
+      "min_separation_m": null,
+      "max_separation_m": null,
+      "max_force_N": null
+    },
+    "left_ring_PP": {
+      "records": 12800,
+      "first_global_substep": 0,
+      "first_control": 1,
+      "first_within_substep": 0,
+      "min_separation_m": 0.0009166660602204502,
+      "max_separation_m": 0.005999916698783636,
+      "max_force_N": 34.66130447387695
+    },
+    "left_ring_MP": {
+      "records": 8953,
+      "first_global_substep": 0,
+      "first_control": 1,
+      "first_within_substep": 0,
+      "min_separation_m": 0.0007695481181144714,
+      "max_separation_m": 0.005999297369271517,
+      "max_force_N": 19.763513565063477
+    },
+    "left_ring_DP": {
+      "records": 1808,
+      "first_global_substep": 0,
+      "first_control": 1,
+      "first_within_substep": 0,
+      "min_separation_m": 0.0015663467347621918,
+      "max_separation_m": 0.005999332759529352,
+      "max_force_N": 0.0
+    },
+    "left_ring_fingertip": {
+      "records": 0,
+      "first_global_substep": null,
+      "first_control": null,
+      "first_within_substep": null,
+      "min_separation_m": null,
+      "max_separation_m": null,
+      "max_force_N": null
+    },
+    "left_ring_elastomer": {
+      "records": 5360,
+      "first_global_substep": 0,
+      "first_control": 1,
+      "first_within_substep": 0,
+      "min_separation_m": 0.0007455320446752012,
+      "max_separation_m": 0.005997915752232075,
+      "max_force_N": 3.120579242706299
+    },
+    "left_pinky_MC": {
+      "records": 0,
+      "first_global_substep": null,
+      "first_control": null,
+      "first_within_substep": null,
+      "min_separation_m": null,
+      "max_separation_m": null,
+      "max_force_N": null
+    },
+    "left_pinky_MCP_VL": {
+      "records": 0,
+      "first_global_substep": null,
+      "first_control": null,
+      "first_within_substep": null,
+      "min_separation_m": null,
+      "max_separation_m": null,
+      "max_force_N": null
+    },
+    "left_pinky_PP": {
+      "records": 5736,
+      "first_global_substep": 6,
+      "first_control": 1,
+      "first_within_substep": 6,
+      "min_separation_m": 0.0007938997587189078,
+      "max_separation_m": 0.005999557673931122,
+      "max_force_N": 39.04141616821289
+    },
+    "left_pinky_MP": {
+      "records": 5355,
+      "first_global_substep": 0,
+      "first_control": 1,
+      "first_within_substep": 0,
+      "min_separation_m": 5.6605786085128784e-05,
+      "max_separation_m": 0.005998895037919283,
+      "max_force_N": 13.858128547668457
+    },
+    "left_pinky_DP": {
+      "records": 2686,
+      "first_global_substep": 0,
+      "first_control": 1,
+      "first_within_substep": 0,
+      "min_separation_m": 0.0012703645043075085,
+      "max_separation_m": 0.005998573265969753,
+      "max_force_N": 0.0
+    },
+    "left_pinky_fingertip": {
+      "records": 0,
+      "first_global_substep": null,
+      "first_control": null,
+      "first_within_substep": null,
+      "min_separation_m": null,
+      "max_separation_m": null,
+      "max_force_N": null
+    },
+    "left_pinky_elastomer": {
+      "records": 4238,
+      "first_global_substep": 0,
+      "first_control": 1,
+      "first_within_substep": 0,
+      "min_separation_m": 0.0006012756493873894,
+      "max_separation_m": 0.0059952521696686745,
+      "max_force_N": 4.827843189239502
+    },
+    "cup_to_table": {
+      "records": 0,
+      "first_global_substep": null,
+      "first_control": null,
+      "first_within_substep": null,
+      "min_separation_m": null,
+      "max_separation_m": null,
+      "max_force_N": null
+    }
+  },
+  "first_nonzero_cup_linear_velocity_substep": 0,
+  "first12": [
+    {
+      "global_substep": 0,
+      "control": 1,
+      "within_substep": 0,
+      "cup_vx_mps": -0.03299069404602051,
+      "cup_vy_mps": -0.07126396894454956,
+      "cup_vz_mps": -0.05180353671312332,
+      "cup_linear_speed_mps": 0.09407734125852585,
+      "cup_x_m": -0.14051218330860138,
+      "cup_y_m": 0.16430559754371643,
+      "cup_z_m": 0.9377297163009644,
+      "cup_displacement_from_reset_mm": 0.5874634790687748,
+      "left_pinky_MP_records": 20,
+      "left_pinky_MP_min_separation_m": 5.6605786085128784e-05,
+      "left_pinky_MP_max_force_N": 7.056977272033691,
+      "cup_to_table_records": 0,
+      "cup_to_table_min_separation_m": null,
+      "cup_to_table_max_force_N": null,
+      "all_left_plus_table_records": 232
+    },
+    {
+      "global_substep": 1,
+      "control": 1,
+      "within_substep": 1,
+      "cup_vx_mps": 0.015729671344161034,
+      "cup_vy_mps": -0.12297903746366501,
+      "cup_vz_mps": -0.11926166713237762,
+      "cup_linear_speed_mps": 0.17203085124492645,
+      "cup_x_m": -0.14054018259048462,
+      "cup_y_m": 0.16395418345928192,
+      "cup_z_m": 0.937309980392456,
+      "cup_displacement_from_reset_mm": 1.042431041578322,
+      "left_pinky_MP_records": 20,
+      "left_pinky_MP_min_separation_m": 0.001042153686285019,
+      "left_pinky_MP_max_force_N": 0.0,
+      "cup_to_table_records": 0,
+      "cup_to_table_min_separation_m": null,
+      "cup_to_table_max_force_N": null,
+      "all_left_plus_table_records": 216
+    },
+    {
+      "global_substep": 2,
+      "control": 1,
+      "within_substep": 2,
+      "cup_vx_mps": 0.014049382880330086,
+      "cup_vy_mps": -0.1586572676897049,
+      "cup_vz_mps": -0.14902734756469727,
+      "cup_linear_speed_mps": 0.2181253433227539,
+      "cup_x_m": -0.1403835415840149,
+      "cup_y_m": 0.16339054703712463,
+      "cup_z_m": 0.9366295337677002,
+      "cup_displacement_from_reset_mm": 1.8397514961531778,
+      "left_pinky_MP_records": 19,
+      "left_pinky_MP_min_separation_m": 0.0015734396874904633,
+      "left_pinky_MP_max_force_N": 0.0,
+      "cup_to_table_records": 0,
+      "cup_to_table_min_separation_m": null,
+      "cup_to_table_max_force_N": null,
+      "all_left_plus_table_records": 198
+    },
+    {
+      "global_substep": 3,
+      "control": 1,
+      "within_substep": 3,
+      "cup_vx_mps": -0.016943182796239853,
+      "cup_vy_mps": -0.1299726963043213,
+      "cup_vz_mps": 0.03273948282003403,
+      "cup_linear_speed_mps": 0.135099396109581,
+      "cup_x_m": -0.14041560888290405,
+      "cup_y_m": 0.16276775300502777,
+      "cup_z_m": 0.9364418387413025,
+      "cup_displacement_from_reset_mm": 2.4208217496981383,
+      "left_pinky_MP_records": 20,
+      "left_pinky_MP_min_separation_m": 0.0018354468047618866,
+      "left_pinky_MP_max_force_N": 0.0,
+      "cup_to_table_records": 0,
+      "cup_to_table_min_separation_m": null,
+      "cup_to_table_max_force_N": null,
+      "all_left_plus_table_records": 189
+    },
+    {
+      "global_substep": 4,
+      "control": 1,
+      "within_substep": 4,
+      "cup_vx_mps": -0.04320875555276871,
+      "cup_vy_mps": -0.12337248027324677,
+      "cup_vz_mps": 0.052956968545913696,
+      "cup_linear_speed_mps": 0.14103972911834717,
+      "cup_x_m": -0.14060905575752258,
+      "cup_y_m": 0.162141352891922,
+      "cup_z_m": 0.9366246461868286,
+      "cup_displacement_from_reset_mm": 2.867049984906592,
+      "left_pinky_MP_records": 15,
+      "left_pinky_MP_min_separation_m": 0.0017514191567897797,
+      "left_pinky_MP_max_force_N": 0.0,
+      "cup_to_table_records": 0,
+      "cup_to_table_min_separation_m": null,
+      "cup_to_table_max_force_N": null,
+      "all_left_plus_table_records": 178
+    },
+    {
+      "global_substep": 5,
+      "control": 1,
+      "within_substep": 5,
+      "cup_vx_mps": -0.04815700277686119,
+      "cup_vy_mps": -0.11885176599025726,
+      "cup_vz_mps": 0.04596518352627754,
+      "cup_linear_speed_mps": 0.13622641563415527,
+      "cup_x_m": -0.1408597081899643,
+      "cup_y_m": 0.16152313351631165,
+      "cup_z_m": 0.9367957711219788,
+      "cup_displacement_from_reset_mm": 3.401327555726595,
+      "left_pinky_MP_records": 16,
+      "left_pinky_MP_min_separation_m": 0.0014385022222995758,
+      "left_pinky_MP_max_force_N": 0.0,
+      "cup_to_table_records": 0,
+      "cup_to_table_min_separation_m": null,
+      "cup_to_table_max_force_N": null,
+      "all_left_plus_table_records": 181
+    },
+    {
+      "global_substep": 6,
+      "control": 1,
+      "within_substep": 6,
+      "cup_vx_mps": -0.07887345552444458,
+      "cup_vy_mps": -0.1855601966381073,
+      "cup_vz_mps": 0.023108765482902527,
+      "cup_linear_speed_mps": 0.20294733345508575,
+      "cup_x_m": -0.14117611944675446,
+      "cup_y_m": 0.16082659363746643,
+      "cup_z_m": 0.936906635761261,
+      "cup_displacement_from_reset_mm": 4.0888906461784025,
+      "left_pinky_MP_records": 14,
+      "left_pinky_MP_min_separation_m": 0.0010019391775131226,
+      "left_pinky_MP_max_force_N": 13.858128547668457,
+      "cup_to_table_records": 0,
+      "cup_to_table_min_separation_m": null,
+      "cup_to_table_max_force_N": null,
+      "all_left_plus_table_records": 185
+    },
+    {
+      "global_substep": 7,
+      "control": 1,
+      "within_substep": 7,
+      "cup_vx_mps": -0.0896194726228714,
+      "cup_vy_mps": -0.16475677490234375,
+      "cup_vz_mps": 0.019093874841928482,
+      "cup_linear_speed_mps": 0.18852326273918152,
+      "cup_x_m": -0.14149382710456848,
+      "cup_y_m": 0.1601334512233734,
+      "cup_z_m": 0.9370145797729492,
+      "cup_displacement_from_reset_mm": 4.800300807038448,
+      "left_pinky_MP_records": 14,
+      "left_pinky_MP_min_separation_m": 0.0009843558073043823,
+      "left_pinky_MP_max_force_N": 10.360218048095703,
+      "cup_to_table_records": 0,
+      "cup_to_table_min_separation_m": null,
+      "cup_to_table_max_force_N": null,
+      "all_left_plus_table_records": 183
+    },
+    {
+      "global_substep": 8,
+      "control": 1,
+      "within_substep": 8,
+      "cup_vx_mps": -0.09124702215194702,
+      "cup_vy_mps": -0.14037473499774933,
+      "cup_vz_mps": 0.014809918589890003,
+      "cup_linear_speed_mps": 0.16807860136032104,
+      "cup_x_m": -0.1418374627828598,
+      "cup_y_m": 0.15953126549720764,
+      "cup_z_m": 0.9370869398117065,
+      "cup_displacement_from_reset_mm": 5.4562543334045674,
+      "left_pinky_MP_records": 14,
+      "left_pinky_MP_min_separation_m": 0.0009658187627792358,
+      "left_pinky_MP_max_force_N": 7.278909206390381,
+      "cup_to_table_records": 0,
+      "cup_to_table_min_separation_m": null,
+      "cup_to_table_max_force_N": null,
+      "all_left_plus_table_records": 188
+    },
+    {
+      "global_substep": 9,
+      "control": 1,
+      "within_substep": 9,
+      "cup_vx_mps": -0.07964944839477539,
+      "cup_vy_mps": -0.10855298489332199,
+      "cup_vz_mps": 0.01476479135453701,
+      "cup_linear_speed_mps": 0.13544660806655884,
+      "cup_x_m": -0.14215755462646484,
+      "cup_y_m": 0.1590532809495926,
+      "cup_z_m": 0.9371580481529236,
+      "cup_displacement_from_reset_mm": 5.997966913250963,
+      "left_pinky_MP_records": 14,
+      "left_pinky_MP_min_separation_m": 0.000982675701379776,
+      "left_pinky_MP_max_force_N": 4.5759382247924805,
+      "cup_to_table_records": 0,
+      "cup_to_table_min_separation_m": null,
+      "cup_to_table_max_force_N": null,
+      "all_left_plus_table_records": 185
+    },
+    {
+      "global_substep": 10,
+      "control": 1,
+      "within_substep": 10,
+      "cup_vx_mps": -0.05830822139978409,
+      "cup_vy_mps": -0.07436484843492508,
+      "cup_vz_mps": 0.012013737112283707,
+      "cup_linear_speed_mps": 0.0952591672539711,
+      "cup_x_m": -0.14240163564682007,
+      "cup_y_m": 0.15872204303741455,
+      "cup_z_m": 0.937240481376648,
+      "cup_displacement_from_reset_mm": 6.381524170938562,
+      "left_pinky_MP_records": 14,
+      "left_pinky_MP_min_separation_m": 0.0009911097586154938,
+      "left_pinky_MP_max_force_N": 3.8781955242156982,
+      "cup_to_table_records": 0,
+      "cup_to_table_min_separation_m": null,
+      "cup_to_table_max_force_N": null,
+      "all_left_plus_table_records": 183
+    },
+    {
+      "global_substep": 11,
+      "control": 1,
+      "within_substep": 11,
+      "cup_vx_mps": -0.03390863910317421,
+      "cup_vy_mps": -0.029957972466945648,
+      "cup_vz_mps": 0.013723384588956833,
+      "cup_linear_speed_mps": 0.04728220775723457,
+      "cup_x_m": -0.14256009459495544,
+      "cup_y_m": 0.15852999687194824,
+      "cup_z_m": 0.9373102784156799,
+      "cup_displacement_from_reset_mm": 6.610057007001737,
+      "left_pinky_MP_records": 14,
+      "left_pinky_MP_min_separation_m": 0.0009944550693035126,
+      "left_pinky_MP_max_force_N": 2.3604249954223633,
+      "cup_to_table_records": 0,
+      "cup_to_table_min_separation_m": null,
+      "cup_to_table_max_force_N": null,
+      "all_left_plus_table_records": 183
+    }
+  ],
+  "first12_positive_force_contacts": [
+    {
+      "global_substep": 0,
+      "contacts": [
+        {
+          "sensor": "left_pinky_MP",
+          "max_force_N": 7.056977272033691,
+          "min_separation_m": 5.6605786085128784e-05
+        }
+      ]
+    },
+    {
+      "global_substep": 1,
+      "contacts": [
+        {
+          "sensor": "left_thumb_PP",
+          "max_force_N": 6.443822383880615,
+          "min_separation_m": 0.001293674693442881
+        }
+      ]
+    },
+    {
+      "global_substep": 2,
+      "contacts": [
+        {
+          "sensor": "left_thumb_PP",
+          "max_force_N": 0.13114464282989502,
+          "min_separation_m": 0.0010221749544143677
+        },
+        {
+          "sensor": "left_index_PP",
+          "max_force_N": 3.114901542663574,
+          "min_separation_m": 0.0011874958872795105
+        }
+      ]
+    },
+    {
+      "global_substep": 3,
+      "contacts": [
+        {
+          "sensor": "left_thumb_PP",
+          "max_force_N": 14.06897258758545,
+          "min_separation_m": 0.0009990334510803223
+        },
+        {
+          "sensor": "left_index_PP",
+          "max_force_N": 25.894214630126953,
+          "min_separation_m": 0.0009978041052818298
+        }
+      ]
+    },
+    {
+      "global_substep": 4,
+      "contacts": [
+        {
+          "sensor": "left_thumb_PP",
+          "max_force_N": 11.029862403869629,
+          "min_separation_m": 0.001014985959045589
+        },
+        {
+          "sensor": "left_index_PP",
+          "max_force_N": 30.140981674194336,
+          "min_separation_m": 0.0009884200990200043
+        }
+      ]
+    },
+    {
+      "global_substep": 5,
+      "contacts": [
+        {
+          "sensor": "left_thumb_PP",
+          "max_force_N": 9.6657133102417,
+          "min_separation_m": 0.0009589254623278975
+        },
+        {
+          "sensor": "left_index_PP",
+          "max_force_N": 39.53059768676758,
+          "min_separation_m": 0.0009794794023036957
+        }
+      ]
+    },
+    {
+      "global_substep": 6,
+      "contacts": [
+        {
+          "sensor": "left_thumb_PP",
+          "max_force_N": 2.281348705291748,
+          "min_separation_m": 0.0009855536045506597
+        },
+        {
+          "sensor": "left_pinky_MP",
+          "max_force_N": 13.858128547668457,
+          "min_separation_m": 0.0010019391775131226
+        }
+      ]
+    },
+    {
+      "global_substep": 7,
+      "contacts": [
+        {
+          "sensor": "left_pinky_MP",
+          "max_force_N": 10.360218048095703,
+          "min_separation_m": 0.0009843558073043823
+        }
+      ]
+    },
+    {
+      "global_substep": 8,
+      "contacts": [
+        {
+          "sensor": "left_pinky_MP",
+          "max_force_N": 7.278909206390381,
+          "min_separation_m": 0.0009658187627792358
+        }
+      ]
+    },
+    {
+      "global_substep": 9,
+      "contacts": [
+        {
+          "sensor": "left_pinky_MP",
+          "max_force_N": 4.5759382247924805,
+          "min_separation_m": 0.000982675701379776
+        }
+      ]
+    },
+    {
+      "global_substep": 10,
+      "contacts": [
+        {
+          "sensor": "left_thumb_PP",
+          "max_force_N": 0.5692387819290161,
+          "min_separation_m": 0.0010362600442022085
+        },
+        {
+          "sensor": "left_pinky_MP",
+          "max_force_N": 3.8781955242156982,
+          "min_separation_m": 0.0009911097586154938
+        }
+      ]
+    },
+    {
+      "global_substep": 11,
+      "contacts": [
+        {
+          "sensor": "left_thumb_PP",
+          "max_force_N": 0.8115177750587463,
+          "min_separation_m": 0.001027097925543785
+        },
+        {
+          "sensor": "left_pinky_MP",
+          "max_force_N": 2.3604249954223633,
+          "min_separation_m": 0.0009944550693035126
+        }
+      ]
+    }
+  ],
+  "state_writes": {
+    "records": 14,
+    "phase_event_asset_method_counts": {
+      "explicit_reset|CALL|/World/envs/env_0/Robot|write_joint_state_to_sim": 1,
+      "explicit_reset|CALL|/World/envs/env_0/Robot|write_joint_position_to_sim": 1,
+      "explicit_reset|RETURNED|/World/envs/env_0/Robot|write_joint_position_to_sim": 1,
+      "explicit_reset|CALL|/World/envs/env_0/Robot|write_joint_velocity_to_sim": 1,
+      "explicit_reset|RETURNED|/World/envs/env_0/Robot|write_joint_velocity_to_sim": 1,
+      "explicit_reset|RETURNED|/World/envs/env_0/Robot|write_joint_state_to_sim": 1,
+      "explicit_reset|CALL|/World/envs/env_0/Aux|write_root_pose_to_sim": 1,
+      "explicit_reset|RETURNED|/World/envs/env_0/Aux|write_root_pose_to_sim": 1,
+      "explicit_reset|CALL|/World/envs/env_0/Aux|write_root_velocity_to_sim": 1,
+      "explicit_reset|RETURNED|/World/envs/env_0/Aux|write_root_velocity_to_sim": 1,
+      "explicit_reset|CALL|/World/envs/env_0/Object|write_root_pose_to_sim": 1,
+      "explicit_reset|RETURNED|/World/envs/env_0/Object|write_root_pose_to_sim": 1,
+      "explicit_reset|CALL|/World/envs/env_0/Object|write_root_velocity_to_sim": 1,
+      "explicit_reset|RETURNED|/World/envs/env_0/Object|write_root_velocity_to_sim": 1
+    },
+    "control_phase_records": 0,
+    "control_phase_rows": []
+  },
+  "interpretation_guardrails": [
+    "negative separation is reported as returned by the actual contact view; it is not relabeled as mesh penetration depth",
+    "cup motion is temporally compared with all left-hand and cup-table contacts, not attributed to the pinky alone",
+    "input collision metadata is not represented as the cooked PhysX geometry"
+  ]
+}

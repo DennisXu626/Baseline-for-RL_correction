@@ -1,0 +1,82 @@
+{
+  "overall": "PARTIAL_PASS_STOPPED",
+  "support_CPU": {
+    "status": "PASS",
+    "evidence": "cpu_behavior_validation.json",
+    "scope": [
+      "actual nested torch serialization",
+      "actual quaternion normalization/sign/rejection",
+      "actual state-write wrapper return/exception preservation",
+      "actual left/right route and wrong-order rejection",
+      "actual observation-sensor registration including cup_to_table",
+      "actual six-array contact parsing and overflow/alias checks",
+      "actual first-12 atomic persistence fault injection",
+      "actual media failure/close ordering and subprocess verdicts"
+    ]
+  },
+  "deployment_identity": {
+    "status": "PASS",
+    "evidence": "execution_versions.json and D_replay02_launch/launch.json",
+    "remote_entry_sha256": "6ff9b8dfec97d0c3104caa77171f8612d021853343134fc34db7eb3b6c1ea7bc",
+    "remote_runtime_support_sha256": "bb20354083f8b7136d1aa4b893c504a795f6989b784f8081d137f51a9cb5214f",
+    "input_sha256": "13a52b4a760bc5ac98e432055b1f50dda2c2e1e560dfd0ac147829e6e799425c"
+  },
+  "D_reset_and_route": {
+    "status": "PASS",
+    "reset_checks": {"left_q": true, "cup_pos": true, "cup_rot": true, "wrist_pos": true, "wrist_rot": true, "hold_zero": true},
+    "controls": 100,
+    "explicit_substeps": 1200,
+    "request_equals_frozen_target_exact": true,
+    "joint_target_equals_frozen_target_exact": true,
+    "processed_target_equals_frozen_target_exact": true,
+    "direct_drive_equals_frozen_target_exact": true,
+    "right_target_processed_and_direct_drive_constant": true,
+    "FABRICS_or_policy_calls": 0,
+    "control_phase_state_writes": 0
+  },
+  "D_raw_data_quality": {
+    "status": "PASS",
+    "grain": "one row per 1/240-second physics substep for one environment; contacts keyed by global_substep and contact sensor",
+    "substep_rows": 1200,
+    "contact_records": 261636,
+    "contact_views": 34,
+    "nonfinite_core_values": 0,
+    "count_to_contact_row_integrity": true,
+    "first12_atomic_files": 12,
+    "remote_local_sha_match": true,
+    "evidence": ["analysis/D_ANALYSIS.json", "delivery_validation.json"]
+  },
+  "D_media": {
+    "status": "PASS",
+    "front": {"decoded_frames": 101, "width": 640, "height": 480, "fps": 20},
+    "top": {"decoded_frames": 101, "width": 640, "height": 480, "fps": 20},
+    "side": {"decoded_frames": 101, "width": 640, "height": 480, "fps": 20},
+    "initial_frame_nonblack": true,
+    "media_close_status": "CLOSED",
+    "remote_local_sha_match": true
+  },
+  "D_process": {
+    "status": "FAIL",
+    "reason": "900-second supervisor timeout after all completion/raw/media artifacts were written",
+    "hang_stage": "SimulationApp.close -> omni.replicator.orchestrator.stop/status callback -> SimulationContext.render",
+    "lingering_package_processes_after_supervisor": 0,
+    "evidence": ["remote_evidence/D_replay02/stacks.log", "remote_evidence/D_replay02_launch/result.json"],
+    "retry_allowed": false
+  },
+  "contact_interpretation": {
+    "status": "OBSERVED_NOT_UNIQUE_CAUSE",
+    "first_actual_force": "left_pinky_MP against cup at global substep 0 (4.167 ms after first command began)",
+    "first_force_N": 7.056977272033691,
+    "first_separation_m": 0.000056605786085128784,
+    "first_contact_region": "lower cup side/bottom region: 36.888 mm radial from recorded cup center and 39.152 mm below it",
+    "cup_displacement_after_first_substep_mm": 0.5874634790687748,
+    "cup_displacement_after_12_substeps_mm": 6.610057007001737,
+    "other_force_contacts_in_first_control": ["left_thumb_PP from substep 1", "left_index_PP from substep 2"],
+    "cup_table_contact_records": 0,
+    "all_actual_separation_records": 261636,
+    "negative_separation_records": 0,
+    "minimum_actual_separation_m": 0.000056605786085128784,
+    "conclusion": "The data support an immediate initial-contact response involving the pinky middle segment and then other fingers, without a later state rewrite. They do not demonstrate penetration of the actual cooked collision shapes or a unique pinky-only cause."
+  },
+  "A_transfer_gate": {"status": "FAIL", "reason": "A1 collision asset/assembly/filter identity is incomplete; no unique single transferable item is proven."}
+}

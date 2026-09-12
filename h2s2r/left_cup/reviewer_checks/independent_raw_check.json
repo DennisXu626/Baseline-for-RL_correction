@@ -1,0 +1,22 @@
+{
+  "substeps": 1200,
+  "contacts": 261636,
+  "min_sep": 5.6605786085128784e-05,
+  "max_sep": 0.005999998189508915,
+  "negative_count": 0,
+  "positive_force_count": 14376,
+  "max_q_abs_diff_history": 0.0,
+  "max_cup_position_diff_history_m": 0.0,
+  "first_force_contacts": [
+    {
+      "body": "left_pinky_MP",
+      "force": 7.056977272033691,
+      "separation": 5.6605786085128784e-05,
+      "point": [
+        -0.10640054941177368,
+        0.17834575474262238,
+        0.898577868938446
+      ]
+    }
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "isolated_local_root": "D:/UCBP/reports/H2S2R_LEFT_CUP_A_ENV_TRANSFER_20260912",
+  "isolated_remote_code_root": "/home/kailang/experiments/baselines/h2s2r_left_cup_a_env_transfer_20260912",
+  "remote_output_root": "/media/msc-auto/HDD/users/kailang/h2s2r_left_cup_a_env_transfer_20260912",
+  "executed_support_sha256": {
+    "runtime_support.py": "bb20354083f8b7136d1aa4b893c504a795f6989b784f8081d137f51a9cb5214f",
+    "contact_capture.py": "f702a615dce62d4773c29a88f4f8f0a81be96e01d98220ef99f37bcf3991086d",
+    "camera_delivery.py": "3ff6f67815bda18ec14cdc78050b5a08699022fcc27b68626cbcd4902b71a61e",
+    "replay_contact.py": "6ff9b8dfec97d0c3104caa77171f8612d021853343134fc34db7eb3b6c1ea7bc",
+    "run_supervised.py": "322700a511bead40d2061c87aeb42e2c6fedd43479eae0ed471b032ab0651867",
+    "test_runtime_support.py": "f12274c9cc3d7bedd2f13f6b84fa666cf96a064c546dc8725e20195068a09172",
+    "command_inputs.npz": "13a52b4a760bc5ac98e432055b1f50dda2c2e1e560dfd0ac147829e6e799425c"
+  },
+  "D_core_read_only_sha256": {
+    "tasks/h2s2r_pour17/env.py": "379ee5531d761c7a2e9242b75201a8c0b51c7c05b88082fe57fdad7faef7633f",
+    "tasks/h2s2r_pour17/left_env.py": "cad387c6dc9d0469eacbc74f395d88453110412fad16749d4d564c39d2af5d1d",
+    "tasks/h2s2r_pour17/cfg.py": "37e0eea46a85f372f0160b370a8371ddb9b3c4e0563fc694f00aefa1e51621ef",
+    "tasks/h2s2r_pour17/ours_physics.py": "8625d0029275edccecd3eac1c97d0388c6a32bdf1ec6d469ed1e7a6e77b4e1a8"
+  },
+  "runtime_assets": {
+    "robot_runtime_loaded_md5": "143385ad217f10f3fe730338d748246d",
+    "D_cup_source_sha256": "6ba6ae859a273d15106767855ec5fcfef3f51cf47f5e7449fd230ad9f5b23e35",
+    "D_cup_cache_sha256": "2047817660b5ecf013e697d973323e26770db6fcc3626c842f71baa966909e71",
+    "A1_cup_cache_sha256": null,
+    "cooked_collision_identity": null
+  },
+  "operational_only_diff": {"CUDA_VISIBLE_DEVICES": "0", "RL_ISAAC_NO_GUARD": "1"},
+  "core_or_shared_modifications": []
+}

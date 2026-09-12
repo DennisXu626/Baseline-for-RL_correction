@@ -1,0 +1,30 @@
+{
+  "package_started_local": "2026-09-12T23:20:19+08:00",
+  "A_targeted_search": {
+    "started_local": "2026-09-12T23:20:19+08:00",
+    "ended_local": "2026-09-12T23:27:30+08:00",
+    "wall_seconds": 431,
+    "limit_seconds": 1500
+  },
+  "support_preparation_and_CPU_validation": {
+    "approx_wall_seconds_before_first_launch": 1425,
+    "remote_CPU_validation_runs": 2,
+    "GPU_seconds": 0
+  },
+  "app_starts": {
+    "used": 2,
+    "limit": 4,
+    "attempt01": {"controls": 0, "explicit_substeps": 0, "process_wall_seconds": 13.479770613834262, "result": "FAILED_PRE_CONTROL_NAMEERROR"},
+    "attempt02": {"controls": 100, "explicit_substeps": 1200, "control_media_wall_seconds": 203.35792051209137, "process_wall_seconds": 900.9130408591591, "result": "FAILED_TIMEOUT_AFTER_COMPLETE_ARTIFACTS"},
+    "aggregate_process_wall_seconds": 914.3928114729933,
+    "aggregate_process_limit_seconds": 2700
+  },
+  "control_trajectories": {"used": 1, "limit": 2},
+  "controls": {"used": 100, "limit": 200},
+  "explicit_substeps": {"used": 1200, "limit": 2400},
+  "A_transfer_trajectory": 0,
+  "PPO": 0,
+  "training": 0,
+  "old_contact_cause_package": "preserved separately with 3/3 historical starts and 0 controls; not reset or overwritten",
+  "budget_disposition": "stopped by completed-control process timeout and independent A1 transfer ineligibility; unused numerical allowance does not authorize another launch"
+}

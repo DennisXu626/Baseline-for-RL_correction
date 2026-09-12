@@ -1,0 +1,361 @@
+{
+  "status": "A_ENV_SOURCE_INCOMPLETE",
+  "search_scope": {
+    "started_local": "2026-09-12T23:20:19+08:00",
+    "closed_local": "2026-09-12T23:27:30+08:00",
+    "within_25_minute_limit": true,
+    "local": "authorized D:/UCBP/RL paths, exact names and Git history only",
+    "remote": "/home/kailang/experiments/baselines plus named H2S2R/Pour17 archives and top-level kailang HDD roots",
+    "remote_result": "no PMIN_P17s51, pour_env.py, or world_fingerprint.py found on the A6000 host",
+    "not_searched": "unrelated large archives, other users, and original /home/lyh or /home/yanghong hosts"
+  },
+  "A1_executed_run_evidence": {
+    "definition": "preserved files or runtime output explicitly tied to PMIN_P17s51",
+    "world_json": {
+      "path": "D:\\UCBP\\reports\\H2S2R_POUR17_SUCCESS_REFERENCE_20260910\\source_extracted\\pour17_success_reference_20260910\\world.json",
+      "bytes": 4879,
+      "sha256": "cc36d76bdbcd335109e3bd84a3674d80d1a76fbf07111008ee9dd2379d7f42fc",
+      "md5": "cb5fcee23f97b55341fe4d7857919894",
+      "content": {
+        "reference": {
+          "path": "tasks/Pour/17/A_Design/L2_Reference/pour17_reference_v3.npz",
+          "md5": "1ee52f7737753fa05da55b65e5d7b52f"
+        },
+        "policy_io": {
+          "obs_dim": 503,
+          "act_dim": 58
+        },
+        "schema": "world_fingerprint_v1",
+        "criteria": {
+          "schema": 3,
+          "digest": "9db93b8a055884b1",
+          "items": {
+            "GATE_POS": 0.05,
+            "GATE_ROT": 0.785398163,
+            "RED_GATE_POS": 0.08,
+            "LEASH_POS": {
+              "0": 0.08,
+              "1": 0.05,
+              "2": 0.03
+            },
+            "LEASH_ROT": {
+              "0": null,
+              "1": 0.523598776,
+              "2": 0.261799388
+            },
+            "G1_HOLD": 10.0,
+            "CERT_RAMP": 8.0,
+            "CERT_HOLD": 5.0,
+            "CERT_RET": 8.0,
+            "CERT_RISE": 0.005,
+            "CERT_SLIP": 0.008,
+            "CERT_WAIT": 20.0,
+            "CERT_TRIES": 3.0,
+            "M2_TILT": 1.570796327,
+            "M2_HOLD": 25.0,
+            "M2_STRICT_HORIZ": 0.0675,
+            "M2_STRICT_DZ_LO": 0.0,
+            "M2_STRICT_DZ_HI": 0.08,
+            "M3_POS": 0.03,
+            "M3_ROT": 0.261799388,
+            "M3_HOLD": 15.0,
+            "M4_ARM": 0.174532925,
+            "M4_HOLD": 15.0,
+            "M4_DIST_POS": 0.05,
+            "M4_DIST_ROT": 0.523598776,
+            "D1_DROP": 0.05,
+            "D2_TILT": 0.523598776,
+            "D3_DEV": 0.35,
+            "TABLE_Z": 0.87,
+            "MIN_RECIPE": 1.0,
+            "MIN_CERT_POS": 0.01,
+            "MIN_CERT_ROT": 0.087266463,
+            "MIN_REL_POS": 0.03,
+            "MIN_REL_ROT": 0.34906585
+          }
+        },
+        "geometry": {
+          "up_local_bot": [
+            0.0,
+            1.0,
+            0.0
+          ],
+          "up_local_cup": [
+            0.0,
+            1.0,
+            0.0
+          ],
+          "axis_spin_ignored": true,
+          "note": "绕长轴自转在 参考IK/皮筋/G3/placed/G4/死线 全链不判"
+        },
+        "time": {
+          "physics_dt_s": 0.004166667,
+          "control_dt_s": 0.05,
+          "decimation": 12,
+          "render_interval": 2
+        },
+        "physx": {
+          "solver_type": 1,
+          "gravity": [
+            0.0,
+            0.0,
+            -9.81
+          ]
+        },
+        "table": {
+          "table_top_z_m": 0.87,
+          "table_size_m": [
+            1.2192,
+            1.8288,
+            0.04
+          ]
+        },
+        "objects": {
+          "object_1": {
+            "mass_kg": 0.5,
+            "static_friction": 1.0,
+            "dynamic_friction": 1.0,
+            "restitution": 0.0,
+            "usd": "/home/yanghong/RL_Correction/datasets/pour17/objects/object_1.usd"
+          },
+          "object_0": {
+            "mass_kg": 0.5,
+            "static_friction": 1.0,
+            "dynamic_friction": 1.0,
+            "restitution": 0.0,
+            "usd": "/home/yanghong/RL_Correction/datasets/pour17/cache/object_0.usd"
+          }
+        },
+        "robot": {
+          "usd": "/home/yanghong/RL_Correction/assets/vega_1p_sharpa_fixedtorso.usd",
+          "usd_md5": "143385ad217f10f3fe730338d748246d",
+          "num_joints_articulation": 58,
+          "controlled_joint_names_in_order": [
+            "R_arm_j1",
+            "R_arm_j2",
+            "R_arm_j3",
+            "R_arm_j4",
+            "R_arm_j5",
+            "R_arm_j6",
+            "R_arm_j7",
+            "L_arm_j1",
+            "L_arm_j2",
+            "L_arm_j3",
+            "L_arm_j4",
+            "L_arm_j5",
+            "L_arm_j6",
+            "L_arm_j7",
+            "right_thumb_CMC_FE",
+            "right_thumb_CMC_AA",
+            "right_thumb_MCP_FE",
+            "right_thumb_MCP_AA",
+            "right_thumb_IP",
+            "right_index_MCP_FE",
+            "right_index_MCP_AA",
+            "right_index_PIP",
+            "right_index_DIP",
+            "right_middle_MCP_FE",
+            "right_middle_MCP_AA",
+            "right_middle_PIP",
+            "right_middle_DIP",
+            "right_ring_MCP_FE",
+            "right_ring_MCP_AA",
+            "right_ring_PIP",
+            "right_ring_DIP",
+            "right_pinky_CMC",
+            "right_pinky_MCP_FE",
+            "right_pinky_MCP_AA",
+            "right_pinky_PIP",
+            "right_pinky_DIP",
+            "left_thumb_CMC_FE",
+            "left_thumb_CMC_AA",
+            "left_thumb_MCP_FE",
+            "left_thumb_MCP_AA",
+            "left_thumb_IP",
+            "left_index_MCP_FE",
+            "left_index_MCP_AA",
+            "left_index_PIP",
+            "left_index_DIP",
+            "left_middle_MCP_FE",
+            "left_middle_MCP_AA",
+            "left_middle_PIP",
+            "left_middle_DIP",
+            "left_ring_MCP_FE",
+            "left_ring_MCP_AA",
+            "left_ring_PIP",
+            "left_ring_DIP",
+            "left_pinky_CMC",
+            "left_pinky_MCP_FE",
+            "left_pinky_MCP_AA",
+            "left_pinky_PIP",
+            "left_pinky_DIP"
+          ],
+          "pad_friction": 1.0,
+          "supergrip_bodies": [
+            "left_index_elastomer",
+            "left_middle_elastomer",
+            "left_pinky_elastomer",
+            "left_ring_elastomer",
+            "left_thumb_elastomer",
+            "right_index_elastomer",
+            "right_middle_elastomer",
+            "right_pinky_elastomer",
+            "right_ring_elastomer",
+            "right_thumb_elastomer"
+          ],
+          "self_collision": false,
+          "self_collision_source": "USD:/World/envs/env_0/Robot/root_joint"
+        },
+        "sensors": {
+          "count": 23,
+          "pad_force_threshold_N": 0.5,
+          "pads_min_per_hand": 3
+        },
+        "scene": {
+          "env_spacing_m": 2.0,
+          "replicate_physics": false
+        },
+        "switches": {
+          "approach_only": true,
+          "obj_jitter_xy": 0.0,
+          "conf_flat": false,
+          "arm_ref_free": false,
+          "goal_only": false,
+          "place_shape": false,
+          "mouth_bonus": false,
+          "min_recipe": true,
+          "arm_free_scale": 1.0,
+          "friction_curriculum": false,
+          "tier_floor_start": 0,
+          "tier_shuffle": 0,
+          "tier_reverse": false,
+          "grip_shape": false,
+          "grip_opp_k": 0.0,
+          "grip_follow_k": 0.0,
+          "hold_pose": false,
+          "place_both": false,
+          "place_terminal": false,
+          "grip_hold": false,
+          "grip_hold_k": 0.0,
+          "place_grace": 0,
+          "place_curr": false,
+          "hold_mode": 0,
+          "rel_ref": false
+        },
+        "method": {
+          "variant": "HYB",
+          "beta_r": "2.0",
+          "beta_l": "1.0",
+          "name": "PMIN_P17s51",
+          "seed": 51
+        }
+      }
+    },
+    "summary_json": {
+      "path": "D:\\UCBP\\reports\\H2S2R_POUR17_SUCCESS_REFERENCE_20260910\\source_extracted\\pour17_success_reference_20260910\\reference_dump\\summary.json",
+      "bytes": 21871,
+      "sha256": "3bc37e9ea4866bb839071a57dbb97977871153fa2c5f0f0de8b266e2f10dfb1a",
+      "md5": "b6e95dd207ff31646f0604841b792b9f"
+    },
+    "runtime_log": {
+      "path": "D:\\UCBP\\reports\\H2S2R_POUR17_SUCCESS_REFERENCE_20260910\\source_extracted\\pour17_success_reference_20260910\\eval10_PMIN_P17s51_s2026_local.log",
+      "bytes": 20495,
+      "sha256": "8896cc64c59d57fa0ec00d124c61798cc009308a7be8c5009d13bba8e6203693",
+      "md5": "b5af4f8f2cdb092f7158b9315c76ce84"
+    },
+    "dump_script": {
+      "path": "D:\\UCBP\\reports\\H2S2R_POUR17_SUCCESS_REFERENCE_20260910\\source_extracted\\pour17_success_reference_20260910\\dump_cmds.py",
+      "bytes": 9698,
+      "sha256": "86889d6b3575bc71237071e97e84cfec015e697b9e00d0c032a5431967f44f4d",
+      "md5": "3662ba9c02b8ecf16a86fda24fb83e49",
+      "role": "records the later source evaluation chain; it imports missing modules and is not the full environment"
+    },
+    "command_trace": {
+      "path": "D:\\UCBP\\reports\\H2S2R_POUR17_SUCCESS_REFERENCE_20260910\\source_extracted\\pour17_success_reference_20260910\\reference_dump\\cmds_trace.npz",
+      "bytes": 8121124,
+      "sha256": "24310a73c28296bf3469b95edb50a240259d1ef2e214a8c2559a3e015a6307d5",
+      "md5": "ba639f0283f900c04b05adbc8cd16aea"
+    },
+    "run_paths": {
+      "training_world_json": "/home/lyh/Project/RL_Correction/logs/PMIN_P17s51/world.json",
+      "checkpoint": "logs/PMIN_P17s51/stage1_nn/last.pth"
+    },
+    "robot": {
+      "path": "/home/yanghong/RL_Correction/assets/vega_1p_sharpa_fixedtorso.usd",
+      "md5": "143385ad217f10f3fe730338d748246d",
+      "content_hash_strength": "A1"
+    },
+    "cup": {
+      "path": "/home/yanghong/RL_Correction/datasets/pour17/cache/object_0.usd",
+      "content_hash": null,
+      "collision_cooked_hash": null,
+      "classification": "missing"
+    },
+    "environment_commit_or_source_sha": null
+  },
+  "A2_candidate": {
+    "definition": "same-name Git history, not tied to the PMIN_P17s51 run by a manifest/commit SHA",
+    "commit": "f44e77b55fef622c05b19b1ffb4b9e383993ef03",
+    "commit_time": "2026-08-29T02:38:07-07:00",
+    "commit_note": "latest local authorized commit; pour_env last changed at eddb375d four minutes earlier",
+    "files": {
+      "tasks/Pour/17/C_Wiring/pour_env.py": {
+        "local_copy": "D:\\UCBP\\reports\\H2S2R_LEFT_CUP_A_ENV_TRANSFER_20260912\\A2_candidate_f44\\tasks\\Pour\\17\\C_Wiring\\pour_env.py",
+        "bytes": 46415,
+        "sha256": "1e73956c629dc9612457c9251d7e9782a157b1f98911ea9216c7a18fca5653bd",
+        "md5": "8ee1bf95eb1de5660c36f687185203dd"
+      },
+      "tasks/Pour/17/C_Wiring/world_fingerprint.py": {
+        "local_copy": "D:\\UCBP\\reports\\H2S2R_LEFT_CUP_A_ENV_TRANSFER_20260912\\A2_candidate_f44\\tasks\\Pour\\17\\C_Wiring\\world_fingerprint.py",
+        "bytes": 12304,
+        "sha256": "20563ab19b7899edc251b435e1ef18242b139e849116f64266bb2b4c7340a60e",
+        "md5": "a0c45a85c3377326cfc4a9b990e92f55"
+      },
+      "tasks/pregrasp/env.py": {
+        "local_copy": "D:\\UCBP\\reports\\H2S2R_LEFT_CUP_A_ENV_TRANSFER_20260912\\A2_candidate_f44\\tasks\\pregrasp\\env.py",
+        "bytes": 234443,
+        "sha256": "300860225d2f7a2b3b7ea80bcc0034a493e05567159297c5dbe7034b35fd66f9",
+        "md5": "0a462c15745e7df3e4bdb0a543258ee1"
+      },
+      "tasks/pregrasp/cfg.py": {
+        "local_copy": "D:\\UCBP\\reports\\H2S2R_LEFT_CUP_A_ENV_TRANSFER_20260912\\A2_candidate_f44\\tasks\\pregrasp\\cfg.py",
+        "bytes": 77116,
+        "sha256": "42edd912ea5ab36b3a79547a423e9f143fa69df30b59bf12af393f4e936bd26e",
+        "md5": "63eb03ee1378b7336604d1b2c5d6cd49"
+      },
+      "assets/vega_1p_sharpa_fixedtorso.usd": {
+        "local_copy": "D:\\UCBP\\reports\\H2S2R_LEFT_CUP_A_ENV_TRANSFER_20260912\\A2_candidate_f44\\assets\\vega_1p_sharpa_fixedtorso.usd",
+        "bytes": 133,
+        "sha256": "29d1ead8f39fd3b34e878ffa97c24dfb59f26a2b6dc468dbe89dffa886410b8a",
+        "md5": "0b60e88fc8cc159bc4f806df8dfb58c5"
+      },
+      "datasets/pour17/objects/object_0.usd": {
+        "local_copy": "D:\\UCBP\\reports\\H2S2R_LEFT_CUP_A_ENV_TRANSFER_20260912\\A2_candidate_f44\\datasets\\pour17\\objects\\object_0.usd",
+        "bytes": 131,
+        "sha256": "beecb067f1b3070ad931b4c5812e8778a3c1e2771a1e51a940af26f19d00ebed",
+        "md5": "5397777c562deba00427efd1eb8d557e"
+      },
+      "datasets/pour17/scene_layout.json": {
+        "local_copy": "D:\\UCBP\\reports\\H2S2R_LEFT_CUP_A_ENV_TRANSFER_20260912\\A2_candidate_f44\\datasets\\pour17\\scene_layout.json",
+        "bytes": 2981,
+        "sha256": "d0cf856a49b04de1c0496fc2817b9c888752b1f0c5878f89ebf1e793f66092dc",
+        "md5": "4e6b5a9da266e01b1d171b1101c662ae"
+      }
+    },
+    "robot_lfs_oid": "sha256:c2bba25aeb7b04b270df51d0c0efbe8eec95b499d8a7aef46834cefcfb71e347",
+    "cup_source_lfs_oid": "sha256:6ba6ae859a273d15106767855ec5fcfef3f51cf47f5e7449fd230ad9f5b23e35",
+    "limitation": "the A runtime cache/object_0.usd was not tracked or hashed; source geometry identity does not establish the cooked collision representation"
+  },
+  "required_missing_A1_files": [
+    "PMIN_P17s51 executed commit/tree SHA or immutable source manifest",
+    "executed tasks/Pour/17/C_Wiring/pour_env.py with SHA",
+    "executed tasks/Pour/17/C_Wiring/world_fingerprint.py with SHA",
+    "executed direct parent tasks/pregrasp/env.py and cfg.py with SHAs",
+    "executed datasets/pour17/cache/object_0.usd bytes/hash and its dependency closure",
+    "executed robot/cup collision prim and filtering manifest, including cooked or approximation identity"
+  ],
+  "transfer_eligibility": {
+    "eligible": false,
+    "reason": "no A1 evidence identifies a unique cup/hand collision asset, assembly transform, or pair-filter difference"
+  }
+}

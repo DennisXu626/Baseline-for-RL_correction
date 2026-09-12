@@ -1,0 +1,22 @@
+{
+  "schema": "h2s2r_run07_uniform_physics_v1",
+  "source": "User-authorized 2026-09-05 uniform Pour physics contract",
+  "precision": "PD values transcribed at supplied precision; not an inferred calibration file",
+  "object_mass_kg": 0.5,
+  "object_friction": 1.0,
+  "object_friction_combine": "average",
+  "pad_friction": 1.0,
+  "pad_friction_combine": "multiply",
+  "body_friction": 1.0,
+  "body_friction_combine": "multiply",
+  "table_friction": 1.0,
+  "restitution": 0.0,
+  "arm_kp": [9765.2, 7141.0, 4469.1, 3999.1, 286.0, 498.4, 322.2],
+  "arm_kd": [39.9, 32.8, 23.7, 37.9, 4.3, 23.7, 28.4],
+  "arm_effort_nm": [150.0, 150.0, 80.0, 80.0, 25.0, 25.0, 25.0],
+  "hand_kp": 20.0,
+  "hand_kd": 2.0,
+  "hand_effort_nm": 300.0,
+  "table": "black table, 1.2192x1.8288x0.04m, top_z=0.87m, friction=1.0",
+  "unchanged": ["geometry", "collision approximation", "self collision", "reset pose", "warmup15", "H2S2R LSTM/PPO/reward", "Estimated input"]
+}

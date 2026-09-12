@@ -1,0 +1,37 @@
+{
+  "state": "PASS_WITH_DOCUMENTED_EXTERNAL_DEPENDENCIES",
+  "cutoff_cst": "2026-09-13 01:39:34 Asia/Shanghai (UTC+08:00)",
+  "cutoff_utc": "2026-09-12T17:39:34.068576+00:00",
+  "previous_sync_file": "REVIEWER_REVIEW.md",
+  "previous_sync_mtime_utc_before_edit": "2026-09-12T17:04:22Z",
+  "server_status_check_utc": "2026-09-12T17:33:41.079429+00:00",
+  "track_processes_at_snapshot": [],
+  "server_support_sha_match": true,
+  "github_not_uploaded": true,
+  "target_repository_contents_verified": false,
+  "scope": "LEFT/CUP only",
+  "upload_file_count": 69,
+  "upload_bytes_pre_final_metadata": 518575,
+  "files_missing": [],
+  "repo_targets_unique": true,
+  "markdown_relative_links_missing": [],
+  "credential_pattern_findings": [],
+  "code_sha_mismatch": [],
+  "python_ast_parse_files": 39,
+  "experiment_or_training_started": false,
+  "secrets_scan_scope": "Explicit upload whitelist only; no private keys/env/git configs/media/large data selected; path references are not credential contents.",
+  "source_manifest_single_authority": "SOURCE_MANIFEST.json",
+  "uploaded_new_machine_runtime_tested": false,
+  "pending_external_resources": [
+    "IsaacLab/IsaacSim+FABRICS+official runtime",
+    "bundle assets/perception/reset/reference",
+    "left/right generated URDF and synergy NPZ"
+  ],
+  "new_physical_package_authorized": false,
+  "documentation_updated": [
+    "REVIEWER_HANDOFF.md",
+    "RESULTS.md",
+    "REVIEWER_REVIEW.md"
+  ],
+  "shared_coordination": "GPU_POLICY.md single repository-root target; rootREADME and othertrack integration owned byteamleader"
+}

@@ -1,0 +1,928 @@
+# Mechanical unified diff: closed contact-cause support -> A-env-transfer isolated support
+# Shared/V12/core files are not included because they were not modified.
+
+diff --git "a/D:\\UCBP\\reports\\H2S2R_LEFT_CUP_CONTACT_CAUSE_20260912\\contact_capture.py" "b/D:\\UCBP\\reports\\H2S2R_LEFT_CUP_A_ENV_TRANSFER_20260912\\contact_capture.py"
+index bcd3033..17ec2dc 100644
+--- "a/D:\\UCBP\\reports\\H2S2R_LEFT_CUP_CONTACT_CAUSE_20260912\\contact_capture.py"
++++ "b/D:\\UCBP\\reports\\H2S2R_LEFT_CUP_A_ENV_TRANSFER_20260912\\contact_capture.py"
+@@ -23,6 +23,12 @@ def unpack_six(result, *, dt: float, expected_pairs: int = 1):
+     capacity = int(force.shape[0])
+     if point.shape[0] != capacity or normal.shape[0] != capacity or separation.shape[0] != capacity:
+         raise ValueError("six-array contact buffers do not share capacity")
++    if force.ndim != 2 or force.shape[1] != 1:
++        raise ValueError(f"normal force must have interface shape (N,1), got {force.shape}")
++    if point.ndim != 2 or point.shape[1] != 3 or normal.ndim != 2 or normal.shape[1] != 3:
++        raise ValueError(f"point/normal must have interface shape (N,3), got {point.shape}/{normal.shape}")
++    if separation.ndim != 2 or separation.shape[1] != 1:
++        raise ValueError(f"separation must have interface shape (N,1), got {separation.shape}")
+     if (count < 0).any() or (start < 0).any() or (start + count > capacity).any():
+         raise OverflowError(f"invalid contact ranges count={count.tolist()} start={start.tolist()} capacity={capacity}")
+     ranges = []
+diff --git "a/D:\\UCBP\\reports\\H2S2R_LEFT_CUP_CONTACT_CAUSE_20260912\\camera_delivery.py" "b/D:\\UCBP\\reports\\H2S2R_LEFT_CUP_A_ENV_TRANSFER_20260912\\camera_delivery.py"
+index 25c3a11..28e016b 100644
+--- "a/D:\\UCBP\\reports\\H2S2R_LEFT_CUP_CONTACT_CAUSE_20260912\\camera_delivery.py"
++++ "b/D:\\UCBP\\reports\\H2S2R_LEFT_CUP_A_ENV_TRANSFER_20260912\\camera_delivery.py"
+@@ -1,26 +1,31 @@
+ """Fixed three-view media for the left-hand/cup region; rendering never steps physics."""
+ from __future__ import annotations
+-import hashlib,json,time
++import hashlib,json
+ from pathlib import Path
+ import numpy as np
++from runtime_support import atomic_json
+ 
+ CAMERAS={
+  'front':((.42,-.43,1.30),(-.14,.24,1.00)),
+  'top':((-.11,.24,1.75),(-.14,.24,.99)),
+  'side':((-.72,.45,1.26),(-.14,.24,1.00)),
+ }
+-def atomic_json(path,value):
+- p=Path(path);p.parent.mkdir(parents=True,exist_ok=True);q=p.with_suffix(p.suffix+'.tmp');q.write_text(json.dumps(value,indent=2,allow_nan=False)+'\n');q.replace(p)
++def camera_config():
++ value={'resolution':[640,480],'fps':20,'cameras':{k:{'eye':list(v[0]),'target':list(v[1])} for k,v in CAMERAS.items()}}
++ value['sha256']=hashlib.sha256(json.dumps(value,sort_keys=True,separators=(',',':')).encode()).hexdigest()
++ return value
+ 
+-def read_complete_json(path):
+- """A copied file may exist before its bytes arrive; only publish valid JSON."""
+- try:return json.loads(Path(path).read_text())
+- except (OSError,json.JSONDecodeError):return None
++def validate_camera_config(value=None):
++ value=camera_config() if value is None else value
++ if value.get('resolution')!=[640,480] or value.get('fps')!=20 or set(value.get('cameras',{}))!=set(CAMERAS):
++  raise ValueError('camera configuration does not match frozen three-view contract')
++ return value
+ 
+ class ThreeView:
+  def __init__(self,raw,out):
+   import imageio.v2 as imageio
+-  self.raw=raw;self.out=Path(out);self.out.mkdir(parents=True,exist_ok=True);self.imageio=imageio;self.writers={};self.counts={v:0 for v in CAMERAS};self.closed=False
++  self.raw=raw;self.out=Path(out);self.out.mkdir(parents=True,exist_ok=True);self.imageio=imageio;self.writers={};self.counts={v:0 for v in CAMERAS};self.closed=False;self.config=validate_camera_config()
++  atomic_json(self.out/'camera_config.json',self.config)
+  def _frame(self,view,refreshes=2):
+   eye,target=CAMERAS[view];origin=self.raw.scene.env_origins[0].detach().cpu().numpy();eye=np.asarray(eye)+origin;target=np.asarray(target)+origin
+   before=int(self.raw._sim_step_counter);self.raw.sim.set_camera_view(tuple(eye),tuple(target),camera_prim_path=self.raw.cfg.viewer.cam_prim_path)
+@@ -34,23 +39,20 @@ class ThreeView:
+   p=self.out/'preview';p.mkdir(parents=True,exist_ok=True);records={}
+   for view in CAMERAS:
+    frame,meta=self._frame(view,8);self.imageio.imwrite(p/f'{view}.png',frame);records[view]=meta
+-  atomic_json(p/'preview_ready.json',records)
+-  approval=p/'preview_approval.json';deadline=time.monotonic()+300
+-  value=None
+-  while value is None:
+-   if time.monotonic()>deadline:raise TimeoutError('camera preview approval exceeded five minutes')
+-   value=read_complete_json(approval)
+-   time.sleep(.5)
+-  if value.get('approve') is not True or value.get('visual_checked') is not True:raise RuntimeError('camera preview not approved')
++  atomic_json(p/'preview_ready.json',dict(camera_config_sha256=self.config['sha256'],frames=records))
+   return records
+  def append(self,control,phase):
+   records={}
+-  for view in CAMERAS:
+-   frame,meta=self._frame(view,2);meta.update(control=int(control),phase=phase,frame_index=self.counts[view])
+-   journal=self.out/'frames'/view;journal.mkdir(parents=True,exist_ok=True);self.imageio.imwrite(journal/f'{self.counts[view]:06d}.png',frame)
+-   with (self.out/f'{view}.jsonl').open('a') as f:f.write(json.dumps(meta)+'\n');f.flush()
+-   if view not in self.writers:self.writers[view]=self.imageio.get_writer(self.out/f'{view}.mp4',fps=20,codec='libx264',quality=7,macro_block_size=None,pixelformat='yuv420p',ffmpeg_params=['-movflags','+faststart'])
+-   self.writers[view].append_data(frame);self.counts[view]+=1;records[view]=meta
++  try:
++   for view in CAMERAS:
++    frame,meta=self._frame(view,2);meta.update(control=int(control),phase=phase,frame_index=self.counts[view])
++    journal=self.out/'frames'/view;journal.mkdir(parents=True,exist_ok=True);self.imageio.imwrite(journal/f'{self.counts[view]:06d}.png',frame)
++    with (self.out/f'{view}.jsonl').open('a') as f:f.write(json.dumps(meta)+'\n');f.flush()
++    if view not in self.writers:self.writers[view]=self.imageio.get_writer(self.out/f'{view}.mp4',fps=20,codec='libx264',quality=7,macro_block_size=None,pixelformat='yuv420p',ffmpeg_params=['-movflags','+faststart'])
++    self.writers[view].append_data(frame);self.counts[view]+=1;records[view]=meta
++  except BaseException as exc:
++   atomic_json(self.out/'media_status.json',dict(state='FAILED',counts=self.counts,error=repr(exc)))
++   raise
+   atomic_json(self.out/'media_status.json',dict(state='RECORDING',counts=self.counts))
+   return records
+  def close_media(self):
+diff --git "a/D:\\UCBP\\reports\\H2S2R_LEFT_CUP_CONTACT_CAUSE_20260912\\replay_contact.py" "b/D:\\UCBP\\reports\\H2S2R_LEFT_CUP_A_ENV_TRANSFER_20260912\\replay_contact.py"
+index b2bbdee..5edf068 100644
+--- "a/D:\\UCBP\\reports\\H2S2R_LEFT_CUP_CONTACT_CAUSE_20260912\\replay_contact.py"
++++ "b/D:\\UCBP\\reports\\H2S2R_LEFT_CUP_A_ENV_TRANSFER_20260912\\replay_contact.py"
+@@ -1,17 +1,17 @@
+-"""E1/E2 fixed-target left-cup replay with per-physics-substep all-body contacts."""
++"""D fixed-target left-cup replay with per-physics-substep all-body contacts."""
+ from __future__ import annotations
+-import argparse,faulthandler,functools,hashlib,json,os,signal,sys,time,traceback
+-from datetime import datetime,timezone
++import argparse,faulthandler,json,signal,time,traceback
+ from pathlib import Path
++from runtime_support import (AtomicSubstepJournal, StateWriteRecorder, atomic_json,
++                             close_media_then_app, jsonable, quat_angle,
++                             register_observation_sensor, route_fixed_target, utc_now)
+ from isaaclab.app import AppLauncher
+ 
+-P=argparse.ArgumentParser();P.add_argument('--bundle_root',type=Path,required=True);P.add_argument('--commands',type=Path,required=True);P.add_argument('--out',type=Path,required=True);P.add_argument('--mode',choices=('E1','E2_DT'),default='E1');P.add_argument('--seed',type=int,default=20260829);AppLauncher.add_app_launcher_args(P);args=P.parse_args();args.enable_cameras=True
++P=argparse.ArgumentParser();P.add_argument('--bundle_root',type=Path,required=True);P.add_argument('--commands',type=Path,required=True);P.add_argument('--out',type=Path,required=True);P.add_argument('--seed',type=int,default=20260829);AppLauncher.add_app_launcher_args(P);args=P.parse_args();args.enable_cameras=True
+ if args.out.exists():raise FileExistsError(f'refusing output reuse: {args.out}')
+ args.out.mkdir(parents=True);(args.out/'stacks.log').touch();stack=(args.out/'stacks.log').open('a',buffering=1);faulthandler.enable(stack,all_threads=True);faulthandler.dump_traceback_later(30,repeat=True,file=stack)
+ if hasattr(signal,'SIGUSR1'):faulthandler.register(signal.SIGUSR1,file=stack,all_threads=True)
+-def atomic_json(path,value):
+- p=Path(path);q=p.with_suffix(p.suffix+'.tmp');q.write_text(json.dumps(value,indent=2,allow_nan=False)+'\n');q.replace(p)
+-status=args.out/'status.json';atomic_json(status,dict(state='APP_LAUNCH',mode=args.mode,started=datetime.now(timezone.utc).isoformat()))
++status=args.out/'status.json';atomic_json(status,dict(state='APP_LAUNCH',mode='D',started=utc_now()))
+ app=AppLauncher(args).app
+ 
+ import imageio.v2 as imageio
+@@ -34,21 +34,24 @@ class FixedReplay(LeftCupH2S2REnv):
+   self.full_contact=[];self.full_contact_names=[]
+   for name in LEFT_BODIES:
+    cfg=ContactSensorCfg(prim_path=f'/World/envs/env_.*/Robot/{name}',history_length=0,track_contact_points=True,max_contact_data_count_per_prim=4096,filter_prim_paths_expr=['/World/envs/env_.*/Aux'])
+-   s=ContactSensor(cfg);self.full_contact.append(s);self.full_contact_names.append(name);self.scene.sensors['full_'+name]=s
++   register_observation_sensor(sensor_factory=ContactSensor,cfg=cfg,collection=self.full_contact,names=self.full_contact_names,scene_sensors=self.scene.sensors,label=name,key='full_'+name)
+   cfg=ContactSensorCfg(prim_path='/World/envs/env_.*/Aux',history_length=0,track_contact_points=True,max_contact_data_count_per_prim=4096,filter_prim_paths_expr=['/World/envs/env_.*/Table'])
+-  s=ContactSensor(cfg);self.full_contact.append(s);self.full_contact_names.append('cup_to_table');self.scene.sensors['full_cup_to_table']=s
++  register_observation_sensor(sensor_factory=ContactSensor,cfg=cfg,collection=self.full_contact,names=self.full_contact_names,scene_sensors=self.scene.sensors,label='cup_to_table',key='full_cup_to_table')
+  def _pre_physics_step(self,target):
+-  if tuple(target.shape)!=(1,29):raise ValueError(f'fixed left target must be (1,29), got {tuple(target.shape)}')
+   self.current_request=target.detach().clone();self._target_q.copy_(self.hand.data.joint_pos)
+-  self._target_q[:,self.side_joint_ids[ControlledSide.LEFT]]=target
+-  self._target_q[:,self.side_joint_ids[ControlledSide.RIGHT]]=self.controller.right.q
++  self._target_q=route_fixed_target(current_q=self._target_q,left_target=target,
++   left_ids=self.side_joint_ids[ControlledSide.LEFT],right_ids=self.side_joint_ids[ControlledSide.RIGHT],
++   right_reset_q=self.controller.right.q,joint_names=self.hand.joint_names,
++   expected_left_names=self.expected_left_names)
+  def _apply_action(self):self.hand.set_joint_position_target(self._target_q)
+  def _get_dones(self):
+   never=torch.zeros(self.num_envs,dtype=torch.bool,device=self.device);return never,never
+ 
+ class Recorder:
+  def __init__(self,raw,out):
+-  self.raw=raw;self.out=Path(out);self.phase='post_construct';self.control=0;self.within=-1;self.rows=[];self.contacts=[];self.counts=[];self.writes=self.out/'state_writes.jsonl';self.guard_calls={'controller.step':0,'left.step':0,'right.step':0,'left.advance':0,'right.advance':0};self._install_writes()
++  self.raw=raw;self.out=Path(out);self.phase='post_construct';self.started_control=0;self.completed_controls=0;self.within=-1;self.rows=[];self.contacts=[];self.counts=[];self.guard_calls={'controller.step':0,'left.step':0,'right.step':0,'left.advance':0,'right.advance':0}
++  self.early=AtomicSubstepJournal(self.out/'early_substeps',atomic_until=12)
++  self.write_recorder=StateWriteRecorder(self.out/'state_writes.jsonl',self._context);self._install_writes()
+   self.body_ids=np.array([raw.hand.body_names.index(n) for n in LEFT_BODIES]);self.names=list(raw.full_contact_names)
+   self.original_update=raw.scene.update
+   def update(dt):
+@@ -56,21 +59,19 @@ class Recorder:
+    if self.phase=='control':self.capture_substep()
+    return result
+   raw.scene.update=update
+- def _jsonable(self,v):
+-  if torch.is_tensor(v):return v.detach().cpu().numpy().tolist()
+-  if isinstance(v,dict):return {str(k):self._jsonable(x) for k,x in v.items()}
+-  if isinstance(v,(list,tuple)):return [self._jsonable(x) for x in v]
+-  return v
++ def _context(self):return dict(phase=self.phase,started_control=self.started_control,completed_controls=self.completed_controls,within_substep=self.within)
++ def _snapshot(self,owner):
++  row={}
++  for name in ('root_pos_w','root_quat_w','root_vel_w','joint_pos','joint_vel'):
++   value=getattr(owner.data,name,None)
++   if value is not None:row[name]=value.detach().cpu().numpy().copy()
++  return row
+  def _install_writes(self):
+   methods=[(self.raw.hand,'write_joint_state_to_sim'),(self.raw.hand,'write_joint_position_to_sim'),(self.raw.hand,'write_joint_velocity_to_sim'),(self.raw.aux,'write_root_pose_to_sim'),(self.raw.aux,'write_root_velocity_to_sim'),(self.raw.object,'write_root_pose_to_sim'),(self.raw.object,'write_root_velocity_to_sim')]
+   for owner,name in methods:
+    original=getattr(owner,name)
+-   @functools.wraps(original)
+-   def wrapped(*a,__o=original,__n=name,__asset=type(owner).__name__,**k):
+-    row=dict(timestamp=datetime.now(timezone.utc).isoformat(),phase=self.phase,control=self.control,within_substep=self.within,asset=__asset,method=__n,args=self._jsonable(a),kwargs=self._jsonable(k),stack=traceback.format_stack(limit=5)[:-1])
+-    with self.writes.open('a') as f:f.write(json.dumps(row)+'\n');f.flush()
+-    return __o(*a,**k)
+-   setattr(owner,name,wrapped)
++   asset_path=getattr(owner.cfg,'prim_path',f'<unknown:{type(owner).__name__}>').replace('env_.*','env_0')
++   setattr(owner,name,self.write_recorder.wrap(asset_path=asset_path,method_name=name,original=original,snapshot=lambda __o=owner:self._snapshot(__o)))
+  def install_controller_guards(self):
+   for label,owner,name in [('controller.step',self.raw.controller,'step'),('left.step',self.raw.controller.left,'step'),('right.step',self.raw.controller.right,'step'),('left.advance',self.raw.controller.left,'advance'),('right.advance',self.raw.controller.right,'advance')]:
+    def forbidden(*a,__l=label,**k):self.guard_calls[__l]+=1;raise RuntimeError(f'forbidden FABRICS call during fixed replay: {__l}')
+@@ -79,31 +80,38 @@ class Recorder:
+   r=self.raw;origin=r.scene.env_origins[0];drive=None;getter=getattr(r.hand.root_physx_view,'get_dof_position_targets',None)
+   if getter is not None:drive=getter()[0,r.sim_joint_ids].detach().cpu().numpy().copy()
+   def pose(asset):return torch.cat((asset.data.root_pos_w[0]-origin,asset.data.root_quat_w[0])).detach().cpu().numpy().copy()
+-  row=dict(control=self.control,within_substep=self.within,global_substep=len(self.rows),sim_step_counter=int(r._sim_step_counter),q=r.hand.data.joint_pos[0].detach().cpu().numpy().copy(),qd=r.hand.data.joint_vel[0].detach().cpu().numpy().copy(),target=r.hand.data.joint_pos_target[0].detach().cpu().numpy().copy(),processed=r.hand._joint_pos_target_sim[0].detach().cpu().numpy().copy(),drive=drive,effort=r.hand.data.applied_torque[0].detach().cpu().numpy().copy(),body_pos=r.hand.data.body_pos_w[0,self.body_ids].detach().cpu().numpy().copy(),body_quat=r.hand.data.body_quat_w[0,self.body_ids].detach().cpu().numpy().copy(),cup=pose(r.aux),cup_vel=r.aux.data.root_vel_w[0].detach().cpu().numpy().copy(),bottle=pose(r.object),bottle_vel=r.object.data.root_vel_w[0].detach().cpu().numpy().copy(),root=torch.cat((r.hand.data.root_pos_w[0]-origin,r.hand.data.root_quat_w[0])).detach().cpu().numpy().copy())
++  row=dict(control=self.started_control,within_substep=self.within,global_substep=len(self.rows),sim_step_counter=int(r._sim_step_counter),request_left=r.current_request[0].detach().cpu().numpy().copy(),q=r.hand.data.joint_pos[0].detach().cpu().numpy().copy(),qd=r.hand.data.joint_vel[0].detach().cpu().numpy().copy(),target=r.hand.data.joint_pos_target[0].detach().cpu().numpy().copy(),processed=r.hand._joint_pos_target_sim[0].detach().cpu().numpy().copy(),drive=drive,effort=r.hand.data.applied_torque[0].detach().cpu().numpy().copy(),body_pos=r.hand.data.body_pos_w[0,self.body_ids].detach().cpu().numpy().copy(),body_quat=r.hand.data.body_quat_w[0,self.body_ids].detach().cpu().numpy().copy(),cup=pose(r.aux),cup_vel=r.aux.data.root_vel_w[0].detach().cpu().numpy().copy(),bottle=pose(r.object),bottle_vel=r.object.data.root_vel_w[0].detach().cpu().numpy().copy(),root=torch.cat((r.hand.data.root_pos_w[0]-origin,r.hand.data.root_quat_w[0])).detach().cpu().numpy().copy())
+   return row
+  def capture_substep(self):
+-  self.within=(len(self.rows)%self.raw.cfg.decimation);row=self.capture_state();view_counts=[]
++  index=len(self.rows);self.within=(index%self.raw.cfg.decimation);row=self.capture_state();view_counts=[];step_contacts=[]
+   for si,sensor in enumerate(self.raw.full_contact):
+    result=sensor.contact_physx_view.get_contact_data(dt=float(self.raw.physics_dt));count_size=int(result[4].numel());snap=unpack_six(result,dt=float(self.raw.physics_dt),expected_pairs=count_size)
+    if count_size!=1:raise RuntimeError(f'contact view {self.names[si]} resolved {count_size} pairs, expected one')
+    if snap['capacity_hit']:raise OverflowError(f'contact capacity hit for {self.names[si]}')
+    view_counts.append(int(snap['count'][0]))
+    for rr in snap['ranges']:
+-    for j in range(rr['count']):self.contacts.append((len(self.rows),si,rr['pair'],rr['force'][j].copy(),rr['point'][j].copy(),rr['normal'][j].copy(),np.asarray(rr['separation'][j]).copy()))
+-  self.counts.append(view_counts);self.rows.append(row)
++    for j in range(rr['count']):step_contacts.append((index,si,rr['pair'],rr['force'][j].copy(),rr['point'][j].copy(),rr['normal'][j].copy(),np.asarray(rr['separation'][j]).copy()))
++  payload={k:(np.empty(0) if v is None else v) for k,v in row.items()};payload['view_counts']=np.asarray(view_counts,np.int32)
++  payload.update(self._contact_arrays(step_contacts))
++  self.early.save(index,payload)
++  self.counts.append(view_counts);self.rows.append(row);self.contacts.extend(step_contacts)
++ @staticmethod
++ def _contact_arrays(items):
++  if items:return dict(contact_substep=np.asarray([x[0] for x in items],np.int32),contact_sensor=np.asarray([x[1] for x in items],np.int16),contact_pair=np.asarray([x[2] for x in items],np.int16),contact_force=np.stack([x[3] for x in items]),contact_point=np.stack([x[4] for x in items]),contact_normal=np.stack([x[5] for x in items]),contact_separation=np.stack([x[6] for x in items]))
++  return dict(contact_substep=np.empty(0,np.int32),contact_sensor=np.empty(0,np.int16),contact_pair=np.empty(0,np.int16),contact_force=np.empty((0,1),np.float32),contact_point=np.empty((0,3),np.float32),contact_normal=np.empty((0,3),np.float32),contact_separation=np.empty((0,1),np.float32))
+  def flush(self,complete=False):
+   if not self.rows:return
+-  keys=('control','within_substep','global_substep','sim_step_counter','q','qd','target','processed','effort','body_pos','body_quat','cup','cup_vel','bottle','bottle_vel','root')
++  keys=('control','within_substep','global_substep','sim_step_counter','request_left','q','qd','target','processed','effort','body_pos','body_quat','cup','cup_vel','bottle','bottle_vel','root')
+   arr={k:np.stack([x[k] for x in self.rows]) for k in keys};arr['drive']=np.stack([x['drive'] for x in self.rows]) if self.rows[0]['drive'] is not None else np.empty((len(self.rows),0));arr['view_counts']=np.asarray(self.counts,np.int32);arr['left_body_names']=np.asarray(LEFT_BODIES);arr['contact_view_names']=np.asarray(self.names);arr['joint_names']=np.asarray(self.raw.hand.joint_names)
++  arr['drive_joint_names']=np.asarray([self.raw.hand.joint_names[int(i)] for i in self.raw.sim_joint_ids.detach().cpu().tolist()]) if self.rows[0]['drive'] is not None else np.asarray([],dtype=str)
++  if arr['drive'].shape[1]!=len(arr['drive_joint_names']):raise RuntimeError('drive target width/name mismatch')
+   tmp=self.out/'substeps.tmp';final=self.out/'substeps.npz'
+   with tmp.open('wb') as f:np.savez_compressed(f,**arr)
+   tmp.replace(final)
+-  if self.contacts:
+-   ca=dict(substep=np.asarray([x[0] for x in self.contacts],np.int32),sensor=np.asarray([x[1] for x in self.contacts],np.int16),pair=np.asarray([x[2] for x in self.contacts],np.int16),force=np.stack([x[3] for x in self.contacts]),point=np.stack([x[4] for x in self.contacts]),normal=np.stack([x[5] for x in self.contacts]),separation=np.stack([x[6] for x in self.contacts]))
+-  else:ca=dict(substep=np.empty(0,np.int32),sensor=np.empty(0,np.int16),pair=np.empty(0,np.int16),force=np.empty((0,3)),point=np.empty((0,3)),normal=np.empty((0,3)),separation=np.empty((0,1)))
++  ca=self._contact_arrays(self.contacts)
+   tmp=self.out/'contacts.tmp';final=self.out/'contacts.npz'
+   with tmp.open('wb') as f:np.savez_compressed(f,**ca)
+-  tmp.replace(final);atomic_json(self.out/'raw_status.json',dict(complete=complete,substeps=len(self.rows),contacts=len(self.contacts),controls=self.control,guard_calls=self.guard_calls))
++  tmp.replace(final);atomic_json(self.out/'raw_status.json',dict(complete=complete,substeps=len(self.rows),contacts=len(self.contacts),started_control=self.started_control,completed_controls=self.completed_controls,guard_calls=self.guard_calls))
+ 
+ def runtime_metadata(raw):
+  stage=raw.sim.stage;rows=[]
+@@ -117,18 +125,18 @@ def runtime_metadata(raw):
+    rows.append(dict(path=str(p.GetPath()),body=root,enabled=col.GetCollisionEnabledAttr().Get(),approximation=mc.GetApproximationAttr().Get() if p.HasAPI(UsdPhysics.MeshCollisionAPI) else None,contact_offset=pc.GetContactOffsetAttr().Get() if p.HasAPI(PhysxSchema.PhysxCollisionAPI) else None,rest_offset=pc.GetRestOffsetAttr().Get() if p.HasAPI(PhysxSchema.PhysxCollisionAPI) else None,source_layers=stack))
+  return rows
+ 
+-media=None;rec=None;out=args.out
++media=None;rec=None;out=args.out;run_error=None;cleanup_errors=[]
+ try:
+- atomic_json(status,dict(state='BUILD_ENV',mode=args.mode));z=np.load(args.commands);commands=z['targets_rad'];expected_names=z['joint_names'].tolist();assert commands.shape==(100,29)
++ atomic_json(status,dict(state='BUILD_ENV',mode='D'));z=np.load(args.commands);commands=z['targets_rad'];expected_names=z['joint_names'].tolist();assert commands.shape==(100,29)
+  cfg=build_cfg(bundle_root=args.bundle_root,num_envs=1,seed=args.seed,input_archive=args.bundle_root/'perception/pour17_perception.npz',input_regime='estimated',reference_start_index=32,left_synergy_npz=Path(__file__).parent/'tasks/h2s2r_pour17/artifacts/synergies/left_synergy_pca5.npz',right_synergy_npz=Path(__file__).parent/'tasks/h2s2r_pour17/artifacts/synergies/right_synergy_pca5.npz',external_evaluator_controls_termination=True)
+- cfg.sim.device=args.device;cfg.sim.dt=1/480 if args.mode=='E2_DT' else 1/240;cfg.decimation=24 if args.mode=='E2_DT' else 12;cfg.sim.render_interval=cfg.decimation;cfg.viewer=ViewerCfg(eye=(.42,-.43,1.30),lookat=(-.14,.24,1.0),origin_type='env',env_index=0,resolution=(640,480))
+- raw=FixedReplay(cfg,render_mode='rgb_array');rec=Recorder(raw,out);rec.phase='explicit_reset';raw.reset(seed=args.seed);rec.phase='post_reset'
++ cfg.sim.device=args.device;cfg.sim.dt=1/240;cfg.decimation=12;cfg.sim.render_interval=cfg.decimation;cfg.viewer=ViewerCfg(eye=(.42,-.43,1.30),lookat=(-.14,.24,1.0),origin_type='env',env_index=0,resolution=(640,480))
++ raw=FixedReplay(cfg,render_mode='rgb_array');raw.expected_left_names=expected_names;rec=Recorder(raw,out)
++ atomic_json(out/'observation_scope.json',dict(recorder_installed_before_explicit_reset=True,constructor_state_writes_observed=False,reason='Recorder requires the constructed asset objects; constructor activity is not claimed as observed.'))
++ rec.phase='explicit_reset';raw.reset(seed=args.seed);rec.phase='post_reset'
+  actual_names=[raw.hand.joint_names[int(i)] for i in raw.side_joint_ids[ControlledSide.LEFT].cpu()]
+  if actual_names!=expected_names:raise RuntimeError(f'left joint order mismatch {actual_names}')
+  def envpose(asset):return torch.cat((asset.data.root_pos_w[0]-raw.scene.env_origins[0],asset.data.root_quat_w[0])).detach().cpu().numpy()
+  q=raw.hand.data.joint_pos[0,raw.side_joint_ids[ControlledSide.LEFT]].detach().cpu().numpy();cup=envpose(raw.aux);wpos,wquat=raw._wrist(ControlledSide.LEFT);wrist=torch.cat((wpos[0],wquat[0])).detach().cpu().numpy()
+- def quat_angle(a,b):
+-  a=np.asarray(a,dtype=np.float64);b=np.asarray(b,dtype=np.float64);a/=np.linalg.norm(a);b/=np.linalg.norm(b);return float(2*np.arccos(np.clip(abs(np.dot(a,b)),0,1)))
+  checks={};checks['left_q'],qtol=float_close(q,z['historical_initial_q_rad']);checks['cup_pos']=bool(np.linalg.norm(cup[:3]-z['historical_cup_pose_wxyz'][:3])<=1e-5);checks['cup_rot']=quat_angle(cup[3:],z['historical_cup_pose_wxyz'][3:])<=1e-4;checks['wrist_pos']=bool(np.linalg.norm(wrist[:3]-z['historical_wrist_pose_wxyz'][:3])<=1e-5);checks['wrist_rot']=quat_angle(wrist[3:],z['historical_wrist_pose_wxyz'][3:])<=1e-4;checks['hold_zero']=int(raw._warmup_clamp_left[0])==0
+  atomic_json(out/'reset_validation.json',dict(checks=checks,actual=dict(left_q=q.tolist(),cup=cup.tolist(),wrist=wrist.tolist()),expected=dict(left_q=z['historical_initial_q_rad'].tolist(),cup=z['historical_cup_pose_wxyz'].tolist(),wrist=z['historical_wrist_pose_wxyz'].tolist()),dtype_aware_q_tolerance_max=qtol))
+  if not all(checks.values()):raise RuntimeError(f'reset geometry mismatch: {checks}')
+@@ -137,23 +145,25 @@ try:
+   if int(data[4].numel())!=1:raise RuntimeError(f'{name} view pair mapping not one: {tuple(data[4].shape)}')
+  atomic_json(out/'runtime_collision.json',dict(cooked_geometry='COOKED_GEOMETRY_UNAVAILABLE',contact_dt=float(raw.physics_dt),contact_views=raw.full_contact_names,capacity_each=4096,collision_prims=runtime_metadata(raw)))
+  rec.install_controller_guards();media=ThreeView(raw,out/'media');media.preview();media.append(0,'post_reset_initial')
+- atomic_json(status,dict(state='CONTROL',controls=0,substeps=0));started=time.monotonic();rec.phase='control'
++ atomic_json(status,dict(state='CONTROL',started_control=0,completed_controls=0,substeps=0));started=time.monotonic();rec.phase='control'
+  with torch.no_grad():
+   for i,target in enumerate(commands,1):
+-   rec.control=i;raw.step(torch.as_tensor(target,device=raw.device).unsqueeze(0));media.append(i,'fixed_target_replay')
+-   if i==1 or i%10==0:rec.flush(False);atomic_json(status,dict(state='CONTROL',controls=i,substeps=len(rec.rows)))
++   rec.started_control=i;atomic_json(status,dict(state='CONTROL',started_control=i,completed_controls=rec.completed_controls,substeps=len(rec.rows)))
++   raw.step(torch.as_tensor(target,device=raw.device).unsqueeze(0));rec.completed_controls=i;rec.flush(False);media.append(i,'fixed_target_replay')
++   atomic_json(status,dict(state='CONTROL',started_control=i,completed_controls=i,substeps=len(rec.rows)))
+  rec.flush(True);media.close_media();media=None
+- atomic_json(out/'completion.json',dict(status='COMPLETE',mode=args.mode,controls=100,explicit_substeps=len(rec.rows),initialization_internal_steps=int(raw._sim_step_counter)-len(rec.rows),wall_seconds=time.monotonic()-started,media_counts={'front':101,'top':101,'side':101},policy=False,ppo=False,fabrics_calls=rec.guard_calls))
+- atomic_json(status,dict(state='COMPLETE',controls=100,substeps=len(rec.rows)))
++ atomic_json(out/'completion.json',dict(status='COMPLETE',mode='D',started_control=100,completed_controls=100,explicit_substeps=len(rec.rows),initialization_internal_steps=int(raw._sim_step_counter)-len(rec.rows),wall_seconds=time.monotonic()-started,media_counts={'front':101,'top':101,'side':101},policy=False,ppo=False,fabrics_calls=rec.guard_calls))
++ atomic_json(status,dict(state='COMPLETE',started_control=100,completed_controls=100,substeps=len(rec.rows)))
+ except BaseException as e:
++ run_error=e
+  if rec:
+   try:rec.flush(False)
+   except BaseException:pass
+- atomic_json(status,dict(state='FAILED',error=repr(e),traceback=traceback.format_exc(),controls=0 if rec is None else rec.control,substeps=0 if rec is None else len(rec.rows)))
+- raise
++ atomic_json(status,dict(state='FAILED',error=repr(e),traceback=traceback.format_exc(),started_control=0 if rec is None else rec.started_control,completed_controls=0 if rec is None else rec.completed_controls,substeps=0 if rec is None else len(rec.rows)))
+ finally:
+- if media is not None:
+-  try:media.close_media()
+-  except BaseException:pass
+- # close_media() must precede app.close(); evidence is saved even if close fails.
+- app.close()
++ cleanup_errors=close_media_then_app(media,app)
++ if cleanup_errors:
++  prior=json.loads(status.read_text()) if status.exists() else {}
++  atomic_json(status,dict(prior,state='FAILED',cleanup_errors=cleanup_errors))
++if run_error is not None:raise run_error
++if cleanup_errors:raise RuntimeError(f'cleanup failed: {cleanup_errors}')
+diff --git "a/D:\\UCBP\\reports\\H2S2R_LEFT_CUP_CONTACT_CAUSE_20260912\\run_supervised.py" "b/D:\\UCBP\\reports\\H2S2R_LEFT_CUP_A_ENV_TRANSFER_20260912\\run_supervised.py"
+index 8fb7f5d..e4c90a7 100644
+--- "a/D:\\UCBP\\reports\\H2S2R_LEFT_CUP_CONTACT_CAUSE_20260912\\run_supervised.py"
++++ "b/D:\\UCBP\\reports\\H2S2R_LEFT_CUP_A_ENV_TRANSFER_20260912\\run_supervised.py"
+@@ -1,46 +1,37 @@
+-"""One-child deadline supervisor; exit zero never overrides a recorded traceback."""
++"""One-child deadline supervisor using the same function covered by CPU tests."""
+ from __future__ import annotations
+-import argparse,hashlib,json,os,signal,subprocess,time,traceback
+-from datetime import datetime,timezone
++
++import argparse
++import os
+ from pathlib import Path
+-P=argparse.ArgumentParser();P.add_argument('--out',type=Path,required=True);P.add_argument('--mode',choices=('E1','E2_DT'),required=True);P.add_argument('--device',default='cuda:0');a=P.parse_args()
+-if a.out.exists():raise FileExistsError(a.out)
+-a.out.parent.mkdir(parents=True,exist_ok=True);launch=a.out.parent/(a.out.name+'_launch');launch.mkdir()
+-root=Path(__file__).resolve().parent;python=Path('/home/kailang/.local/miniconda3/envs/rl-correction-pour/bin/python');bundle=Path('/home/kailang/experiments/baselines/pour17_baseline_bundle_20260829/pour17')
+-cmd=[str(python),str(root/'replay_contact.py'),'--bundle_root',str(bundle),'--commands',str(root/'command_inputs.npz'),'--out',str(a.out),'--mode',a.mode,'--device',a.device,'--headless']
+-def sha(p):return hashlib.sha256(Path(p).read_bytes()).hexdigest()
+-manifest=dict(started=datetime.now(timezone.utc).isoformat(),cmd=cmd,cwd=str(root),pid=None,timeout_s=900,entry_sha256=sha(root/'replay_contact.py'),mode=a.mode,CUDA_VISIBLE_DEVICES=os.environ.get('CUDA_VISIBLE_DEVICES'),PYTHONPATH=os.environ.get('PYTHONPATH'),TMPDIR=os.environ.get('TMPDIR'))
+-(launch/'launch.json').write_text(json.dumps(manifest,indent=2)+'\n')
+-with (launch/'stdout.log').open('w') as out,(launch/'stderr.log').open('w') as err:
+- p=subprocess.Popen(cmd,cwd=root,stdout=out,stderr=err,start_new_session=True);manifest['pid']=p.pid;(launch/'launch.json').write_text(json.dumps(manifest,indent=2)+'\n');started=time.monotonic();timed=False
+- failed_since=None
+- while p.poll() is None:
+-  child_status=a.out/'status.json'
+-  if child_status.is_file():
+-   try:is_failed=json.loads(child_status.read_text()).get('state')=='FAILED'
+-   except (OSError,json.JSONDecodeError):is_failed=False
+-   if is_failed and failed_since is None:failed_since=time.monotonic()
+-   if is_failed and time.monotonic()-failed_since>20:
+-    os.killpg(p.pid,signal.SIGUSR1);time.sleep(2)
+-    if p.poll() is None:os.killpg(p.pid,signal.SIGTERM)
+-    break
+-  if time.monotonic()-started>900:
+-   timed=True;os.killpg(p.pid,signal.SIGUSR1);time.sleep(2);os.killpg(p.pid,signal.SIGTERM);break
+-  time.sleep(1)
+- if timed:
+-  try:p.wait(20)
+-  except subprocess.TimeoutExpired:os.killpg(p.pid,signal.SIGKILL);p.wait()
+- if p.poll() is None:
+-  try:p.wait(20)
+-  except subprocess.TimeoutExpired:os.killpg(p.pid,signal.SIGKILL);p.wait()
+- rc=p.returncode
+-stderr=(launch/'stderr.log').read_text(errors='replace');child_state=None
+-try:child_state=json.loads((a.out/'status.json').read_text()).get('state')
+-except (OSError,json.JSONDecodeError):pass
+-failed=('Traceback (most recent call last)' in stderr) or timed or rc!=0 or child_state!='COMPLETE'
+-result=dict(**manifest,ended=datetime.now(timezone.utc).isoformat(),return_code=rc,timed_out=timed,wall_seconds=time.monotonic()-started,child_state=child_state,status='FAILED' if failed else 'COMPLETE',stderr_sha256=sha(launch/'stderr.log'),stdout_sha256=sha(launch/'stdout.log'))
+-(launch/'result.json').write_text(json.dumps(result,indent=2)+'\n')
+-if failed:raise SystemExit(1)
+ 
+-# Test-visible ordering contract for replay_contact.py: close_media() before app.close().
+-# Any traceback is FAILED even when a native wrapper exits zero.
++from runtime_support import sha256_file, supervise_process
++
++
++parser = argparse.ArgumentParser()
++parser.add_argument("--out", type=Path, required=True)
++parser.add_argument("--device", default="cuda:0")
++args = parser.parse_args()
++if args.out.exists():
++    raise FileExistsError(args.out)
++
++root = Path(__file__).resolve().parent
++python = Path("/home/kailang/.local/miniconda3/envs/rl-correction-pour/bin/python")
++bundle = Path("/home/kailang/experiments/baselines/pour17_baseline_bundle_20260829/pour17")
++command = [str(python), str(root / "replay_contact.py"),
++           "--bundle_root", str(bundle), "--commands", str(root / "command_inputs.npz"),
++           "--out", str(args.out), "--device", args.device, "--headless"]
++metadata = {
++    "mode": "D",
++    "entry_sha256": sha256_file(root / "replay_contact.py"),
++    "runtime_support_sha256": sha256_file(root / "runtime_support.py"),
++    "CUDA_VISIBLE_DEVICES": os.environ.get("CUDA_VISIBLE_DEVICES"),
++    "PYTHONPATH": os.environ.get("PYTHONPATH"),
++    "TMPDIR": os.environ.get("TMPDIR"),
++}
++result = supervise_process(cmd=command, cwd=root,
++                           launch_dir=args.out.parent / (args.out.name + "_launch"),
++                           output_dir=args.out, timeout_s=900,
++                           env=os.environ.copy(), metadata=metadata)
++if result["status"] != "COMPLETE":
++    raise SystemExit(1)
+diff --git "a/D:\\UCBP\\reports\\H2S2R_LEFT_CUP_CONTACT_CAUSE_20260912\\test_contact_support.py" "b/D:\\UCBP\\reports\\H2S2R_LEFT_CUP_A_ENV_TRANSFER_20260912\\test_runtime_support.py"
+index 3181960..19f20a9 100644
+--- "a/D:\\UCBP\\reports\\H2S2R_LEFT_CUP_CONTACT_CAUSE_20260912\\test_contact_support.py"
++++ "b/D:\\UCBP\\reports\\H2S2R_LEFT_CUP_A_ENV_TRANSFER_20260912\\test_runtime_support.py"
+@@ -1,55 +1,226 @@
+-"""CPU-only contract tests: no App probe and no Isaac import."""
++"""CPU behavior tests call the exact support functions used by the D replay."""
+ from __future__ import annotations
+-import json,runpy,tempfile
++
++import json
++import sys
++import tempfile
+ from pathlib import Path
++
+ import numpy as np
+-from contact_capture import unpack_six,float_close
+-from camera_delivery import read_complete_json
+-B=Path(__file__).resolve().parent
+-tests={}
+-z=np.load(B/'command_inputs.npz');tests['command_count_100']=z['targets_rad'].shape==(100,29)
+-tests['trace0_not_command']=not np.array_equal(z['historical_initial_q_rad'],z['targets_rad'][0])
+-tests['joint_name_count_29']=len(z['joint_names'])==29 and len(set(z['joint_names'].tolist()))==29
++import torch
++
++from camera_delivery import CAMERAS, ThreeView, camera_config, validate_camera_config
++from contact_capture import float_close, unpack_six
++from runtime_support import (AtomicSubstepJournal, StateWriteRecorder,
++                             close_media_then_app, jsonable, process_verdict,
++                             quat_angle, register_observation_sensor,
++                             route_fixed_target, sha256_file,
++                             supervise_process)
++
++
++B = Path(__file__).resolve().parent
++tests = {}
++
++# Frozen commands and the production routing helper.
++frozen = np.load(B / "command_inputs.npz")
++tests["frozen_100x29"] = frozen["targets_rad"].shape == (100, 29)
++tests["trace0_not_command"] = not np.array_equal(frozen["historical_initial_q_rad"], frozen["targets_rad"][0])
++names = [f"joint_{i}" for i in range(58)]
++left_ids = torch.arange(0, 29)
++right_ids = torch.arange(29, 58)
++current = torch.arange(58, dtype=torch.float32).reshape(1, 58)
++left = torch.full((1, 29), 7.0)
++right = torch.full((1, 29), -3.0)
++routed = route_fixed_target(current_q=current, left_target=left, left_ids=left_ids,
++                            right_ids=right_ids, right_reset_q=right,
++                            joint_names=names, expected_left_names=names[:29])
++tests["real_route_left_right"] = torch.equal(routed[:, :29], left) and torch.equal(routed[:, 29:], right)
++routed_1d = route_fixed_target(current_q=current, left_target=left, left_ids=left_ids,
++                               right_ids=right_ids, right_reset_q=right[0],
++                               joint_names=names, expected_left_names=names[:29])
++tests["real_route_accepts_runtime_1d_right"] = torch.equal(routed_1d[:, 29:], right)
++
++
++class _FakeScene:
++    def __init__(self):
++        self.sensors = {}
++
++
++created = []
++collection = []
++sensor_names = []
++scene = _FakeScene()
++
++
++def _fake_sensor_factory(cfg):
++    sensor = {"cfg": cfg}
++    created.append(sensor)
++    return sensor
++
++
++registered = register_observation_sensor(
++    sensor_factory=_fake_sensor_factory, cfg={"pair": "cup_to_table"},
++    collection=collection, names=sensor_names, scene_sensors=scene.sensors,
++    label="cup_to_table", key="full_cup_to_table")
++tests["real_contact_sensor_registration"] = (
++    len(created) == 1 and collection == [registered]
++    and sensor_names == ["cup_to_table"]
++    and scene.sensors == {"full_cup_to_table": registered})
+ try:
+-    wrong=z['joint_names'].tolist();wrong[0],wrong[1]=wrong[1],wrong[0]
+-    if wrong!=z['joint_names'].tolist():raise ValueError('name mismatch rejected')
+-except ValueError:tests['name_mismatch_rejected']=True
+-empty=(np.zeros((8,3)),np.full((8,3),np.nan),np.full((8,3),np.nan),np.full((8,1),np.nan),np.array([[0]]),np.array([[0]]))
+-snap=unpack_six(empty,dt=1/240);tests['empty_contact_valid']=snap['ranges'][0]['count']==0
+-multi=(np.arange(24,dtype=np.float32).reshape(8,3),np.ones((8,3)),np.ones((8,3)),np.array([[-.005],[-.002],[.001],[0],[0],[0],[0],[0]],np.float32),np.array([[2,1]]),np.array([[0,2]]))
+-s=unpack_six(multi,dt=1/240,expected_pairs=2);tests['six_arrays_and_ranges']=len(s['ranges'])==2 and s['ranges'][1]['start']==2
+-tests['separation_sign_preserved']=s['ranges'][0]['separation'][:,0].tolist()==[-.004999999888241291,-.0020000000949949026] and s['ranges'][1]['separation'][0,0]>0
+-multi[0][0,0]=999;tests['snapshot_breaks_alias']=s['ranges'][0]['force'][0,0]!=999
+-try:unpack_six((np.zeros((2,3)),)*5,dt=1/240)
+-except ValueError:tests['five_array_unpack_rejected']=True
+-try:unpack_six((np.zeros((2,3)),np.zeros((2,3)),np.zeros((2,3)),np.zeros((2,1)),np.array([2]),np.array([1])),dt=1/240)
+-except OverflowError:tests['overflow_range_rejected']=True
+-full=unpack_six((np.zeros((2,3)),np.zeros((2,3)),np.zeros((2,3)),np.zeros((2,1)),np.array([2]),np.array([0])),dt=1/480);tests['capacity_hit_flagged']=full['capacity_hit'] and full['dt']==1/480
+-tests['invalid_padding_nan_ignored']=True
+-ok,tol=float_close(np.array([.05],np.float32),np.array([.05],np.float64),dtype=np.float32);tests['dtype_aware_float_comparison']=ok and tol>0
+-q=np.array([.3099363446235657,-.2978839874267578,.724361002445221,-.5389856100082397],np.float32);qn=q.astype(np.float64);qn/=np.linalg.norm(qn);tests['normalized_quaternion_self_angle']=float(2*np.arccos(np.clip(abs(qn@qn),0,1)))<=1e-12
+-class Recorder:
+-    def __init__(self):self.rows=[]
+-    def wrap(self,fn,phase):
+-        def w(*a,**k):self.rows.append(('before',phase));r=fn(*a,**k);self.rows.append(('after',phase));return r
+-        return w
+-r=Recorder();assert r.wrap(lambda:7,'reset')()==7;tests['write_wrapper_preserves_call']=r.rows==[('before','reset'),('after','reset')]
+-def recursive_jsonable(v):
+-    if isinstance(v,dict):return {str(k):recursive_jsonable(x) for k,x in v.items()}
+-    if isinstance(v,(list,tuple)):return [recursive_jsonable(x) for x in v]
+-    if isinstance(v,np.ndarray):return v.tolist()
+-    return v
+-tests['tensor_kwargs_recursive_shape']=recursive_jsonable({'env_ids':np.array([0])})=={'env_ids':[0]}
+-tests['phase_labels_explicit']=set(('pre_reset','reset','post_reset','control','substep'))==set(('pre_reset','reset','post_reset','control','substep'))
+-source=(B/'run_supervised.py').read_text() if (B/'run_supervised.py').exists() else ''
+-tests['media_close_before_app_close']='close_media()' in source and source.index('close_media()')<source.index('app.close()')
+-tests['traceback_overrides_exit0']='traceback' in source and 'FAILED' in source
+-tests['failed_child_cleanup_bounded']='failed_since' in source and 'os.killpg' in source
+-tests['cleanup_waits_for_return_code']='if p.poll() is None:' in source and 'p.wait(20)' in source
+-with tempfile.TemporaryDirectory() as td:
+-    p=Path(td)/'approval.json';p.write_text('');tests['partial_approval_not_consumed']=read_complete_json(p) is None;p.write_text('{"approve":true}');tests['complete_approval_consumed']=read_complete_json(p)=={'approve':True}
+-tests['child_status_overrides_exit0']='child_state' in source and "child_state!='COMPLETE'" in source
+-tests={key:bool(value) for key,value in tests.items()}
+-assert all(tests.values()),tests
+-(B/'cpu_validation.json').write_text(json.dumps(dict(status='PASS',cpu_only=True,app_probe=False,tests=tests),indent=2)+'\n')
+-print(json.dumps(tests,indent=2))
++    route_fixed_target(current_q=current, left_target=left, left_ids=left_ids,
++                       right_ids=right_ids, right_reset_q=right,
++                       joint_names=names, expected_left_names=list(reversed(names[:29])))
++except ValueError:
++    tests["real_route_wrong_order_rejected"] = True
++
++# Real torch values nested exactly through dict/list/kwargs, plus wrapper return/raise behavior.
++nested = {"env_ids": torch.tensor([0]), "payload": [torch.arange(3), {"q": torch.ones((1, 2))}]}
++tests["real_torch_nested_jsonable"] = json.loads(json.dumps(jsonable(nested))) == {
++    "env_ids": [0], "payload": [[0, 1, 2], {"q": [[1.0, 1.0]]}]}
++with tempfile.TemporaryDirectory() as temporary:
++    root = Path(temporary)
++    context = lambda: {"phase": "explicit_reset", "started_control": 0,
++                       "completed_controls": 0, "within_substep": -1}
++    recorder = StateWriteRecorder(root / "writes.jsonl", context)
++    received = []
++    def original(*args, **kwargs):
++        received.append((args, kwargs))
++        return {"returned": torch.tensor([9.0])}
++    wrapped = recorder.wrap(asset_path="/World/envs/env_.*/Aux", method_name="write_root_pose_to_sim",
++                            original=original, snapshot=lambda: {"pose": torch.zeros((1, 7))})
++    arg = torch.arange(7, dtype=torch.float32).reshape(1, 7)
++    result = wrapped(arg, env_ids=torch.tensor([0]))
++    rows = [json.loads(line) for line in (root / "writes.jsonl").read_text().splitlines()]
++    tests["real_write_wrapper_same_args_return"] = received[0][0][0] is arg and result["returned"].item() == 9 and [x["event"] for x in rows] == ["CALL", "RETURNED"]
++    marker = RuntimeError("expected-marker")
++    def raising(*args, **kwargs):
++        raise marker
++    bad = recorder.wrap(asset_path="/World/envs/env_.*/Object", method_name="write_root_pose_to_sim",
++                        original=raising, snapshot=lambda: {})
++    try:
++        bad(arg, env_ids=torch.tensor([0]))
++    except RuntimeError as caught:
++        tests["real_write_wrapper_same_exception"] = caught is marker
++    rows = [json.loads(line) for line in (root / "writes.jsonl").read_text().splitlines()]
++    tests["write_asset_paths_and_outcomes"] = rows[0]["asset_path"].endswith("/Aux") and rows[-1]["event"] == "RAISED" and rows[-1]["asset_path"].endswith("/Object")
++
++# Quaternion behavior uses the production function.
++q = np.array([0.30993634, -0.29788399, 0.724361, -0.53898561], np.float32)
++tests["quat_self_zero"] = quat_angle(q, q) <= 1e-12
++tests["quat_sign_zero"] = quat_angle(q, -q) <= 1e-12
++tests["quat_scaled_normalized"] = quat_angle(q * 3.2, q * 0.2) <= 1e-12
++for label, value in (("zero", np.zeros(4)), ("nan", np.array([1.0, 0.0, np.nan, 0.0]))):
++    try:
++        quat_angle(value, q)
++    except ValueError:
++        tests[f"quat_{label}_rejected"] = True
++
++# Exact six-array interface shapes: scalar normal force and separation, vector point/normal.
++empty = (np.zeros((8, 1), np.float32), np.full((8, 3), np.nan),
++         np.full((8, 3), np.nan), np.full((8, 1), np.nan),
++         np.array([[0]]), np.array([[0]]))
++snapshot = unpack_six(empty, dt=1 / 240)
++tests["six_empty_schema"] = snapshot["ranges"][0]["force"].shape == (0, 1)
++nonempty = (np.array([[2.0], [3.0], [0.0]], np.float32), np.ones((3, 3), np.float32),
++            np.ones((3, 3), np.float32), np.array([[-0.002], [0.001], [0.0]], np.float32),
++            np.array([[2]]), np.array([[0]]))
++snapshot = unpack_six(nonempty, dt=1 / 240)
++tests["six_nonempty_sign_and_shape"] = snapshot["ranges"][0]["force"].shape == (2, 1) and snapshot["ranges"][0]["separation"][0, 0] < 0 < snapshot["ranges"][0]["separation"][1, 0]
++nonempty[0][0, 0] = 999
++tests["six_snapshot_breaks_alias"] = snapshot["ranges"][0]["force"][0, 0] == 2.0
++try:
++    unpack_six((np.zeros((2, 1)),) * 5, dt=1 / 240)
++except ValueError:
++    tests["six_five_array_rejected"] = True
++try:
++    unpack_six((np.zeros((2, 1)), np.zeros((2, 3)), np.zeros((2, 3)), np.zeros((2, 1)), np.array([2]), np.array([1])), dt=1 / 240)
++except OverflowError:
++    tests["six_overflow_rejected"] = True
++try:
++    unpack_six((np.zeros((2, 3)), np.zeros((2, 3)), np.zeros((2, 3)), np.zeros((2, 1)), np.array([0]), np.array([0])), dt=1 / 240)
++except ValueError:
++    tests["fake_vector_force_rejected"] = True
++tests["dtype_aware_float"] = float_close(np.array([0.05], np.float32), np.array([0.05], np.float64))[0]
++
++# Actual atomic journal preserves 0..k-1 when the kth publish fails.
++with tempfile.TemporaryDirectory() as temporary:
++    root = Path(temporary)
++    def inject(index, tmp, final):
++        if index == 5:
++            raise OSError("injected-before-publish")
++    journal = AtomicSubstepJournal(root, atomic_until=12, before_publish=inject)
++    for index in range(5):
++        journal.save(index, {"global_substep": index, "contact_force": np.empty((0, 1), np.float32)})
++    try:
++        journal.save(5, {"global_substep": 5, "contact_force": np.empty((0, 1), np.float32)})
++    except OSError:
++        pass
++    completed = sorted(root.glob("*.npz"))
++    tests["real_substep_fault_preserves_prefix"] = len(completed) == 5 and all(int(np.load(path)["global_substep"]) == i for i, path in enumerate(completed))
++
++# Actual media append/close functions with injected writer failures.
++class FakeWriter:
++    def __init__(self, events, *, fail_append=False, fail_close=False):
++        self.events = events; self.fail_append = fail_append; self.fail_close = fail_close
++    def append_data(self, frame):
++        self.events.append("append")
++        if self.fail_append: raise OSError("append-failure")
++    def close(self):
++        self.events.append("media_close")
++        if self.fail_close: raise OSError("close-failure")
++class FakeImageIO:
++    def __init__(self, writer): self.writer = writer
++    def imwrite(self, path, frame): Path(path).write_bytes(frame.tobytes())
++    def get_writer(self, *args, **kwargs): return self.writer
++class FakeApp:
++    def __init__(self, events, fail=False): self.events = events; self.fail = fail
++    def close(self):
++        self.events.append("app_close")
++        if self.fail: raise OSError("app-close-failure")
++with tempfile.TemporaryDirectory() as temporary:
++    events = []
++    media = object.__new__(ThreeView); media.out = Path(temporary); media.imageio = FakeImageIO(FakeWriter(events, fail_append=True)); media.writers = {}; media.counts = {view: 0 for view in CAMERAS}; media.closed = False
++    media._frame = lambda view, refreshes=2: (np.ones((480, 640, 3), np.uint8), {"view": view})
++    try: media.append(0, "test")
++    except OSError: pass
++    tests["real_media_write_failure_saved"] = json.loads((Path(temporary) / "media_status.json").read_text())["state"] == "FAILED"
++with tempfile.TemporaryDirectory() as temporary:
++    events = []
++    media = object.__new__(ThreeView); media.out = Path(temporary); media.writers = {"front": FakeWriter(events, fail_close=True)}; media.counts = {view: 1 for view in CAMERAS}; media.closed = False
++    app = FakeApp(events)
++    errors = close_media_then_app(media, app)
++    tests["real_close_failure_preserved_and_ordered"] = [x["stage"] for x in errors] == ["media.close_media"] and events == ["media_close", "app_close"] and json.loads((Path(temporary) / "media_status.json").read_text())["state"] == "FAILED"
++events = []
++media = type("Media", (), {"close_media": lambda self: events.append("media_close")})()
++errors = close_media_then_app(media, FakeApp(events, fail=True))
++tests["real_app_close_failure_preserved"] = events == ["media_close", "app_close"] and errors[0]["stage"] == "app.close"
++
++# Frozen camera contract and no approval/SCP dependency.
++tests["frozen_camera_contract"] = validate_camera_config(camera_config())["resolution"] == [640, 480]
++
++# Actual supervisor function: final log hashes, exit-0 FAILED, traceback, and missing completion.
++with tempfile.TemporaryDirectory() as temporary:
++    root = Path(temporary)
++    def run_case(label, child_code):
++        output = root / label
++        return supervise_process(cmd=[sys.executable, "-c", child_code, str(output)], cwd=root,
++                                 launch_dir=root / (label + "_launch"), output_dir=output,
++                                 timeout_s=10, metadata={"case": label})
++    success_code = "import json,pathlib,sys;p=pathlib.Path(sys.argv[1]);p.mkdir();(p/'status.json').write_text(json.dumps({'state':'COMPLETE'}));(p/'completion.json').write_text(json.dumps({'status':'COMPLETE'}));print('final-line',flush=True)"
++    success = run_case("success", success_code)
++    tests["real_supervisor_success_and_final_hash"] = success["status"] == "COMPLETE" and success["stdout_sha256"] == sha256_file(root / "success_launch/stdout.log")
++    fail_code = "import json,pathlib,sys,os;p=pathlib.Path(sys.argv[1]);p.mkdir();(p/'status.json').write_text(json.dumps({'state':'FAILED'}));os._exit(0)"
++    failed = run_case("exit0_failed", fail_code)
++    tests["real_supervisor_exit0_failed"] = failed["status"] == "FAILED" and "child_status_not_complete" in failed["reasons"]
++    trace_code = "import json,pathlib,sys;p=pathlib.Path(sys.argv[1]);p.mkdir();(p/'status.json').write_text(json.dumps({'state':'COMPLETE'}));(p/'completion.json').write_text(json.dumps({'status':'COMPLETE'}));sys.stderr.write('Traceback (most recent call last)\\n')"
++    traced = run_case("traceback", trace_code)
++    tests["real_supervisor_traceback_failed"] = traced["status"] == "FAILED" and "traceback" in traced["reasons"]
++    missing_code = "import json,pathlib,sys;p=pathlib.Path(sys.argv[1]);p.mkdir();(p/'status.json').write_text(json.dumps({'state':'COMPLETE'}))"
++    missing = run_case("missing_completion", missing_code)
++    tests["real_supervisor_missing_completion_failed"] = missing["status"] == "FAILED" and "completion_missing_or_not_complete" in missing["reasons"]
++
++tests = {key: bool(value) for key, value in tests.items()}
++if not all(tests.values()):
++    raise AssertionError({key: value for key, value in tests.items() if not value})
++(B / "cpu_behavior_validation.json").write_text(json.dumps({"status": "PASS", "torch": torch.__version__, "tests": tests}, indent=2) + "\n")
++print(json.dumps(tests, indent=2))
+
+# New file: runtime_support.py
+
+"""App-independent support used by both the real replay and behavior tests."""
+from __future__ import annotations
+
+import hashlib
+import json
+import math
+import os
+import signal
+import subprocess
+import time
+import traceback
+from datetime import datetime, timezone
+from pathlib import Path
+
+import numpy as np
+
+
+def utc_now():
+    return datetime.now(timezone.utc).isoformat()
+
+
+def atomic_json(path, value):
+    path = Path(path)
+    path.parent.mkdir(parents=True, exist_ok=True)
+    tmp = path.with_suffix(path.suffix + ".tmp")
+    tmp.write_text(json.dumps(value, indent=2, allow_nan=False) + "\n", encoding="utf-8")
+    tmp.replace(path)
+
+
+def sha256_file(path):
+    digest = hashlib.sha256()
+    with Path(path).open("rb") as stream:
+        for block in iter(lambda: stream.read(1024 * 1024), b""):
+            digest.update(block)
+    return digest.hexdigest()
+
+
+def jsonable(value):
+    """Serialize the actual nested torch/numpy argument shapes used by write wrappers."""
+    try:
+        import torch
+        if torch.is_tensor(value):
+            return value.detach().cpu().numpy().tolist()
+    except ImportError:
+        pass
+    if isinstance(value, np.ndarray):
+        return value.tolist()
+    if isinstance(value, np.generic):
+        return value.item()
+    if isinstance(value, dict):
+        return {str(key): jsonable(item) for key, item in value.items()}
+    if isinstance(value, (list, tuple)):
+        return [jsonable(item) for item in value]
+    if isinstance(value, Path):
+        return str(value)
+    if isinstance(value, (str, int, float, bool)) or value is None:
+        return value
+    raise TypeError(f"unsupported JSON value {type(value).__name__}")
+
+
+def quat_angle(a, b):
+    """Sign-invariant angle for xyzw/wxyz-agnostic paired arrays."""
+    a = np.asarray(a, dtype=np.float64).reshape(-1)
+    b = np.asarray(b, dtype=np.float64).reshape(-1)
+    if a.shape != (4,) or b.shape != (4,) or not np.isfinite(a).all() or not np.isfinite(b).all():
+        raise ValueError("quaternions must be finite four-vectors")
+    na = float(np.linalg.norm(a))
+    nb = float(np.linalg.norm(b))
+    if na <= np.finfo(np.float64).tiny or nb <= np.finfo(np.float64).tiny:
+        raise ValueError("zero quaternion is invalid")
+    dot = abs(float(np.dot(a / na, b / nb)))
+    return float(2.0 * math.acos(np.clip(dot, 0.0, 1.0)))
+
+
+class JsonlJournal:
+    def __init__(self, path):
+        self.path = Path(path)
+        self.path.parent.mkdir(parents=True, exist_ok=True)
+
+    def append(self, value):
+        line = json.dumps(jsonable(value), allow_nan=False, separators=(",", ":")) + "\n"
+        with self.path.open("a", encoding="utf-8") as stream:
+            stream.write(line)
+            stream.flush()
+            os.fsync(stream.fileno())
+
+
+class StateWriteRecorder:
+    """Wrap real state-write methods while preserving return values and exceptions."""
+    def __init__(self, path, context):
+        self.journal = JsonlJournal(path)
+        self.context = context
+
+    def wrap(self, *, asset_path, method_name, original, snapshot=None):
+        def wrapped(*args, **kwargs):
+            call_id = f"{time.time_ns()}-{os.getpid()}"
+            base = dict(self.context(), timestamp=utc_now(), call_id=call_id,
+                        asset_path=str(asset_path), method=method_name,
+                        args=jsonable(args), kwargs=jsonable(kwargs),
+                        before=jsonable(snapshot()) if snapshot is not None else None,
+                        stack=traceback.format_stack(limit=6)[:-1])
+            self.journal.append(dict(base, event="CALL"))
+            try:
+                result = original(*args, **kwargs)
+            except BaseException as exc:
+                self.journal.append(dict(base, event="RAISED", error=repr(exc),
+                                         after=jsonable(snapshot()) if snapshot is not None else None))
+                raise
+            self.journal.append(dict(base, event="RETURNED", result=jsonable(result),
+                                     after=jsonable(snapshot()) if snapshot is not None else None))
+            return result
+        return wrapped
+
+
+class AtomicSubstepJournal:
+    """One immutable NPZ per early substep; a failed publish cannot erase prior files."""
+    def __init__(self, root, *, atomic_until=12, before_publish=None):
+        self.root = Path(root)
+        self.root.mkdir(parents=True, exist_ok=True)
+        self.atomic_until = int(atomic_until)
+        self.before_publish = before_publish
+
+    def save(self, index, payload):
+        index = int(index)
+        if index >= self.atomic_until:
+            return None
+        final = self.root / f"substep_{index:06d}.npz"
+        if final.exists():
+            raise FileExistsError(final)
+        tmp = self.root / f"substep_{index:06d}.tmp"
+        arrays = {str(key): np.asarray(value) for key, value in payload.items()}
+        with tmp.open("wb") as stream:
+            np.savez_compressed(stream, **arrays)
+            stream.flush()
+            os.fsync(stream.fileno())
+        if self.before_publish is not None:
+            self.before_publish(index, tmp, final)
+        tmp.replace(final)
+        return final
+
+
+def route_fixed_target(*, current_q, left_target, left_ids, right_ids,
+                       right_reset_q, joint_names, expected_left_names):
+    """The production route: measured other joints, fixed left target, fixed reset right."""
+    if tuple(left_target.shape) != (1, 29):
+        raise ValueError(f"left target must be (1,29), got {tuple(left_target.shape)}")
+    left_index = [int(x) for x in np.asarray(left_ids.detach().cpu() if hasattr(left_ids, "detach") else left_ids).reshape(-1)]
+    right_index = [int(x) for x in np.asarray(right_ids.detach().cpu() if hasattr(right_ids, "detach") else right_ids).reshape(-1)]
+    if [joint_names[i] for i in left_index] != list(expected_left_names):
+        raise ValueError("left joint names/order mismatch")
+    if current_q.ndim != 2 or current_q.shape[0] != 1 or current_q.shape[1] != len(joint_names):
+        raise ValueError("full joint names do not match current_q width")
+    if tuple(right_reset_q.shape) not in ((len(right_index),), (1, len(right_index))):
+        raise ValueError("right reset target width does not match right joint ids")
+    routed = current_q.clone() if hasattr(current_q, "clone") else np.array(current_q, copy=True)
+    routed[:, left_ids] = left_target
+    routed[:, right_ids] = right_reset_q
+    return routed
+
+
+def register_observation_sensor(*, sensor_factory, cfg, collection, names,
+                                scene_sensors, label, key):
+    """Create and register one observation-only sensor in all runtime indexes."""
+    sensor = sensor_factory(cfg)
+    collection.append(sensor)
+    names.append(label)
+    scene_sensors[key] = sensor
+    return sensor
+
+
+def close_media_then_app(media, app):
+    """Always close media first, then App; preserve both failures for the caller."""
+    errors = []
+    if media is not None:
+        try:
+            media.close_media()
+        except BaseException as exc:
+            errors.append({"stage": "media.close_media", "error": repr(exc)})
+    try:
+        app.close()
+    except BaseException as exc:
+        errors.append({"stage": "app.close", "error": repr(exc)})
+    return errors
+
+
+def process_verdict(*, return_code, timed_out, stderr_text, child_status, completion):
+    reasons = []
+    if timed_out:
+        reasons.append("timeout")
+    if return_code != 0:
+        reasons.append(f"return_code={return_code}")
+    if "Traceback (most recent call last)" in stderr_text:
+        reasons.append("traceback")
+    if not isinstance(child_status, dict) or child_status.get("state") != "COMPLETE":
+        reasons.append("child_status_not_complete")
+    if not isinstance(completion, dict) or completion.get("status") != "COMPLETE":
+        reasons.append("completion_missing_or_not_complete")
+    return {"status": "FAILED" if reasons else "COMPLETE", "reasons": reasons}
+
+
+def _load_json(path):
+    try:
+        return json.loads(Path(path).read_text(encoding="utf-8"))
+    except (OSError, json.JSONDecodeError):
+        return None
+
+
+def supervise_process(*, cmd, cwd, launch_dir, output_dir, timeout_s, env=None, metadata=None):
+    """Run the real child, wait for log closure, then compute the final evidence hashes."""
+    cwd = Path(cwd)
+    launch_dir = Path(launch_dir)
+    output_dir = Path(output_dir)
+    launch_dir.mkdir(parents=True, exist_ok=False)
+    stdout_path = launch_dir / "stdout.log"
+    stderr_path = launch_dir / "stderr.log"
+    manifest = dict(metadata or {}, started=utc_now(), cmd=[str(x) for x in cmd], cwd=str(cwd),
+                    timeout_s=float(timeout_s), pid=None)
+    atomic_json(launch_dir / "launch.json", manifest)
+    started = time.monotonic()
+    timed_out = False
+    with stdout_path.open("w", encoding="utf-8") as stdout, stderr_path.open("w", encoding="utf-8") as stderr:
+        child = subprocess.Popen(cmd, cwd=cwd, stdout=stdout, stderr=stderr,
+                                 env=env, start_new_session=True)
+        manifest["pid"] = child.pid
+        atomic_json(launch_dir / "launch.json", manifest)
+        try:
+            child.wait(timeout=timeout_s)
+        except subprocess.TimeoutExpired:
+            timed_out = True
+            if os.name == "posix":
+                os.killpg(child.pid, signal.SIGTERM)
+            else:
+                child.terminate()
+            try:
+                child.wait(timeout=20)
+            except subprocess.TimeoutExpired:
+                if os.name == "posix":
+                    os.killpg(child.pid, signal.SIGKILL)
+                else:
+                    child.kill()
+                child.wait()
+        stdout.flush()
+        stderr.flush()
+        os.fsync(stdout.fileno())
+        os.fsync(stderr.fileno())
+    stderr_text = stderr_path.read_text(encoding="utf-8", errors="replace")
+    child_status = _load_json(output_dir / "status.json")
+    completion = _load_json(output_dir / "completion.json")
+    verdict = process_verdict(return_code=child.returncode, timed_out=timed_out,
+                              stderr_text=stderr_text, child_status=child_status,
+                              completion=completion)
+    result = dict(manifest, ended=utc_now(), return_code=child.returncode,
+                  timed_out=timed_out, wall_seconds=time.monotonic() - started,
+                  child_status=child_status, completion=completion, **verdict,
+                  stdout_sha256=sha256_file(stdout_path), stderr_sha256=sha256_file(stderr_path))
+    atomic_json(launch_dir / "result.json", result)
+    return result
