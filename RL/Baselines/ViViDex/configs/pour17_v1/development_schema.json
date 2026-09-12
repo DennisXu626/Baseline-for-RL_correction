@@ -1,0 +1,100 @@
+{
+  "schema": "pour17_state_v2",
+  "observation_dim": 544,
+  "action_dim": 58,
+  "fields": [
+    {
+      "name": "joint_q_rad",
+      "start": 0,
+      "stop": 58
+    },
+    {
+      "name": "joint_qd_rad_s",
+      "start": 58,
+      "stop": 116
+    },
+    {
+      "name": "wrist_pose_velocity",
+      "start": 116,
+      "stop": 142
+    },
+    {
+      "name": "object_pose_velocity",
+      "start": 142,
+      "stop": 168
+    },
+    {
+      "name": "target_wrist_pose",
+      "start": 168,
+      "stop": 182
+    },
+    {
+      "name": "target_object_pose",
+      "start": 182,
+      "stop": 196
+    },
+    {
+      "name": "target_ten_landmarks",
+      "start": 196,
+      "stop": 256
+    },
+    {
+      "name": "wrist_relative_object",
+      "start": 256,
+      "stop": 270
+    },
+    {
+      "name": "target_wrist_relative_object",
+      "start": 270,
+      "stop": 284
+    },
+    {
+      "name": "actual_palm_five_tips",
+      "start": 284,
+      "stop": 320
+    },
+    {
+      "name": "actual_hand_rot_velocity",
+      "start": 320,
+      "stop": 440
+    },
+    {
+      "name": "hand_points_minus_object",
+      "start": 440,
+      "stop": 476
+    },
+    {
+      "name": "final_object_goal_xyz",
+      "start": 476,
+      "stop": 482
+    },
+    {
+      "name": "palm_minus_final_goal",
+      "start": 482,
+      "stop": 488
+    },
+    {
+      "name": "object_minus_final_goal",
+      "start": 488,
+      "stop": 494
+    },
+    {
+      "name": "future_object_goals_1_5_10_quat_then_xyz",
+      "start": 494,
+      "stop": 536
+    },
+    {
+      "name": "phase_sin_cos_1_4_6_8",
+      "start": 536,
+      "stop": 544
+    }
+  ],
+  "coordinates": "per-env fixed world frame; xyz metres, q radians; quaternions wxyz",
+  "side_order": [
+    "right/bottle",
+    "left/cup"
+  ],
+  "future": "reference index offsets 1,5,10; clamp to last; per offset side then wxyz,xyz",
+  "clipping": "no observation clipping; finite required; actions clipped [-1,1]",
+  "images_in_policy": false
+}

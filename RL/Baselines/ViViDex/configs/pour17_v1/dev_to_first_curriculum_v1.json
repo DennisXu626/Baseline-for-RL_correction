@@ -1,0 +1,15 @@
+{
+  "authorization": "DEV_TO_FIRST_CURRICULUM_V1",
+  "development_only": true,
+  "seed": 1701,
+  "resume_steps": 262144,
+  "midpoint_steps": 524288,
+  "target_steps": 1003520,
+  "maximum_new_transitions": 741376,
+  "training_wall_cap_seconds": 14400,
+  "fixed_diagnostic_wall_cap_seconds": 1200,
+  "fixed_episode_seeds": [100000, 100024],
+  "fixed_modes": ["stochastic", "deterministic"],
+  "curriculum_threshold_strictly_greater_than": 0.95,
+  "formal_3m_approved": false
+}

@@ -1,0 +1,108 @@
+{
+  "status": "PROPOSED — wrist-zero hand-local calibration candidate; formula scope clarified only",
+  "candidate_id": "proposed_wrist_zero_hand_local_calibration_v2",
+  "change_from_v1": {
+    "scope": "documentation/schema correction only; runtime logic and all numeric calibration values unchanged",
+    "previous_path": "D:/UCBP/RL/Baselines/ViViDex/configs/m1a_wrist_zero_hand_local_calibration_candidate_v1.json",
+    "previous_sha256": "6506ed41389f8d56771118bd73c5f3e3c0c984675ea9cd26dc9f0a522c711149",
+    "retained_evidence_path": "D:/UCBP/RL/Baselines/ViViDex/artifacts/m1a_wrist_zero_hand_local_calibration_candidate_v1/m1a_wrist_zero_hand_local_calibration_audit_v1.json",
+    "retained_evidence_sha256": "b102a28d683d453785118d50e62f43d4afa01ac17b16cd6366612c3ddb405cfd"
+  },
+  "hand_local_definition_id": "proposed_wrist_zero_global_hand_local_v1",
+  "paths": {
+    "mano_model": "D:/UCBP/RL/Baselines/ViViDex/upstream/vividex_sapien/mano/assets/MANO_LEFT.pkl",
+    "decoder_and_fk_implementation": "D:/UCBP/RL/Baselines/ViViDex/diagnostics/m1a_full_mano_decode_audit.py",
+    "mano_selector_source": "D:/UCBP/RL/Baselines/ViViDex/upstream/vividex_sapien/mano/manolayer.py",
+    "candidate_urdf": "D:/UCBP/RL/Worktrees/RL-Correction-Step4-Publish/datasets/vega_urdf/vega_1p_sharpa/vega_1p_sharpa_fix.urdf",
+    "previous_candidate_config": "D:/UCBP/RL/Baselines/ViViDex/configs/m1a_left_landmark_calibration_candidate_v1.json",
+    "hand_local_diagnostic_samples": "D:/UCBP/RL/Baselines/ViViDex/artifacts/m1a_hand_local_candidate_v1/m1a_hand_local_diagnostic_samples_v1.npz"
+  },
+  "sha256": {
+    "mano_model": "c4022f7083f2ca7c78b2b3d595abbab52debd32b09d372b16923a801f0ea6a30",
+    "decoder_and_fk_implementation": "2f48bb2e1f0983ba3376ca3595a540b56eaf8fcf37bfe5cf0ad5ebcb2ef62ecd",
+    "mano_selector_source": "ac89167559ee134b37d0d0ac6f31ff50f2bfb33c56938c00f7bd4ed98bfaa2fe",
+    "candidate_urdf": "968b41f8647ddd6a6e1b51f7ee8702fc44c16965680d67cf2e9a70f9d60c76db",
+    "previous_candidate_config": "9f71748a78e895fdce4d574210ac6291fcca729d8f8d7e764af71cab5ac0b518",
+    "hand_local_diagnostic_samples": "77d4bc3513b6868d9493ea9ca87695ceae7862d0b99e5d5b1e5be5545722ff7b"
+  },
+  "canonical": {
+    "mano": {
+      "beta": [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0],
+      "pose45": "45 zeros",
+      "global_aa": [0.0, 0.0, 0.0],
+      "trans": [0.0, 0.0, 0.0],
+      "variant": "proposed_raw_pose",
+      "variant_scope": "retains the previous calibration canonical only; does not select real-input mean semantics",
+      "left_shapedirs_x_flip": true
+    },
+    "sharpa": {
+      "q": "all candidate left Sharpa joints zero",
+      "urdf": "candidate_urdf"
+    },
+    "fit_count": 1,
+    "prohibited_refits": ["per-frame", "per-beta", "per-mean-variant"]
+  },
+  "hand_local": {
+    "origin": "same-decode joints21[0] wrist",
+    "axes": "candidate MANO model axes at global_aa=0",
+    "general_sample_formula": "P_H = D(beta, pose45, global_aa=0, trans=0; variant) - D(beta, pose45, global_aa=0, trans=0; variant).joints21[0]",
+    "canonical_only_formula": "Pcanonical_H = Pcanonical - w_ref",
+    "w_ref_scope": "the single beta=0, pose45=0, proposed_raw_pose calibration canonical only",
+    "scale_normalization": false
+  },
+  "sharpa_target_frame": {
+    "root_link": "left_hand_C_MC",
+    "root_transform_at_q0": "identity",
+    "note": "reuse existing candidate FK and target coordinates; not wrist, EE, or palm-mean root"
+  },
+  "axis_construction": {
+    "origin": "mean(index_MCP,middle_MCP,ring_MCP,pinky_MCP)",
+    "x": "normalize(middle_MCP - wrist_or_root)",
+    "y_raw": "index_MCP - pinky_MCP",
+    "z": "normalize(cross(x,y_raw))",
+    "y": "normalize(cross(z,x))",
+    "basis": "B=[x y z] as columns",
+    "degenerate_vector_threshold": 1e-8
+  },
+  "transform": {
+    "scale": 1.0,
+    "unit": "meter",
+    "R_S_from_H": [
+      [-0.014021578466266971, -0.9989024597392235, 0.044690840943569454],
+      [-0.136442201351016, -0.042365752788848576, -0.9897417181674839],
+      [0.9905487979033658, -0.019975457881192, -0.13569841581475298]
+    ],
+    "t_S_from_H_m": [-0.0020081801195304307, -0.001578327634321078, 0.009231794169036217],
+    "formula_column_vectors": "A_new(p_H)=R_S_from_H @ p_H + t_S_from_H_m",
+    "fitting": "single canonical basis construction only; no geometric fit, scale adjustment, or visual tuning"
+  },
+  "old_coordinate_relation": {
+    "w_ref_m": [-0.09566993092407175, 0.006383428857461437, 0.006186305280135195],
+    "p_old": "p_H + w_ref",
+    "expected_R_new": "R_old",
+    "expected_t_new": "t_old + R_old @ w_ref"
+  },
+  "algebra_tolerances": {
+    "orthogonality_fro_lte": 1e-10,
+    "determinant_abs_error_lte": 1e-10,
+    "rotation_max_abs_lte": 1e-10,
+    "translation_and_point_max_abs_m_lte": 1e-10,
+    "scope": "coordinate algebra only; not anatomical or robot geometry acceptance"
+  },
+  "diagnostic_sample_application": {
+    "source": "hand_local_diagnostic_samples",
+    "cases": ["neutral", "index_mcp_local_rotation", "nonzero_betas", "global_rotation_translation", "real_frame_0", "real_frame_71", "real_frame_141"],
+    "variants": ["proposed_raw_pose", "proposed_plus_hands_mean"],
+    "transform_policy": "apply the same fixed A_new to every sample and both variants; no refit",
+    "nonzero_beta_policy": "use each sample's own same-decode wrist-zero hand-local points; do not use canonical w_ref and do not recalibrate"
+  },
+  "not_applicable_to": [
+    "historical HaWoR or author coordinate reconstruction",
+    "mean-branch selection",
+    "thumb-middle definition",
+    "anatomical landmark approval",
+    "authoritative Sharpa runtime approval",
+    "robot q or robot reference generation",
+    "replay, training, evaluation, or M0 release"
+  ]
+}

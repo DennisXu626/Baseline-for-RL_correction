@@ -1,0 +1,64 @@
+status: development_only
+task_id: pour17
+control_hz: 20
+physics_hz: 240
+decimation: 12
+episode_horizon_control_steps: 903
+reset:
+  regime: canonical_t0
+  rsi: false
+  object_clamp_steps: 0
+action:
+  dimension: 58
+  semantics: normalized_absolute_pd_target
+  order: [Rarm7, Larm7, Rfinger22, Lfinger22]
+observation:
+  dimension: 286
+  schema: observation_action_schema.json
+reward:
+  source: upstream/vividex_mujoco/hand_imitation/env/models/rewards.py:ObjectMimic
+  bimanual_reduction: mean_of_right_bottle_and_left_cup
+  hand_error_scale: 10.0
+  object_error_scale: 50.0
+  object_reward_scale: 10.0
+  lift_bonus_threshold_m: 0.02
+  lift_bonus_magnitude: 2.5
+  object_termination_m: 0.25
+ppo:
+  implementation: stable_baselines3==2.7.0
+  policy: MlpPolicy
+  gamma: 0.95
+  gae_lambda: 0.95
+  learning_rate: 1.0e-5
+  ent_coef: 0.001
+  vf_coef: 0.5
+  clip_range: 0.2
+  n_steps_per_env: 128
+  batch_size: 256
+  n_epochs: 5
+  net_arch: {pi: [256, 128], vf: [256, 128]}
+  log_std_init: -1.60
+  warm_start_mean: canonical_t0_normalized_action_bias
+wp1_short_run:
+  num_envs: 32
+  rollouts: 2
+  global_transitions: 8192
+augmentation:
+  stage0: {translation_xy_m: [0.0, 0.0], yaw_rad: 0.0}
+  stage1_and_2:
+    translation_x_delta_m: [-0.06, 0.04]
+    translation_y_delta_m: [0.0, 0.1]
+    yaw_rad: 0.0
+  scope: common_to_both_hands_and_both_objects
+  wp1_exercise: stage0_training_plus_nonidentity_offline_instance
+curriculum:
+  stages: [0, 1, 2]
+  internal_evaluation_episodes: 25
+  policy_mode: stochastic
+  promote_if_pregrasp_success_mean_strictly_greater_than: 0.95
+  final_external_evaluation_promotes_stage: false
+world_alignment:
+  status: DEVELOPMENT_CANDIDATE_NOT_FROZEN
+  method: common_center_baseline_yaw_and_centroid_translation
+  scale: 1.0
+

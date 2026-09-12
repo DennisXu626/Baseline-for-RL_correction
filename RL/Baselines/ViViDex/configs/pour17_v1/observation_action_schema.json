@@ -1,0 +1,30 @@
+{
+  "schema_version": "pour17_v1_joint_state_rl_v1",
+  "development_only": true,
+  "coordinate_frame": "env-local; env_origin is removed exactly once from measured world positions",
+  "units": {"position": "m", "rotation": "xyz+wxyz", "joint": "rad", "velocity": "m/s or rad/s"},
+  "observation": {
+    "dimension": 286,
+    "fields_in_order": [
+      {"name": "joint_q", "width": 58, "source": "simulator measured articulation state"},
+      {"name": "joint_qd", "width": 58, "source": "simulator measured articulation state"},
+      {"name": "wrist_pose_velocity", "width": 26, "shape": [2, 13], "side_order": ["right", "left"], "source": "simulator measured body state"},
+      {"name": "object_pose_velocity", "width": 26, "shape": [2, 13], "object_order": ["object_1_bottle", "object_0_cup"], "source": "simulator measured rigid-body state"},
+      {"name": "target_wrist_pose", "width": 14, "shape": [2, 7], "side_order": ["right", "left"], "source": "ViViDex adapter reference"},
+      {"name": "target_object_pose", "width": 14, "shape": [2, 7], "object_order": ["object_1_bottle", "object_0_cup"], "source": "ViViDex adapter reference"},
+      {"name": "target_hand_landmarks", "width": 60, "shape": [2, 10, 3], "side_order": ["right", "left"], "source": "ViViDex ten-point reference"},
+      {"name": "actual_wrist_to_object_pose", "width": 14, "shape": [2, 7], "source": "computed only from measured state"},
+      {"name": "target_wrist_to_object_pose", "width": 14, "shape": [2, 7], "source": "computed only from reference"},
+      {"name": "common_phase_sin_cos", "width": 2, "source": "reference index"}
+    ]
+  },
+  "action": {
+    "dimension": 58,
+    "input_range": [-1.0, 1.0],
+    "mapping": "lower + (action+1)/2*(upper-lower)",
+    "semantics": "absolute joint position PD target",
+    "joint_order": "world_manifest.robot.controlled_joint_names_in_order",
+    "layout": ["R_arm_j1..7", "L_arm_j1..7", "right_fingers22", "left_fingers22"]
+  },
+  "excluded": ["zero padding to 358", "Ours robot reference", "confidence", "Dexonomy prior", "cert_arm", "training reward", "H2S2R reference"]
+}

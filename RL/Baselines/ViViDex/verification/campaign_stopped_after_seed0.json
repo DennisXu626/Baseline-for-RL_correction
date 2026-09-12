@@ -1,0 +1,71 @@
+{
+  "started_utc": "2026-09-06T12:57:59.582359+00:00",
+  "seeds": [
+    0
+  ],
+  "requested_steps_per_seed": 60000000,
+  "checkpoint_rule": "final updated model",
+  "expected_steps_after_full_ppo_rollout": 60002304,
+  "eval_reset_seeds": [
+    200000,
+    200299
+  ],
+  "episodes_per_seed": 300,
+  "source_commit": "9790140170d8be49b828ab214ce3537a2475fcea",
+  "patch_sha256": "d7aa9de63fb01d4fbca5d2158152239e255c969c3af14ec7a16ec5d0c8253fb4",
+  "resume_model": null,
+  "state": "stopped_after_seed0",
+  "runs": [
+    {
+      "seed": 0,
+      "state": "complete",
+      "run_dir": "/media/msc-auto/HDD/users/kailang/baselines/vividex_mujoco/outputs/pour_multiseed_60m_20260906_01/seed_0",
+      "command": [
+        "/media/msc-auto/HDD/users/kailang/baselines/vividex_mujoco/env/bin/python",
+        "-u",
+        "/media/msc-auto/HDD/users/kailang/baselines/vividex_mujoco/pour_multiseed_source/tools/train.py",
+        "env=dexycb_pour",
+        "seed=0",
+        "resume_model=null",
+        "total_timesteps=60000000",
+        "hydra.run.dir=/media/msc-auto/HDD/users/kailang/baselines/vividex_mujoco/outputs/pour_multiseed_60m_20260906_01/seed_0"
+      ],
+      "mean_particle_fraction": 0.8469444444444444,
+      "actual_steps": 60002304,
+      "checkpoint_sha256": "d988b1b19a9610c8c65b4bda887bda59f708134281c490a69abcdb66484fd120"
+    },
+    {
+      "seed": 1,
+      "state": "cancelled_by_user",
+      "run_dir": "/media/msc-auto/HDD/users/kailang/baselines/vividex_mujoco/outputs/pour_multiseed_60m_20260906_01/seed_1",
+      "command": [
+        "/media/msc-auto/HDD/users/kailang/baselines/vividex_mujoco/env/bin/python",
+        "-u",
+        "/media/msc-auto/HDD/users/kailang/baselines/vividex_mujoco/pour_multiseed_source/tools/train.py",
+        "env=dexycb_pour",
+        "seed=1",
+        "resume_model=null",
+        "total_timesteps=60000000",
+        "hydra.run.dir=/media/msc-auto/HDD/users/kailang/baselines/vividex_mujoco/outputs/pour_multiseed_60m_20260906_01/seed_1"
+      ],
+      "partial_steps_at_stop": 13918208
+    }
+  ],
+  "trajectory_sha256": "1d71e53925f983758c63f40571b2649d8574a8394b3781a565cec72445a21dd2",
+  "cancelled_seeds": [
+    1,
+    2,
+    3,
+    4
+  ],
+  "scope_changed_utc": "2026-09-06T13:13:06.163354+00:00",
+  "scope_change_reason": "User reduced time budget to two seeds; retain active seed 0",
+  "controller_pid": 1182502,
+  "retained_trainer_pid": 1179296,
+  "completed_seeds": [
+    0
+  ],
+  "stopped_utc": "2026-09-08T11:02:27.6461166Z",
+  "stop_reason": "User stopped seed 1 after seed 0 completed and passed fixed evaluation",
+  "controller_stopped": true
+}

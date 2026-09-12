@@ -1,0 +1,150 @@
+{
+  "kind": "DEV_EXTEND_262144_V1_DEVELOPMENT_ONLY",
+  "extension_result_archive_remote_and_local_sha256": "951dddddd5b1abc577849ab1bce9f4b6230f2a3e16736e4cf811d1e251afd22a",
+  "files": {
+    "all_learning_windows.json": {
+      "bytes": 50326,
+      "sha256": "ef69074482f1000e8963a17ee95f9e879408ec58f8eccf6b48afe54cd1e34ea0"
+    },
+    "DEVELOPMENT_EXTENSION_REPORT.md": {
+      "bytes": 7314,
+      "sha256": "11aed7756f7fc11d345fbe348d892cfd6a27726e23e988305c608b474a5c209f"
+    },
+    "extension_contract.json": {
+      "bytes": 14307,
+      "sha256": "2d7a2b0875cade7250f7e3b58dc814e8534615230a328332cd8443fdf82b4341"
+    },
+    "extension_deploy_v1.tar.gz": {
+      "bytes": 146869,
+      "sha256": "78e5e454bf81917018f5fbe8bd277309f89b80150035a96821391e063074b5c2"
+    },
+    "extension_learning_curves.png": {
+      "bytes": 363772,
+      "sha256": "8ce13e57238b27a049da50a8e5689c6fb06fea2b910222a7415d12e44f661c3e"
+    },
+    "extension_result_v1.tar.gz": {
+      "bytes": 9175811,
+      "sha256": "951dddddd5b1abc577849ab1bce9f4b6230f2a3e16736e4cf811d1e251afd22a"
+    },
+    "fixed_endpoint_paired_errors.png": {
+      "bytes": 524425,
+      "sha256": "2160bb71af2d96aed7a5089d22324b67be56b2d577b125d7c00b1e87e6acfe2c"
+    },
+    "fixed_endpoint_pairs.json": {
+      "bytes": 26628,
+      "sha256": "1cfd5898cd5b884e16aa14819f2147014e63227109b06f3069906a2961b00007"
+    },
+    "fixed_endpoint_summary.json": {
+      "bytes": 3585,
+      "sha256": "9e18e684bed5aeda2214958b3897e03aa1270bc12392aeaaa10f0046bb37b732"
+    },
+    "remote\\development_training_ledger.json": {
+      "bytes": 1199,
+      "sha256": "50b1d22a28692764b25db6ce6bc88f86b665f97efb078c9fd99ce336bb243fa4"
+    },
+    "remote\\eval_after_deterministic\\policy_diagnostic.json": {
+      "bytes": 695633,
+      "sha256": "c5378fc0566a7a79c3b4b76975563eeb28cef9df7b53bac9c34865bf2b73a121"
+    },
+    "remote\\eval_after_deterministic.log": {
+      "bytes": 9366,
+      "sha256": "aa5fabe0823aef6f7a23d4720bff0666066d340a46a8d53a94fd8dba91145752"
+    },
+    "remote\\eval_after_stochastic\\policy_diagnostic.json": {
+      "bytes": 683855,
+      "sha256": "ec651e0ed943bc83c8f5285e389df9ae6ea70948501524ceb5ec8eca4f4aea1b"
+    },
+    "remote\\eval_after_stochastic.log": {
+      "bytes": 9357,
+      "sha256": "5d447971aa988d632209a7a865aaf0ab7ccaef923e9159a7bc2c050adb9daee7"
+    },
+    "remote\\eval_before_deterministic\\policy_diagnostic.json": {
+      "bytes": 696876,
+      "sha256": "a68fea76aa61b6b84bc13f19e001a880c2763bdbd8269f70bdceb10c1e5bf42a"
+    },
+    "remote\\eval_before_deterministic.log": {
+      "bytes": 9369,
+      "sha256": "5d0802ccab655b03b2b2a02b2af4dd1e326f9fafd4110977a52f048cd5d75dbf"
+    },
+    "remote\\eval_before_stochastic\\policy_diagnostic.json": {
+      "bytes": 692203,
+      "sha256": "074f730b5fa7c347fba4bf4ed31be304f1a3fbad36166ca342aefaedff4dccce"
+    },
+    "remote\\eval_before_stochastic.log": {
+      "bytes": 9360,
+      "sha256": "62af4bb88c346619af83c0b4e895ff967c33cea0b7d9f11eb8ea34451f0ae60b"
+    },
+    "remote\\extension_job.json": {
+      "bytes": 9245,
+      "sha256": "8ecca79220a3fd30fca534cc5cb257167e65aff2b04f1a51776804427d1e37ae"
+    },
+    "remote\\training\\completed_steps.txt": {
+      "bytes": 7,
+      "sha256": "921cab4dd8bd56be04bea95b10a9d25eaeade78e2c888f18e721499bddcf8d71"
+    },
+    "remote\\training\\final_model.zip": {
+      "bytes": 4381665,
+      "sha256": "92868d6525087ae36da2acb09982432af074d4a6d2c5208a40de7f4039b19483"
+    },
+    "remote\\training\\latest_training_state.pt": {
+      "bytes": 17749,
+      "sha256": "5818d26401bb7745ef814f9b06e7f4869fc206d96bc47f745f8dd9dccdc37b80"
+    },
+    "remote\\training\\latest_updated_model.zip": {
+      "bytes": 4381665,
+      "sha256": "92868d6525087ae36da2acb09982432af074d4a6d2c5208a40de7f4039b19483"
+    },
+    "remote\\training\\observation_action_schema.json": {
+      "bytes": 2078,
+      "sha256": "08485687564f1cca7dd8e05bac5513225e5074c444b3fa588e542481081c0ef9"
+    },
+    "remote\\training\\ppo_update_result.json": {
+      "bytes": 2935766,
+      "sha256": "7193fba1ec18e130875d349e72de60ac72f28a80f1b27a1c50ffb566df34c0f2"
+    },
+    "remote\\training\\pregrasp_boundary_trace.json": {
+      "bytes": 839054,
+      "sha256": "f6c398ca0cc2d60e447dd3904e6c024d18d8a7f638cbe6d5170d386426553e0b"
+    },
+    "remote\\training\\progress.json": {
+      "bytes": 113,
+      "sha256": "b4fad2c4149b6390d020032728b35457544dc4b2964273daea79c5adf6bf12b3"
+    },
+    "remote\\training\\reload_fixed_observation.npy": {
+      "bytes": 69760,
+      "sha256": "40fbab50497dfe1d93d86cb0888637aec3aab91d888c8d296f6aac68fabc9903"
+    },
+    "remote\\training\\resolved_config.yaml": {
+      "bytes": 1719,
+      "sha256": "ecaea984c5a1bbea5033d8f510c60a51e5f9955b7348cd6d8c1e26e3bf886311"
+    },
+    "remote\\training\\rollout_windows.json": {
+      "bytes": 2720245,
+      "sha256": "f818c619e697e1bc23a45713d2e2135820cb35b28b2c414795eb4abcc448b225"
+    },
+    "remote\\training\\training_reset_samples.json": {
+      "bytes": 1676732,
+      "sha256": "f05cec283305fd6a4fcf262d9808921d0efac4f474d5ca6f9f7d10290cf3bc97"
+    },
+    "remote\\training\\training_state.pt": {
+      "bytes": 17693,
+      "sha256": "6de5b4073d0b9ea9effb0b7323fc5cb8fda8d7ac8e9fd77479437d3ca38c08c5"
+    },
+    "remote\\training\\world_binding.json": {
+      "bytes": 64977,
+      "sha256": "e41d75750ba454e372fbdb4f1d3f9cf7b1db6d8e653a643ebc0560b9fa2b8f13"
+    },
+    "remote\\training.log": {
+      "bytes": 56306,
+      "sha256": "e17ce06db9f7601170f914f744c0fd5a54bca0ce4597ed69408467c4a4694ce0"
+    },
+    "seal_extension.py": {
+      "bytes": 3722,
+      "sha256": "f207a98d041e359e7b0ce3d60f9b3024a5d680104fc6ab5f3ded97d8c8a25f4f"
+    },
+    "summarize_extension.py": {
+      "bytes": 9222,
+      "sha256": "6e33f2080533a2b963cd6a9169e8480e5612515f4baf65207fcb0b1dc16330f9"
+    }
+  }
+}

@@ -1,0 +1,99 @@
+{
+  "status": "PROPOSED — candidate left Sharpa FK/limit interface; internal consistency only",
+  "candidate_id": "proposed_sharpa_left_22joint_fk_v1",
+  "root_link": "left_hand_C_MC",
+  "paths": {
+    "bundle_archive": "D:/UCBP/pour17_baseline_bundle_20260829.tar.gz",
+    "candidate_sharpa_urdf": "D:/UCBP/RL/Worktrees/RL-Correction-Step4-Publish/datasets/vega_urdf/vega_1p_sharpa/vega_1p_sharpa_fix.urdf",
+    "candidate_fk_interface": "D:/UCBP/RL/Baselines/ViViDex/diagnostics/m1a_sharpa_left_fk_candidate_v1.py",
+    "diagnostic_script": "D:/UCBP/RL/Baselines/ViViDex/diagnostics/m1a_sharpa_left_fk_audit_v1.py",
+    "existing_zero_frame_implementation": "D:/UCBP/RL/Baselines/ViViDex/diagnostics/m1a_full_mano_decode_audit.py",
+    "existing_long_finger_landmark_candidate": "D:/UCBP/RL/Baselines/ViViDex/configs/m1a_left_landmark_calibration_candidate_v1.json",
+    "existing_thumb_landmark_candidate": "D:/UCBP/RL/Baselines/ViViDex/configs/m1a_thumb_internal_segment_midpoint_candidate_v1.json"
+  },
+  "expected_sha256": {
+    "bundle_archive": "77edc03ca5be028fcbd8b6d978fd1a4072582b5c9904d603f5c86b29a70210f6",
+    "manifest_member": "2339f7a9ca3eda294908e392744c798c06fbbbc0edd79250bd5e43aaa828dcd5",
+    "candidate_sharpa_urdf": "968b41f8647ddd6a6e1b51f7ee8702fc44c16965680d67cf2e9a70f9d60c76db",
+    "candidate_fk_interface": "1824dd4eaeef280c6d19008e6707f25935889faa9f219960778617ebcbc82c64",
+    "existing_zero_frame_implementation": "2f48bb2e1f0983ba3376ca3595a540b56eaf8fcf37bfe5cf0ad5ebcb2ef62ecd",
+    "existing_long_finger_landmark_candidate": "9f71748a78e895fdce4d574210ac6291fcca729d8f8d7e764af71cab5ac0b518",
+    "existing_thumb_landmark_candidate": "537e2ffe25a34ec8727d99a91f3bd273062d6c437c6854da49ea2b6f45cde3c5"
+  },
+  "manifest": {
+    "archive_member": "pour17/world/world_manifest.json",
+    "controlled_names_field": "robot.controlled_joint_names_in_order",
+    "controlled_limits_field": "robot.controlled_joint_limits_rad",
+    "left_hand_slice_zero_based_half_open": [36, 58],
+    "unused_same_name_extracted_copy": {
+      "path": "D:/UCBP/_inspection/pour17_baseline_bundle_20260829/pour17/world/world_manifest.json",
+      "observed_sha256": "44519e35df44b9fe0f83dbcab4ba064b0d22a0b1a9e4bedab7491f7bd9ab3ec3",
+      "reason": "not the manifest member registered by BASELINE_PLAN.md and the bundle HASHES.txt"
+    }
+  },
+  "joint_order": [
+    "left_thumb_CMC_FE",
+    "left_thumb_CMC_AA",
+    "left_thumb_MCP_FE",
+    "left_thumb_MCP_AA",
+    "left_thumb_IP",
+    "left_index_MCP_FE",
+    "left_index_MCP_AA",
+    "left_index_PIP",
+    "left_index_DIP",
+    "left_middle_MCP_FE",
+    "left_middle_MCP_AA",
+    "left_middle_PIP",
+    "left_middle_DIP",
+    "left_ring_MCP_FE",
+    "left_ring_MCP_AA",
+    "left_ring_PIP",
+    "left_ring_DIP",
+    "left_pinky_CMC",
+    "left_pinky_MCP_FE",
+    "left_pinky_MCP_AA",
+    "left_pinky_PIP",
+    "left_pinky_DIP"
+  ],
+  "landmarks": [
+    {"name": "thumb_tip", "link": "left_thumb_fingertip", "local_m": [0.0, 0.0, 0.0]},
+    {"name": "thumb_middle", "link": "left_thumb_PP", "local_m": [0.0195, 0.0, 0.0]},
+    {"name": "index_tip", "link": "left_index_fingertip", "local_m": [0.0, 0.0, 0.0]},
+    {"name": "index_middle", "link": "left_index_MP", "local_m": [0.01575, 0.0, 0.0]},
+    {"name": "middle_tip", "link": "left_middle_fingertip", "local_m": [0.0, 0.0, 0.0]},
+    {"name": "middle_middle", "link": "left_middle_MP", "local_m": [0.01575, 0.0, 0.0]},
+    {"name": "ring_tip", "link": "left_ring_fingertip", "local_m": [0.0, 0.0, 0.0]},
+    {"name": "ring_middle", "link": "left_ring_MP", "local_m": [0.01575, 0.0, 0.0]},
+    {"name": "pinky_tip", "link": "left_pinky_fingertip", "local_m": [0.0, 0.0, 0.0]},
+    {"name": "pinky_middle", "link": "left_pinky_MP", "local_m": [0.01575, 0.0, 0.0]}
+  ],
+  "input_contract": {
+    "q_rad_shape": [22],
+    "finite_required": true,
+    "limit_source": "registered manifest member soft limits by joint name and order",
+    "limit_comparison_tolerance_rad": 1e-6,
+    "clip": false
+  },
+  "validation": {
+    "q_mid_formula": "(lower + upper) / 2",
+    "single_joint_delta": "0.1 * (upper - lower), added to q_mid",
+    "position_max_abs_m_lte": 1e-8,
+    "rotation_orthogonality_and_det_abs_lte": 1e-10,
+    "zero_frame_source": "existing_zero_frame_implementation.sharpa_zero_frames",
+    "single_joint_expected_relation": "baseline root-frame axis and pivot plus an independent Rodrigues implementation"
+  },
+  "scope": {
+    "ten_points": "authorized only for this candidate FK interface test; formal method contract remains pending",
+    "authoritative_runtime_equivalence": "UNKNOWN/BLOCKED",
+    "m1a_retargeting": "NOT TESTED",
+    "mean_branch_selected": false,
+    "m0": "BLOCKED",
+    "prohibited": [
+      "real MANO sequence access",
+      "MANO mean branch selection",
+      "MANO-to-Sharpa correspondence or A evaluation",
+      "optimizer, robot q/reference generation, replay, training",
+      "claiming candidate URDF or manifest equals the authoritative runtime"
+    ]
+  }
+}

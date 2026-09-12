@@ -1,0 +1,2710 @@
+{
+  "episodes": 300,
+  "train_seed": 0,
+  "checkpoint_sha256": "d988b1b19a9610c8c65b4bda887bda59f708134281c490a69abcdb66484fd120",
+  "mean_particle_fraction": 0.8469444444444444,
+  "requested_train_steps": 60000000,
+  "actual_train_steps": 60002304,
+  "records": [
+    {
+      "episode": 0,
+      "reset_seed": 200000,
+      "steps": 100,
+      "initial_physics_sha256": "2c253d268f274610134a7a0131fbf74a507bb6726c1b2c37193efe293c352e2c",
+      "particles_inside": 9,
+      "particles_total": 12,
+      "fraction": 0.75
+    },
+    {
+      "episode": 1,
+      "reset_seed": 200001,
+      "steps": 100,
+      "initial_physics_sha256": "2c253d268f274610134a7a0131fbf74a507bb6726c1b2c37193efe293c352e2c",
+      "particles_inside": 9,
+      "particles_total": 12,
+      "fraction": 0.75
+    },
+    {
+      "episode": 2,
+      "reset_seed": 200002,
+      "steps": 100,
+      "initial_physics_sha256": "2c253d268f274610134a7a0131fbf74a507bb6726c1b2c37193efe293c352e2c",
+      "particles_inside": 7,
+      "particles_total": 12,
+      "fraction": 0.5833333333333334
+    },
+    {
+      "episode": 3,
+      "reset_seed": 200003,
+      "steps": 100,
+      "initial_physics_sha256": "2c253d268f274610134a7a0131fbf74a507bb6726c1b2c37193efe293c352e2c",
+      "particles_inside": 11,
+      "particles_total": 12,
+      "fraction": 0.9166666666666666
+    },
+    {
+      "episode": 4,
+      "reset_seed": 200004,
+      "steps": 100,
+      "initial_physics_sha256": "2c253d268f274610134a7a0131fbf74a507bb6726c1b2c37193efe293c352e2c",
+      "particles_inside": 12,
+      "particles_total": 12,
+      "fraction": 1.0
+    },
+    {
+      "episode": 5,
+      "reset_seed": 200005,
+      "steps": 100,
+      "initial_physics_sha256": "2c253d268f274610134a7a0131fbf74a507bb6726c1b2c37193efe293c352e2c",
+      "particles_inside": 9,
+      "particles_total": 12,
+      "fraction": 0.75
+    },
+    {
+      "episode": 6,
+      "reset_seed": 200006,
+      "steps": 100,
+      "initial_physics_sha256": "2c253d268f274610134a7a0131fbf74a507bb6726c1b2c37193efe293c352e2c",
+      "particles_inside": 11,
+      "particles_total": 12,
+      "fraction": 0.9166666666666666
+    },
+    {
+      "episode": 7,
+      "reset_seed": 200007,
+      "steps": 100,
+      "initial_physics_sha256": "2c253d268f274610134a7a0131fbf74a507bb6726c1b2c37193efe293c352e2c",
+      "particles_inside": 9,
+      "particles_total": 12,
+      "fraction": 0.75
+    },
+    {
+      "episode": 8,
+      "reset_seed": 200008,
+      "steps": 100,
+      "initial_physics_sha256": "2c253d268f274610134a7a0131fbf74a507bb6726c1b2c37193efe293c352e2c",
+      "particles_inside": 10,
+      "particles_total": 12,
+      "fraction": 0.8333333333333334
+    },
+    {
+      "episode": 9,
+      "reset_seed": 200009,
+      "steps": 100,
+      "initial_physics_sha256": "2c253d268f274610134a7a0131fbf74a507bb6726c1b2c37193efe293c352e2c",
+      "particles_inside": 12,
+      "particles_total": 12,
+      "fraction": 1.0
+    },
+    {
+      "episode": 10,
+      "reset_seed": 200010,
+      "steps": 100,
+      "initial_physics_sha256": "2c253d268f274610134a7a0131fbf74a507bb6726c1b2c37193efe293c352e2c",
+      "particles_inside": 8,
+      "particles_total": 12,
+      "fraction": 0.6666666666666666
+    },
+    {
+      "episode": 11,
+      "reset_seed": 200011,
+      "steps": 100,
+      "initial_physics_sha256": "2c253d268f274610134a7a0131fbf74a507bb6726c1b2c37193efe293c352e2c",
+      "particles_inside": 7,
+      "particles_total": 12,
+      "fraction": 0.5833333333333334
+    },
+    {
+      "episode": 12,
+      "reset_seed": 200012,
+      "steps": 100,
+      "initial_physics_sha256": "2c253d268f274610134a7a0131fbf74a507bb6726c1b2c37193efe293c352e2c",
+      "particles_inside": 12,
+      "particles_total": 12,
+      "fraction": 1.0
+    },
+    {
+      "episode": 13,
+      "reset_seed": 200013,
+      "steps": 100,
+      "initial_physics_sha256": "2c253d268f274610134a7a0131fbf74a507bb6726c1b2c37193efe293c352e2c",
+      "particles_inside": 9,
+      "particles_total": 12,
+      "fraction": 0.75
+    },
+    {
+      "episode": 14,
+      "reset_seed": 200014,
+      "steps": 100,
+      "initial_physics_sha256": "2c253d268f274610134a7a0131fbf74a507bb6726c1b2c37193efe293c352e2c",
+      "particles_inside": 9,
+      "particles_total": 12,
+      "fraction": 0.75
+    },
+    {
+      "episode": 15,
+      "reset_seed": 200015,
+      "steps": 100,
+      "initial_physics_sha256": "2c253d268f274610134a7a0131fbf74a507bb6726c1b2c37193efe293c352e2c",
+      "particles_inside": 11,
+      "particles_total": 12,
+      "fraction": 0.9166666666666666
+    },
+    {
+      "episode": 16,
+      "reset_seed": 200016,
+      "steps": 100,
+      "initial_physics_sha256": "2c253d268f274610134a7a0131fbf74a507bb6726c1b2c37193efe293c352e2c",
+      "particles_inside": 11,
+      "particles_total": 12,
+      "fraction": 0.9166666666666666
+    },
+    {
+      "episode": 17,
+      "reset_seed": 200017,
+      "steps": 100,
+      "initial_physics_sha256": "2c253d268f274610134a7a0131fbf74a507bb6726c1b2c37193efe293c352e2c",
+      "particles_inside": 12,
+      "particles_total": 12,
+      "fraction": 1.0
+    },
+    {
+      "episode": 18,
+      "reset_seed": 200018,
+      "steps": 100,
+      "initial_physics_sha256": "2c253d268f274610134a7a0131fbf74a507bb6726c1b2c37193efe293c352e2c",
+      "particles_inside": 12,
+      "particles_total": 12,
+      "fraction": 1.0
+    },
+    {
+      "episode": 19,
+      "reset_seed": 200019,
+      "steps": 100,
+      "initial_physics_sha256": "2c253d268f274610134a7a0131fbf74a507bb6726c1b2c37193efe293c352e2c",
+      "particles_inside": 12,
+      "particles_total": 12,
+      "fraction": 1.0
+    },
+    {
+      "episode": 20,
+      "reset_seed": 200020,
+      "steps": 100,
+      "initial_physics_sha256": "2c253d268f274610134a7a0131fbf74a507bb6726c1b2c37193efe293c352e2c",
+      "particles_inside": 11,
+      "particles_total": 12,
+      "fraction": 0.9166666666666666
+    },
+    {
+      "episode": 21,
+      "reset_seed": 200021,
+      "steps": 100,
+      "initial_physics_sha256": "2c253d268f274610134a7a0131fbf74a507bb6726c1b2c37193efe293c352e2c",
+      "particles_inside": 11,
+      "particles_total": 12,
+      "fraction": 0.9166666666666666
+    },
+    {
+      "episode": 22,
+      "reset_seed": 200022,
+      "steps": 100,
+      "initial_physics_sha256": "2c253d268f274610134a7a0131fbf74a507bb6726c1b2c37193efe293c352e2c",
+      "particles_inside": 10,
+      "particles_total": 12,
+      "fraction": 0.8333333333333334
+    },
+    {
+      "episode": 23,
+      "reset_seed": 200023,
+      "steps": 100,
+      "initial_physics_sha256": "2c253d268f274610134a7a0131fbf74a507bb6726c1b2c37193efe293c352e2c",
+      "particles_inside": 11,
+      "particles_total": 12,
+      "fraction": 0.9166666666666666
+    },
+    {
+      "episode": 24,
+      "reset_seed": 200024,
+      "steps": 100,
+      "initial_physics_sha256": "2c253d268f274610134a7a0131fbf74a507bb6726c1b2c37193efe293c352e2c",
+      "particles_inside": 8,
+      "particles_total": 12,
+      "fraction": 0.6666666666666666
+    },
+    {
+      "episode": 25,
+      "reset_seed": 200025,
+      "steps": 100,
+      "initial_physics_sha256": "2c253d268f274610134a7a0131fbf74a507bb6726c1b2c37193efe293c352e2c",
+      "particles_inside": 11,
+      "particles_total": 12,
+      "fraction": 0.9166666666666666
+    },
+    {
+      "episode": 26,
+      "reset_seed": 200026,
+      "steps": 100,
+      "initial_physics_sha256": "2c253d268f274610134a7a0131fbf74a507bb6726c1b2c37193efe293c352e2c",
+      "particles_inside": 7,
+      "particles_total": 12,
+      "fraction": 0.5833333333333334
+    },
+    {
+      "episode": 27,
+      "reset_seed": 200027,
+      "steps": 100,
+      "initial_physics_sha256": "2c253d268f274610134a7a0131fbf74a507bb6726c1b2c37193efe293c352e2c",
+      "particles_inside": 11,
+      "particles_total": 12,
+      "fraction": 0.9166666666666666
+    },
+    {
+      "episode": 28,
+      "reset_seed": 200028,
+      "steps": 100,
+      "initial_physics_sha256": "2c253d268f274610134a7a0131fbf74a507bb6726c1b2c37193efe293c352e2c",
+      "particles_inside": 9,
+      "particles_total": 12,
+      "fraction": 0.75
+    },
+    {
+      "episode": 29,
+      "reset_seed": 200029,
+      "steps": 100,
+      "initial_physics_sha256": "2c253d268f274610134a7a0131fbf74a507bb6726c1b2c37193efe293c352e2c",
+      "particles_inside": 12,
+      "particles_total": 12,
+      "fraction": 1.0
+    },
+    {
+      "episode": 30,
+      "reset_seed": 200030,
+      "steps": 100,
+      "initial_physics_sha256": "2c253d268f274610134a7a0131fbf74a507bb6726c1b2c37193efe293c352e2c",
+      "particles_inside": 12,
+      "particles_total": 12,
+      "fraction": 1.0
+    },
+    {
+      "episode": 31,
+      "reset_seed": 200031,
+      "steps": 100,
+      "initial_physics_sha256": "2c253d268f274610134a7a0131fbf74a507bb6726c1b2c37193efe293c352e2c",
+      "particles_inside": 11,
+      "particles_total": 12,
+      "fraction": 0.9166666666666666
+    },
+    {
+      "episode": 32,
+      "reset_seed": 200032,
+      "steps": 100,
+      "initial_physics_sha256": "2c253d268f274610134a7a0131fbf74a507bb6726c1b2c37193efe293c352e2c",
+      "particles_inside": 11,
+      "particles_total": 12,
+      "fraction": 0.9166666666666666
+    },
+    {
+      "episode": 33,
+      "reset_seed": 200033,
+      "steps": 100,
+      "initial_physics_sha256": "2c253d268f274610134a7a0131fbf74a507bb6726c1b2c37193efe293c352e2c",
+      "particles_inside": 12,
+      "particles_total": 12,
+      "fraction": 1.0
+    },
+    {
+      "episode": 34,
+      "reset_seed": 200034,
+      "steps": 100,
+      "initial_physics_sha256": "2c253d268f274610134a7a0131fbf74a507bb6726c1b2c37193efe293c352e2c",
+      "particles_inside": 9,
+      "particles_total": 12,
+      "fraction": 0.75
+    },
+    {
+      "episode": 35,
+      "reset_seed": 200035,
+      "steps": 100,
+      "initial_physics_sha256": "2c253d268f274610134a7a0131fbf74a507bb6726c1b2c37193efe293c352e2c",
+      "particles_inside": 10,
+      "particles_total": 12,
+      "fraction": 0.8333333333333334
+    },
+    {
+      "episode": 36,
+      "reset_seed": 200036,
+      "steps": 100,
+      "initial_physics_sha256": "2c253d268f274610134a7a0131fbf74a507bb6726c1b2c37193efe293c352e2c",
+      "particles_inside": 11,
+      "particles_total": 12,
+      "fraction": 0.9166666666666666
+    },
+    {
+      "episode": 37,
+      "reset_seed": 200037,
+      "steps": 100,
+      "initial_physics_sha256": "2c253d268f274610134a7a0131fbf74a507bb6726c1b2c37193efe293c352e2c",
+      "particles_inside": 12,
+      "particles_total": 12,
+      "fraction": 1.0
+    },
+    {
+      "episode": 38,
+      "reset_seed": 200038,
+      "steps": 100,
+      "initial_physics_sha256": "2c253d268f274610134a7a0131fbf74a507bb6726c1b2c37193efe293c352e2c",
+      "particles_inside": 10,
+      "particles_total": 12,
+      "fraction": 0.8333333333333334
+    },
+    {
+      "episode": 39,
+      "reset_seed": 200039,
+      "steps": 100,
+      "initial_physics_sha256": "2c253d268f274610134a7a0131fbf74a507bb6726c1b2c37193efe293c352e2c",
+      "particles_inside": 8,
+      "particles_total": 12,
+      "fraction": 0.6666666666666666
+    },
+    {
+      "episode": 40,
+      "reset_seed": 200040,
+      "steps": 100,
+      "initial_physics_sha256": "2c253d268f274610134a7a0131fbf74a507bb6726c1b2c37193efe293c352e2c",
+      "particles_inside": 10,
+      "particles_total": 12,
+      "fraction": 0.8333333333333334
+    },
+    {
+      "episode": 41,
+      "reset_seed": 200041,
+      "steps": 100,
+      "initial_physics_sha256": "2c253d268f274610134a7a0131fbf74a507bb6726c1b2c37193efe293c352e2c",
+      "particles_inside": 10,
+      "particles_total": 12,
+      "fraction": 0.8333333333333334
+    },
+    {
+      "episode": 42,
+      "reset_seed": 200042,
+      "steps": 100,
+      "initial_physics_sha256": "2c253d268f274610134a7a0131fbf74a507bb6726c1b2c37193efe293c352e2c",
+      "particles_inside": 11,
+      "particles_total": 12,
+      "fraction": 0.9166666666666666
+    },
+    {
+      "episode": 43,
+      "reset_seed": 200043,
+      "steps": 100,
+      "initial_physics_sha256": "2c253d268f274610134a7a0131fbf74a507bb6726c1b2c37193efe293c352e2c",
+      "particles_inside": 10,
+      "particles_total": 12,
+      "fraction": 0.8333333333333334
+    },
+    {
+      "episode": 44,
+      "reset_seed": 200044,
+      "steps": 100,
+      "initial_physics_sha256": "2c253d268f274610134a7a0131fbf74a507bb6726c1b2c37193efe293c352e2c",
+      "particles_inside": 12,
+      "particles_total": 12,
+      "fraction": 1.0
+    },
+    {
+      "episode": 45,
+      "reset_seed": 200045,
+      "steps": 100,
+      "initial_physics_sha256": "2c253d268f274610134a7a0131fbf74a507bb6726c1b2c37193efe293c352e2c",
+      "particles_inside": 12,
+      "particles_total": 12,
+      "fraction": 1.0
+    },
+    {
+      "episode": 46,
+      "reset_seed": 200046,
+      "steps": 100,
+      "initial_physics_sha256": "2c253d268f274610134a7a0131fbf74a507bb6726c1b2c37193efe293c352e2c",
+      "particles_inside": 11,
+      "particles_total": 12,
+      "fraction": 0.9166666666666666
+    },
+    {
+      "episode": 47,
+      "reset_seed": 200047,
+      "steps": 100,
+      "initial_physics_sha256": "2c253d268f274610134a7a0131fbf74a507bb6726c1b2c37193efe293c352e2c",
+      "particles_inside": 11,
+      "particles_total": 12,
+      "fraction": 0.9166666666666666
+    },
+    {
+      "episode": 48,
+      "reset_seed": 200048,
+      "steps": 100,
+      "initial_physics_sha256": "2c253d268f274610134a7a0131fbf74a507bb6726c1b2c37193efe293c352e2c",
+      "particles_inside": 9,
+      "particles_total": 12,
+      "fraction": 0.75
+    },
+    {
+      "episode": 49,
+      "reset_seed": 200049,
+      "steps": 100,
+      "initial_physics_sha256": "2c253d268f274610134a7a0131fbf74a507bb6726c1b2c37193efe293c352e2c",
+      "particles_inside": 9,
+      "particles_total": 12,
+      "fraction": 0.75
+    },
+    {
+      "episode": 50,
+      "reset_seed": 200050,
+      "steps": 100,
+      "initial_physics_sha256": "2c253d268f274610134a7a0131fbf74a507bb6726c1b2c37193efe293c352e2c",
+      "particles_inside": 10,
+      "particles_total": 12,
+      "fraction": 0.8333333333333334
+    },
+    {
+      "episode": 51,
+      "reset_seed": 200051,
+      "steps": 100,
+      "initial_physics_sha256": "2c253d268f274610134a7a0131fbf74a507bb6726c1b2c37193efe293c352e2c",
+      "particles_inside": 12,
+      "particles_total": 12,
+      "fraction": 1.0
+    },
+    {
+      "episode": 52,
+      "reset_seed": 200052,
+      "steps": 100,
+      "initial_physics_sha256": "2c253d268f274610134a7a0131fbf74a507bb6726c1b2c37193efe293c352e2c",
+      "particles_inside": 11,
+      "particles_total": 12,
+      "fraction": 0.9166666666666666
+    },
+    {
+      "episode": 53,
+      "reset_seed": 200053,
+      "steps": 100,
+      "initial_physics_sha256": "2c253d268f274610134a7a0131fbf74a507bb6726c1b2c37193efe293c352e2c",
+      "particles_inside": 11,
+      "particles_total": 12,
+      "fraction": 0.9166666666666666
+    },
+    {
+      "episode": 54,
+      "reset_seed": 200054,
+      "steps": 100,
+      "initial_physics_sha256": "2c253d268f274610134a7a0131fbf74a507bb6726c1b2c37193efe293c352e2c",
+      "particles_inside": 10,
+      "particles_total": 12,
+      "fraction": 0.8333333333333334
+    },
+    {
+      "episode": 55,
+      "reset_seed": 200055,
+      "steps": 100,
+      "initial_physics_sha256": "2c253d268f274610134a7a0131fbf74a507bb6726c1b2c37193efe293c352e2c",
+      "particles_inside": 8,
+      "particles_total": 12,
+      "fraction": 0.6666666666666666
+    },
+    {
+      "episode": 56,
+      "reset_seed": 200056,
+      "steps": 100,
+      "initial_physics_sha256": "2c253d268f274610134a7a0131fbf74a507bb6726c1b2c37193efe293c352e2c",
+      "particles_inside": 10,
+      "particles_total": 12,
+      "fraction": 0.8333333333333334
+    },
+    {
+      "episode": 57,
+      "reset_seed": 200057,
+      "steps": 100,
+      "initial_physics_sha256": "2c253d268f274610134a7a0131fbf74a507bb6726c1b2c37193efe293c352e2c",
+      "particles_inside": 12,
+      "particles_total": 12,
+      "fraction": 1.0
+    },
+    {
+      "episode": 58,
+      "reset_seed": 200058,
+      "steps": 100,
+      "initial_physics_sha256": "2c253d268f274610134a7a0131fbf74a507bb6726c1b2c37193efe293c352e2c",
+      "particles_inside": 12,
+      "particles_total": 12,
+      "fraction": 1.0
+    },
+    {
+      "episode": 59,
+      "reset_seed": 200059,
+      "steps": 100,
+      "initial_physics_sha256": "2c253d268f274610134a7a0131fbf74a507bb6726c1b2c37193efe293c352e2c",
+      "particles_inside": 11,
+      "particles_total": 12,
+      "fraction": 0.9166666666666666
+    },
+    {
+      "episode": 60,
+      "reset_seed": 200060,
+      "steps": 100,
+      "initial_physics_sha256": "2c253d268f274610134a7a0131fbf74a507bb6726c1b2c37193efe293c352e2c",
+      "particles_inside": 11,
+      "particles_total": 12,
+      "fraction": 0.9166666666666666
+    },
+    {
+      "episode": 61,
+      "reset_seed": 200061,
+      "steps": 100,
+      "initial_physics_sha256": "2c253d268f274610134a7a0131fbf74a507bb6726c1b2c37193efe293c352e2c",
+      "particles_inside": 12,
+      "particles_total": 12,
+      "fraction": 1.0
+    },
+    {
+      "episode": 62,
+      "reset_seed": 200062,
+      "steps": 100,
+      "initial_physics_sha256": "2c253d268f274610134a7a0131fbf74a507bb6726c1b2c37193efe293c352e2c",
+      "particles_inside": 10,
+      "particles_total": 12,
+      "fraction": 0.8333333333333334
+    },
+    {
+      "episode": 63,
+      "reset_seed": 200063,
+      "steps": 100,
+      "initial_physics_sha256": "2c253d268f274610134a7a0131fbf74a507bb6726c1b2c37193efe293c352e2c",
+      "particles_inside": 12,
+      "particles_total": 12,
+      "fraction": 1.0
+    },
+    {
+      "episode": 64,
+      "reset_seed": 200064,
+      "steps": 100,
+      "initial_physics_sha256": "2c253d268f274610134a7a0131fbf74a507bb6726c1b2c37193efe293c352e2c",
+      "particles_inside": 12,
+      "particles_total": 12,
+      "fraction": 1.0
+    },
+    {
+      "episode": 65,
+      "reset_seed": 200065,
+      "steps": 100,
+      "initial_physics_sha256": "2c253d268f274610134a7a0131fbf74a507bb6726c1b2c37193efe293c352e2c",
+      "particles_inside": 10,
+      "particles_total": 12,
+      "fraction": 0.8333333333333334
+    },
+    {
+      "episode": 66,
+      "reset_seed": 200066,
+      "steps": 100,
+      "initial_physics_sha256": "2c253d268f274610134a7a0131fbf74a507bb6726c1b2c37193efe293c352e2c",
+      "particles_inside": 12,
+      "particles_total": 12,
+      "fraction": 1.0
+    },
+    {
+      "episode": 67,
+      "reset_seed": 200067,
+      "steps": 100,
+      "initial_physics_sha256": "2c253d268f274610134a7a0131fbf74a507bb6726c1b2c37193efe293c352e2c",
+      "particles_inside": 11,
+      "particles_total": 12,
+      "fraction": 0.9166666666666666
+    },
+    {
+      "episode": 68,
+      "reset_seed": 200068,
+      "steps": 100,
+      "initial_physics_sha256": "2c253d268f274610134a7a0131fbf74a507bb6726c1b2c37193efe293c352e2c",
+      "particles_inside": 10,
+      "particles_total": 12,
+      "fraction": 0.8333333333333334
+    },
+    {
+      "episode": 69,
+      "reset_seed": 200069,
+      "steps": 100,
+      "initial_physics_sha256": "2c253d268f274610134a7a0131fbf74a507bb6726c1b2c37193efe293c352e2c",
+      "particles_inside": 10,
+      "particles_total": 12,
+      "fraction": 0.8333333333333334
+    },
+    {
+      "episode": 70,
+      "reset_seed": 200070,
+      "steps": 100,
+      "initial_physics_sha256": "2c253d268f274610134a7a0131fbf74a507bb6726c1b2c37193efe293c352e2c",
+      "particles_inside": 12,
+      "particles_total": 12,
+      "fraction": 1.0
+    },
+    {
+      "episode": 71,
+      "reset_seed": 200071,
+      "steps": 100,
+      "initial_physics_sha256": "2c253d268f274610134a7a0131fbf74a507bb6726c1b2c37193efe293c352e2c",
+      "particles_inside": 11,
+      "particles_total": 12,
+      "fraction": 0.9166666666666666
+    },
+    {
+      "episode": 72,
+      "reset_seed": 200072,
+      "steps": 100,
+      "initial_physics_sha256": "2c253d268f274610134a7a0131fbf74a507bb6726c1b2c37193efe293c352e2c",
+      "particles_inside": 12,
+      "particles_total": 12,
+      "fraction": 1.0
+    },
+    {
+      "episode": 73,
+      "reset_seed": 200073,
+      "steps": 100,
+      "initial_physics_sha256": "2c253d268f274610134a7a0131fbf74a507bb6726c1b2c37193efe293c352e2c",
+      "particles_inside": 6,
+      "particles_total": 12,
+      "fraction": 0.5
+    },
+    {
+      "episode": 74,
+      "reset_seed": 200074,
+      "steps": 100,
+      "initial_physics_sha256": "2c253d268f274610134a7a0131fbf74a507bb6726c1b2c37193efe293c352e2c",
+      "particles_inside": 9,
+      "particles_total": 12,
+      "fraction": 0.75
+    },
+    {
+      "episode": 75,
+      "reset_seed": 200075,
+      "steps": 100,
+      "initial_physics_sha256": "2c253d268f274610134a7a0131fbf74a507bb6726c1b2c37193efe293c352e2c",
+      "particles_inside": 12,
+      "particles_total": 12,
+      "fraction": 1.0
+    },
+    {
+      "episode": 76,
+      "reset_seed": 200076,
+      "steps": 100,
+      "initial_physics_sha256": "2c253d268f274610134a7a0131fbf74a507bb6726c1b2c37193efe293c352e2c",
+      "particles_inside": 12,
+      "particles_total": 12,
+      "fraction": 1.0
+    },
+    {
+      "episode": 77,
+      "reset_seed": 200077,
+      "steps": 100,
+      "initial_physics_sha256": "2c253d268f274610134a7a0131fbf74a507bb6726c1b2c37193efe293c352e2c",
+      "particles_inside": 9,
+      "particles_total": 12,
+      "fraction": 0.75
+    },
+    {
+      "episode": 78,
+      "reset_seed": 200078,
+      "steps": 100,
+      "initial_physics_sha256": "2c253d268f274610134a7a0131fbf74a507bb6726c1b2c37193efe293c352e2c",
+      "particles_inside": 8,
+      "particles_total": 12,
+      "fraction": 0.6666666666666666
+    },
+    {
+      "episode": 79,
+      "reset_seed": 200079,
+      "steps": 100,
+      "initial_physics_sha256": "2c253d268f274610134a7a0131fbf74a507bb6726c1b2c37193efe293c352e2c",
+      "particles_inside": 11,
+      "particles_total": 12,
+      "fraction": 0.9166666666666666
+    },
+    {
+      "episode": 80,
+      "reset_seed": 200080,
+      "steps": 100,
+      "initial_physics_sha256": "2c253d268f274610134a7a0131fbf74a507bb6726c1b2c37193efe293c352e2c",
+      "particles_inside": 11,
+      "particles_total": 12,
+      "fraction": 0.9166666666666666
+    },
+    {
+      "episode": 81,
+      "reset_seed": 200081,
+      "steps": 100,
+      "initial_physics_sha256": "2c253d268f274610134a7a0131fbf74a507bb6726c1b2c37193efe293c352e2c",
+      "particles_inside": 10,
+      "particles_total": 12,
+      "fraction": 0.8333333333333334
+    },
+    {
+      "episode": 82,
+      "reset_seed": 200082,
+      "steps": 100,
+      "initial_physics_sha256": "2c253d268f274610134a7a0131fbf74a507bb6726c1b2c37193efe293c352e2c",
+      "particles_inside": 10,
+      "particles_total": 12,
+      "fraction": 0.8333333333333334
+    },
+    {
+      "episode": 83,
+      "reset_seed": 200083,
+      "steps": 100,
+      "initial_physics_sha256": "2c253d268f274610134a7a0131fbf74a507bb6726c1b2c37193efe293c352e2c",
+      "particles_inside": 12,
+      "particles_total": 12,
+      "fraction": 1.0
+    },
+    {
+      "episode": 84,
+      "reset_seed": 200084,
+      "steps": 100,
+      "initial_physics_sha256": "2c253d268f274610134a7a0131fbf74a507bb6726c1b2c37193efe293c352e2c",
+      "particles_inside": 11,
+      "particles_total": 12,
+      "fraction": 0.9166666666666666
+    },
+    {
+      "episode": 85,
+      "reset_seed": 200085,
+      "steps": 100,
+      "initial_physics_sha256": "2c253d268f274610134a7a0131fbf74a507bb6726c1b2c37193efe293c352e2c",
+      "particles_inside": 8,
+      "particles_total": 12,
+      "fraction": 0.6666666666666666
+    },
+    {
+      "episode": 86,
+      "reset_seed": 200086,
+      "steps": 100,
+      "initial_physics_sha256": "2c253d268f274610134a7a0131fbf74a507bb6726c1b2c37193efe293c352e2c",
+      "particles_inside": 11,
+      "particles_total": 12,
+      "fraction": 0.9166666666666666
+    },
+    {
+      "episode": 87,
+      "reset_seed": 200087,
+      "steps": 100,
+      "initial_physics_sha256": "2c253d268f274610134a7a0131fbf74a507bb6726c1b2c37193efe293c352e2c",
+      "particles_inside": 12,
+      "particles_total": 12,
+      "fraction": 1.0
+    },
+    {
+      "episode": 88,
+      "reset_seed": 200088,
+      "steps": 100,
+      "initial_physics_sha256": "2c253d268f274610134a7a0131fbf74a507bb6726c1b2c37193efe293c352e2c",
+      "particles_inside": 12,
+      "particles_total": 12,
+      "fraction": 1.0
+    },
+    {
+      "episode": 89,
+      "reset_seed": 200089,
+      "steps": 100,
+      "initial_physics_sha256": "2c253d268f274610134a7a0131fbf74a507bb6726c1b2c37193efe293c352e2c",
+      "particles_inside": 11,
+      "particles_total": 12,
+      "fraction": 0.9166666666666666
+    },
+    {
+      "episode": 90,
+      "reset_seed": 200090,
+      "steps": 100,
+      "initial_physics_sha256": "2c253d268f274610134a7a0131fbf74a507bb6726c1b2c37193efe293c352e2c",
+      "particles_inside": 11,
+      "particles_total": 12,
+      "fraction": 0.9166666666666666
+    },
+    {
+      "episode": 91,
+      "reset_seed": 200091,
+      "steps": 100,
+      "initial_physics_sha256": "2c253d268f274610134a7a0131fbf74a507bb6726c1b2c37193efe293c352e2c",
+      "particles_inside": 7,
+      "particles_total": 12,
+      "fraction": 0.5833333333333334
+    },
+    {
+      "episode": 92,
+      "reset_seed": 200092,
+      "steps": 100,
+      "initial_physics_sha256": "2c253d268f274610134a7a0131fbf74a507bb6726c1b2c37193efe293c352e2c",
+      "particles_inside": 7,
+      "particles_total": 12,
+      "fraction": 0.5833333333333334
+    },
+    {
+      "episode": 93,
+      "reset_seed": 200093,
+      "steps": 100,
+      "initial_physics_sha256": "2c253d268f274610134a7a0131fbf74a507bb6726c1b2c37193efe293c352e2c",
+      "particles_inside": 10,
+      "particles_total": 12,
+      "fraction": 0.8333333333333334
+    },
+    {
+      "episode": 94,
+      "reset_seed": 200094,
+      "steps": 100,
+      "initial_physics_sha256": "2c253d268f274610134a7a0131fbf74a507bb6726c1b2c37193efe293c352e2c",
+      "particles_inside": 9,
+      "particles_total": 12,
+      "fraction": 0.75
+    },
+    {
+      "episode": 95,
+      "reset_seed": 200095,
+      "steps": 100,
+      "initial_physics_sha256": "2c253d268f274610134a7a0131fbf74a507bb6726c1b2c37193efe293c352e2c",
+      "particles_inside": 10,
+      "particles_total": 12,
+      "fraction": 0.8333333333333334
+    },
+    {
+      "episode": 96,
+      "reset_seed": 200096,
+      "steps": 100,
+      "initial_physics_sha256": "2c253d268f274610134a7a0131fbf74a507bb6726c1b2c37193efe293c352e2c",
+      "particles_inside": 11,
+      "particles_total": 12,
+      "fraction": 0.9166666666666666
+    },
+    {
+      "episode": 97,
+      "reset_seed": 200097,
+      "steps": 100,
+      "initial_physics_sha256": "2c253d268f274610134a7a0131fbf74a507bb6726c1b2c37193efe293c352e2c",
+      "particles_inside": 9,
+      "particles_total": 12,
+      "fraction": 0.75
+    },
+    {
+      "episode": 98,
+      "reset_seed": 200098,
+      "steps": 100,
+      "initial_physics_sha256": "2c253d268f274610134a7a0131fbf74a507bb6726c1b2c37193efe293c352e2c",
+      "particles_inside": 11,
+      "particles_total": 12,
+      "fraction": 0.9166666666666666
+    },
+    {
+      "episode": 99,
+      "reset_seed": 200099,
+      "steps": 100,
+      "initial_physics_sha256": "2c253d268f274610134a7a0131fbf74a507bb6726c1b2c37193efe293c352e2c",
+      "particles_inside": 11,
+      "particles_total": 12,
+      "fraction": 0.9166666666666666
+    },
+    {
+      "episode": 100,
+      "reset_seed": 200100,
+      "steps": 100,
+      "initial_physics_sha256": "2c253d268f274610134a7a0131fbf74a507bb6726c1b2c37193efe293c352e2c",
+      "particles_inside": 8,
+      "particles_total": 12,
+      "fraction": 0.6666666666666666
+    },
+    {
+      "episode": 101,
+      "reset_seed": 200101,
+      "steps": 100,
+      "initial_physics_sha256": "2c253d268f274610134a7a0131fbf74a507bb6726c1b2c37193efe293c352e2c",
+      "particles_inside": 11,
+      "particles_total": 12,
+      "fraction": 0.9166666666666666
+    },
+    {
+      "episode": 102,
+      "reset_seed": 200102,
+      "steps": 100,
+      "initial_physics_sha256": "2c253d268f274610134a7a0131fbf74a507bb6726c1b2c37193efe293c352e2c",
+      "particles_inside": 11,
+      "particles_total": 12,
+      "fraction": 0.9166666666666666
+    },
+    {
+      "episode": 103,
+      "reset_seed": 200103,
+      "steps": 100,
+      "initial_physics_sha256": "2c253d268f274610134a7a0131fbf74a507bb6726c1b2c37193efe293c352e2c",
+      "particles_inside": 10,
+      "particles_total": 12,
+      "fraction": 0.8333333333333334
+    },
+    {
+      "episode": 104,
+      "reset_seed": 200104,
+      "steps": 100,
+      "initial_physics_sha256": "2c253d268f274610134a7a0131fbf74a507bb6726c1b2c37193efe293c352e2c",
+      "particles_inside": 11,
+      "particles_total": 12,
+      "fraction": 0.9166666666666666
+    },
+    {
+      "episode": 105,
+      "reset_seed": 200105,
+      "steps": 100,
+      "initial_physics_sha256": "2c253d268f274610134a7a0131fbf74a507bb6726c1b2c37193efe293c352e2c",
+      "particles_inside": 12,
+      "particles_total": 12,
+      "fraction": 1.0
+    },
+    {
+      "episode": 106,
+      "reset_seed": 200106,
+      "steps": 100,
+      "initial_physics_sha256": "2c253d268f274610134a7a0131fbf74a507bb6726c1b2c37193efe293c352e2c",
+      "particles_inside": 9,
+      "particles_total": 12,
+      "fraction": 0.75
+    },
+    {
+      "episode": 107,
+      "reset_seed": 200107,
+      "steps": 100,
+      "initial_physics_sha256": "2c253d268f274610134a7a0131fbf74a507bb6726c1b2c37193efe293c352e2c",
+      "particles_inside": 11,
+      "particles_total": 12,
+      "fraction": 0.9166666666666666
+    },
+    {
+      "episode": 108,
+      "reset_seed": 200108,
+      "steps": 100,
+      "initial_physics_sha256": "2c253d268f274610134a7a0131fbf74a507bb6726c1b2c37193efe293c352e2c",
+      "particles_inside": 8,
+      "particles_total": 12,
+      "fraction": 0.6666666666666666
+    },
+    {
+      "episode": 109,
+      "reset_seed": 200109,
+      "steps": 100,
+      "initial_physics_sha256": "2c253d268f274610134a7a0131fbf74a507bb6726c1b2c37193efe293c352e2c",
+      "particles_inside": 12,
+      "particles_total": 12,
+      "fraction": 1.0
+    },
+    {
+      "episode": 110,
+      "reset_seed": 200110,
+      "steps": 100,
+      "initial_physics_sha256": "2c253d268f274610134a7a0131fbf74a507bb6726c1b2c37193efe293c352e2c",
+      "particles_inside": 9,
+      "particles_total": 12,
+      "fraction": 0.75
+    },
+    {
+      "episode": 111,
+      "reset_seed": 200111,
+      "steps": 100,
+      "initial_physics_sha256": "2c253d268f274610134a7a0131fbf74a507bb6726c1b2c37193efe293c352e2c",
+      "particles_inside": 12,
+      "particles_total": 12,
+      "fraction": 1.0
+    },
+    {
+      "episode": 112,
+      "reset_seed": 200112,
+      "steps": 100,
+      "initial_physics_sha256": "2c253d268f274610134a7a0131fbf74a507bb6726c1b2c37193efe293c352e2c",
+      "particles_inside": 12,
+      "particles_total": 12,
+      "fraction": 1.0
+    },
+    {
+      "episode": 113,
+      "reset_seed": 200113,
+      "steps": 100,
+      "initial_physics_sha256": "2c253d268f274610134a7a0131fbf74a507bb6726c1b2c37193efe293c352e2c",
+      "particles_inside": 11,
+      "particles_total": 12,
+      "fraction": 0.9166666666666666
+    },
+    {
+      "episode": 114,
+      "reset_seed": 200114,
+      "steps": 100,
+      "initial_physics_sha256": "2c253d268f274610134a7a0131fbf74a507bb6726c1b2c37193efe293c352e2c",
+      "particles_inside": 10,
+      "particles_total": 12,
+      "fraction": 0.8333333333333334
+    },
+    {
+      "episode": 115,
+      "reset_seed": 200115,
+      "steps": 100,
+      "initial_physics_sha256": "2c253d268f274610134a7a0131fbf74a507bb6726c1b2c37193efe293c352e2c",
+      "particles_inside": 10,
+      "particles_total": 12,
+      "fraction": 0.8333333333333334
+    },
+    {
+      "episode": 116,
+      "reset_seed": 200116,
+      "steps": 100,
+      "initial_physics_sha256": "2c253d268f274610134a7a0131fbf74a507bb6726c1b2c37193efe293c352e2c",
+      "particles_inside": 12,
+      "particles_total": 12,
+      "fraction": 1.0
+    },
+    {
+      "episode": 117,
+      "reset_seed": 200117,
+      "steps": 100,
+      "initial_physics_sha256": "2c253d268f274610134a7a0131fbf74a507bb6726c1b2c37193efe293c352e2c",
+      "particles_inside": 9,
+      "particles_total": 12,
+      "fraction": 0.75
+    },
+    {
+      "episode": 118,
+      "reset_seed": 200118,
+      "steps": 100,
+      "initial_physics_sha256": "2c253d268f274610134a7a0131fbf74a507bb6726c1b2c37193efe293c352e2c",
+      "particles_inside": 9,
+      "particles_total": 12,
+      "fraction": 0.75
+    },
+    {
+      "episode": 119,
+      "reset_seed": 200119,
+      "steps": 100,
+      "initial_physics_sha256": "2c253d268f274610134a7a0131fbf74a507bb6726c1b2c37193efe293c352e2c",
+      "particles_inside": 9,
+      "particles_total": 12,
+      "fraction": 0.75
+    },
+    {
+      "episode": 120,
+      "reset_seed": 200120,
+      "steps": 100,
+      "initial_physics_sha256": "2c253d268f274610134a7a0131fbf74a507bb6726c1b2c37193efe293c352e2c",
+      "particles_inside": 8,
+      "particles_total": 12,
+      "fraction": 0.6666666666666666
+    },
+    {
+      "episode": 121,
+      "reset_seed": 200121,
+      "steps": 100,
+      "initial_physics_sha256": "2c253d268f274610134a7a0131fbf74a507bb6726c1b2c37193efe293c352e2c",
+      "particles_inside": 11,
+      "particles_total": 12,
+      "fraction": 0.9166666666666666
+    },
+    {
+      "episode": 122,
+      "reset_seed": 200122,
+      "steps": 100,
+      "initial_physics_sha256": "2c253d268f274610134a7a0131fbf74a507bb6726c1b2c37193efe293c352e2c",
+      "particles_inside": 11,
+      "particles_total": 12,
+      "fraction": 0.9166666666666666
+    },
+    {
+      "episode": 123,
+      "reset_seed": 200123,
+      "steps": 100,
+      "initial_physics_sha256": "2c253d268f274610134a7a0131fbf74a507bb6726c1b2c37193efe293c352e2c",
+      "particles_inside": 8,
+      "particles_total": 12,
+      "fraction": 0.6666666666666666
+    },
+    {
+      "episode": 124,
+      "reset_seed": 200124,
+      "steps": 100,
+      "initial_physics_sha256": "2c253d268f274610134a7a0131fbf74a507bb6726c1b2c37193efe293c352e2c",
+      "particles_inside": 12,
+      "particles_total": 12,
+      "fraction": 1.0
+    },
+    {
+      "episode": 125,
+      "reset_seed": 200125,
+      "steps": 100,
+      "initial_physics_sha256": "2c253d268f274610134a7a0131fbf74a507bb6726c1b2c37193efe293c352e2c",
+      "particles_inside": 9,
+      "particles_total": 12,
+      "fraction": 0.75
+    },
+    {
+      "episode": 126,
+      "reset_seed": 200126,
+      "steps": 100,
+      "initial_physics_sha256": "2c253d268f274610134a7a0131fbf74a507bb6726c1b2c37193efe293c352e2c",
+      "particles_inside": 9,
+      "particles_total": 12,
+      "fraction": 0.75
+    },
+    {
+      "episode": 127,
+      "reset_seed": 200127,
+      "steps": 100,
+      "initial_physics_sha256": "2c253d268f274610134a7a0131fbf74a507bb6726c1b2c37193efe293c352e2c",
+      "particles_inside": 12,
+      "particles_total": 12,
+      "fraction": 1.0
+    },
+    {
+      "episode": 128,
+      "reset_seed": 200128,
+      "steps": 100,
+      "initial_physics_sha256": "2c253d268f274610134a7a0131fbf74a507bb6726c1b2c37193efe293c352e2c",
+      "particles_inside": 12,
+      "particles_total": 12,
+      "fraction": 1.0
+    },
+    {
+      "episode": 129,
+      "reset_seed": 200129,
+      "steps": 100,
+      "initial_physics_sha256": "2c253d268f274610134a7a0131fbf74a507bb6726c1b2c37193efe293c352e2c",
+      "particles_inside": 12,
+      "particles_total": 12,
+      "fraction": 1.0
+    },
+    {
+      "episode": 130,
+      "reset_seed": 200130,
+      "steps": 100,
+      "initial_physics_sha256": "2c253d268f274610134a7a0131fbf74a507bb6726c1b2c37193efe293c352e2c",
+      "particles_inside": 12,
+      "particles_total": 12,
+      "fraction": 1.0
+    },
+    {
+      "episode": 131,
+      "reset_seed": 200131,
+      "steps": 100,
+      "initial_physics_sha256": "2c253d268f274610134a7a0131fbf74a507bb6726c1b2c37193efe293c352e2c",
+      "particles_inside": 7,
+      "particles_total": 12,
+      "fraction": 0.5833333333333334
+    },
+    {
+      "episode": 132,
+      "reset_seed": 200132,
+      "steps": 100,
+      "initial_physics_sha256": "2c253d268f274610134a7a0131fbf74a507bb6726c1b2c37193efe293c352e2c",
+      "particles_inside": 10,
+      "particles_total": 12,
+      "fraction": 0.8333333333333334
+    },
+    {
+      "episode": 133,
+      "reset_seed": 200133,
+      "steps": 100,
+      "initial_physics_sha256": "2c253d268f274610134a7a0131fbf74a507bb6726c1b2c37193efe293c352e2c",
+      "particles_inside": 11,
+      "particles_total": 12,
+      "fraction": 0.9166666666666666
+    },
+    {
+      "episode": 134,
+      "reset_seed": 200134,
+      "steps": 100,
+      "initial_physics_sha256": "2c253d268f274610134a7a0131fbf74a507bb6726c1b2c37193efe293c352e2c",
+      "particles_inside": 11,
+      "particles_total": 12,
+      "fraction": 0.9166666666666666
+    },
+    {
+      "episode": 135,
+      "reset_seed": 200135,
+      "steps": 100,
+      "initial_physics_sha256": "2c253d268f274610134a7a0131fbf74a507bb6726c1b2c37193efe293c352e2c",
+      "particles_inside": 10,
+      "particles_total": 12,
+      "fraction": 0.8333333333333334
+    },
+    {
+      "episode": 136,
+      "reset_seed": 200136,
+      "steps": 100,
+      "initial_physics_sha256": "2c253d268f274610134a7a0131fbf74a507bb6726c1b2c37193efe293c352e2c",
+      "particles_inside": 11,
+      "particles_total": 12,
+      "fraction": 0.9166666666666666
+    },
+    {
+      "episode": 137,
+      "reset_seed": 200137,
+      "steps": 100,
+      "initial_physics_sha256": "2c253d268f274610134a7a0131fbf74a507bb6726c1b2c37193efe293c352e2c",
+      "particles_inside": 11,
+      "particles_total": 12,
+      "fraction": 0.9166666666666666
+    },
+    {
+      "episode": 138,
+      "reset_seed": 200138,
+      "steps": 100,
+      "initial_physics_sha256": "2c253d268f274610134a7a0131fbf74a507bb6726c1b2c37193efe293c352e2c",
+      "particles_inside": 12,
+      "particles_total": 12,
+      "fraction": 1.0
+    },
+    {
+      "episode": 139,
+      "reset_seed": 200139,
+      "steps": 100,
+      "initial_physics_sha256": "2c253d268f274610134a7a0131fbf74a507bb6726c1b2c37193efe293c352e2c",
+      "particles_inside": 12,
+      "particles_total": 12,
+      "fraction": 1.0
+    },
+    {
+      "episode": 140,
+      "reset_seed": 200140,
+      "steps": 100,
+      "initial_physics_sha256": "2c253d268f274610134a7a0131fbf74a507bb6726c1b2c37193efe293c352e2c",
+      "particles_inside": 9,
+      "particles_total": 12,
+      "fraction": 0.75
+    },
+    {
+      "episode": 141,
+      "reset_seed": 200141,
+      "steps": 100,
+      "initial_physics_sha256": "2c253d268f274610134a7a0131fbf74a507bb6726c1b2c37193efe293c352e2c",
+      "particles_inside": 12,
+      "particles_total": 12,
+      "fraction": 1.0
+    },
+    {
+      "episode": 142,
+      "reset_seed": 200142,
+      "steps": 100,
+      "initial_physics_sha256": "2c253d268f274610134a7a0131fbf74a507bb6726c1b2c37193efe293c352e2c",
+      "particles_inside": 12,
+      "particles_total": 12,
+      "fraction": 1.0
+    },
+    {
+      "episode": 143,
+      "reset_seed": 200143,
+      "steps": 100,
+      "initial_physics_sha256": "2c253d268f274610134a7a0131fbf74a507bb6726c1b2c37193efe293c352e2c",
+      "particles_inside": 8,
+      "particles_total": 12,
+      "fraction": 0.6666666666666666
+    },
+    {
+      "episode": 144,
+      "reset_seed": 200144,
+      "steps": 100,
+      "initial_physics_sha256": "2c253d268f274610134a7a0131fbf74a507bb6726c1b2c37193efe293c352e2c",
+      "particles_inside": 11,
+      "particles_total": 12,
+      "fraction": 0.9166666666666666
+    },
+    {
+      "episode": 145,
+      "reset_seed": 200145,
+      "steps": 100,
+      "initial_physics_sha256": "2c253d268f274610134a7a0131fbf74a507bb6726c1b2c37193efe293c352e2c",
+      "particles_inside": 10,
+      "particles_total": 12,
+      "fraction": 0.8333333333333334
+    },
+    {
+      "episode": 146,
+      "reset_seed": 200146,
+      "steps": 100,
+      "initial_physics_sha256": "2c253d268f274610134a7a0131fbf74a507bb6726c1b2c37193efe293c352e2c",
+      "particles_inside": 11,
+      "particles_total": 12,
+      "fraction": 0.9166666666666666
+    },
+    {
+      "episode": 147,
+      "reset_seed": 200147,
+      "steps": 100,
+      "initial_physics_sha256": "2c253d268f274610134a7a0131fbf74a507bb6726c1b2c37193efe293c352e2c",
+      "particles_inside": 11,
+      "particles_total": 12,
+      "fraction": 0.9166666666666666
+    },
+    {
+      "episode": 148,
+      "reset_seed": 200148,
+      "steps": 100,
+      "initial_physics_sha256": "2c253d268f274610134a7a0131fbf74a507bb6726c1b2c37193efe293c352e2c",
+      "particles_inside": 8,
+      "particles_total": 12,
+      "fraction": 0.6666666666666666
+    },
+    {
+      "episode": 149,
+      "reset_seed": 200149,
+      "steps": 100,
+      "initial_physics_sha256": "2c253d268f274610134a7a0131fbf74a507bb6726c1b2c37193efe293c352e2c",
+      "particles_inside": 9,
+      "particles_total": 12,
+      "fraction": 0.75
+    },
+    {
+      "episode": 150,
+      "reset_seed": 200150,
+      "steps": 100,
+      "initial_physics_sha256": "2c253d268f274610134a7a0131fbf74a507bb6726c1b2c37193efe293c352e2c",
+      "particles_inside": 9,
+      "particles_total": 12,
+      "fraction": 0.75
+    },
+    {
+      "episode": 151,
+      "reset_seed": 200151,
+      "steps": 100,
+      "initial_physics_sha256": "2c253d268f274610134a7a0131fbf74a507bb6726c1b2c37193efe293c352e2c",
+      "particles_inside": 11,
+      "particles_total": 12,
+      "fraction": 0.9166666666666666
+    },
+    {
+      "episode": 152,
+      "reset_seed": 200152,
+      "steps": 100,
+      "initial_physics_sha256": "2c253d268f274610134a7a0131fbf74a507bb6726c1b2c37193efe293c352e2c",
+      "particles_inside": 11,
+      "particles_total": 12,
+      "fraction": 0.9166666666666666
+    },
+    {
+      "episode": 153,
+      "reset_seed": 200153,
+      "steps": 100,
+      "initial_physics_sha256": "2c253d268f274610134a7a0131fbf74a507bb6726c1b2c37193efe293c352e2c",
+      "particles_inside": 12,
+      "particles_total": 12,
+      "fraction": 1.0
+    },
+    {
+      "episode": 154,
+      "reset_seed": 200154,
+      "steps": 100,
+      "initial_physics_sha256": "2c253d268f274610134a7a0131fbf74a507bb6726c1b2c37193efe293c352e2c",
+      "particles_inside": 10,
+      "particles_total": 12,
+      "fraction": 0.8333333333333334
+    },
+    {
+      "episode": 155,
+      "reset_seed": 200155,
+      "steps": 100,
+      "initial_physics_sha256": "2c253d268f274610134a7a0131fbf74a507bb6726c1b2c37193efe293c352e2c",
+      "particles_inside": 11,
+      "particles_total": 12,
+      "fraction": 0.9166666666666666
+    },
+    {
+      "episode": 156,
+      "reset_seed": 200156,
+      "steps": 100,
+      "initial_physics_sha256": "2c253d268f274610134a7a0131fbf74a507bb6726c1b2c37193efe293c352e2c",
+      "particles_inside": 8,
+      "particles_total": 12,
+      "fraction": 0.6666666666666666
+    },
+    {
+      "episode": 157,
+      "reset_seed": 200157,
+      "steps": 100,
+      "initial_physics_sha256": "2c253d268f274610134a7a0131fbf74a507bb6726c1b2c37193efe293c352e2c",
+      "particles_inside": 10,
+      "particles_total": 12,
+      "fraction": 0.8333333333333334
+    },
+    {
+      "episode": 158,
+      "reset_seed": 200158,
+      "steps": 100,
+      "initial_physics_sha256": "2c253d268f274610134a7a0131fbf74a507bb6726c1b2c37193efe293c352e2c",
+      "particles_inside": 11,
+      "particles_total": 12,
+      "fraction": 0.9166666666666666
+    },
+    {
+      "episode": 159,
+      "reset_seed": 200159,
+      "steps": 100,
+      "initial_physics_sha256": "2c253d268f274610134a7a0131fbf74a507bb6726c1b2c37193efe293c352e2c",
+      "particles_inside": 8,
+      "particles_total": 12,
+      "fraction": 0.6666666666666666
+    },
+    {
+      "episode": 160,
+      "reset_seed": 200160,
+      "steps": 100,
+      "initial_physics_sha256": "2c253d268f274610134a7a0131fbf74a507bb6726c1b2c37193efe293c352e2c",
+      "particles_inside": 9,
+      "particles_total": 12,
+      "fraction": 0.75
+    },
+    {
+      "episode": 161,
+      "reset_seed": 200161,
+      "steps": 100,
+      "initial_physics_sha256": "2c253d268f274610134a7a0131fbf74a507bb6726c1b2c37193efe293c352e2c",
+      "particles_inside": 9,
+      "particles_total": 12,
+      "fraction": 0.75
+    },
+    {
+      "episode": 162,
+      "reset_seed": 200162,
+      "steps": 100,
+      "initial_physics_sha256": "2c253d268f274610134a7a0131fbf74a507bb6726c1b2c37193efe293c352e2c",
+      "particles_inside": 9,
+      "particles_total": 12,
+      "fraction": 0.75
+    },
+    {
+      "episode": 163,
+      "reset_seed": 200163,
+      "steps": 100,
+      "initial_physics_sha256": "2c253d268f274610134a7a0131fbf74a507bb6726c1b2c37193efe293c352e2c",
+      "particles_inside": 12,
+      "particles_total": 12,
+      "fraction": 1.0
+    },
+    {
+      "episode": 164,
+      "reset_seed": 200164,
+      "steps": 100,
+      "initial_physics_sha256": "2c253d268f274610134a7a0131fbf74a507bb6726c1b2c37193efe293c352e2c",
+      "particles_inside": 11,
+      "particles_total": 12,
+      "fraction": 0.9166666666666666
+    },
+    {
+      "episode": 165,
+      "reset_seed": 200165,
+      "steps": 100,
+      "initial_physics_sha256": "2c253d268f274610134a7a0131fbf74a507bb6726c1b2c37193efe293c352e2c",
+      "particles_inside": 9,
+      "particles_total": 12,
+      "fraction": 0.75
+    },
+    {
+      "episode": 166,
+      "reset_seed": 200166,
+      "steps": 100,
+      "initial_physics_sha256": "2c253d268f274610134a7a0131fbf74a507bb6726c1b2c37193efe293c352e2c",
+      "particles_inside": 7,
+      "particles_total": 12,
+      "fraction": 0.5833333333333334
+    },
+    {
+      "episode": 167,
+      "reset_seed": 200167,
+      "steps": 100,
+      "initial_physics_sha256": "2c253d268f274610134a7a0131fbf74a507bb6726c1b2c37193efe293c352e2c",
+      "particles_inside": 12,
+      "particles_total": 12,
+      "fraction": 1.0
+    },
+    {
+      "episode": 168,
+      "reset_seed": 200168,
+      "steps": 100,
+      "initial_physics_sha256": "2c253d268f274610134a7a0131fbf74a507bb6726c1b2c37193efe293c352e2c",
+      "particles_inside": 9,
+      "particles_total": 12,
+      "fraction": 0.75
+    },
+    {
+      "episode": 169,
+      "reset_seed": 200169,
+      "steps": 100,
+      "initial_physics_sha256": "2c253d268f274610134a7a0131fbf74a507bb6726c1b2c37193efe293c352e2c",
+      "particles_inside": 10,
+      "particles_total": 12,
+      "fraction": 0.8333333333333334
+    },
+    {
+      "episode": 170,
+      "reset_seed": 200170,
+      "steps": 100,
+      "initial_physics_sha256": "2c253d268f274610134a7a0131fbf74a507bb6726c1b2c37193efe293c352e2c",
+      "particles_inside": 10,
+      "particles_total": 12,
+      "fraction": 0.8333333333333334
+    },
+    {
+      "episode": 171,
+      "reset_seed": 200171,
+      "steps": 100,
+      "initial_physics_sha256": "2c253d268f274610134a7a0131fbf74a507bb6726c1b2c37193efe293c352e2c",
+      "particles_inside": 9,
+      "particles_total": 12,
+      "fraction": 0.75
+    },
+    {
+      "episode": 172,
+      "reset_seed": 200172,
+      "steps": 100,
+      "initial_physics_sha256": "2c253d268f274610134a7a0131fbf74a507bb6726c1b2c37193efe293c352e2c",
+      "particles_inside": 10,
+      "particles_total": 12,
+      "fraction": 0.8333333333333334
+    },
+    {
+      "episode": 173,
+      "reset_seed": 200173,
+      "steps": 100,
+      "initial_physics_sha256": "2c253d268f274610134a7a0131fbf74a507bb6726c1b2c37193efe293c352e2c",
+      "particles_inside": 9,
+      "particles_total": 12,
+      "fraction": 0.75
+    },
+    {
+      "episode": 174,
+      "reset_seed": 200174,
+      "steps": 100,
+      "initial_physics_sha256": "2c253d268f274610134a7a0131fbf74a507bb6726c1b2c37193efe293c352e2c",
+      "particles_inside": 10,
+      "particles_total": 12,
+      "fraction": 0.8333333333333334
+    },
+    {
+      "episode": 175,
+      "reset_seed": 200175,
+      "steps": 100,
+      "initial_physics_sha256": "2c253d268f274610134a7a0131fbf74a507bb6726c1b2c37193efe293c352e2c",
+      "particles_inside": 9,
+      "particles_total": 12,
+      "fraction": 0.75
+    },
+    {
+      "episode": 176,
+      "reset_seed": 200176,
+      "steps": 100,
+      "initial_physics_sha256": "2c253d268f274610134a7a0131fbf74a507bb6726c1b2c37193efe293c352e2c",
+      "particles_inside": 10,
+      "particles_total": 12,
+      "fraction": 0.8333333333333334
+    },
+    {
+      "episode": 177,
+      "reset_seed": 200177,
+      "steps": 100,
+      "initial_physics_sha256": "2c253d268f274610134a7a0131fbf74a507bb6726c1b2c37193efe293c352e2c",
+      "particles_inside": 11,
+      "particles_total": 12,
+      "fraction": 0.9166666666666666
+    },
+    {
+      "episode": 178,
+      "reset_seed": 200178,
+      "steps": 100,
+      "initial_physics_sha256": "2c253d268f274610134a7a0131fbf74a507bb6726c1b2c37193efe293c352e2c",
+      "particles_inside": 12,
+      "particles_total": 12,
+      "fraction": 1.0
+    },
+    {
+      "episode": 179,
+      "reset_seed": 200179,
+      "steps": 100,
+      "initial_physics_sha256": "2c253d268f274610134a7a0131fbf74a507bb6726c1b2c37193efe293c352e2c",
+      "particles_inside": 9,
+      "particles_total": 12,
+      "fraction": 0.75
+    },
+    {
+      "episode": 180,
+      "reset_seed": 200180,
+      "steps": 100,
+      "initial_physics_sha256": "2c253d268f274610134a7a0131fbf74a507bb6726c1b2c37193efe293c352e2c",
+      "particles_inside": 9,
+      "particles_total": 12,
+      "fraction": 0.75
+    },
+    {
+      "episode": 181,
+      "reset_seed": 200181,
+      "steps": 100,
+      "initial_physics_sha256": "2c253d268f274610134a7a0131fbf74a507bb6726c1b2c37193efe293c352e2c",
+      "particles_inside": 10,
+      "particles_total": 12,
+      "fraction": 0.8333333333333334
+    },
+    {
+      "episode": 182,
+      "reset_seed": 200182,
+      "steps": 100,
+      "initial_physics_sha256": "2c253d268f274610134a7a0131fbf74a507bb6726c1b2c37193efe293c352e2c",
+      "particles_inside": 10,
+      "particles_total": 12,
+      "fraction": 0.8333333333333334
+    },
+    {
+      "episode": 183,
+      "reset_seed": 200183,
+      "steps": 100,
+      "initial_physics_sha256": "2c253d268f274610134a7a0131fbf74a507bb6726c1b2c37193efe293c352e2c",
+      "particles_inside": 11,
+      "particles_total": 12,
+      "fraction": 0.9166666666666666
+    },
+    {
+      "episode": 184,
+      "reset_seed": 200184,
+      "steps": 100,
+      "initial_physics_sha256": "2c253d268f274610134a7a0131fbf74a507bb6726c1b2c37193efe293c352e2c",
+      "particles_inside": 9,
+      "particles_total": 12,
+      "fraction": 0.75
+    },
+    {
+      "episode": 185,
+      "reset_seed": 200185,
+      "steps": 100,
+      "initial_physics_sha256": "2c253d268f274610134a7a0131fbf74a507bb6726c1b2c37193efe293c352e2c",
+      "particles_inside": 9,
+      "particles_total": 12,
+      "fraction": 0.75
+    },
+    {
+      "episode": 186,
+      "reset_seed": 200186,
+      "steps": 100,
+      "initial_physics_sha256": "2c253d268f274610134a7a0131fbf74a507bb6726c1b2c37193efe293c352e2c",
+      "particles_inside": 8,
+      "particles_total": 12,
+      "fraction": 0.6666666666666666
+    },
+    {
+      "episode": 187,
+      "reset_seed": 200187,
+      "steps": 100,
+      "initial_physics_sha256": "2c253d268f274610134a7a0131fbf74a507bb6726c1b2c37193efe293c352e2c",
+      "particles_inside": 9,
+      "particles_total": 12,
+      "fraction": 0.75
+    },
+    {
+      "episode": 188,
+      "reset_seed": 200188,
+      "steps": 100,
+      "initial_physics_sha256": "2c253d268f274610134a7a0131fbf74a507bb6726c1b2c37193efe293c352e2c",
+      "particles_inside": 9,
+      "particles_total": 12,
+      "fraction": 0.75
+    },
+    {
+      "episode": 189,
+      "reset_seed": 200189,
+      "steps": 100,
+      "initial_physics_sha256": "2c253d268f274610134a7a0131fbf74a507bb6726c1b2c37193efe293c352e2c",
+      "particles_inside": 10,
+      "particles_total": 12,
+      "fraction": 0.8333333333333334
+    },
+    {
+      "episode": 190,
+      "reset_seed": 200190,
+      "steps": 100,
+      "initial_physics_sha256": "2c253d268f274610134a7a0131fbf74a507bb6726c1b2c37193efe293c352e2c",
+      "particles_inside": 10,
+      "particles_total": 12,
+      "fraction": 0.8333333333333334
+    },
+    {
+      "episode": 191,
+      "reset_seed": 200191,
+      "steps": 100,
+      "initial_physics_sha256": "2c253d268f274610134a7a0131fbf74a507bb6726c1b2c37193efe293c352e2c",
+      "particles_inside": 12,
+      "particles_total": 12,
+      "fraction": 1.0
+    },
+    {
+      "episode": 192,
+      "reset_seed": 200192,
+      "steps": 100,
+      "initial_physics_sha256": "2c253d268f274610134a7a0131fbf74a507bb6726c1b2c37193efe293c352e2c",
+      "particles_inside": 11,
+      "particles_total": 12,
+      "fraction": 0.9166666666666666
+    },
+    {
+      "episode": 193,
+      "reset_seed": 200193,
+      "steps": 100,
+      "initial_physics_sha256": "2c253d268f274610134a7a0131fbf74a507bb6726c1b2c37193efe293c352e2c",
+      "particles_inside": 12,
+      "particles_total": 12,
+      "fraction": 1.0
+    },
+    {
+      "episode": 194,
+      "reset_seed": 200194,
+      "steps": 100,
+      "initial_physics_sha256": "2c253d268f274610134a7a0131fbf74a507bb6726c1b2c37193efe293c352e2c",
+      "particles_inside": 9,
+      "particles_total": 12,
+      "fraction": 0.75
+    },
+    {
+      "episode": 195,
+      "reset_seed": 200195,
+      "steps": 100,
+      "initial_physics_sha256": "2c253d268f274610134a7a0131fbf74a507bb6726c1b2c37193efe293c352e2c",
+      "particles_inside": 11,
+      "particles_total": 12,
+      "fraction": 0.9166666666666666
+    },
+    {
+      "episode": 196,
+      "reset_seed": 200196,
+      "steps": 100,
+      "initial_physics_sha256": "2c253d268f274610134a7a0131fbf74a507bb6726c1b2c37193efe293c352e2c",
+      "particles_inside": 10,
+      "particles_total": 12,
+      "fraction": 0.8333333333333334
+    },
+    {
+      "episode": 197,
+      "reset_seed": 200197,
+      "steps": 100,
+      "initial_physics_sha256": "2c253d268f274610134a7a0131fbf74a507bb6726c1b2c37193efe293c352e2c",
+      "particles_inside": 6,
+      "particles_total": 12,
+      "fraction": 0.5
+    },
+    {
+      "episode": 198,
+      "reset_seed": 200198,
+      "steps": 100,
+      "initial_physics_sha256": "2c253d268f274610134a7a0131fbf74a507bb6726c1b2c37193efe293c352e2c",
+      "particles_inside": 9,
+      "particles_total": 12,
+      "fraction": 0.75
+    },
+    {
+      "episode": 199,
+      "reset_seed": 200199,
+      "steps": 100,
+      "initial_physics_sha256": "2c253d268f274610134a7a0131fbf74a507bb6726c1b2c37193efe293c352e2c",
+      "particles_inside": 10,
+      "particles_total": 12,
+      "fraction": 0.8333333333333334
+    },
+    {
+      "episode": 200,
+      "reset_seed": 200200,
+      "steps": 100,
+      "initial_physics_sha256": "2c253d268f274610134a7a0131fbf74a507bb6726c1b2c37193efe293c352e2c",
+      "particles_inside": 9,
+      "particles_total": 12,
+      "fraction": 0.75
+    },
+    {
+      "episode": 201,
+      "reset_seed": 200201,
+      "steps": 100,
+      "initial_physics_sha256": "2c253d268f274610134a7a0131fbf74a507bb6726c1b2c37193efe293c352e2c",
+      "particles_inside": 10,
+      "particles_total": 12,
+      "fraction": 0.8333333333333334
+    },
+    {
+      "episode": 202,
+      "reset_seed": 200202,
+      "steps": 100,
+      "initial_physics_sha256": "2c253d268f274610134a7a0131fbf74a507bb6726c1b2c37193efe293c352e2c",
+      "particles_inside": 9,
+      "particles_total": 12,
+      "fraction": 0.75
+    },
+    {
+      "episode": 203,
+      "reset_seed": 200203,
+      "steps": 100,
+      "initial_physics_sha256": "2c253d268f274610134a7a0131fbf74a507bb6726c1b2c37193efe293c352e2c",
+      "particles_inside": 11,
+      "particles_total": 12,
+      "fraction": 0.9166666666666666
+    },
+    {
+      "episode": 204,
+      "reset_seed": 200204,
+      "steps": 100,
+      "initial_physics_sha256": "2c253d268f274610134a7a0131fbf74a507bb6726c1b2c37193efe293c352e2c",
+      "particles_inside": 12,
+      "particles_total": 12,
+      "fraction": 1.0
+    },
+    {
+      "episode": 205,
+      "reset_seed": 200205,
+      "steps": 100,
+      "initial_physics_sha256": "2c253d268f274610134a7a0131fbf74a507bb6726c1b2c37193efe293c352e2c",
+      "particles_inside": 8,
+      "particles_total": 12,
+      "fraction": 0.6666666666666666
+    },
+    {
+      "episode": 206,
+      "reset_seed": 200206,
+      "steps": 100,
+      "initial_physics_sha256": "2c253d268f274610134a7a0131fbf74a507bb6726c1b2c37193efe293c352e2c",
+      "particles_inside": 9,
+      "particles_total": 12,
+      "fraction": 0.75
+    },
+    {
+      "episode": 207,
+      "reset_seed": 200207,
+      "steps": 100,
+      "initial_physics_sha256": "2c253d268f274610134a7a0131fbf74a507bb6726c1b2c37193efe293c352e2c",
+      "particles_inside": 12,
+      "particles_total": 12,
+      "fraction": 1.0
+    },
+    {
+      "episode": 208,
+      "reset_seed": 200208,
+      "steps": 100,
+      "initial_physics_sha256": "2c253d268f274610134a7a0131fbf74a507bb6726c1b2c37193efe293c352e2c",
+      "particles_inside": 10,
+      "particles_total": 12,
+      "fraction": 0.8333333333333334
+    },
+    {
+      "episode": 209,
+      "reset_seed": 200209,
+      "steps": 100,
+      "initial_physics_sha256": "2c253d268f274610134a7a0131fbf74a507bb6726c1b2c37193efe293c352e2c",
+      "particles_inside": 10,
+      "particles_total": 12,
+      "fraction": 0.8333333333333334
+    },
+    {
+      "episode": 210,
+      "reset_seed": 200210,
+      "steps": 100,
+      "initial_physics_sha256": "2c253d268f274610134a7a0131fbf74a507bb6726c1b2c37193efe293c352e2c",
+      "particles_inside": 6,
+      "particles_total": 12,
+      "fraction": 0.5
+    },
+    {
+      "episode": 211,
+      "reset_seed": 200211,
+      "steps": 100,
+      "initial_physics_sha256": "2c253d268f274610134a7a0131fbf74a507bb6726c1b2c37193efe293c352e2c",
+      "particles_inside": 7,
+      "particles_total": 12,
+      "fraction": 0.5833333333333334
+    },
+    {
+      "episode": 212,
+      "reset_seed": 200212,
+      "steps": 100,
+      "initial_physics_sha256": "2c253d268f274610134a7a0131fbf74a507bb6726c1b2c37193efe293c352e2c",
+      "particles_inside": 12,
+      "particles_total": 12,
+      "fraction": 1.0
+    },
+    {
+      "episode": 213,
+      "reset_seed": 200213,
+      "steps": 100,
+      "initial_physics_sha256": "2c253d268f274610134a7a0131fbf74a507bb6726c1b2c37193efe293c352e2c",
+      "particles_inside": 12,
+      "particles_total": 12,
+      "fraction": 1.0
+    },
+    {
+      "episode": 214,
+      "reset_seed": 200214,
+      "steps": 100,
+      "initial_physics_sha256": "2c253d268f274610134a7a0131fbf74a507bb6726c1b2c37193efe293c352e2c",
+      "particles_inside": 12,
+      "particles_total": 12,
+      "fraction": 1.0
+    },
+    {
+      "episode": 215,
+      "reset_seed": 200215,
+      "steps": 100,
+      "initial_physics_sha256": "2c253d268f274610134a7a0131fbf74a507bb6726c1b2c37193efe293c352e2c",
+      "particles_inside": 12,
+      "particles_total": 12,
+      "fraction": 1.0
+    },
+    {
+      "episode": 216,
+      "reset_seed": 200216,
+      "steps": 100,
+      "initial_physics_sha256": "2c253d268f274610134a7a0131fbf74a507bb6726c1b2c37193efe293c352e2c",
+      "particles_inside": 10,
+      "particles_total": 12,
+      "fraction": 0.8333333333333334
+    },
+    {
+      "episode": 217,
+      "reset_seed": 200217,
+      "steps": 100,
+      "initial_physics_sha256": "2c253d268f274610134a7a0131fbf74a507bb6726c1b2c37193efe293c352e2c",
+      "particles_inside": 10,
+      "particles_total": 12,
+      "fraction": 0.8333333333333334
+    },
+    {
+      "episode": 218,
+      "reset_seed": 200218,
+      "steps": 100,
+      "initial_physics_sha256": "2c253d268f274610134a7a0131fbf74a507bb6726c1b2c37193efe293c352e2c",
+      "particles_inside": 9,
+      "particles_total": 12,
+      "fraction": 0.75
+    },
+    {
+      "episode": 219,
+      "reset_seed": 200219,
+      "steps": 100,
+      "initial_physics_sha256": "2c253d268f274610134a7a0131fbf74a507bb6726c1b2c37193efe293c352e2c",
+      "particles_inside": 11,
+      "particles_total": 12,
+      "fraction": 0.9166666666666666
+    },
+    {
+      "episode": 220,
+      "reset_seed": 200220,
+      "steps": 100,
+      "initial_physics_sha256": "2c253d268f274610134a7a0131fbf74a507bb6726c1b2c37193efe293c352e2c",
+      "particles_inside": 11,
+      "particles_total": 12,
+      "fraction": 0.9166666666666666
+    },
+    {
+      "episode": 221,
+      "reset_seed": 200221,
+      "steps": 100,
+      "initial_physics_sha256": "2c253d268f274610134a7a0131fbf74a507bb6726c1b2c37193efe293c352e2c",
+      "particles_inside": 10,
+      "particles_total": 12,
+      "fraction": 0.8333333333333334
+    },
+    {
+      "episode": 222,
+      "reset_seed": 200222,
+      "steps": 100,
+      "initial_physics_sha256": "2c253d268f274610134a7a0131fbf74a507bb6726c1b2c37193efe293c352e2c",
+      "particles_inside": 8,
+      "particles_total": 12,
+      "fraction": 0.6666666666666666
+    },
+    {
+      "episode": 223,
+      "reset_seed": 200223,
+      "steps": 100,
+      "initial_physics_sha256": "2c253d268f274610134a7a0131fbf74a507bb6726c1b2c37193efe293c352e2c",
+      "particles_inside": 12,
+      "particles_total": 12,
+      "fraction": 1.0
+    },
+    {
+      "episode": 224,
+      "reset_seed": 200224,
+      "steps": 100,
+      "initial_physics_sha256": "2c253d268f274610134a7a0131fbf74a507bb6726c1b2c37193efe293c352e2c",
+      "particles_inside": 8,
+      "particles_total": 12,
+      "fraction": 0.6666666666666666
+    },
+    {
+      "episode": 225,
+      "reset_seed": 200225,
+      "steps": 100,
+      "initial_physics_sha256": "2c253d268f274610134a7a0131fbf74a507bb6726c1b2c37193efe293c352e2c",
+      "particles_inside": 9,
+      "particles_total": 12,
+      "fraction": 0.75
+    },
+    {
+      "episode": 226,
+      "reset_seed": 200226,
+      "steps": 100,
+      "initial_physics_sha256": "2c253d268f274610134a7a0131fbf74a507bb6726c1b2c37193efe293c352e2c",
+      "particles_inside": 7,
+      "particles_total": 12,
+      "fraction": 0.5833333333333334
+    },
+    {
+      "episode": 227,
+      "reset_seed": 200227,
+      "steps": 100,
+      "initial_physics_sha256": "2c253d268f274610134a7a0131fbf74a507bb6726c1b2c37193efe293c352e2c",
+      "particles_inside": 11,
+      "particles_total": 12,
+      "fraction": 0.9166666666666666
+    },
+    {
+      "episode": 228,
+      "reset_seed": 200228,
+      "steps": 100,
+      "initial_physics_sha256": "2c253d268f274610134a7a0131fbf74a507bb6726c1b2c37193efe293c352e2c",
+      "particles_inside": 10,
+      "particles_total": 12,
+      "fraction": 0.8333333333333334
+    },
+    {
+      "episode": 229,
+      "reset_seed": 200229,
+      "steps": 100,
+      "initial_physics_sha256": "2c253d268f274610134a7a0131fbf74a507bb6726c1b2c37193efe293c352e2c",
+      "particles_inside": 12,
+      "particles_total": 12,
+      "fraction": 1.0
+    },
+    {
+      "episode": 230,
+      "reset_seed": 200230,
+      "steps": 100,
+      "initial_physics_sha256": "2c253d268f274610134a7a0131fbf74a507bb6726c1b2c37193efe293c352e2c",
+      "particles_inside": 8,
+      "particles_total": 12,
+      "fraction": 0.6666666666666666
+    },
+    {
+      "episode": 231,
+      "reset_seed": 200231,
+      "steps": 100,
+      "initial_physics_sha256": "2c253d268f274610134a7a0131fbf74a507bb6726c1b2c37193efe293c352e2c",
+      "particles_inside": 9,
+      "particles_total": 12,
+      "fraction": 0.75
+    },
+    {
+      "episode": 232,
+      "reset_seed": 200232,
+      "steps": 100,
+      "initial_physics_sha256": "2c253d268f274610134a7a0131fbf74a507bb6726c1b2c37193efe293c352e2c",
+      "particles_inside": 11,
+      "particles_total": 12,
+      "fraction": 0.9166666666666666
+    },
+    {
+      "episode": 233,
+      "reset_seed": 200233,
+      "steps": 100,
+      "initial_physics_sha256": "2c253d268f274610134a7a0131fbf74a507bb6726c1b2c37193efe293c352e2c",
+      "particles_inside": 9,
+      "particles_total": 12,
+      "fraction": 0.75
+    },
+    {
+      "episode": 234,
+      "reset_seed": 200234,
+      "steps": 100,
+      "initial_physics_sha256": "2c253d268f274610134a7a0131fbf74a507bb6726c1b2c37193efe293c352e2c",
+      "particles_inside": 11,
+      "particles_total": 12,
+      "fraction": 0.9166666666666666
+    },
+    {
+      "episode": 235,
+      "reset_seed": 200235,
+      "steps": 100,
+      "initial_physics_sha256": "2c253d268f274610134a7a0131fbf74a507bb6726c1b2c37193efe293c352e2c",
+      "particles_inside": 9,
+      "particles_total": 12,
+      "fraction": 0.75
+    },
+    {
+      "episode": 236,
+      "reset_seed": 200236,
+      "steps": 100,
+      "initial_physics_sha256": "2c253d268f274610134a7a0131fbf74a507bb6726c1b2c37193efe293c352e2c",
+      "particles_inside": 11,
+      "particles_total": 12,
+      "fraction": 0.9166666666666666
+    },
+    {
+      "episode": 237,
+      "reset_seed": 200237,
+      "steps": 100,
+      "initial_physics_sha256": "2c253d268f274610134a7a0131fbf74a507bb6726c1b2c37193efe293c352e2c",
+      "particles_inside": 9,
+      "particles_total": 12,
+      "fraction": 0.75
+    },
+    {
+      "episode": 238,
+      "reset_seed": 200238,
+      "steps": 100,
+      "initial_physics_sha256": "2c253d268f274610134a7a0131fbf74a507bb6726c1b2c37193efe293c352e2c",
+      "particles_inside": 8,
+      "particles_total": 12,
+      "fraction": 0.6666666666666666
+    },
+    {
+      "episode": 239,
+      "reset_seed": 200239,
+      "steps": 100,
+      "initial_physics_sha256": "2c253d268f274610134a7a0131fbf74a507bb6726c1b2c37193efe293c352e2c",
+      "particles_inside": 12,
+      "particles_total": 12,
+      "fraction": 1.0
+    },
+    {
+      "episode": 240,
+      "reset_seed": 200240,
+      "steps": 100,
+      "initial_physics_sha256": "2c253d268f274610134a7a0131fbf74a507bb6726c1b2c37193efe293c352e2c",
+      "particles_inside": 7,
+      "particles_total": 12,
+      "fraction": 0.5833333333333334
+    },
+    {
+      "episode": 241,
+      "reset_seed": 200241,
+      "steps": 100,
+      "initial_physics_sha256": "2c253d268f274610134a7a0131fbf74a507bb6726c1b2c37193efe293c352e2c",
+      "particles_inside": 8,
+      "particles_total": 12,
+      "fraction": 0.6666666666666666
+    },
+    {
+      "episode": 242,
+      "reset_seed": 200242,
+      "steps": 100,
+      "initial_physics_sha256": "2c253d268f274610134a7a0131fbf74a507bb6726c1b2c37193efe293c352e2c",
+      "particles_inside": 8,
+      "particles_total": 12,
+      "fraction": 0.6666666666666666
+    },
+    {
+      "episode": 243,
+      "reset_seed": 200243,
+      "steps": 100,
+      "initial_physics_sha256": "2c253d268f274610134a7a0131fbf74a507bb6726c1b2c37193efe293c352e2c",
+      "particles_inside": 10,
+      "particles_total": 12,
+      "fraction": 0.8333333333333334
+    },
+    {
+      "episode": 244,
+      "reset_seed": 200244,
+      "steps": 100,
+      "initial_physics_sha256": "2c253d268f274610134a7a0131fbf74a507bb6726c1b2c37193efe293c352e2c",
+      "particles_inside": 9,
+      "particles_total": 12,
+      "fraction": 0.75
+    },
+    {
+      "episode": 245,
+      "reset_seed": 200245,
+      "steps": 100,
+      "initial_physics_sha256": "2c253d268f274610134a7a0131fbf74a507bb6726c1b2c37193efe293c352e2c",
+      "particles_inside": 11,
+      "particles_total": 12,
+      "fraction": 0.9166666666666666
+    },
+    {
+      "episode": 246,
+      "reset_seed": 200246,
+      "steps": 100,
+      "initial_physics_sha256": "2c253d268f274610134a7a0131fbf74a507bb6726c1b2c37193efe293c352e2c",
+      "particles_inside": 11,
+      "particles_total": 12,
+      "fraction": 0.9166666666666666
+    },
+    {
+      "episode": 247,
+      "reset_seed": 200247,
+      "steps": 100,
+      "initial_physics_sha256": "2c253d268f274610134a7a0131fbf74a507bb6726c1b2c37193efe293c352e2c",
+      "particles_inside": 7,
+      "particles_total": 12,
+      "fraction": 0.5833333333333334
+    },
+    {
+      "episode": 248,
+      "reset_seed": 200248,
+      "steps": 100,
+      "initial_physics_sha256": "2c253d268f274610134a7a0131fbf74a507bb6726c1b2c37193efe293c352e2c",
+      "particles_inside": 12,
+      "particles_total": 12,
+      "fraction": 1.0
+    },
+    {
+      "episode": 249,
+      "reset_seed": 200249,
+      "steps": 100,
+      "initial_physics_sha256": "2c253d268f274610134a7a0131fbf74a507bb6726c1b2c37193efe293c352e2c",
+      "particles_inside": 12,
+      "particles_total": 12,
+      "fraction": 1.0
+    },
+    {
+      "episode": 250,
+      "reset_seed": 200250,
+      "steps": 100,
+      "initial_physics_sha256": "2c253d268f274610134a7a0131fbf74a507bb6726c1b2c37193efe293c352e2c",
+      "particles_inside": 8,
+      "particles_total": 12,
+      "fraction": 0.6666666666666666
+    },
+    {
+      "episode": 251,
+      "reset_seed": 200251,
+      "steps": 100,
+      "initial_physics_sha256": "2c253d268f274610134a7a0131fbf74a507bb6726c1b2c37193efe293c352e2c",
+      "particles_inside": 7,
+      "particles_total": 12,
+      "fraction": 0.5833333333333334
+    },
+    {
+      "episode": 252,
+      "reset_seed": 200252,
+      "steps": 100,
+      "initial_physics_sha256": "2c253d268f274610134a7a0131fbf74a507bb6726c1b2c37193efe293c352e2c",
+      "particles_inside": 11,
+      "particles_total": 12,
+      "fraction": 0.9166666666666666
+    },
+    {
+      "episode": 253,
+      "reset_seed": 200253,
+      "steps": 100,
+      "initial_physics_sha256": "2c253d268f274610134a7a0131fbf74a507bb6726c1b2c37193efe293c352e2c",
+      "particles_inside": 12,
+      "particles_total": 12,
+      "fraction": 1.0
+    },
+    {
+      "episode": 254,
+      "reset_seed": 200254,
+      "steps": 100,
+      "initial_physics_sha256": "2c253d268f274610134a7a0131fbf74a507bb6726c1b2c37193efe293c352e2c",
+      "particles_inside": 11,
+      "particles_total": 12,
+      "fraction": 0.9166666666666666
+    },
+    {
+      "episode": 255,
+      "reset_seed": 200255,
+      "steps": 100,
+      "initial_physics_sha256": "2c253d268f274610134a7a0131fbf74a507bb6726c1b2c37193efe293c352e2c",
+      "particles_inside": 12,
+      "particles_total": 12,
+      "fraction": 1.0
+    },
+    {
+      "episode": 256,
+      "reset_seed": 200256,
+      "steps": 100,
+      "initial_physics_sha256": "2c253d268f274610134a7a0131fbf74a507bb6726c1b2c37193efe293c352e2c",
+      "particles_inside": 11,
+      "particles_total": 12,
+      "fraction": 0.9166666666666666
+    },
+    {
+      "episode": 257,
+      "reset_seed": 200257,
+      "steps": 100,
+      "initial_physics_sha256": "2c253d268f274610134a7a0131fbf74a507bb6726c1b2c37193efe293c352e2c",
+      "particles_inside": 9,
+      "particles_total": 12,
+      "fraction": 0.75
+    },
+    {
+      "episode": 258,
+      "reset_seed": 200258,
+      "steps": 100,
+      "initial_physics_sha256": "2c253d268f274610134a7a0131fbf74a507bb6726c1b2c37193efe293c352e2c",
+      "particles_inside": 10,
+      "particles_total": 12,
+      "fraction": 0.8333333333333334
+    },
+    {
+      "episode": 259,
+      "reset_seed": 200259,
+      "steps": 100,
+      "initial_physics_sha256": "2c253d268f274610134a7a0131fbf74a507bb6726c1b2c37193efe293c352e2c",
+      "particles_inside": 12,
+      "particles_total": 12,
+      "fraction": 1.0
+    },
+    {
+      "episode": 260,
+      "reset_seed": 200260,
+      "steps": 100,
+      "initial_physics_sha256": "2c253d268f274610134a7a0131fbf74a507bb6726c1b2c37193efe293c352e2c",
+      "particles_inside": 11,
+      "particles_total": 12,
+      "fraction": 0.9166666666666666
+    },
+    {
+      "episode": 261,
+      "reset_seed": 200261,
+      "steps": 100,
+      "initial_physics_sha256": "2c253d268f274610134a7a0131fbf74a507bb6726c1b2c37193efe293c352e2c",
+      "particles_inside": 12,
+      "particles_total": 12,
+      "fraction": 1.0
+    },
+    {
+      "episode": 262,
+      "reset_seed": 200262,
+      "steps": 100,
+      "initial_physics_sha256": "2c253d268f274610134a7a0131fbf74a507bb6726c1b2c37193efe293c352e2c",
+      "particles_inside": 10,
+      "particles_total": 12,
+      "fraction": 0.8333333333333334
+    },
+    {
+      "episode": 263,
+      "reset_seed": 200263,
+      "steps": 100,
+      "initial_physics_sha256": "2c253d268f274610134a7a0131fbf74a507bb6726c1b2c37193efe293c352e2c",
+      "particles_inside": 8,
+      "particles_total": 12,
+      "fraction": 0.6666666666666666
+    },
+    {
+      "episode": 264,
+      "reset_seed": 200264,
+      "steps": 100,
+      "initial_physics_sha256": "2c253d268f274610134a7a0131fbf74a507bb6726c1b2c37193efe293c352e2c",
+      "particles_inside": 9,
+      "particles_total": 12,
+      "fraction": 0.75
+    },
+    {
+      "episode": 265,
+      "reset_seed": 200265,
+      "steps": 100,
+      "initial_physics_sha256": "2c253d268f274610134a7a0131fbf74a507bb6726c1b2c37193efe293c352e2c",
+      "particles_inside": 12,
+      "particles_total": 12,
+      "fraction": 1.0
+    },
+    {
+      "episode": 266,
+      "reset_seed": 200266,
+      "steps": 100,
+      "initial_physics_sha256": "2c253d268f274610134a7a0131fbf74a507bb6726c1b2c37193efe293c352e2c",
+      "particles_inside": 10,
+      "particles_total": 12,
+      "fraction": 0.8333333333333334
+    },
+    {
+      "episode": 267,
+      "reset_seed": 200267,
+      "steps": 100,
+      "initial_physics_sha256": "2c253d268f274610134a7a0131fbf74a507bb6726c1b2c37193efe293c352e2c",
+      "particles_inside": 12,
+      "particles_total": 12,
+      "fraction": 1.0
+    },
+    {
+      "episode": 268,
+      "reset_seed": 200268,
+      "steps": 100,
+      "initial_physics_sha256": "2c253d268f274610134a7a0131fbf74a507bb6726c1b2c37193efe293c352e2c",
+      "particles_inside": 7,
+      "particles_total": 12,
+      "fraction": 0.5833333333333334
+    },
+    {
+      "episode": 269,
+      "reset_seed": 200269,
+      "steps": 100,
+      "initial_physics_sha256": "2c253d268f274610134a7a0131fbf74a507bb6726c1b2c37193efe293c352e2c",
+      "particles_inside": 12,
+      "particles_total": 12,
+      "fraction": 1.0
+    },
+    {
+      "episode": 270,
+      "reset_seed": 200270,
+      "steps": 100,
+      "initial_physics_sha256": "2c253d268f274610134a7a0131fbf74a507bb6726c1b2c37193efe293c352e2c",
+      "particles_inside": 10,
+      "particles_total": 12,
+      "fraction": 0.8333333333333334
+    },
+    {
+      "episode": 271,
+      "reset_seed": 200271,
+      "steps": 100,
+      "initial_physics_sha256": "2c253d268f274610134a7a0131fbf74a507bb6726c1b2c37193efe293c352e2c",
+      "particles_inside": 11,
+      "particles_total": 12,
+      "fraction": 0.9166666666666666
+    },
+    {
+      "episode": 272,
+      "reset_seed": 200272,
+      "steps": 100,
+      "initial_physics_sha256": "2c253d268f274610134a7a0131fbf74a507bb6726c1b2c37193efe293c352e2c",
+      "particles_inside": 10,
+      "particles_total": 12,
+      "fraction": 0.8333333333333334
+    },
+    {
+      "episode": 273,
+      "reset_seed": 200273,
+      "steps": 100,
+      "initial_physics_sha256": "2c253d268f274610134a7a0131fbf74a507bb6726c1b2c37193efe293c352e2c",
+      "particles_inside": 10,
+      "particles_total": 12,
+      "fraction": 0.8333333333333334
+    },
+    {
+      "episode": 274,
+      "reset_seed": 200274,
+      "steps": 100,
+      "initial_physics_sha256": "2c253d268f274610134a7a0131fbf74a507bb6726c1b2c37193efe293c352e2c",
+      "particles_inside": 10,
+      "particles_total": 12,
+      "fraction": 0.8333333333333334
+    },
+    {
+      "episode": 275,
+      "reset_seed": 200275,
+      "steps": 100,
+      "initial_physics_sha256": "2c253d268f274610134a7a0131fbf74a507bb6726c1b2c37193efe293c352e2c",
+      "particles_inside": 12,
+      "particles_total": 12,
+      "fraction": 1.0
+    },
+    {
+      "episode": 276,
+      "reset_seed": 200276,
+      "steps": 100,
+      "initial_physics_sha256": "2c253d268f274610134a7a0131fbf74a507bb6726c1b2c37193efe293c352e2c",
+      "particles_inside": 11,
+      "particles_total": 12,
+      "fraction": 0.9166666666666666
+    },
+    {
+      "episode": 277,
+      "reset_seed": 200277,
+      "steps": 100,
+      "initial_physics_sha256": "2c253d268f274610134a7a0131fbf74a507bb6726c1b2c37193efe293c352e2c",
+      "particles_inside": 10,
+      "particles_total": 12,
+      "fraction": 0.8333333333333334
+    },
+    {
+      "episode": 278,
+      "reset_seed": 200278,
+      "steps": 100,
+      "initial_physics_sha256": "2c253d268f274610134a7a0131fbf74a507bb6726c1b2c37193efe293c352e2c",
+      "particles_inside": 10,
+      "particles_total": 12,
+      "fraction": 0.8333333333333334
+    },
+    {
+      "episode": 279,
+      "reset_seed": 200279,
+      "steps": 100,
+      "initial_physics_sha256": "2c253d268f274610134a7a0131fbf74a507bb6726c1b2c37193efe293c352e2c",
+      "particles_inside": 9,
+      "particles_total": 12,
+      "fraction": 0.75
+    },
+    {
+      "episode": 280,
+      "reset_seed": 200280,
+      "steps": 100,
+      "initial_physics_sha256": "2c253d268f274610134a7a0131fbf74a507bb6726c1b2c37193efe293c352e2c",
+      "particles_inside": 11,
+      "particles_total": 12,
+      "fraction": 0.9166666666666666
+    },
+    {
+      "episode": 281,
+      "reset_seed": 200281,
+      "steps": 100,
+      "initial_physics_sha256": "2c253d268f274610134a7a0131fbf74a507bb6726c1b2c37193efe293c352e2c",
+      "particles_inside": 7,
+      "particles_total": 12,
+      "fraction": 0.5833333333333334
+    },
+    {
+      "episode": 282,
+      "reset_seed": 200282,
+      "steps": 100,
+      "initial_physics_sha256": "2c253d268f274610134a7a0131fbf74a507bb6726c1b2c37193efe293c352e2c",
+      "particles_inside": 9,
+      "particles_total": 12,
+      "fraction": 0.75
+    },
+    {
+      "episode": 283,
+      "reset_seed": 200283,
+      "steps": 100,
+      "initial_physics_sha256": "2c253d268f274610134a7a0131fbf74a507bb6726c1b2c37193efe293c352e2c",
+      "particles_inside": 10,
+      "particles_total": 12,
+      "fraction": 0.8333333333333334
+    },
+    {
+      "episode": 284,
+      "reset_seed": 200284,
+      "steps": 100,
+      "initial_physics_sha256": "2c253d268f274610134a7a0131fbf74a507bb6726c1b2c37193efe293c352e2c",
+      "particles_inside": 12,
+      "particles_total": 12,
+      "fraction": 1.0
+    },
+    {
+      "episode": 285,
+      "reset_seed": 200285,
+      "steps": 100,
+      "initial_physics_sha256": "2c253d268f274610134a7a0131fbf74a507bb6726c1b2c37193efe293c352e2c",
+      "particles_inside": 11,
+      "particles_total": 12,
+      "fraction": 0.9166666666666666
+    },
+    {
+      "episode": 286,
+      "reset_seed": 200286,
+      "steps": 100,
+      "initial_physics_sha256": "2c253d268f274610134a7a0131fbf74a507bb6726c1b2c37193efe293c352e2c",
+      "particles_inside": 12,
+      "particles_total": 12,
+      "fraction": 1.0
+    },
+    {
+      "episode": 287,
+      "reset_seed": 200287,
+      "steps": 100,
+      "initial_physics_sha256": "2c253d268f274610134a7a0131fbf74a507bb6726c1b2c37193efe293c352e2c",
+      "particles_inside": 9,
+      "particles_total": 12,
+      "fraction": 0.75
+    },
+    {
+      "episode": 288,
+      "reset_seed": 200288,
+      "steps": 100,
+      "initial_physics_sha256": "2c253d268f274610134a7a0131fbf74a507bb6726c1b2c37193efe293c352e2c",
+      "particles_inside": 10,
+      "particles_total": 12,
+      "fraction": 0.8333333333333334
+    },
+    {
+      "episode": 289,
+      "reset_seed": 200289,
+      "steps": 100,
+      "initial_physics_sha256": "2c253d268f274610134a7a0131fbf74a507bb6726c1b2c37193efe293c352e2c",
+      "particles_inside": 12,
+      "particles_total": 12,
+      "fraction": 1.0
+    },
+    {
+      "episode": 290,
+      "reset_seed": 200290,
+      "steps": 100,
+      "initial_physics_sha256": "2c253d268f274610134a7a0131fbf74a507bb6726c1b2c37193efe293c352e2c",
+      "particles_inside": 11,
+      "particles_total": 12,
+      "fraction": 0.9166666666666666
+    },
+    {
+      "episode": 291,
+      "reset_seed": 200291,
+      "steps": 100,
+      "initial_physics_sha256": "2c253d268f274610134a7a0131fbf74a507bb6726c1b2c37193efe293c352e2c",
+      "particles_inside": 11,
+      "particles_total": 12,
+      "fraction": 0.9166666666666666
+    },
+    {
+      "episode": 292,
+      "reset_seed": 200292,
+      "steps": 100,
+      "initial_physics_sha256": "2c253d268f274610134a7a0131fbf74a507bb6726c1b2c37193efe293c352e2c",
+      "particles_inside": 9,
+      "particles_total": 12,
+      "fraction": 0.75
+    },
+    {
+      "episode": 293,
+      "reset_seed": 200293,
+      "steps": 100,
+      "initial_physics_sha256": "2c253d268f274610134a7a0131fbf74a507bb6726c1b2c37193efe293c352e2c",
+      "particles_inside": 9,
+      "particles_total": 12,
+      "fraction": 0.75
+    },
+    {
+      "episode": 294,
+      "reset_seed": 200294,
+      "steps": 100,
+      "initial_physics_sha256": "2c253d268f274610134a7a0131fbf74a507bb6726c1b2c37193efe293c352e2c",
+      "particles_inside": 11,
+      "particles_total": 12,
+      "fraction": 0.9166666666666666
+    },
+    {
+      "episode": 295,
+      "reset_seed": 200295,
+      "steps": 100,
+      "initial_physics_sha256": "2c253d268f274610134a7a0131fbf74a507bb6726c1b2c37193efe293c352e2c",
+      "particles_inside": 9,
+      "particles_total": 12,
+      "fraction": 0.75
+    },
+    {
+      "episode": 296,
+      "reset_seed": 200296,
+      "steps": 100,
+      "initial_physics_sha256": "2c253d268f274610134a7a0131fbf74a507bb6726c1b2c37193efe293c352e2c",
+      "particles_inside": 11,
+      "particles_total": 12,
+      "fraction": 0.9166666666666666
+    },
+    {
+      "episode": 297,
+      "reset_seed": 200297,
+      "steps": 100,
+      "initial_physics_sha256": "2c253d268f274610134a7a0131fbf74a507bb6726c1b2c37193efe293c352e2c",
+      "particles_inside": 7,
+      "particles_total": 12,
+      "fraction": 0.5833333333333334
+    },
+    {
+      "episode": 298,
+      "reset_seed": 200298,
+      "steps": 100,
+      "initial_physics_sha256": "2c253d268f274610134a7a0131fbf74a507bb6726c1b2c37193efe293c352e2c",
+      "particles_inside": 11,
+      "particles_total": 12,
+      "fraction": 0.9166666666666666
+    },
+    {
+      "episode": 299,
+      "reset_seed": 200299,
+      "steps": 100,
+      "initial_physics_sha256": "2c253d268f274610134a7a0131fbf74a507bb6726c1b2c37193efe293c352e2c",
+      "particles_inside": 11,
+      "particles_total": 12,
+      "fraction": 0.9166666666666666
+    }
+  ]
+}

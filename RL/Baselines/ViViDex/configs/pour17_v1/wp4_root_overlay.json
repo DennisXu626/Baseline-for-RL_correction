@@ -1,0 +1,13 @@
+{
+  "world_version": "CW_ROOT_NEGATIVE_X_075_V1",
+  "approval": "BASELINE_PLAN.md H; APPROVED_FOR_SHORT_VALIDATION_ONLY",
+  "robot_root_env_xyz_m": [-0.75, 0.0, 0.0],
+  "robot_root_quat_wxyz": [1.0, 0.0, 0.0, 0.0],
+  "root_rule": "Spawn complete fixed articulation once; fixed world anchor = env_origin + root offset; no root writes in reset or control",
+  "base_world_sha256": "2339f7a9ca3eda294908e392744c798c06fbbbc0edd79250bd5e43aaa828dcd5",
+  "base_canonical_sha256": "d41cd5d6ab19f55d583dc3fcd458db89b48dc52e069e8d1be1d61e60ad64e679",
+  "base_robot_usd_sha256": "c2bba25aeb7b04b270df51d0c0efbe8eec95b499d8a7aef46834cefcfb71e347",
+  "unchanged": ["table", "object initial state and physics", "canonical joint q and qd", "PD", "collision filters", "control period", "W1/S1 operation world targets", "A", "mean", "finger reference", "G1-G4"],
+  "other_method_readback": "PENDING; own isolated implementation required; no trajectory sharing",
+  "training_release": false
+}

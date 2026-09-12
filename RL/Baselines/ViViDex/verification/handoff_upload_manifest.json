@@ -1,0 +1,2408 @@
+{
+  "handoff_cutoff_utc": "2026-09-12T17:38:28.115409+00:00",
+  "handoff_cutoff_asia_shanghai": "2026-09-13T01:38:28+08:00",
+  "running_training_results_must_be_requested_from": "Dennis",
+  "upload_performed": false,
+  "target_repository": "https://github.com/DennisXu626/Baseline-for-RL_correction",
+  "files": [
+    {
+      "local_path": "D:/UCBP/RL/Baselines/ViViDex/README.md",
+      "repository_path": "RL/Baselines/ViViDex/README.md",
+      "purpose": "交接入口、资源/命令、逐文件上传索引",
+      "updated_in_handoff": true,
+      "deployed_relative_path": null,
+      "deployed_sha256": null,
+      "bytes": 38402,
+      "sha256": "3517239b433c14052893153a6270050742562a118eb85b150ab71fa258bb7e62"
+    },
+    {
+      "local_path": "D:/UCBP/RL/Baselines/ViViDex/AGENTS.md",
+      "repository_path": "RL/Baselines/ViViDex/AGENTS.md",
+      "purpose": "本track约束及向Dennis索取运行结果要求",
+      "updated_in_handoff": true,
+      "deployed_relative_path": null,
+      "deployed_sha256": null,
+      "bytes": 2420,
+      "sha256": "d2835db4e260730be9ee9075a9dbaf28cf0b9b52a29ed667e288509c5e798089"
+    },
+    {
+      "local_path": "D:/UCBP/RL/Baselines/ViViDex/REPRODUCTION_STATUS.md",
+      "repository_path": "RL/Baselines/ViViDex/REPRODUCTION_STATUS.md",
+      "purpose": "当前/历史状态与结果边界",
+      "updated_in_handoff": true,
+      "deployed_relative_path": null,
+      "deployed_sha256": null,
+      "bytes": 57327,
+      "sha256": "2a1d40728a97106064d1dc2ce6e603b917deb6f40049b8ffcb8401ec05975b2a"
+    },
+    {
+      "local_path": "D:/UCBP/RL/Baselines/ViViDex/BASELINE_PLAN.md",
+      "repository_path": "RL/Baselines/ViViDex/BASELINE_PLAN.md",
+      "purpose": "已批准工作包与历史决策；仅H顶部当前有效",
+      "updated_in_handoff": true,
+      "deployed_relative_path": null,
+      "deployed_sha256": null,
+      "bytes": 204617,
+      "sha256": "95593b0965f31ed0fb19ce10da508834d88f0323d2aa63f5ae87fa9ca0b04c9f"
+    },
+    {
+      "local_path": "D:/UCBP/RL/Baselines/ViViDex/M1A_INPUT_GEOMETRY_AUDIT.md",
+      "repository_path": "RL/Baselines/ViViDex/M1A_INPUT_GEOMETRY_AUDIT.md",
+      "purpose": "几何/输入来源历史证据",
+      "updated_in_handoff": true,
+      "deployed_relative_path": null,
+      "deployed_sha256": null,
+      "bytes": 86727,
+      "sha256": "bbc449e0592e9d3b1254987f12205abc6ea9e381e437b8ca13d1d16cf34eb246"
+    },
+    {
+      "local_path": "D:/UCBP/RL/Baselines/ViViDex/POUR_TWO_SEED_PROTOCOL.md",
+      "repository_path": "RL/Baselines/ViViDex/POUR_TWO_SEED_PROTOCOL.md",
+      "purpose": "已关闭native MuJoCo实验合同",
+      "updated_in_handoff": true,
+      "deployed_relative_path": null,
+      "deployed_sha256": null,
+      "bytes": 6233,
+      "sha256": "cf01f70ea0565b37aea45c564938e673649778f68127bb625534e7aec12c4837"
+    },
+    {
+      "local_path": "D:/UCBP/RL/Baselines/ViViDex/diagnostics/m1a_full_mano_decode_audit.py",
+      "repository_path": "RL/Baselines/ViViDex/diagnostics/m1a_full_mano_decode_audit.py",
+      "purpose": "自身MANO解码/手指retarget必要CPU组件",
+      "updated_in_handoff": false,
+      "deployed_relative_path": null,
+      "deployed_sha256": null,
+      "bytes": 37877,
+      "sha256": "2f48bb2e1f0983ba3376ca3595a540b56eaf8fcf37bfe5cf0ad5ebcb2ef62ecd"
+    },
+    {
+      "local_path": "D:/UCBP/RL/Baselines/ViViDex/diagnostics/m1a_sharpa_left_fk_candidate_v1.py",
+      "repository_path": "RL/Baselines/ViViDex/diagnostics/m1a_sharpa_left_fk_candidate_v1.py",
+      "purpose": "自身MANO解码/手指retarget必要CPU组件",
+      "updated_in_handoff": false,
+      "deployed_relative_path": null,
+      "deployed_sha256": null,
+      "bytes": 13624,
+      "sha256": "1824dd4eaeef280c6d19008e6707f25935889faa9f219960778617ebcbc82c64"
+    },
+    {
+      "local_path": "D:/UCBP/RL/Baselines/ViViDex/diagnostics/m1a_sharpa_single_frame_solver_candidate_v1.py",
+      "repository_path": "RL/Baselines/ViViDex/diagnostics/m1a_sharpa_single_frame_solver_candidate_v1.py",
+      "purpose": "自身MANO解码/手指retarget必要CPU组件",
+      "updated_in_handoff": false,
+      "deployed_relative_path": null,
+      "deployed_sha256": null,
+      "bytes": 5822,
+      "sha256": "fd8c753a03664cbc426a91796b2a8e5befd295a007edea163df7af4f23acd89d"
+    },
+    {
+      "local_path": "D:/UCBP/RL/Baselines/ViViDex/configs/m1a_sharpa_left_fk_candidate_v1.json",
+      "repository_path": "RL/Baselines/ViViDex/configs/m1a_sharpa_left_fk_candidate_v1.json",
+      "purpose": "实际配置/输入合同；历史路径需外部资源",
+      "updated_in_handoff": false,
+      "deployed_relative_path": null,
+      "deployed_sha256": null,
+      "bytes": 5028,
+      "sha256": "c6ff31d3961fe28714d4556f5fc503f29d745805c6666dcd11af386d0800312e"
+    },
+    {
+      "local_path": "D:/UCBP/RL/Baselines/ViViDex/configs/m1a_wrist_zero_hand_local_calibration_candidate_v2.json",
+      "repository_path": "RL/Baselines/ViViDex/configs/m1a_wrist_zero_hand_local_calibration_candidate_v2.json",
+      "purpose": "实际配置/输入合同；历史路径需外部资源",
+      "updated_in_handoff": false,
+      "deployed_relative_path": null,
+      "deployed_sha256": null,
+      "bytes": 5756,
+      "sha256": "7c37127838a94589af3d8b64cb860ea7efb74b77d2034710c27007364eb81c03"
+    },
+    {
+      "local_path": "D:/UCBP/RL/Baselines/ViViDex/verification/handoff_20260913_snapshot.json",
+      "repository_path": "RL/Baselines/ViViDex/verification/handoff_20260913_snapshot.json",
+      "purpose": "交接快照/上传集合、SHA与自检",
+      "updated_in_handoff": true,
+      "deployed_relative_path": null,
+      "deployed_sha256": null,
+      "bytes": 88172,
+      "sha256": "1f2f9562f3dbbaf5d9297c1cfe49ec797e419c719f7c7c8df66f32df5aadd885"
+    },
+    {
+      "local_path": "D:/UCBP/RL/Baselines/ViViDex/verification/handoff_upload_manifest.json",
+      "repository_path": "RL/Baselines/ViViDex/verification/handoff_upload_manifest.json",
+      "purpose": "交接快照/上传集合、SHA与自检",
+      "updated_in_handoff": true,
+      "deployed_relative_path": null,
+      "deployed_sha256": null,
+      "bytes": 133653,
+      "sha256": null
+    },
+    {
+      "local_path": "D:/UCBP/RL/Baselines/ViViDex/verification/seed_0_fixed_eval.json",
+      "repository_path": "RL/Baselines/ViViDex/verification/seed_0_fixed_eval.json",
+      "purpose": "native固定300回合结果/已关闭campaign",
+      "updated_in_handoff": false,
+      "deployed_relative_path": null,
+      "deployed_sha256": null,
+      "bytes": 81882,
+      "sha256": "b032aea179bfe91e597d1161aa15f56660c55e6e3f1385abb966033b6d61936a"
+    },
+    {
+      "local_path": "D:/UCBP/RL/Baselines/ViViDex/verification/campaign_stopped_after_seed0.json",
+      "repository_path": "RL/Baselines/ViViDex/verification/campaign_stopped_after_seed0.json",
+      "purpose": "native固定300回合结果/已关闭campaign",
+      "updated_in_handoff": false,
+      "deployed_relative_path": null,
+      "deployed_sha256": null,
+      "bytes": 2689,
+      "sha256": "aeed5df2adb39c4beb6422563706312c4508a0e5f4f359cb2e0c382c92fd5d83"
+    },
+    {
+      "local_path": "D:/UCBP/RL/Baselines/ViViDex/upstream/vividex_mujoco/LICENSE",
+      "repository_path": "RL/Baselines/ViViDex/upstream/vividex_mujoco/LICENSE",
+      "purpose": "保留第三方许可证",
+      "updated_in_handoff": false,
+      "deployed_relative_path": null,
+      "deployed_sha256": null,
+      "bytes": 1088,
+      "sha256": "bd90e9eb7a95a77ddf0ccaaceb0dc21c59f57fba04d6a95eb24b070d17eef5ac"
+    },
+    {
+      "local_path": "D:/UCBP/RL/Baselines/ViViDex/upstream/vividex_sapien/LICENSE",
+      "repository_path": "RL/Baselines/ViViDex/upstream/vividex_sapien/LICENSE",
+      "purpose": "保留第三方许可证",
+      "updated_in_handoff": false,
+      "deployed_relative_path": null,
+      "deployed_sha256": null,
+      "bytes": 1088,
+      "sha256": "bd90e9eb7a95a77ddf0ccaaceb0dc21c59f57fba04d6a95eb24b070d17eef5ac"
+    },
+    {
+      "local_path": "D:/UCBP/RL/Baselines/ViViDex/artifacts/pour17_v1/development_extension_20260912_01/fixed_endpoint_summary.json",
+      "repository_path": "RL/Baselines/ViViDex/artifacts/pour17_v1/development_extension_20260912_01/fixed_endpoint_summary.json",
+      "purpose": "262144封存结果轻量统计或完整产物索引",
+      "updated_in_handoff": false,
+      "deployed_relative_path": null,
+      "deployed_sha256": null,
+      "bytes": 3585,
+      "sha256": "9e18e684bed5aeda2214958b3897e03aa1270bc12392aeaaa10f0046bb37b732"
+    },
+    {
+      "local_path": "D:/UCBP/RL/Baselines/ViViDex/artifacts/pour17_v1/development_extension_20260912_01/all_learning_windows.json",
+      "repository_path": "RL/Baselines/ViViDex/artifacts/pour17_v1/development_extension_20260912_01/all_learning_windows.json",
+      "purpose": "262144封存结果轻量统计或完整产物索引",
+      "updated_in_handoff": false,
+      "deployed_relative_path": null,
+      "deployed_sha256": null,
+      "bytes": 50326,
+      "sha256": "ef69074482f1000e8963a17ee95f9e879408ec58f8eccf6b48afe54cd1e34ea0"
+    },
+    {
+      "local_path": "D:/UCBP/RL/Baselines/ViViDex/artifacts/pour17_v1/development_extension_20260912_01/delivery_manifest.json",
+      "repository_path": "RL/Baselines/ViViDex/artifacts/pour17_v1/development_extension_20260912_01/delivery_manifest.json",
+      "purpose": "262144封存结果轻量统计或完整产物索引",
+      "updated_in_handoff": false,
+      "deployed_relative_path": null,
+      "deployed_sha256": null,
+      "bytes": 6023,
+      "sha256": "d57ab40e4232ef6aac22358ecdc19475decbfba1c11a496aa672db8830c94386"
+    },
+    {
+      "local_path": "D:/UCBP/RL/Baselines/ViViDex/adaptation/__init__.py",
+      "repository_path": "RL/Baselines/ViViDex/adaptation/__init__.py",
+      "purpose": "当前部署运行/评测/参考组件；保持源码身份",
+      "updated_in_handoff": false,
+      "deployed_relative_path": "adaptation/__init__.py",
+      "deployed_sha256": "5c4762f6feecdcb14f0c93d9619d48cde92231c71496750bae08ca88089dcfb0",
+      "bytes": 44,
+      "sha256": "5c4762f6feecdcb14f0c93d9619d48cde92231c71496750bae08ca88089dcfb0"
+    },
+    {
+      "local_path": "D:/UCBP/RL/Baselines/ViViDex/adaptation/pour17_v1/__init__.py",
+      "repository_path": "RL/Baselines/ViViDex/adaptation/pour17_v1/__init__.py",
+      "purpose": "当前部署运行/评测/参考组件；保持源码身份",
+      "updated_in_handoff": false,
+      "deployed_relative_path": "adaptation/pour17_v1/__init__.py",
+      "deployed_sha256": "691cee7e77caeac2ce789cf43741e2f3c8888a17b3dcd58454ecae61141c5649",
+      "bytes": 89,
+      "sha256": "691cee7e77caeac2ce789cf43741e2f3c8888a17b3dcd58454ecae61141c5649"
+    },
+    {
+      "local_path": "D:/UCBP/RL/Baselines/ViViDex/adaptation/pour17_v1/augmentation.py",
+      "repository_path": "RL/Baselines/ViViDex/adaptation/pour17_v1/augmentation.py",
+      "purpose": "当前部署运行/评测/参考组件；保持源码身份",
+      "updated_in_handoff": false,
+      "deployed_relative_path": "adaptation/pour17_v1/augmentation.py",
+      "deployed_sha256": "555d22398fecdff37483630a4bbe070a628c50e98c66ccb2790be059b060afdf",
+      "bytes": 2028,
+      "sha256": "555d22398fecdff37483630a4bbe070a628c50e98c66ccb2790be059b060afdf"
+    },
+    {
+      "local_path": "D:/UCBP/RL/Baselines/ViViDex/adaptation/pour17_v1/batch_eval.py",
+      "repository_path": "RL/Baselines/ViViDex/adaptation/pour17_v1/batch_eval.py",
+      "purpose": "当前部署运行/评测/参考组件；保持源码身份",
+      "updated_in_handoff": false,
+      "deployed_relative_path": "adaptation/pour17_v1/batch_eval.py",
+      "deployed_sha256": "185623816d8f2a16490d5426e95a582c23ef5a42116d9f284551c22487c60cee",
+      "bytes": 9652,
+      "sha256": "185623816d8f2a16490d5426e95a582c23ef5a42116d9f284551c22487c60cee"
+    },
+    {
+      "local_path": "D:/UCBP/RL/Baselines/ViViDex/adaptation/pour17_v1/bind_wp2_inputs.py",
+      "repository_path": "RL/Baselines/ViViDex/adaptation/pour17_v1/bind_wp2_inputs.py",
+      "purpose": "当前部署运行/评测/参考组件；保持源码身份",
+      "updated_in_handoff": false,
+      "deployed_relative_path": "adaptation/pour17_v1/bind_wp2_inputs.py",
+      "deployed_sha256": "f2d4a4dbf13cede32b35ff450e264af35df7d6f59128d1a312a8dddfa69b331f",
+      "bytes": 2022,
+      "sha256": "f2d4a4dbf13cede32b35ff450e264af35df7d6f59128d1a312a8dddfa69b331f"
+    },
+    {
+      "local_path": "D:/UCBP/RL/Baselines/ViViDex/adaptation/pour17_v1/black_table_record.py",
+      "repository_path": "RL/Baselines/ViViDex/adaptation/pour17_v1/black_table_record.py",
+      "purpose": "随部署保留的历史入口/组件；非新启动授权",
+      "updated_in_handoff": false,
+      "deployed_relative_path": "adaptation/pour17_v1/black_table_record.py",
+      "deployed_sha256": "9d7c0224ac1345c1009b772d4dffca8067541d7c18944bda12e6a6623ad57d76",
+      "bytes": 2183,
+      "sha256": "9d7c0224ac1345c1009b772d4dffca8067541d7c18944bda12e6a6623ad57d76"
+    },
+    {
+      "local_path": "D:/UCBP/RL/Baselines/ViViDex/adaptation/pour17_v1/contact_events.py",
+      "repository_path": "RL/Baselines/ViViDex/adaptation/pour17_v1/contact_events.py",
+      "purpose": "当前部署运行/评测/参考组件；保持源码身份",
+      "updated_in_handoff": false,
+      "deployed_relative_path": "adaptation/pour17_v1/contact_events.py",
+      "deployed_sha256": "12116ea43e9d22ce1dccbc72290e684560b7858f5bb14c09cd0baa910e2225bc",
+      "bytes": 4177,
+      "sha256": "12116ea43e9d22ce1dccbc72290e684560b7858f5bb14c09cd0baa910e2225bc"
+    },
+    {
+      "local_path": "D:/UCBP/RL/Baselines/ViViDex/adaptation/pour17_v1/curriculum.py",
+      "repository_path": "RL/Baselines/ViViDex/adaptation/pour17_v1/curriculum.py",
+      "purpose": "当前部署运行/评测/参考组件；保持源码身份",
+      "updated_in_handoff": false,
+      "deployed_relative_path": "adaptation/pour17_v1/curriculum.py",
+      "deployed_sha256": "71b2db1ced24148c8ed1b0e5e441d286e443635d5f8f72a0dc7fb00f4f2c8ea2",
+      "bytes": 1201,
+      "sha256": "71b2db1ced24148c8ed1b0e5e441d286e443635d5f8f72a0dc7fb00f4f2c8ea2"
+    },
+    {
+      "local_path": "D:/UCBP/RL/Baselines/ViViDex/adaptation/pour17_v1/development_binding.py",
+      "repository_path": "RL/Baselines/ViViDex/adaptation/pour17_v1/development_binding.py",
+      "purpose": "当前部署运行/评测/参考组件；保持源码身份",
+      "updated_in_handoff": false,
+      "deployed_relative_path": "adaptation/pour17_v1/development_binding.py",
+      "deployed_sha256": "8d23719b78edf8ae7222687e3191eacfc00213cdcd97bba1a728c5d4d181a65d",
+      "bytes": 2988,
+      "sha256": "8d23719b78edf8ae7222687e3191eacfc00213cdcd97bba1a728c5d4d181a65d"
+    },
+    {
+      "local_path": "D:/UCBP/RL/Baselines/ViViDex/adaptation/pour17_v1/development_curriculum_job.py",
+      "repository_path": "RL/Baselines/ViViDex/adaptation/pour17_v1/development_curriculum_job.py",
+      "purpose": "当前部署运行/评测/参考组件；保持源码身份",
+      "updated_in_handoff": false,
+      "deployed_relative_path": "adaptation/pour17_v1/development_curriculum_job.py",
+      "deployed_sha256": "10917497363fdd0f48781e1e1c9d7824f8fac4f66f533ae8cc943f40fa1bd184",
+      "bytes": 10976,
+      "sha256": "10917497363fdd0f48781e1e1c9d7824f8fac4f66f533ae8cc943f40fa1bd184"
+    },
+    {
+      "local_path": "D:/UCBP/RL/Baselines/ViViDex/adaptation/pour17_v1/development_extension_job.py",
+      "repository_path": "RL/Baselines/ViViDex/adaptation/pour17_v1/development_extension_job.py",
+      "purpose": "随部署保留的历史入口/组件；非新启动授权",
+      "updated_in_handoff": false,
+      "deployed_relative_path": "adaptation/pour17_v1/development_extension_job.py",
+      "deployed_sha256": "5b57bacfe4a084cd14272b3759f21ec5d926c1042a55ddfd096c195186947dfc",
+      "bytes": 5606,
+      "sha256": "5b57bacfe4a084cd14272b3759f21ec5d926c1042a55ddfd096c195186947dfc"
+    },
+    {
+      "local_path": "D:/UCBP/RL/Baselines/ViViDex/adaptation/pour17_v1/development_job.py",
+      "repository_path": "RL/Baselines/ViViDex/adaptation/pour17_v1/development_job.py",
+      "purpose": "随部署保留的历史入口/组件；非新启动授权",
+      "updated_in_handoff": false,
+      "deployed_relative_path": "adaptation/pour17_v1/development_job.py",
+      "deployed_sha256": "df5b006c76e8a8b0ed6ac7a40ea34adfa62746e21fa99cdffdd406fbf70e6de4",
+      "bytes": 2234,
+      "sha256": "df5b006c76e8a8b0ed6ac7a40ea34adfa62746e21fa99cdffdd406fbf70e6de4"
+    },
+    {
+      "local_path": "D:/UCBP/RL/Baselines/ViViDex/adaptation/pour17_v1/env.py",
+      "repository_path": "RL/Baselines/ViViDex/adaptation/pour17_v1/env.py",
+      "purpose": "当前部署运行/评测/参考组件；保持源码身份",
+      "updated_in_handoff": false,
+      "deployed_relative_path": "adaptation/pour17_v1/env.py",
+      "deployed_sha256": "fb63f2dfea1559691ae7a0c5b70aab4e431c7f48f6195d990d274ad88d20b479",
+      "bytes": 38148,
+      "sha256": "fb63f2dfea1559691ae7a0c5b70aab4e431c7f48f6195d990d274ad88d20b479"
+    },
+    {
+      "local_path": "D:/UCBP/RL/Baselines/ViViDex/adaptation/pour17_v1/eval_entry.py",
+      "repository_path": "RL/Baselines/ViViDex/adaptation/pour17_v1/eval_entry.py",
+      "purpose": "当前部署运行/评测/参考组件；保持源码身份",
+      "updated_in_handoff": false,
+      "deployed_relative_path": "adaptation/pour17_v1/eval_entry.py",
+      "deployed_sha256": "458f36bb8dd9edd8f8b9e72771df440ddceb89b7fbbc854e28f7f3a37311689e",
+      "bytes": 5787,
+      "sha256": "458f36bb8dd9edd8f8b9e72771df440ddceb89b7fbbc854e28f7f3a37311689e"
+    },
+    {
+      "local_path": "D:/UCBP/RL/Baselines/ViViDex/adaptation/pour17_v1/execution_evidence.py",
+      "repository_path": "RL/Baselines/ViViDex/adaptation/pour17_v1/execution_evidence.py",
+      "purpose": "当前部署运行/评测/参考组件；保持源码身份",
+      "updated_in_handoff": false,
+      "deployed_relative_path": "adaptation/pour17_v1/execution_evidence.py",
+      "deployed_sha256": "8c911cac250ee64c7b8024b50eb916b395a5d99bb7523d18bdebcd676f7dc26e",
+      "bytes": 5042,
+      "sha256": "8c911cac250ee64c7b8024b50eb916b395a5d99bb7523d18bdebcd676f7dc26e"
+    },
+    {
+      "local_path": "D:/UCBP/RL/Baselines/ViViDex/adaptation/pour17_v1/followup_approach_probe.py",
+      "repository_path": "RL/Baselines/ViViDex/adaptation/pour17_v1/followup_approach_probe.py",
+      "purpose": "随部署保留的历史入口/组件；非新启动授权",
+      "updated_in_handoff": false,
+      "deployed_relative_path": "adaptation/pour17_v1/followup_approach_probe.py",
+      "deployed_sha256": "d89e97f486d708ee117ed13fef134bbdede3c36e533812a93f42d41b42477749",
+      "bytes": 4828,
+      "sha256": "d89e97f486d708ee117ed13fef134bbdede3c36e533812a93f42d41b42477749"
+    },
+    {
+      "local_path": "D:/UCBP/RL/Baselines/ViViDex/adaptation/pour17_v1/followup_blocker.py",
+      "repository_path": "RL/Baselines/ViViDex/adaptation/pour17_v1/followup_blocker.py",
+      "purpose": "随部署保留的历史入口/组件；非新启动授权",
+      "updated_in_handoff": false,
+      "deployed_relative_path": "adaptation/pour17_v1/followup_blocker.py",
+      "deployed_sha256": "70c8eb349506c8399f0d611f182af0a9c388ac501d82dcee04646b9dda8ee198",
+      "bytes": 6209,
+      "sha256": "70c8eb349506c8399f0d611f182af0a9c388ac501d82dcee04646b9dda8ee198"
+    },
+    {
+      "local_path": "D:/UCBP/RL/Baselines/ViViDex/adaptation/pour17_v1/followup_saved_control.py",
+      "repository_path": "RL/Baselines/ViViDex/adaptation/pour17_v1/followup_saved_control.py",
+      "purpose": "随部署保留的历史入口/组件；非新启动授权",
+      "updated_in_handoff": false,
+      "deployed_relative_path": "adaptation/pour17_v1/followup_saved_control.py",
+      "deployed_sha256": "ae35e44c7bd520a94895d7c2874f21102e40175cc207690f5c7a6ba9daca19ce",
+      "bytes": 3421,
+      "sha256": "ae35e44c7bd520a94895d7c2874f21102e40175cc207690f5c7a6ba9daca19ce"
+    },
+    {
+      "local_path": "D:/UCBP/RL/Baselines/ViViDex/adaptation/pour17_v1/followup_source_check.py",
+      "repository_path": "RL/Baselines/ViViDex/adaptation/pour17_v1/followup_source_check.py",
+      "purpose": "随部署保留的历史入口/组件；非新启动授权",
+      "updated_in_handoff": false,
+      "deployed_relative_path": "adaptation/pour17_v1/followup_source_check.py",
+      "deployed_sha256": "6c5393612b4bd70fe6430d056727519d3794aed53f9924f61e6b8b0abcfff2bf",
+      "bytes": 5893,
+      "sha256": "6c5393612b4bd70fe6430d056727519d3794aed53f9924f61e6b8b0abcfff2bf"
+    },
+    {
+      "local_path": "D:/UCBP/RL/Baselines/ViViDex/adaptation/pour17_v1/geometry.py",
+      "repository_path": "RL/Baselines/ViViDex/adaptation/pour17_v1/geometry.py",
+      "purpose": "当前部署运行/评测/参考组件；保持源码身份",
+      "updated_in_handoff": false,
+      "deployed_relative_path": "adaptation/pour17_v1/geometry.py",
+      "deployed_sha256": "83066009400ad909bf3255df425fd2c3931448ed5b56fbeb0bf7ea85414f770d",
+      "bytes": 23840,
+      "sha256": "83066009400ad909bf3255df425fd2c3931448ed5b56fbeb0bf7ea85414f770d"
+    },
+    {
+      "local_path": "D:/UCBP/RL/Baselines/ViViDex/adaptation/pour17_v1/internal_eval.py",
+      "repository_path": "RL/Baselines/ViViDex/adaptation/pour17_v1/internal_eval.py",
+      "purpose": "当前部署运行/评测/参考组件；保持源码身份",
+      "updated_in_handoff": false,
+      "deployed_relative_path": "adaptation/pour17_v1/internal_eval.py",
+      "deployed_sha256": "86457b5c36f1dff057c2c73b9452f89301780c7cfb9628f29337c292cdf53070",
+      "bytes": 3561,
+      "sha256": "86457b5c36f1dff057c2c73b9452f89301780c7cfb9628f29337c292cdf53070"
+    },
+    {
+      "local_path": "D:/UCBP/RL/Baselines/ViViDex/adaptation/pour17_v1/policy_diagnostic_eval.py",
+      "repository_path": "RL/Baselines/ViViDex/adaptation/pour17_v1/policy_diagnostic_eval.py",
+      "purpose": "当前部署运行/评测/参考组件；保持源码身份",
+      "updated_in_handoff": false,
+      "deployed_relative_path": "adaptation/pour17_v1/policy_diagnostic_eval.py",
+      "deployed_sha256": "69e184225065255f35c6ee20ca14578dba6713172cb14b21fa0d068cb730f6fe",
+      "bytes": 5591,
+      "sha256": "69e184225065255f35c6ee20ca14578dba6713172cb14b21fa0d068cb730f6fe"
+    },
+    {
+      "local_path": "D:/UCBP/RL/Baselines/ViViDex/adaptation/pour17_v1/reference.py",
+      "repository_path": "RL/Baselines/ViViDex/adaptation/pour17_v1/reference.py",
+      "purpose": "当前部署运行/评测/参考组件；保持源码身份",
+      "updated_in_handoff": false,
+      "deployed_relative_path": "adaptation/pour17_v1/reference.py",
+      "deployed_sha256": "9d5612e01474215888c40b5e2861d1fedafb45a5cd39bbf8092809c039408e3a",
+      "bytes": 16908,
+      "sha256": "9d5612e01474215888c40b5e2861d1fedafb45a5cd39bbf8092809c039408e3a"
+    },
+    {
+      "local_path": "D:/UCBP/RL/Baselines/ViViDex/adaptation/pour17_v1/render_capture.py",
+      "repository_path": "RL/Baselines/ViViDex/adaptation/pour17_v1/render_capture.py",
+      "purpose": "当前部署运行/评测/参考组件；保持源码身份",
+      "updated_in_handoff": false,
+      "deployed_relative_path": "adaptation/pour17_v1/render_capture.py",
+      "deployed_sha256": "30b636a04eb0835abd83d54e6797d2bc031fbee502227867e8dde5bce647d4ad",
+      "bytes": 11698,
+      "sha256": "30b636a04eb0835abd83d54e6797d2bc031fbee502227867e8dde5bce647d4ad"
+    },
+    {
+      "local_path": "D:/UCBP/RL/Baselines/ViViDex/adaptation/pour17_v1/reward.py",
+      "repository_path": "RL/Baselines/ViViDex/adaptation/pour17_v1/reward.py",
+      "purpose": "当前部署运行/评测/参考组件；保持源码身份",
+      "updated_in_handoff": false,
+      "deployed_relative_path": "adaptation/pour17_v1/reward.py",
+      "deployed_sha256": "192c6a9427ef00da3795782798e38824e5a840af901a877946607fc3faf96459",
+      "bytes": 3568,
+      "sha256": "192c6a9427ef00da3795782798e38824e5a840af901a877946607fc3faf96459"
+    },
+    {
+      "local_path": "D:/UCBP/RL/Baselines/ViViDex/adaptation/pour17_v1/robot_table_contact.py",
+      "repository_path": "RL/Baselines/ViViDex/adaptation/pour17_v1/robot_table_contact.py",
+      "purpose": "当前部署运行/评测/参考组件；保持源码身份",
+      "updated_in_handoff": false,
+      "deployed_relative_path": "adaptation/pour17_v1/robot_table_contact.py",
+      "deployed_sha256": "68754188dacd0b08acf5a2136669765272b1ba06ca0dbc2c5c0f93a365f7f603",
+      "bytes": 2203,
+      "sha256": "68754188dacd0b08acf5a2136669765272b1ba06ca0dbc2c5c0f93a365f7f603"
+    },
+    {
+      "local_path": "D:/UCBP/RL/Baselines/ViViDex/adaptation/pour17_v1/runtime_checks.py",
+      "repository_path": "RL/Baselines/ViViDex/adaptation/pour17_v1/runtime_checks.py",
+      "purpose": "当前部署运行/评测/参考组件；保持源码身份",
+      "updated_in_handoff": false,
+      "deployed_relative_path": "adaptation/pour17_v1/runtime_checks.py",
+      "deployed_sha256": "492106d44694bee2e3a79bcf5bbb997d96dec32b774bb90a92f09565d26cec0a",
+      "bytes": 7124,
+      "sha256": "492106d44694bee2e3a79bcf5bbb997d96dec32b774bb90a92f09565d26cec0a"
+    },
+    {
+      "local_path": "D:/UCBP/RL/Baselines/ViViDex/adaptation/pour17_v1/sb3_vecenv.py",
+      "repository_path": "RL/Baselines/ViViDex/adaptation/pour17_v1/sb3_vecenv.py",
+      "purpose": "当前部署运行/评测/参考组件；保持源码身份",
+      "updated_in_handoff": false,
+      "deployed_relative_path": "adaptation/pour17_v1/sb3_vecenv.py",
+      "deployed_sha256": "3238e343fc7db602dbf11df480e042dcc6cb03f419dd443552dc3174ba7d6b57",
+      "bytes": 4416,
+      "sha256": "3238e343fc7db602dbf11df480e042dcc6cb03f419dd443552dc3174ba7d6b57"
+    },
+    {
+      "local_path": "D:/UCBP/RL/Baselines/ViViDex/adaptation/pour17_v1/scene.py",
+      "repository_path": "RL/Baselines/ViViDex/adaptation/pour17_v1/scene.py",
+      "purpose": "当前部署运行/评测/参考组件；保持源码身份",
+      "updated_in_handoff": false,
+      "deployed_relative_path": "adaptation/pour17_v1/scene.py",
+      "deployed_sha256": "c57be8b32ed2dd80d3140ffe8da778602f6e5aaa183b28322d514e71d5793419",
+      "bytes": 17244,
+      "sha256": "c57be8b32ed2dd80d3140ffe8da778602f6e5aaa183b28322d514e71d5793419"
+    },
+    {
+      "local_path": "D:/UCBP/RL/Baselines/ViViDex/adaptation/pour17_v1/schema.py",
+      "repository_path": "RL/Baselines/ViViDex/adaptation/pour17_v1/schema.py",
+      "purpose": "当前部署运行/评测/参考组件；保持源码身份",
+      "updated_in_handoff": false,
+      "deployed_relative_path": "adaptation/pour17_v1/schema.py",
+      "deployed_sha256": "0c1aa392352bc22f1bee50e5f54c92fa7eb38efbf7c55f12664e165af5bd0782",
+      "bytes": 1378,
+      "sha256": "0c1aa392352bc22f1bee50e5f54c92fa7eb38efbf7c55f12664e165af5bd0782"
+    },
+    {
+      "local_path": "D:/UCBP/RL/Baselines/ViViDex/adaptation/pour17_v1/smoke.py",
+      "repository_path": "RL/Baselines/ViViDex/adaptation/pour17_v1/smoke.py",
+      "purpose": "当前部署运行/评测/参考组件；保持源码身份",
+      "updated_in_handoff": false,
+      "deployed_relative_path": "adaptation/pour17_v1/smoke.py",
+      "deployed_sha256": "bd48de6d785e0a570ac0a8808d9c3fdc1edd828b9bfa071c56faa9b661c3e26e",
+      "bytes": 17456,
+      "sha256": "bd48de6d785e0a570ac0a8808d9c3fdc1edd828b9bfa071c56faa9b661c3e26e"
+    },
+    {
+      "local_path": "D:/UCBP/RL/Baselines/ViViDex/adaptation/pour17_v1/tensor_contact_probe.py",
+      "repository_path": "RL/Baselines/ViViDex/adaptation/pour17_v1/tensor_contact_probe.py",
+      "purpose": "当前部署运行/评测/参考组件；保持源码身份",
+      "updated_in_handoff": false,
+      "deployed_relative_path": "adaptation/pour17_v1/tensor_contact_probe.py",
+      "deployed_sha256": "d4f42c756540e6eb175a3a00933b75f81d4a1aa3a6ce71dffdc5154afed4fee2",
+      "bytes": 4728,
+      "sha256": "d4f42c756540e6eb175a3a00933b75f81d4a1aa3a6ce71dffdc5154afed4fee2"
+    },
+    {
+      "local_path": "D:/UCBP/RL/Baselines/ViViDex/adaptation/pour17_v1/tests.py",
+      "repository_path": "RL/Baselines/ViViDex/adaptation/pour17_v1/tests.py",
+      "purpose": "当前部署运行/评测/参考组件；保持源码身份",
+      "updated_in_handoff": false,
+      "deployed_relative_path": "adaptation/pour17_v1/tests.py",
+      "deployed_sha256": "f6b0aec8b5601f217688db6be39bd1af9261a58c7bac604349630825931a2fd0",
+      "bytes": 5866,
+      "sha256": "f6b0aec8b5601f217688db6be39bd1af9261a58c7bac604349630825931a2fd0"
+    },
+    {
+      "local_path": "D:/UCBP/RL/Baselines/ViViDex/adaptation/pour17_v1/train.py",
+      "repository_path": "RL/Baselines/ViViDex/adaptation/pour17_v1/train.py",
+      "purpose": "当前部署运行/评测/参考组件；保持源码身份",
+      "updated_in_handoff": false,
+      "deployed_relative_path": "adaptation/pour17_v1/train.py",
+      "deployed_sha256": "153c607e9a3cb02ee8dfed68405889bff5ea3eeb3e829d389fc11a5ff97c81cd",
+      "bytes": 30138,
+      "sha256": "153c607e9a3cb02ee8dfed68405889bff5ea3eeb3e829d389fc11a5ff97c81cd"
+    },
+    {
+      "local_path": "D:/UCBP/RL/Baselines/ViViDex/adaptation/pour17_v1/train_state.py",
+      "repository_path": "RL/Baselines/ViViDex/adaptation/pour17_v1/train_state.py",
+      "purpose": "当前部署运行/评测/参考组件；保持源码身份",
+      "updated_in_handoff": false,
+      "deployed_relative_path": "adaptation/pour17_v1/train_state.py",
+      "deployed_sha256": "c3265ad9afd4f67edb258351ac0726e623755418538f4d451e5dc1b87ed1f598",
+      "bytes": 1657,
+      "sha256": "c3265ad9afd4f67edb258351ac0726e623755418538f4d451e5dc1b87ed1f598"
+    },
+    {
+      "local_path": "D:/UCBP/RL/Baselines/ViViDex/adaptation/pour17_v1/wp1_compat/__init__.py",
+      "repository_path": "RL/Baselines/ViViDex/adaptation/pour17_v1/wp1_compat/__init__.py",
+      "purpose": "历史WP1兼容源，随部署保留；不启动",
+      "updated_in_handoff": false,
+      "deployed_relative_path": "adaptation/pour17_v1/wp1_compat/__init__.py",
+      "deployed_sha256": "691cee7e77caeac2ce789cf43741e2f3c8888a17b3dcd58454ecae61141c5649",
+      "bytes": 89,
+      "sha256": "691cee7e77caeac2ce789cf43741e2f3c8888a17b3dcd58454ecae61141c5649"
+    },
+    {
+      "local_path": "D:/UCBP/RL/Baselines/ViViDex/adaptation/pour17_v1/wp1_compat/augmentation.py",
+      "repository_path": "RL/Baselines/ViViDex/adaptation/pour17_v1/wp1_compat/augmentation.py",
+      "purpose": "历史WP1兼容源，随部署保留；不启动",
+      "updated_in_handoff": false,
+      "deployed_relative_path": "adaptation/pour17_v1/wp1_compat/augmentation.py",
+      "deployed_sha256": "555d22398fecdff37483630a4bbe070a628c50e98c66ccb2790be059b060afdf",
+      "bytes": 2028,
+      "sha256": "555d22398fecdff37483630a4bbe070a628c50e98c66ccb2790be059b060afdf"
+    },
+    {
+      "local_path": "D:/UCBP/RL/Baselines/ViViDex/adaptation/pour17_v1/wp1_compat/curriculum.py",
+      "repository_path": "RL/Baselines/ViViDex/adaptation/pour17_v1/wp1_compat/curriculum.py",
+      "purpose": "历史WP1兼容源，随部署保留；不启动",
+      "updated_in_handoff": false,
+      "deployed_relative_path": "adaptation/pour17_v1/wp1_compat/curriculum.py",
+      "deployed_sha256": "71b2db1ced24148c8ed1b0e5e441d286e443635d5f8f72a0dc7fb00f4f2c8ea2",
+      "bytes": 1201,
+      "sha256": "71b2db1ced24148c8ed1b0e5e441d286e443635d5f8f72a0dc7fb00f4f2c8ea2"
+    },
+    {
+      "local_path": "D:/UCBP/RL/Baselines/ViViDex/adaptation/pour17_v1/wp1_compat/env.py",
+      "repository_path": "RL/Baselines/ViViDex/adaptation/pour17_v1/wp1_compat/env.py",
+      "purpose": "历史WP1兼容源，随部署保留；不启动",
+      "updated_in_handoff": false,
+      "deployed_relative_path": "adaptation/pour17_v1/wp1_compat/env.py",
+      "deployed_sha256": "ed19733b27f8981a5050a9fe24e0956b83bba00023858c9e408f9d71e6df5e71",
+      "bytes": 29056,
+      "sha256": "ed19733b27f8981a5050a9fe24e0956b83bba00023858c9e408f9d71e6df5e71"
+    },
+    {
+      "local_path": "D:/UCBP/RL/Baselines/ViViDex/adaptation/pour17_v1/wp1_compat/eval_entry.py",
+      "repository_path": "RL/Baselines/ViViDex/adaptation/pour17_v1/wp1_compat/eval_entry.py",
+      "purpose": "历史WP1兼容源，随部署保留；不启动",
+      "updated_in_handoff": false,
+      "deployed_relative_path": "adaptation/pour17_v1/wp1_compat/eval_entry.py",
+      "deployed_sha256": "458f36bb8dd9edd8f8b9e72771df440ddceb89b7fbbc854e28f7f3a37311689e",
+      "bytes": 5787,
+      "sha256": "458f36bb8dd9edd8f8b9e72771df440ddceb89b7fbbc854e28f7f3a37311689e"
+    },
+    {
+      "local_path": "D:/UCBP/RL/Baselines/ViViDex/adaptation/pour17_v1/wp1_compat/geometry.py",
+      "repository_path": "RL/Baselines/ViViDex/adaptation/pour17_v1/wp1_compat/geometry.py",
+      "purpose": "历史WP1兼容源，随部署保留；不启动",
+      "updated_in_handoff": false,
+      "deployed_relative_path": "adaptation/pour17_v1/wp1_compat/geometry.py",
+      "deployed_sha256": "83066009400ad909bf3255df425fd2c3931448ed5b56fbeb0bf7ea85414f770d",
+      "bytes": 23840,
+      "sha256": "83066009400ad909bf3255df425fd2c3931448ed5b56fbeb0bf7ea85414f770d"
+    },
+    {
+      "local_path": "D:/UCBP/RL/Baselines/ViViDex/adaptation/pour17_v1/wp1_compat/reference.py",
+      "repository_path": "RL/Baselines/ViViDex/adaptation/pour17_v1/wp1_compat/reference.py",
+      "purpose": "历史WP1兼容源，随部署保留；不启动",
+      "updated_in_handoff": false,
+      "deployed_relative_path": "adaptation/pour17_v1/wp1_compat/reference.py",
+      "deployed_sha256": "9d5612e01474215888c40b5e2861d1fedafb45a5cd39bbf8092809c039408e3a",
+      "bytes": 16908,
+      "sha256": "9d5612e01474215888c40b5e2861d1fedafb45a5cd39bbf8092809c039408e3a"
+    },
+    {
+      "local_path": "D:/UCBP/RL/Baselines/ViViDex/adaptation/pour17_v1/wp1_compat/reward.py",
+      "repository_path": "RL/Baselines/ViViDex/adaptation/pour17_v1/wp1_compat/reward.py",
+      "purpose": "历史WP1兼容源，随部署保留；不启动",
+      "updated_in_handoff": false,
+      "deployed_relative_path": "adaptation/pour17_v1/wp1_compat/reward.py",
+      "deployed_sha256": "71f9add60c361b00398974ca24d950274cf6d3d26a094f409444519d85b5c096",
+      "bytes": 3406,
+      "sha256": "71f9add60c361b00398974ca24d950274cf6d3d26a094f409444519d85b5c096"
+    },
+    {
+      "local_path": "D:/UCBP/RL/Baselines/ViViDex/adaptation/pour17_v1/wp1_compat/sb3_vecenv.py",
+      "repository_path": "RL/Baselines/ViViDex/adaptation/pour17_v1/wp1_compat/sb3_vecenv.py",
+      "purpose": "历史WP1兼容源，随部署保留；不启动",
+      "updated_in_handoff": false,
+      "deployed_relative_path": "adaptation/pour17_v1/wp1_compat/sb3_vecenv.py",
+      "deployed_sha256": "81be31807e21b214570dc90b54d4a5607505110c479fedc1a9e4688127cb6404",
+      "bytes": 4323,
+      "sha256": "81be31807e21b214570dc90b54d4a5607505110c479fedc1a9e4688127cb6404"
+    },
+    {
+      "local_path": "D:/UCBP/RL/Baselines/ViViDex/adaptation/pour17_v1/wp1_compat/scene.py",
+      "repository_path": "RL/Baselines/ViViDex/adaptation/pour17_v1/wp1_compat/scene.py",
+      "purpose": "历史WP1兼容源，随部署保留；不启动",
+      "updated_in_handoff": false,
+      "deployed_relative_path": "adaptation/pour17_v1/wp1_compat/scene.py",
+      "deployed_sha256": "1da7029dbfc3548cb48e5a7edf31f2d0295702843653cbb2c2146ac7386736cd",
+      "bytes": 17306,
+      "sha256": "1da7029dbfc3548cb48e5a7edf31f2d0295702843653cbb2c2146ac7386736cd"
+    },
+    {
+      "local_path": "D:/UCBP/RL/Baselines/ViViDex/adaptation/pour17_v1/wp1_compat/smoke.py",
+      "repository_path": "RL/Baselines/ViViDex/adaptation/pour17_v1/wp1_compat/smoke.py",
+      "purpose": "历史WP1兼容源，随部署保留；不启动",
+      "updated_in_handoff": false,
+      "deployed_relative_path": "adaptation/pour17_v1/wp1_compat/smoke.py",
+      "deployed_sha256": "bd48de6d785e0a570ac0a8808d9c3fdc1edd828b9bfa071c56faa9b661c3e26e",
+      "bytes": 17456,
+      "sha256": "bd48de6d785e0a570ac0a8808d9c3fdc1edd828b9bfa071c56faa9b661c3e26e"
+    },
+    {
+      "local_path": "D:/UCBP/RL/Baselines/ViViDex/adaptation/pour17_v1/wp1_compat/tests.py",
+      "repository_path": "RL/Baselines/ViViDex/adaptation/pour17_v1/wp1_compat/tests.py",
+      "purpose": "历史WP1兼容源，随部署保留；不启动",
+      "updated_in_handoff": false,
+      "deployed_relative_path": "adaptation/pour17_v1/wp1_compat/tests.py",
+      "deployed_sha256": "f6b0aec8b5601f217688db6be39bd1af9261a58c7bac604349630825931a2fd0",
+      "bytes": 5866,
+      "sha256": "f6b0aec8b5601f217688db6be39bd1af9261a58c7bac604349630825931a2fd0"
+    },
+    {
+      "local_path": "D:/UCBP/RL/Baselines/ViViDex/adaptation/pour17_v1/wp1_compat/train.py",
+      "repository_path": "RL/Baselines/ViViDex/adaptation/pour17_v1/wp1_compat/train.py",
+      "purpose": "历史WP1兼容源，随部署保留；不启动",
+      "updated_in_handoff": false,
+      "deployed_relative_path": "adaptation/pour17_v1/wp1_compat/train.py",
+      "deployed_sha256": "b2290768ddd7c96256f39d567c805e83d2aa08bebd48d8dc995e5820e2d40624",
+      "bytes": 12350,
+      "sha256": "b2290768ddd7c96256f39d567c805e83d2aa08bebd48d8dc995e5820e2d40624"
+    },
+    {
+      "local_path": "D:/UCBP/RL/Baselines/ViViDex/adaptation/pour17_v1/wp2_cpu_tests.py",
+      "repository_path": "RL/Baselines/ViViDex/adaptation/pour17_v1/wp2_cpu_tests.py",
+      "purpose": "随部署保留的历史入口/组件；非新启动授权",
+      "updated_in_handoff": false,
+      "deployed_relative_path": "adaptation/pour17_v1/wp2_cpu_tests.py",
+      "deployed_sha256": "e7c18633cd8087ef26c0a32e85f5e51e024457dec7edde8c34bef1f95800fc39",
+      "bytes": 11855,
+      "sha256": "e7c18633cd8087ef26c0a32e85f5e51e024457dec7edde8c34bef1f95800fc39"
+    },
+    {
+      "local_path": "D:/UCBP/RL/Baselines/ViViDex/adaptation/pour17_v1/wp2_delivery.py",
+      "repository_path": "RL/Baselines/ViViDex/adaptation/pour17_v1/wp2_delivery.py",
+      "purpose": "随部署保留的历史入口/组件；非新启动授权",
+      "updated_in_handoff": false,
+      "deployed_relative_path": "adaptation/pour17_v1/wp2_delivery.py",
+      "deployed_sha256": "161f4708bd3784e2ff8b67ba2342d97a474c74a10312c7eeef2eff7046eeec2c",
+      "bytes": 9593,
+      "sha256": "161f4708bd3784e2ff8b67ba2342d97a474c74a10312c7eeef2eff7046eeec2c"
+    },
+    {
+      "local_path": "D:/UCBP/RL/Baselines/ViViDex/adaptation/pour17_v1/wp2_job.py",
+      "repository_path": "RL/Baselines/ViViDex/adaptation/pour17_v1/wp2_job.py",
+      "purpose": "随部署保留的历史入口/组件；非新启动授权",
+      "updated_in_handoff": false,
+      "deployed_relative_path": "adaptation/pour17_v1/wp2_job.py",
+      "deployed_sha256": "c689cb1dc40156e2da256865ab1c9d4e710f1391dd50328641d838e92ed3b77c",
+      "bytes": 7220,
+      "sha256": "c689cb1dc40156e2da256865ab1c9d4e710f1391dd50328641d838e92ed3b77c"
+    },
+    {
+      "local_path": "D:/UCBP/RL/Baselines/ViViDex/adaptation/pour17_v1/wp2_prepare.py",
+      "repository_path": "RL/Baselines/ViViDex/adaptation/pour17_v1/wp2_prepare.py",
+      "purpose": "随部署保留的历史入口/组件；非新启动授权",
+      "updated_in_handoff": false,
+      "deployed_relative_path": "adaptation/pour17_v1/wp2_prepare.py",
+      "deployed_sha256": "714e316c478752f9182ba4ce9c02f172193fe2c2c9a202fb12765863025a11be",
+      "bytes": 14103,
+      "sha256": "714e316c478752f9182ba4ce9c02f172193fe2c2c9a202fb12765863025a11be"
+    },
+    {
+      "local_path": "D:/UCBP/RL/Baselines/ViViDex/adaptation/pour17_v1/wp3_finalize.py",
+      "repository_path": "RL/Baselines/ViViDex/adaptation/pour17_v1/wp3_finalize.py",
+      "purpose": "随部署保留的历史入口/组件；非新启动授权",
+      "updated_in_handoff": false,
+      "deployed_relative_path": "adaptation/pour17_v1/wp3_finalize.py",
+      "deployed_sha256": "018581a6c238e41db9ee8c937d46e4b3cc0d82f4a8e41766c91129bda24af2a0",
+      "bytes": 11718,
+      "sha256": "018581a6c238e41db9ee8c937d46e4b3cc0d82f4a8e41766c91129bda24af2a0"
+    },
+    {
+      "local_path": "D:/UCBP/RL/Baselines/ViViDex/adaptation/pour17_v1/wp3_job.py",
+      "repository_path": "RL/Baselines/ViViDex/adaptation/pour17_v1/wp3_job.py",
+      "purpose": "随部署保留的历史入口/组件；非新启动授权",
+      "updated_in_handoff": false,
+      "deployed_relative_path": "adaptation/pour17_v1/wp3_job.py",
+      "deployed_sha256": "dcaa827df042caa679fa89e0e43fd74c6699429aef22f7f29566c25831e0f007",
+      "bytes": 2912,
+      "sha256": "dcaa827df042caa679fa89e0e43fd74c6699429aef22f7f29566c25831e0f007"
+    },
+    {
+      "local_path": "D:/UCBP/RL/Baselines/ViViDex/adaptation/pour17_v1/wp3_reference_interpretation.py",
+      "repository_path": "RL/Baselines/ViViDex/adaptation/pour17_v1/wp3_reference_interpretation.py",
+      "purpose": "随部署保留的历史入口/组件；非新启动授权",
+      "updated_in_handoff": false,
+      "deployed_relative_path": "adaptation/pour17_v1/wp3_reference_interpretation.py",
+      "deployed_sha256": "330ec0ecd8b454e4c039067b14cf357b81c2f427445496bacc936031b2743cee",
+      "bytes": 5828,
+      "sha256": "330ec0ecd8b454e4c039067b14cf357b81c2f427445496bacc936031b2743cee"
+    },
+    {
+      "local_path": "D:/UCBP/RL/Baselines/ViViDex/adaptation/pour17_v1/wp3_scene_probe.py",
+      "repository_path": "RL/Baselines/ViViDex/adaptation/pour17_v1/wp3_scene_probe.py",
+      "purpose": "随部署保留的历史入口/组件；非新启动授权",
+      "updated_in_handoff": false,
+      "deployed_relative_path": "adaptation/pour17_v1/wp3_scene_probe.py",
+      "deployed_sha256": "5df3b7ec85adb80edb391e1f56d5c4120a185fb848ef60fa1cd83d0077602839",
+      "bytes": 17268,
+      "sha256": "5df3b7ec85adb80edb391e1f56d5c4120a185fb848ef60fa1cd83d0077602839"
+    },
+    {
+      "local_path": "D:/UCBP/RL/Baselines/ViViDex/adaptation/pour17_v1/wp4_delivery.py",
+      "repository_path": "RL/Baselines/ViViDex/adaptation/pour17_v1/wp4_delivery.py",
+      "purpose": "随部署保留的历史入口/组件；非新启动授权",
+      "updated_in_handoff": false,
+      "deployed_relative_path": "adaptation/pour17_v1/wp4_delivery.py",
+      "deployed_sha256": "b6b350efc82b00ea5097a1ea62c71fdb0b66fbdb60445778095476bab1e105b4",
+      "bytes": 8645,
+      "sha256": "b6b350efc82b00ea5097a1ea62c71fdb0b66fbdb60445778095476bab1e105b4"
+    },
+    {
+      "local_path": "D:/UCBP/RL/Baselines/ViViDex/adaptation/pour17_v1/wp4_job.py",
+      "repository_path": "RL/Baselines/ViViDex/adaptation/pour17_v1/wp4_job.py",
+      "purpose": "随部署保留的历史入口/组件；非新启动授权",
+      "updated_in_handoff": false,
+      "deployed_relative_path": "adaptation/pour17_v1/wp4_job.py",
+      "deployed_sha256": "c729a3c34abe28cf22a1afaeec3ae5fa968e0d0aff3e76151f33abbcd67f7aab",
+      "bytes": 2981,
+      "sha256": "c729a3c34abe28cf22a1afaeec3ae5fa968e0d0aff3e76151f33abbcd67f7aab"
+    },
+    {
+      "local_path": "D:/UCBP/RL/Baselines/ViViDex/adaptation/pour17_v1/wp4_reference.py",
+      "repository_path": "RL/Baselines/ViViDex/adaptation/pour17_v1/wp4_reference.py",
+      "purpose": "随部署保留的历史入口/组件；非新启动授权",
+      "updated_in_handoff": false,
+      "deployed_relative_path": "adaptation/pour17_v1/wp4_reference.py",
+      "deployed_sha256": "2239a3d91734fa8d9880adad67b0886ff4fe6db6da9c7719a3ce183bb8c8ca2f",
+      "bytes": 5390,
+      "sha256": "2239a3d91734fa8d9880adad67b0886ff4fe6db6da9c7719a3ce183bb8c8ca2f"
+    },
+    {
+      "local_path": "D:/UCBP/RL/Baselines/ViViDex/adaptation/pour17_v1/wp4_rollout.py",
+      "repository_path": "RL/Baselines/ViViDex/adaptation/pour17_v1/wp4_rollout.py",
+      "purpose": "随部署保留的历史入口/组件；非新启动授权",
+      "updated_in_handoff": false,
+      "deployed_relative_path": "adaptation/pour17_v1/wp4_rollout.py",
+      "deployed_sha256": "583eaa54dfcbe23c855222284434f982f0531311e44815260c076b353a2c85ed",
+      "bytes": 20924,
+      "sha256": "583eaa54dfcbe23c855222284434f982f0531311e44815260c076b353a2c85ed"
+    },
+    {
+      "local_path": "D:/UCBP/RL/Baselines/ViViDex/adaptation/pour17_v1/wp4_rollout_job.py",
+      "repository_path": "RL/Baselines/ViViDex/adaptation/pour17_v1/wp4_rollout_job.py",
+      "purpose": "随部署保留的历史入口/组件；非新启动授权",
+      "updated_in_handoff": false,
+      "deployed_relative_path": "adaptation/pour17_v1/wp4_rollout_job.py",
+      "deployed_sha256": "50fdb55afacab5099811d918d37b9be64731ab01486fe34b5dfaf491cfa0e740",
+      "bytes": 2664,
+      "sha256": "50fdb55afacab5099811d918d37b9be64731ab01486fe34b5dfaf491cfa0e740"
+    },
+    {
+      "local_path": "D:/UCBP/RL/Baselines/ViViDex/adaptation/pour17_v1/wp4_scene_probe.py",
+      "repository_path": "RL/Baselines/ViViDex/adaptation/pour17_v1/wp4_scene_probe.py",
+      "purpose": "随部署保留的历史入口/组件；非新启动授权",
+      "updated_in_handoff": false,
+      "deployed_relative_path": "adaptation/pour17_v1/wp4_scene_probe.py",
+      "deployed_sha256": "07b8452c8b9fc56322237e1b348053b515c15dde928e84abaff5186aad93d774",
+      "bytes": 18049,
+      "sha256": "07b8452c8b9fc56322237e1b348053b515c15dde928e84abaff5186aad93d774"
+    },
+    {
+      "local_path": "D:/UCBP/RL/Baselines/ViViDex/adaptation/pour17_v1/wp4_static.py",
+      "repository_path": "RL/Baselines/ViViDex/adaptation/pour17_v1/wp4_static.py",
+      "purpose": "随部署保留的历史入口/组件；非新启动授权",
+      "updated_in_handoff": false,
+      "deployed_relative_path": "adaptation/pour17_v1/wp4_static.py",
+      "deployed_sha256": "1cc7c716638cf234e08ad7051e9a3e05f16f2abc2213993932952d3e67da583f",
+      "bytes": 3926,
+      "sha256": "1cc7c716638cf234e08ad7051e9a3e05f16f2abc2213993932952d3e67da583f"
+    },
+    {
+      "local_path": "D:/UCBP/RL/Baselines/ViViDex/adaptation/pour17_v1/wp4_world.py",
+      "repository_path": "RL/Baselines/ViViDex/adaptation/pour17_v1/wp4_world.py",
+      "purpose": "随部署保留的历史入口/组件；非新启动授权",
+      "updated_in_handoff": false,
+      "deployed_relative_path": "adaptation/pour17_v1/wp4_world.py",
+      "deployed_sha256": "7a1a6bb3f35d87a0deb54efc034a317b4ac7c1399957d54a6ce24ff3a7551a8e",
+      "bytes": 1241,
+      "sha256": "7a1a6bb3f35d87a0deb54efc034a317b4ac7c1399957d54a6ce24ff3a7551a8e"
+    },
+    {
+      "local_path": "D:/UCBP/RL/Baselines/ViViDex/configs/pour17_v1/dev_to_first_curriculum_v1.json",
+      "repository_path": "RL/Baselines/ViViDex/configs/pour17_v1/dev_to_first_curriculum_v1.json",
+      "purpose": "实际配置/输入合同；历史路径需外部资源",
+      "updated_in_handoff": false,
+      "deployed_relative_path": "configs/pour17_v1/dev_to_first_curriculum_v1.json",
+      "deployed_sha256": "4142a0f6ac8a8cec82c78e2b3f8844d4a083bfb7580c15ebb71154717b51bc34",
+      "bytes": 475,
+      "sha256": "4142a0f6ac8a8cec82c78e2b3f8844d4a083bfb7580c15ebb71154717b51bc34"
+    },
+    {
+      "local_path": "D:/UCBP/RL/Baselines/ViViDex/configs/pour17_v1/development_schema.json",
+      "repository_path": "RL/Baselines/ViViDex/configs/pour17_v1/development_schema.json",
+      "purpose": "实际配置/输入合同；历史路径需外部资源",
+      "updated_in_handoff": false,
+      "deployed_relative_path": "configs/pour17_v1/development_schema.json",
+      "deployed_sha256": "08485687564f1cca7dd8e05bac5513225e5074c444b3fa588e542481081c0ef9",
+      "bytes": 2078,
+      "sha256": "08485687564f1cca7dd8e05bac5513225e5074c444b3fa588e542481081c0ef9"
+    },
+    {
+      "local_path": "D:/UCBP/RL/Baselines/ViViDex/configs/pour17_v1/observation_action_schema.json",
+      "repository_path": "RL/Baselines/ViViDex/configs/pour17_v1/observation_action_schema.json",
+      "purpose": "实际配置/输入合同；历史路径需外部资源",
+      "updated_in_handoff": false,
+      "deployed_relative_path": "configs/pour17_v1/observation_action_schema.json",
+      "deployed_sha256": "3ef054290b25efecd1fcb78fd1bb08566f8057165b34810652f92f888df9d340",
+      "bytes": 2112,
+      "sha256": "3ef054290b25efecd1fcb78fd1bb08566f8057165b34810652f92f888df9d340"
+    },
+    {
+      "local_path": "D:/UCBP/RL/Baselines/ViViDex/configs/pour17_v1/wp1_config.json",
+      "repository_path": "RL/Baselines/ViViDex/configs/pour17_v1/wp1_config.json",
+      "purpose": "实际配置/输入合同；历史路径需外部资源",
+      "updated_in_handoff": false,
+      "deployed_relative_path": "configs/pour17_v1/wp1_config.json",
+      "deployed_sha256": "0f7b377d8b9c1622819ef53b495c7d81ec50e6c3d1431b3be42909deb9af7d39",
+      "bytes": 4115,
+      "sha256": "0f7b377d8b9c1622819ef53b495c7d81ec50e6c3d1431b3be42909deb9af7d39"
+    },
+    {
+      "local_path": "D:/UCBP/RL/Baselines/ViViDex/configs/pour17_v1/wp1_train.yaml",
+      "repository_path": "RL/Baselines/ViViDex/configs/pour17_v1/wp1_train.yaml",
+      "purpose": "实际配置/输入合同；历史路径需外部资源",
+      "updated_in_handoff": false,
+      "deployed_relative_path": "configs/pour17_v1/wp1_train.yaml",
+      "deployed_sha256": "483c67afb0a728e4226d47db24129df08c69c6f6b33a79fc872639d5a4f7f0a3",
+      "bytes": 1748,
+      "sha256": "483c67afb0a728e4226d47db24129df08c69c6f6b33a79fc872639d5a4f7f0a3"
+    },
+    {
+      "local_path": "D:/UCBP/RL/Baselines/ViViDex/configs/pour17_v1/wp2_train.yaml",
+      "repository_path": "RL/Baselines/ViViDex/configs/pour17_v1/wp2_train.yaml",
+      "purpose": "实际配置/输入合同；历史路径需外部资源",
+      "updated_in_handoff": false,
+      "deployed_relative_path": "configs/pour17_v1/wp2_train.yaml",
+      "deployed_sha256": "51fbdec7c684dce9ab9e2d5aa9e7659bd3272fcc18b7379e82850a6c6126cb5c",
+      "bytes": 1413,
+      "sha256": "51fbdec7c684dce9ab9e2d5aa9e7659bd3272fcc18b7379e82850a6c6126cb5c"
+    },
+    {
+      "local_path": "D:/UCBP/RL/Baselines/ViViDex/configs/pour17_v1/wp4_root_overlay.json",
+      "repository_path": "RL/Baselines/ViViDex/configs/pour17_v1/wp4_root_overlay.json",
+      "purpose": "实际配置/输入合同；历史路径需外部资源",
+      "updated_in_handoff": false,
+      "deployed_relative_path": "configs/pour17_v1/wp4_root_overlay.json",
+      "deployed_sha256": "df3849dafcfabe4ea2cf7df9e7394f6d41c097986ce5a53c5e66a312c6846bc7",
+      "bytes": 975,
+      "sha256": "df3849dafcfabe4ea2cf7df9e7394f6d41c097986ce5a53c5e66a312c6846bc7"
+    },
+    {
+      "local_path": "D:/UCBP/GPU_POLICY.md",
+      "repository_path": "GPU_POLICY.md",
+      "purpose": "共享GPU唯一规则；team leader只上传一次",
+      "updated_in_handoff": false,
+      "deployed_relative_path": null,
+      "deployed_sha256": null,
+      "bytes": 5044,
+      "sha256": "d5c675df77db48ac69ba406c9e8c13bcc6d0edecd39fb06da99377655de05dda"
+    }
+  ],
+  "archived_links": [
+    {
+      "document": "REPRODUCTION_STATUS.md",
+      "original_target": "artifacts/pour17_v1/development_extension_20260912_01/DEVELOPMENT_EXTENSION_REPORT.md",
+      "local_resource": "D:/UCBP/RL/Baselines/ViViDex/artifacts/pour17_v1/development_extension_20260912_01/DEVELOPMENT_EXTENSION_REPORT.md",
+      "local_exists": true
+    },
+    {
+      "document": "REPRODUCTION_STATUS.md",
+      "original_target": "artifacts/pour17_v1/development_extension_20260912_01/",
+      "local_resource": "D:/UCBP/RL/Baselines/ViViDex/artifacts/pour17_v1/development_extension_20260912_01",
+      "local_exists": true
+    },
+    {
+      "document": "REPRODUCTION_STATUS.md",
+      "original_target": "artifacts/pour17_v1/development_20260912_01/DEVELOPMENT_REPORT.md",
+      "local_resource": "D:/UCBP/RL/Baselines/ViViDex/artifacts/pour17_v1/development_20260912_01/DEVELOPMENT_REPORT.md",
+      "local_exists": true
+    },
+    {
+      "document": "REPRODUCTION_STATUS.md",
+      "original_target": "artifacts/pour17_v1/development_20260912_01/learning_curves.png",
+      "local_resource": "D:/UCBP/RL/Baselines/ViViDex/artifacts/pour17_v1/development_20260912_01/learning_curves.png",
+      "local_exists": true
+    },
+    {
+      "document": "REPRODUCTION_STATUS.md",
+      "original_target": "artifacts/pour17_v1/wp1_20260912_02/training_mechanism_report.json",
+      "local_resource": "D:/UCBP/RL/Baselines/ViViDex/artifacts/pour17_v1/wp1_20260912_02/training_mechanism_report.json",
+      "local_exists": true
+    },
+    {
+      "document": "REPRODUCTION_STATUS.md",
+      "original_target": "artifacts/pour17_v1/wp4_followup_20260912_01/FOLLOWUP_REPORT.md",
+      "local_resource": "D:/UCBP/RL/Baselines/ViViDex/artifacts/pour17_v1/wp4_followup_20260912_01/FOLLOWUP_REPORT.md",
+      "local_exists": true
+    },
+    {
+      "document": "REPRODUCTION_STATUS.md",
+      "original_target": "artifacts/pour17_v1/wp4_20260912_01/WP4_REPORT.md",
+      "local_resource": "D:/UCBP/RL/Baselines/ViViDex/artifacts/pour17_v1/wp4_20260912_01/WP4_REPORT.md",
+      "local_exists": true
+    },
+    {
+      "document": "REPRODUCTION_STATUS.md",
+      "original_target": "artifacts/pour17_v1/wp3_20260912_01/WP3_REPORT.md",
+      "local_resource": "D:/UCBP/RL/Baselines/ViViDex/artifacts/pour17_v1/wp3_20260912_01/WP3_REPORT.md",
+      "local_exists": true
+    },
+    {
+      "document": "REPRODUCTION_STATUS.md",
+      "original_target": "artifacts/pour17_v1/wp3_20260912_01/common_world_revision_proposal.json",
+      "local_resource": "D:/UCBP/RL/Baselines/ViViDex/artifacts/pour17_v1/wp3_20260912_01/common_world_revision_proposal.json",
+      "local_exists": true
+    },
+    {
+      "document": "REPRODUCTION_STATUS.md",
+      "original_target": "artifacts/m1a_full_sequence_candidate_surface_visualization_delivery_v1/m1a_full_sequence_candidate_synchronized_surface_v1.gif",
+      "local_resource": "D:/UCBP/RL/Baselines/ViViDex/artifacts/m1a_full_sequence_candidate_surface_visualization_delivery_v1/m1a_full_sequence_candidate_synchronized_surface_v1.gif",
+      "local_exists": true
+    },
+    {
+      "document": "REPRODUCTION_STATUS.md",
+      "original_target": "artifacts/m1a_full_sequence_candidate_surface_visualization_delivery_v1/m1a_full_sequence_candidate_fixed_frames_surface_v1.png",
+      "local_resource": "D:/UCBP/RL/Baselines/ViViDex/artifacts/m1a_full_sequence_candidate_surface_visualization_delivery_v1/m1a_full_sequence_candidate_fixed_frames_surface_v1.png",
+      "local_exists": true
+    },
+    {
+      "document": "REPRODUCTION_STATUS.md",
+      "original_target": "artifacts/m1a_full_sequence_candidate_surface_visualization_delivery_v1/M1A_FULL_SEQUENCE_CANDIDATE_SURFACE_VISUALIZATION_DELIVERY_V1.md",
+      "local_resource": "D:/UCBP/RL/Baselines/ViViDex/artifacts/m1a_full_sequence_candidate_surface_visualization_delivery_v1/M1A_FULL_SEQUENCE_CANDIDATE_SURFACE_VISUALIZATION_DELIVERY_V1.md",
+      "local_exists": true
+    },
+    {
+      "document": "REPRODUCTION_STATUS.md",
+      "original_target": "artifacts/pour17_v1/wp1_20260912_02/wp1_report.json",
+      "local_resource": "D:/UCBP/RL/Baselines/ViViDex/artifacts/pour17_v1/wp1_20260912_02/wp1_report.json",
+      "local_exists": true
+    },
+    {
+      "document": "REPRODUCTION_STATUS.md",
+      "original_target": "artifacts/pour17_v1/wp1_20260912_02/throughput.json",
+      "local_resource": "D:/UCBP/RL/Baselines/ViViDex/artifacts/pour17_v1/wp1_20260912_02/throughput.json",
+      "local_exists": true
+    },
+    {
+      "document": "REPRODUCTION_STATUS.md",
+      "original_target": "artifacts/pour17_v1/wp1_20260912_02/training_mechanism_report.json",
+      "local_resource": "D:/UCBP/RL/Baselines/ViViDex/artifacts/pour17_v1/wp1_20260912_02/training_mechanism_report.json",
+      "local_exists": true
+    },
+    {
+      "document": "REPRODUCTION_STATUS.md",
+      "original_target": "artifacts/pour17_v1/wp1_20260912_02/final_model.zip",
+      "local_resource": "D:/UCBP/RL/Baselines/ViViDex/artifacts/pour17_v1/wp1_20260912_02/final_model.zip",
+      "local_exists": true
+    },
+    {
+      "document": "REPRODUCTION_STATUS.md",
+      "original_target": "artifacts/pour17_v1/wp1_20260912_02/video_validation.json",
+      "local_resource": "D:/UCBP/RL/Baselines/ViViDex/artifacts/pour17_v1/wp1_20260912_02/video_validation.json",
+      "local_exists": true
+    },
+    {
+      "document": "REPRODUCTION_STATUS.md",
+      "original_target": "verification/checkpoint_manifest.json",
+      "local_resource": "D:/UCBP/RL/Baselines/ViViDex/verification/checkpoint_manifest.json",
+      "local_exists": true
+    },
+    {
+      "document": "REPRODUCTION_STATUS.md",
+      "original_target": "checkpoint_index.json",
+      "local_resource": "D:/UCBP/RL/Baselines/ViViDex/checkpoint_index.json",
+      "local_exists": true
+    },
+    {
+      "document": "REPRODUCTION_STATUS.md",
+      "original_target": "verification/requirements.lock.txt",
+      "local_resource": "D:/UCBP/RL/Baselines/ViViDex/verification/requirements.lock.txt",
+      "local_exists": true
+    },
+    {
+      "document": "REPRODUCTION_STATUS.md",
+      "original_target": "setup_mujoco.sh",
+      "local_resource": "D:/UCBP/RL/Baselines/ViViDex/setup_mujoco.sh",
+      "local_exists": true
+    },
+    {
+      "document": "REPRODUCTION_STATUS.md",
+      "original_target": "artifacts/pour17_v1/wp2_20260912_01/WP2_REPORT.md",
+      "local_resource": "D:/UCBP/RL/Baselines/ViViDex/artifacts/pour17_v1/wp2_20260912_01/WP2_REPORT.md",
+      "local_exists": true
+    },
+    {
+      "document": "REPRODUCTION_STATUS.md",
+      "original_target": "artifacts/pour17_v1/wp2_20260912_01/wp2_report.json",
+      "local_resource": "D:/UCBP/RL/Baselines/ViViDex/artifacts/pour17_v1/wp2_20260912_01/wp2_report.json",
+      "local_exists": true
+    },
+    {
+      "document": "REPRODUCTION_STATUS.md",
+      "original_target": "artifacts/pour17_v1/wp2_20260912_01/wp2_delivery_manifest.json",
+      "local_resource": "D:/UCBP/RL/Baselines/ViViDex/artifacts/pour17_v1/wp2_20260912_01/wp2_delivery_manifest.json",
+      "local_exists": true
+    },
+    {
+      "document": "REPRODUCTION_STATUS.md",
+      "original_target": "artifacts/pour17_v1/wp2_20260912_01/FORMAL_COMMANDS_REVIEW_ONLY.md",
+      "local_resource": "D:/UCBP/RL/Baselines/ViViDex/artifacts/pour17_v1/wp2_20260912_01/FORMAL_COMMANDS_REVIEW_ONLY.md",
+      "local_exists": true
+    },
+    {
+      "document": "REPRODUCTION_STATUS.md",
+      "original_target": "../../Reports/环境报告_ENVIRONMENT_INVENTORY.md",
+      "local_resource": "D:/UCBP/RL/Reports/环境报告_ENVIRONMENT_INVENTORY.md",
+      "local_exists": true
+    },
+    {
+      "document": "REPRODUCTION_STATUS.md",
+      "original_target": "verification/multiseed_repro.patch",
+      "local_resource": "D:/UCBP/RL/Baselines/ViViDex/verification/multiseed_repro.patch",
+      "local_exists": true
+    },
+    {
+      "document": "REPRODUCTION_STATUS.md",
+      "original_target": "eval_pour_fixed.py",
+      "local_resource": "D:/UCBP/RL/Baselines/ViViDex/eval_pour_fixed.py",
+      "local_exists": true
+    },
+    {
+      "document": "REPRODUCTION_STATUS.md",
+      "original_target": "run_pour_campaign.py",
+      "local_resource": "D:/UCBP/RL/Baselines/ViViDex/run_pour_campaign.py",
+      "local_exists": true
+    },
+    {
+      "document": "REPRODUCTION_STATUS.md",
+      "original_target": "reduce_campaign_to_two.py",
+      "local_resource": "D:/UCBP/RL/Baselines/ViViDex/reduce_campaign_to_two.py",
+      "local_exists": true
+    },
+    {
+      "document": "REPRODUCTION_STATUS.md",
+      "original_target": "place_metric_compatibility.patch",
+      "local_resource": "D:/UCBP/RL/Baselines/ViViDex/place_metric_compatibility.patch",
+      "local_exists": true
+    },
+    {
+      "document": "REPRODUCTION_STATUS.md",
+      "original_target": "upstream/vividex_mujoco/hand_imitation/env/models/control.py",
+      "local_resource": "D:/UCBP/RL/Baselines/ViViDex/upstream/vividex_mujoco/hand_imitation/env/models/control.py",
+      "local_exists": true
+    },
+    {
+      "document": "REPRODUCTION_STATUS.md",
+      "original_target": "upstream/vividex_mujoco/tools/experiments/env/dexycb_pour.yaml",
+      "local_resource": "D:/UCBP/RL/Baselines/ViViDex/upstream/vividex_mujoco/tools/experiments/env/dexycb_pour.yaml",
+      "local_exists": true
+    },
+    {
+      "document": "REPRODUCTION_STATUS.md",
+      "original_target": "verification/smoke_02/report.json",
+      "local_resource": "D:/UCBP/RL/Baselines/ViViDex/verification/smoke_02/report.json",
+      "local_exists": true
+    },
+    {
+      "document": "REPRODUCTION_STATUS.md",
+      "original_target": "verification/checkpoint_videos_01",
+      "local_resource": "D:/UCBP/RL/Baselines/ViViDex/verification/checkpoint_videos_01",
+      "local_exists": true
+    },
+    {
+      "document": "REPRODUCTION_STATUS.md",
+      "original_target": "upstream/vividex_mujoco/hand_imitation/env/models/rewards.py",
+      "local_resource": "D:/UCBP/RL/Baselines/ViViDex/upstream/vividex_mujoco/hand_imitation/env/models/rewards.py",
+      "local_exists": true
+    },
+    {
+      "document": "REPRODUCTION_STATUS.md",
+      "original_target": "verification/smoke_02/report.json",
+      "local_resource": "D:/UCBP/RL/Baselines/ViViDex/verification/smoke_02/report.json",
+      "local_exists": true
+    },
+    {
+      "document": "REPRODUCTION_STATUS.md",
+      "original_target": "verification/train_entry_smoke_01.log",
+      "local_resource": "D:/UCBP/RL/Baselines/ViViDex/verification/train_entry_smoke_01.log",
+      "local_exists": true
+    },
+    {
+      "document": "REPRODUCTION_STATUS.md",
+      "original_target": "verification/checkpoint_eval_01.log",
+      "local_resource": "D:/UCBP/RL/Baselines/ViViDex/verification/checkpoint_eval_01.log",
+      "local_exists": true
+    },
+    {
+      "document": "REPRODUCTION_STATUS.md",
+      "original_target": "verification/checkpoint_eval_pour_01.log",
+      "local_resource": "D:/UCBP/RL/Baselines/ViViDex/verification/checkpoint_eval_pour_01.log",
+      "local_exists": true
+    },
+    {
+      "document": "REPRODUCTION_STATUS.md",
+      "original_target": "verification/multiseed_checks.json",
+      "local_resource": "D:/UCBP/RL/Baselines/ViViDex/verification/multiseed_checks.json",
+      "local_exists": true
+    },
+    {
+      "document": "REPRODUCTION_STATUS.md",
+      "original_target": "verification/place_mesh_diagnosis.json",
+      "local_resource": "D:/UCBP/RL/Baselines/ViViDex/verification/place_mesh_diagnosis.json",
+      "local_exists": true
+    },
+    {
+      "document": "REPRODUCTION_STATUS.md",
+      "original_target": "prepare_multiseed.py",
+      "local_resource": "D:/UCBP/RL/Baselines/ViViDex/prepare_multiseed.py",
+      "local_exists": true
+    },
+    {
+      "document": "REPRODUCTION_STATUS.md",
+      "original_target": "check_multiseed.py",
+      "local_resource": "D:/UCBP/RL/Baselines/ViViDex/check_multiseed.py",
+      "local_exists": true
+    },
+    {
+      "document": "REPRODUCTION_STATUS.md",
+      "original_target": "run_pour_campaign.py",
+      "local_resource": "D:/UCBP/RL/Baselines/ViViDex/run_pour_campaign.py",
+      "local_exists": true
+    },
+    {
+      "document": "REPRODUCTION_STATUS.md",
+      "original_target": "reduce_campaign_to_two.py",
+      "local_resource": "D:/UCBP/RL/Baselines/ViViDex/reduce_campaign_to_two.py",
+      "local_exists": true
+    },
+    {
+      "document": "REPRODUCTION_STATUS.md",
+      "original_target": "smoke_mujoco.py",
+      "local_resource": "D:/UCBP/RL/Baselines/ViViDex/smoke_mujoco.py",
+      "local_exists": true
+    },
+    {
+      "document": "REPRODUCTION_STATUS.md",
+      "original_target": "record_checkpoint_episode.py",
+      "local_resource": "D:/UCBP/RL/Baselines/ViViDex/record_checkpoint_episode.py",
+      "local_exists": true
+    },
+    {
+      "document": "REPRODUCTION_STATUS.md",
+      "original_target": "download_checkpoints.py",
+      "local_resource": "D:/UCBP/RL/Baselines/ViViDex/download_checkpoints.py",
+      "local_exists": true
+    },
+    {
+      "document": "REPRODUCTION_STATUS.md",
+      "original_target": "inspect_place_mesh.py",
+      "local_resource": "D:/UCBP/RL/Baselines/ViViDex/inspect_place_mesh.py",
+      "local_exists": true
+    },
+    {
+      "document": "BASELINE_PLAN.md",
+      "original_target": "artifacts/pour17_v1/wp1_20260912_02/throughput.json",
+      "local_resource": "D:/UCBP/RL/Baselines/ViViDex/artifacts/pour17_v1/wp1_20260912_02/throughput.json",
+      "local_exists": true
+    },
+    {
+      "document": "BASELINE_PLAN.md",
+      "original_target": "artifacts/pour17_v1/wp2_20260912_01/WP2_REPORT.md",
+      "local_resource": "D:/UCBP/RL/Baselines/ViViDex/artifacts/pour17_v1/wp2_20260912_01/WP2_REPORT.md",
+      "local_exists": true
+    },
+    {
+      "document": "BASELINE_PLAN.md",
+      "original_target": "artifacts/pour17_v1/wp2_20260912_01/wp2_report.json",
+      "local_resource": "D:/UCBP/RL/Baselines/ViViDex/artifacts/pour17_v1/wp2_20260912_01/wp2_report.json",
+      "local_exists": true
+    },
+    {
+      "document": "BASELINE_PLAN.md",
+      "original_target": "artifacts/pour17_v1/wp3_20260912_01/WP3_REPORT.md",
+      "local_resource": "D:/UCBP/RL/Baselines/ViViDex/artifacts/pour17_v1/wp3_20260912_01/WP3_REPORT.md",
+      "local_exists": true
+    },
+    {
+      "document": "BASELINE_PLAN.md",
+      "original_target": "artifacts/pour17_v1/wp3_20260912_01/common_world_revision_proposal.json",
+      "local_resource": "D:/UCBP/RL/Baselines/ViViDex/artifacts/pour17_v1/wp3_20260912_01/common_world_revision_proposal.json",
+      "local_exists": true
+    },
+    {
+      "document": "BASELINE_PLAN.md",
+      "original_target": "artifacts/pour17_v1/development_extension_20260912_01/DEVELOPMENT_EXTENSION_REPORT.md",
+      "local_resource": "D:/UCBP/RL/Baselines/ViViDex/artifacts/pour17_v1/development_extension_20260912_01/DEVELOPMENT_EXTENSION_REPORT.md",
+      "local_exists": true
+    },
+    {
+      "document": "BASELINE_PLAN.md",
+      "original_target": "artifacts/pour17_v1/development_extension_20260912_01/DEVELOPMENT_EXTENSION_REPORT.md",
+      "local_resource": "D:/UCBP/RL/Baselines/ViViDex/artifacts/pour17_v1/development_extension_20260912_01/DEVELOPMENT_EXTENSION_REPORT.md",
+      "local_exists": true
+    },
+    {
+      "document": "BASELINE_PLAN.md",
+      "original_target": "artifacts/pour17_v1/development_extension_20260912_01/extension_learning_curves.png",
+      "local_resource": "D:/UCBP/RL/Baselines/ViViDex/artifacts/pour17_v1/development_extension_20260912_01/extension_learning_curves.png",
+      "local_exists": true
+    },
+    {
+      "document": "BASELINE_PLAN.md",
+      "original_target": "artifacts/pour17_v1/development_extension_20260912_01/fixed_endpoint_paired_errors.png",
+      "local_resource": "D:/UCBP/RL/Baselines/ViViDex/artifacts/pour17_v1/development_extension_20260912_01/fixed_endpoint_paired_errors.png",
+      "local_exists": true
+    },
+    {
+      "document": "BASELINE_PLAN.md",
+      "original_target": "artifacts/pour17_v1/development_extension_20260912_01/extension_contract.json",
+      "local_resource": "D:/UCBP/RL/Baselines/ViViDex/artifacts/pour17_v1/development_extension_20260912_01/extension_contract.json",
+      "local_exists": true
+    },
+    {
+      "document": "BASELINE_PLAN.md",
+      "original_target": "artifacts/pour17_v1/development_20260912_01/DEVELOPMENT_REPORT.md",
+      "local_resource": "D:/UCBP/RL/Baselines/ViViDex/artifacts/pour17_v1/development_20260912_01/DEVELOPMENT_REPORT.md",
+      "local_exists": true
+    },
+    {
+      "document": "BASELINE_PLAN.md",
+      "original_target": "artifacts/pour17_v1/development_20260912_01/learning_curves.png",
+      "local_resource": "D:/UCBP/RL/Baselines/ViViDex/artifacts/pour17_v1/development_20260912_01/learning_curves.png",
+      "local_exists": true
+    },
+    {
+      "document": "BASELINE_PLAN.md",
+      "original_target": "artifacts/pour17_v1/development_20260912_01/delivery_manifest.json",
+      "local_resource": "D:/UCBP/RL/Baselines/ViViDex/artifacts/pour17_v1/development_20260912_01/delivery_manifest.json",
+      "local_exists": true
+    },
+    {
+      "document": "BASELINE_PLAN.md",
+      "original_target": "artifacts/pour17_v1/wp4_followup_20260912_01/FOLLOWUP_REPORT.md",
+      "local_resource": "D:/UCBP/RL/Baselines/ViViDex/artifacts/pour17_v1/wp4_followup_20260912_01/FOLLOWUP_REPORT.md",
+      "local_exists": true
+    },
+    {
+      "document": "BASELINE_PLAN.md",
+      "original_target": "artifacts/pour17_v1/wp4_followup_20260912_01/minimal_revision_proposal.json",
+      "local_resource": "D:/UCBP/RL/Baselines/ViViDex/artifacts/pour17_v1/wp4_followup_20260912_01/minimal_revision_proposal.json",
+      "local_exists": true
+    },
+    {
+      "document": "BASELINE_PLAN.md",
+      "original_target": "artifacts/pour17_v1/wp4_20260912_01/WP4_REPORT.md",
+      "local_resource": "D:/UCBP/RL/Baselines/ViViDex/artifacts/pour17_v1/wp4_20260912_01/WP4_REPORT.md",
+      "local_exists": true
+    },
+    {
+      "document": "BASELINE_PLAN.md",
+      "original_target": "artifacts/pour17_v1/wp4_20260912_01/COMMON_WORLD_HANDOFF.md",
+      "local_resource": "D:/UCBP/RL/Baselines/ViViDex/artifacts/pour17_v1/wp4_20260912_01/COMMON_WORLD_HANDOFF.md",
+      "local_exists": true
+    },
+    {
+      "document": "BASELINE_PLAN.md",
+      "original_target": "diagnostics/m1a_sharpa_left_fk_audit_v1.py",
+      "local_resource": "D:/UCBP/RL/Baselines/ViViDex/diagnostics/m1a_sharpa_left_fk_audit_v1.py",
+      "local_exists": true
+    },
+    {
+      "document": "BASELINE_PLAN.md",
+      "original_target": "artifacts/m1a_sharpa_left_fk_candidate_v1/m1a_sharpa_left_fk_audit_v1.json",
+      "local_resource": "D:/UCBP/RL/Baselines/ViViDex/artifacts/m1a_sharpa_left_fk_candidate_v1/m1a_sharpa_left_fk_audit_v1.json",
+      "local_exists": true
+    },
+    {
+      "document": "BASELINE_PLAN.md",
+      "original_target": "configs/m1a_nlopt_v1_requirements.lock.txt",
+      "local_resource": "D:/UCBP/RL/Baselines/ViViDex/configs/m1a_nlopt_v1_requirements.lock.txt",
+      "local_exists": true
+    },
+    {
+      "document": "BASELINE_PLAN.md",
+      "original_target": "configs/m1a_sharpa_single_frame_solver_synthetic_candidate_v2.json",
+      "local_resource": "D:/UCBP/RL/Baselines/ViViDex/configs/m1a_sharpa_single_frame_solver_synthetic_candidate_v2.json",
+      "local_exists": true
+    },
+    {
+      "document": "BASELINE_PLAN.md",
+      "original_target": "artifacts/m1a_sharpa_single_frame_solver_synthetic_candidate_v2/m1a_sharpa_single_frame_solver_synthetic_audit_v2.json",
+      "local_resource": "D:/UCBP/RL/Baselines/ViViDex/artifacts/m1a_sharpa_single_frame_solver_synthetic_candidate_v2/m1a_sharpa_single_frame_solver_synthetic_audit_v2.json",
+      "local_exists": true
+    },
+    {
+      "document": "BASELINE_PLAN.md",
+      "original_target": "artifacts/m1a_sharpa_single_frame_solver_synthetic_candidate_v2/m1a_nlopt_environment_and_execution_audit_v1.json",
+      "local_resource": "D:/UCBP/RL/Baselines/ViViDex/artifacts/m1a_sharpa_single_frame_solver_synthetic_candidate_v2/m1a_nlopt_environment_and_execution_audit_v1.json",
+      "local_exists": true
+    },
+    {
+      "document": "BASELINE_PLAN.md",
+      "original_target": "artifacts/m1a_real_mano_single_frame_candidate_diagnostic_v1/real_mano_single_frame_candidate_diagnostic_v1.json",
+      "local_resource": "D:/UCBP/RL/Baselines/ViViDex/artifacts/m1a_real_mano_single_frame_candidate_diagnostic_v1/real_mano_single_frame_candidate_diagnostic_v1.json",
+      "local_exists": true
+    },
+    {
+      "document": "BASELINE_PLAN.md",
+      "original_target": "artifacts/m1a_real_mano_single_frame_candidate_diagnostic_v1/real_mano_single_frame_candidate_diagnostic_samples_v1.npz",
+      "local_resource": "D:/UCBP/RL/Baselines/ViViDex/artifacts/m1a_real_mano_single_frame_candidate_diagnostic_v1/real_mano_single_frame_candidate_diagnostic_samples_v1.npz",
+      "local_exists": true
+    },
+    {
+      "document": "BASELINE_PLAN.md",
+      "original_target": "artifacts/m1a_real_mano_single_frame_candidate_diagnostic_v1/real_mano_single_frame_candidate_diagnostic_v1.png",
+      "local_resource": "D:/UCBP/RL/Baselines/ViViDex/artifacts/m1a_real_mano_single_frame_candidate_diagnostic_v1/real_mano_single_frame_candidate_diagnostic_v1.png",
+      "local_exists": true
+    },
+    {
+      "document": "BASELINE_PLAN.md",
+      "original_target": "artifacts/m1a_midpoint_anchor_effect_probe_v1/m1a_midpoint_anchor_effect_probe_v1.json",
+      "local_resource": "D:/UCBP/RL/Baselines/ViViDex/artifacts/m1a_midpoint_anchor_effect_probe_v1/m1a_midpoint_anchor_effect_probe_v1.json",
+      "local_exists": true
+    },
+    {
+      "document": "BASELINE_PLAN.md",
+      "original_target": "artifacts/m1a_short_sequence_candidate_diagnostic_v1/short_sequence_candidate_diagnostic_v1.json",
+      "local_resource": "D:/UCBP/RL/Baselines/ViViDex/artifacts/m1a_short_sequence_candidate_diagnostic_v1/short_sequence_candidate_diagnostic_v1.json",
+      "local_exists": true
+    },
+    {
+      "document": "BASELINE_PLAN.md",
+      "original_target": "artifacts/m1a_short_sequence_candidate_diagnostic_v1/short_sequence_candidate_diagnostic_arrays_v1.npz",
+      "local_resource": "D:/UCBP/RL/Baselines/ViViDex/artifacts/m1a_short_sequence_candidate_diagnostic_v1/short_sequence_candidate_diagnostic_arrays_v1.npz",
+      "local_exists": true
+    },
+    {
+      "document": "BASELINE_PLAN.md",
+      "original_target": "artifacts/m1a_short_sequence_candidate_diagnostic_v1/short_sequence_candidate_diagnostic_proposed_raw_pose_v1.png",
+      "local_resource": "D:/UCBP/RL/Baselines/ViViDex/artifacts/m1a_short_sequence_candidate_diagnostic_v1/short_sequence_candidate_diagnostic_proposed_raw_pose_v1.png",
+      "local_exists": true
+    },
+    {
+      "document": "BASELINE_PLAN.md",
+      "original_target": "artifacts/m1a_short_sequence_candidate_diagnostic_v1/short_sequence_candidate_diagnostic_proposed_plus_hands_mean_v1.png",
+      "local_resource": "D:/UCBP/RL/Baselines/ViViDex/artifacts/m1a_short_sequence_candidate_diagnostic_v1/short_sequence_candidate_diagnostic_proposed_plus_hands_mean_v1.png",
+      "local_exists": true
+    },
+    {
+      "document": "BASELINE_PLAN.md",
+      "original_target": "artifacts/m1a_fixed_target_recursion_candidate_diagnostic_v1/fixed_target_recursion_candidate_diagnostic_v1.json",
+      "local_resource": "D:/UCBP/RL/Baselines/ViViDex/artifacts/m1a_fixed_target_recursion_candidate_diagnostic_v1/fixed_target_recursion_candidate_diagnostic_v1.json",
+      "local_exists": true
+    },
+    {
+      "document": "BASELINE_PLAN.md",
+      "original_target": "artifacts/m1a_fixed_target_recursion_candidate_diagnostic_v1/fixed_target_recursion_candidate_diagnostic_arrays_v1.npz",
+      "local_resource": "D:/UCBP/RL/Baselines/ViViDex/artifacts/m1a_fixed_target_recursion_candidate_diagnostic_v1/fixed_target_recursion_candidate_diagnostic_arrays_v1.npz",
+      "local_exists": true
+    },
+    {
+      "document": "BASELINE_PLAN.md",
+      "original_target": "artifacts/m1a_fixed_target_recursion_candidate_diagnostic_v1/fixed_target_recursion_candidate_diagnostic_proposed_raw_pose_v1.png",
+      "local_resource": "D:/UCBP/RL/Baselines/ViViDex/artifacts/m1a_fixed_target_recursion_candidate_diagnostic_v1/fixed_target_recursion_candidate_diagnostic_proposed_raw_pose_v1.png",
+      "local_exists": true
+    },
+    {
+      "document": "BASELINE_PLAN.md",
+      "original_target": "artifacts/m1a_fixed_target_recursion_candidate_diagnostic_v1/fixed_target_recursion_candidate_diagnostic_proposed_plus_hands_mean_v1.png",
+      "local_resource": "D:/UCBP/RL/Baselines/ViViDex/artifacts/m1a_fixed_target_recursion_candidate_diagnostic_v1/fixed_target_recursion_candidate_diagnostic_proposed_plus_hands_mean_v1.png",
+      "local_exists": true
+    },
+    {
+      "document": "BASELINE_PLAN.md",
+      "original_target": "artifacts/m1a_full_sequence_candidate_diagnostic_v1/full_sequence_candidate_diagnostic_v1.json",
+      "local_resource": "D:/UCBP/RL/Baselines/ViViDex/artifacts/m1a_full_sequence_candidate_diagnostic_v1/full_sequence_candidate_diagnostic_v1.json",
+      "local_exists": true
+    },
+    {
+      "document": "BASELINE_PLAN.md",
+      "original_target": "artifacts/m1a_full_sequence_candidate_diagnostic_v1/full_sequence_candidate_diagnostic_arrays_v1.npz",
+      "local_resource": "D:/UCBP/RL/Baselines/ViViDex/artifacts/m1a_full_sequence_candidate_diagnostic_v1/full_sequence_candidate_diagnostic_arrays_v1.npz",
+      "local_exists": true
+    },
+    {
+      "document": "BASELINE_PLAN.md",
+      "original_target": "artifacts/m1a_full_sequence_candidate_diagnostic_v1/full_sequence_candidate_diagnostic_proposed_raw_pose_curves_v1.png",
+      "local_resource": "D:/UCBP/RL/Baselines/ViViDex/artifacts/m1a_full_sequence_candidate_diagnostic_v1/full_sequence_candidate_diagnostic_proposed_raw_pose_curves_v1.png",
+      "local_exists": true
+    },
+    {
+      "document": "BASELINE_PLAN.md",
+      "original_target": "artifacts/m1a_full_sequence_candidate_diagnostic_v1/full_sequence_candidate_diagnostic_proposed_plus_hands_mean_curves_v1.png",
+      "local_resource": "D:/UCBP/RL/Baselines/ViViDex/artifacts/m1a_full_sequence_candidate_diagnostic_v1/full_sequence_candidate_diagnostic_proposed_plus_hands_mean_curves_v1.png",
+      "local_exists": true
+    },
+    {
+      "document": "BASELINE_PLAN.md",
+      "original_target": "artifacts/m1a_full_sequence_candidate_diagnostic_v1/full_sequence_candidate_diagnostic_proposed_raw_pose_static_v1.png",
+      "local_resource": "D:/UCBP/RL/Baselines/ViViDex/artifacts/m1a_full_sequence_candidate_diagnostic_v1/full_sequence_candidate_diagnostic_proposed_raw_pose_static_v1.png",
+      "local_exists": true
+    },
+    {
+      "document": "BASELINE_PLAN.md",
+      "original_target": "artifacts/m1a_full_sequence_candidate_diagnostic_v1/full_sequence_candidate_diagnostic_proposed_plus_hands_mean_static_v1.png",
+      "local_resource": "D:/UCBP/RL/Baselines/ViViDex/artifacts/m1a_full_sequence_candidate_diagnostic_v1/full_sequence_candidate_diagnostic_proposed_plus_hands_mean_static_v1.png",
+      "local_exists": true
+    },
+    {
+      "document": "BASELINE_PLAN.md",
+      "original_target": "artifacts/m1a_limit_residual_audit_v1/M1A_LIMIT_RESIDUAL_AUDIT_V1.md",
+      "local_resource": "D:/UCBP/RL/Baselines/ViViDex/artifacts/m1a_limit_residual_audit_v1/M1A_LIMIT_RESIDUAL_AUDIT_V1.md",
+      "local_exists": true
+    },
+    {
+      "document": "BASELINE_PLAN.md",
+      "original_target": "artifacts/m1a_limit_residual_audit_v1/m1a_limit_residual_audit_v1.json",
+      "local_resource": "D:/UCBP/RL/Baselines/ViViDex/artifacts/m1a_limit_residual_audit_v1/m1a_limit_residual_audit_v1.json",
+      "local_exists": true
+    },
+    {
+      "document": "BASELINE_PLAN.md",
+      "original_target": "artifacts/m1a_limit_residual_audit_v1/m1a_limit_residual_audit_arrays_v1.npz",
+      "local_resource": "D:/UCBP/RL/Baselines/ViViDex/artifacts/m1a_limit_residual_audit_v1/m1a_limit_residual_audit_arrays_v1.npz",
+      "local_exists": true
+    },
+    {
+      "document": "BASELINE_PLAN.md",
+      "original_target": "artifacts/m1a_limit_residual_audit_v1/m1a_limit_residual_audit_hashes_v1.json",
+      "local_resource": "D:/UCBP/RL/Baselines/ViViDex/artifacts/m1a_limit_residual_audit_v1/m1a_limit_residual_audit_hashes_v1.json",
+      "local_exists": true
+    },
+    {
+      "document": "BASELINE_PLAN.md",
+      "original_target": "artifacts/m1a_tip_middle_distance_compatibility_audit_v1/M1A_TIP_MIDDLE_DISTANCE_COMPATIBILITY_AUDIT_V1.md",
+      "local_resource": "D:/UCBP/RL/Baselines/ViViDex/artifacts/m1a_tip_middle_distance_compatibility_audit_v1/M1A_TIP_MIDDLE_DISTANCE_COMPATIBILITY_AUDIT_V1.md",
+      "local_exists": true
+    },
+    {
+      "document": "BASELINE_PLAN.md",
+      "original_target": "artifacts/m1a_tip_middle_distance_compatibility_audit_v1/m1a_tip_middle_distance_compatibility_audit_v1.json",
+      "local_resource": "D:/UCBP/RL/Baselines/ViViDex/artifacts/m1a_tip_middle_distance_compatibility_audit_v1/m1a_tip_middle_distance_compatibility_audit_v1.json",
+      "local_exists": true
+    },
+    {
+      "document": "BASELINE_PLAN.md",
+      "original_target": "artifacts/m1a_tip_middle_distance_compatibility_audit_v1/m1a_tip_middle_distance_compatibility_audit_arrays_v1.npz",
+      "local_resource": "D:/UCBP/RL/Baselines/ViViDex/artifacts/m1a_tip_middle_distance_compatibility_audit_v1/m1a_tip_middle_distance_compatibility_audit_arrays_v1.npz",
+      "local_exists": true
+    },
+    {
+      "document": "BASELINE_PLAN.md",
+      "original_target": "artifacts/m1a_tip_middle_distance_compatibility_audit_v1/m1a_tip_middle_distance_compatibility_audit_hashes_v1.json",
+      "local_resource": "D:/UCBP/RL/Baselines/ViViDex/artifacts/m1a_tip_middle_distance_compatibility_audit_v1/m1a_tip_middle_distance_compatibility_audit_hashes_v1.json",
+      "local_exists": true
+    },
+    {
+      "document": "BASELINE_PLAN.md",
+      "original_target": "artifacts/m1a_fixed_q_posthoc_rigid_alignment_audit_v1/M1A_FIXED_Q_POSTHOC_RIGID_ALIGNMENT_AUDIT_V1.md",
+      "local_resource": "D:/UCBP/RL/Baselines/ViViDex/artifacts/m1a_fixed_q_posthoc_rigid_alignment_audit_v1/M1A_FIXED_Q_POSTHOC_RIGID_ALIGNMENT_AUDIT_V1.md",
+      "local_exists": true
+    },
+    {
+      "document": "BASELINE_PLAN.md",
+      "original_target": "artifacts/m1a_fixed_q_posthoc_rigid_alignment_audit_v1/m1a_fixed_q_posthoc_rigid_alignment_audit_v1.json",
+      "local_resource": "D:/UCBP/RL/Baselines/ViViDex/artifacts/m1a_fixed_q_posthoc_rigid_alignment_audit_v1/m1a_fixed_q_posthoc_rigid_alignment_audit_v1.json",
+      "local_exists": true
+    },
+    {
+      "document": "BASELINE_PLAN.md",
+      "original_target": "artifacts/m1a_fixed_q_posthoc_rigid_alignment_audit_v1/m1a_fixed_q_posthoc_rigid_alignment_audit_arrays_v1.npz",
+      "local_resource": "D:/UCBP/RL/Baselines/ViViDex/artifacts/m1a_fixed_q_posthoc_rigid_alignment_audit_v1/m1a_fixed_q_posthoc_rigid_alignment_audit_arrays_v1.npz",
+      "local_exists": true
+    },
+    {
+      "document": "BASELINE_PLAN.md",
+      "original_target": "artifacts/m1a_fixed_q_posthoc_rigid_alignment_audit_v1/m1a_fixed_q_posthoc_rigid_alignment_audit_v1.png",
+      "local_resource": "D:/UCBP/RL/Baselines/ViViDex/artifacts/m1a_fixed_q_posthoc_rigid_alignment_audit_v1/m1a_fixed_q_posthoc_rigid_alignment_audit_v1.png",
+      "local_exists": true
+    },
+    {
+      "document": "BASELINE_PLAN.md",
+      "original_target": "artifacts/m1a_fixed_q_posthoc_rigid_alignment_audit_v1/m1a_fixed_q_posthoc_rigid_alignment_audit_hashes_v1.json",
+      "local_resource": "D:/UCBP/RL/Baselines/ViViDex/artifacts/m1a_fixed_q_posthoc_rigid_alignment_audit_v1/m1a_fixed_q_posthoc_rigid_alignment_audit_hashes_v1.json",
+      "local_exists": true
+    },
+    {
+      "document": "BASELINE_PLAN.md",
+      "original_target": "artifacts/m1a_fixed_A_construction_basis_audit_v1/M1A_FIXED_A_CONSTRUCTION_BASIS_AUDIT_V1.md",
+      "local_resource": "D:/UCBP/RL/Baselines/ViViDex/artifacts/m1a_fixed_A_construction_basis_audit_v1/M1A_FIXED_A_CONSTRUCTION_BASIS_AUDIT_V1.md",
+      "local_exists": true
+    },
+    {
+      "document": "BASELINE_PLAN.md",
+      "original_target": "artifacts/m1a_fixed_A_construction_basis_audit_v1/m1a_fixed_A_construction_basis_audit_v1.json",
+      "local_resource": "D:/UCBP/RL/Baselines/ViViDex/artifacts/m1a_fixed_A_construction_basis_audit_v1/m1a_fixed_A_construction_basis_audit_v1.json",
+      "local_exists": true
+    },
+    {
+      "document": "BASELINE_PLAN.md",
+      "original_target": "artifacts/m1a_fixed_A_construction_basis_audit_v1/m1a_fixed_A_construction_basis_audit_v1.png",
+      "local_resource": "D:/UCBP/RL/Baselines/ViViDex/artifacts/m1a_fixed_A_construction_basis_audit_v1/m1a_fixed_A_construction_basis_audit_v1.png",
+      "local_exists": true
+    },
+    {
+      "document": "BASELINE_PLAN.md",
+      "original_target": "artifacts/m1a_fixed_A_construction_basis_audit_v1/m1a_fixed_A_construction_basis_audit_hashes_v1.json",
+      "local_resource": "D:/UCBP/RL/Baselines/ViViDex/artifacts/m1a_fixed_A_construction_basis_audit_v1/m1a_fixed_A_construction_basis_audit_hashes_v1.json",
+      "local_exists": true
+    },
+    {
+      "document": "BASELINE_PLAN.md",
+      "original_target": "artifacts/m1a_full_sequence_candidate_geometry_visualization_delivery_v1/m1a_full_sequence_candidate_synchronized_skeleton_landmarks_v1.gif",
+      "local_resource": "D:/UCBP/RL/Baselines/ViViDex/artifacts/m1a_full_sequence_candidate_geometry_visualization_delivery_v1/m1a_full_sequence_candidate_synchronized_skeleton_landmarks_v1.gif",
+      "local_exists": true
+    },
+    {
+      "document": "BASELINE_PLAN.md",
+      "original_target": "artifacts/m1a_full_sequence_candidate_geometry_visualization_delivery_v1/m1a_full_sequence_candidate_fixed_frames_skeleton_landmarks_v1.png",
+      "local_resource": "D:/UCBP/RL/Baselines/ViViDex/artifacts/m1a_full_sequence_candidate_geometry_visualization_delivery_v1/m1a_full_sequence_candidate_fixed_frames_skeleton_landmarks_v1.png",
+      "local_exists": true
+    },
+    {
+      "document": "BASELINE_PLAN.md",
+      "original_target": "artifacts/m1a_full_sequence_candidate_geometry_visualization_delivery_v1/M1A_FULL_SEQUENCE_CANDIDATE_GEOMETRY_VISUALIZATION_DELIVERY_V1.md",
+      "local_resource": "D:/UCBP/RL/Baselines/ViViDex/artifacts/m1a_full_sequence_candidate_geometry_visualization_delivery_v1/M1A_FULL_SEQUENCE_CANDIDATE_GEOMETRY_VISUALIZATION_DELIVERY_V1.md",
+      "local_exists": true
+    },
+    {
+      "document": "BASELINE_PLAN.md",
+      "original_target": "artifacts/m1a_sharpa_visual_mesh_exact_recovery_v1/M1A_SHARPA_VISUAL_MESH_EXACT_RECOVERY_V1.md",
+      "local_resource": "D:/UCBP/RL/Baselines/ViViDex/artifacts/m1a_sharpa_visual_mesh_exact_recovery_v1/M1A_SHARPA_VISUAL_MESH_EXACT_RECOVERY_V1.md",
+      "local_exists": true
+    },
+    {
+      "document": "BASELINE_PLAN.md",
+      "original_target": "artifacts/m1a_full_sequence_candidate_surface_visualization_delivery_v1/m1a_full_sequence_candidate_synchronized_surface_v1.gif",
+      "local_resource": "D:/UCBP/RL/Baselines/ViViDex/artifacts/m1a_full_sequence_candidate_surface_visualization_delivery_v1/m1a_full_sequence_candidate_synchronized_surface_v1.gif",
+      "local_exists": true
+    },
+    {
+      "document": "BASELINE_PLAN.md",
+      "original_target": "artifacts/m1a_full_sequence_candidate_surface_visualization_delivery_v1/m1a_full_sequence_candidate_fixed_frames_surface_v1.png",
+      "local_resource": "D:/UCBP/RL/Baselines/ViViDex/artifacts/m1a_full_sequence_candidate_surface_visualization_delivery_v1/m1a_full_sequence_candidate_fixed_frames_surface_v1.png",
+      "local_exists": true
+    },
+    {
+      "document": "BASELINE_PLAN.md",
+      "original_target": "artifacts/m1a_full_sequence_candidate_surface_visualization_delivery_v1/M1A_FULL_SEQUENCE_CANDIDATE_SURFACE_VISUALIZATION_DELIVERY_V1.md",
+      "local_resource": "D:/UCBP/RL/Baselines/ViViDex/artifacts/m1a_full_sequence_candidate_surface_visualization_delivery_v1/M1A_FULL_SEQUENCE_CANDIDATE_SURFACE_VISUALIZATION_DELIVERY_V1.md",
+      "local_exists": true
+    },
+    {
+      "document": "BASELINE_PLAN.md",
+      "original_target": "artifacts/m1a_static_geometry_audit/m1a_static_geometry_audit.json",
+      "local_resource": "D:/UCBP/RL/Baselines/ViViDex/artifacts/m1a_static_geometry_audit/m1a_static_geometry_audit.json",
+      "local_exists": true
+    },
+    {
+      "document": "BASELINE_PLAN.md",
+      "original_target": "artifacts/m1a_mano_crosscheck_v4/m1a_v4_evidence_binding.json",
+      "local_resource": "D:/UCBP/RL/Baselines/ViViDex/artifacts/m1a_mano_crosscheck_v4/m1a_v4_evidence_binding.json",
+      "local_exists": true
+    },
+    {
+      "document": "BASELINE_PLAN.md",
+      "original_target": "configs/m1a_mano_crosscheck_v4.json",
+      "local_resource": "D:/UCBP/RL/Baselines/ViViDex/configs/m1a_mano_crosscheck_v4.json",
+      "local_exists": true
+    },
+    {
+      "document": "BASELINE_PLAN.md",
+      "original_target": "configs/m1a_left_landmark_calibration_candidate_v1.json",
+      "local_resource": "D:/UCBP/RL/Baselines/ViViDex/configs/m1a_left_landmark_calibration_candidate_v1.json",
+      "local_exists": true
+    },
+    {
+      "document": "BASELINE_PLAN.md",
+      "original_target": "artifacts/m1a_hand_local_candidate_v1/m1a_hand_local_candidate_v1.json",
+      "local_resource": "D:/UCBP/RL/Baselines/ViViDex/artifacts/m1a_hand_local_candidate_v1/m1a_hand_local_candidate_v1.json",
+      "local_exists": true
+    },
+    {
+      "document": "BASELINE_PLAN.md",
+      "original_target": "artifacts/m1a_wrist_zero_hand_local_calibration_candidate_v1/m1a_wrist_zero_hand_local_calibration_audit_v1.json",
+      "local_resource": "D:/UCBP/RL/Baselines/ViViDex/artifacts/m1a_wrist_zero_hand_local_calibration_candidate_v1/m1a_wrist_zero_hand_local_calibration_audit_v1.json",
+      "local_exists": true
+    },
+    {
+      "document": "M1A_INPUT_GEOMETRY_AUDIT.md",
+      "original_target": "configs/m1a_left_landmark_calibration_candidate_v1.json",
+      "local_resource": "D:/UCBP/RL/Baselines/ViViDex/configs/m1a_left_landmark_calibration_candidate_v1.json",
+      "local_exists": true
+    },
+    {
+      "document": "M1A_INPUT_GEOMETRY_AUDIT.md",
+      "original_target": "artifacts/m1a_full_mano_decode_audit_v4/m1a_full_mano_decode_audit.json",
+      "local_resource": "D:/UCBP/RL/Baselines/ViViDex/artifacts/m1a_full_mano_decode_audit_v4/m1a_full_mano_decode_audit.json",
+      "local_exists": true
+    },
+    {
+      "document": "M1A_INPUT_GEOMETRY_AUDIT.md",
+      "original_target": "artifacts/m1a_mano_crosscheck_v4/m1a_mano_crosscheck_v4.json",
+      "local_resource": "D:/UCBP/RL/Baselines/ViViDex/artifacts/m1a_mano_crosscheck_v4/m1a_mano_crosscheck_v4.json",
+      "local_exists": true
+    },
+    {
+      "document": "M1A_INPUT_GEOMETRY_AUDIT.md",
+      "original_target": "artifacts/m1a_trusted_layer_validation_v4/trusted_layer_runtime_evidence.json",
+      "local_resource": "D:/UCBP/RL/Baselines/ViViDex/artifacts/m1a_trusted_layer_validation_v4/trusted_layer_runtime_evidence.json",
+      "local_exists": true
+    },
+    {
+      "document": "M1A_INPUT_GEOMETRY_AUDIT.md",
+      "original_target": "artifacts/m1a_mano_crosscheck_v4/m1a_v4_evidence_binding.json",
+      "local_resource": "D:/UCBP/RL/Baselines/ViViDex/artifacts/m1a_mano_crosscheck_v4/m1a_v4_evidence_binding.json",
+      "local_exists": true
+    },
+    {
+      "document": "M1A_INPUT_GEOMETRY_AUDIT.md",
+      "original_target": "artifacts/m1a_hand_local_candidate_v1/m1a_hand_local_candidate_v1.json",
+      "local_resource": "D:/UCBP/RL/Baselines/ViViDex/artifacts/m1a_hand_local_candidate_v1/m1a_hand_local_candidate_v1.json",
+      "local_exists": true
+    },
+    {
+      "document": "M1A_INPUT_GEOMETRY_AUDIT.md",
+      "original_target": "artifacts/m1a_hand_local_candidate_v1/m1a_hand_local_diagnostic_samples_v1.npz",
+      "local_resource": "D:/UCBP/RL/Baselines/ViViDex/artifacts/m1a_hand_local_candidate_v1/m1a_hand_local_diagnostic_samples_v1.npz",
+      "local_exists": true
+    },
+    {
+      "document": "M1A_INPUT_GEOMETRY_AUDIT.md",
+      "original_target": "diagnostics/m1a_hand_local_candidate_v1.py",
+      "local_resource": "D:/UCBP/RL/Baselines/ViViDex/diagnostics/m1a_hand_local_candidate_v1.py",
+      "local_exists": true
+    },
+    {
+      "document": "M1A_INPUT_GEOMETRY_AUDIT.md",
+      "original_target": "configs/m1a_wrist_zero_hand_local_calibration_candidate_v1.json",
+      "local_resource": "D:/UCBP/RL/Baselines/ViViDex/configs/m1a_wrist_zero_hand_local_calibration_candidate_v1.json",
+      "local_exists": true
+    },
+    {
+      "document": "M1A_INPUT_GEOMETRY_AUDIT.md",
+      "original_target": "artifacts/m1a_wrist_zero_hand_local_calibration_candidate_v1/m1a_wrist_zero_hand_local_calibration_audit_v1.json",
+      "local_resource": "D:/UCBP/RL/Baselines/ViViDex/artifacts/m1a_wrist_zero_hand_local_calibration_candidate_v1/m1a_wrist_zero_hand_local_calibration_audit_v1.json",
+      "local_exists": true
+    },
+    {
+      "document": "M1A_INPUT_GEOMETRY_AUDIT.md",
+      "original_target": "diagnostics/m1a_wrist_zero_hand_local_calibration_audit_v1.py",
+      "local_resource": "D:/UCBP/RL/Baselines/ViViDex/diagnostics/m1a_wrist_zero_hand_local_calibration_audit_v1.py",
+      "local_exists": true
+    },
+    {
+      "document": "M1A_INPUT_GEOMETRY_AUDIT.md",
+      "original_target": "configs/m1a_thumb_internal_segment_midpoint_candidate_v1.json",
+      "local_resource": "D:/UCBP/RL/Baselines/ViViDex/configs/m1a_thumb_internal_segment_midpoint_candidate_v1.json",
+      "local_exists": true
+    },
+    {
+      "document": "M1A_INPUT_GEOMETRY_AUDIT.md",
+      "original_target": "artifacts/m1a_thumb_internal_segment_midpoint_candidate_v1/m1a_thumb_internal_segment_midpoint_audit_v1.json",
+      "local_resource": "D:/UCBP/RL/Baselines/ViViDex/artifacts/m1a_thumb_internal_segment_midpoint_candidate_v1/m1a_thumb_internal_segment_midpoint_audit_v1.json",
+      "local_exists": true
+    },
+    {
+      "document": "M1A_INPUT_GEOMETRY_AUDIT.md",
+      "original_target": "diagnostics/m1a_thumb_internal_segment_midpoint_audit_v1.py",
+      "local_resource": "D:/UCBP/RL/Baselines/ViViDex/diagnostics/m1a_thumb_internal_segment_midpoint_audit_v1.py",
+      "local_exists": true
+    },
+    {
+      "document": "M1A_INPUT_GEOMETRY_AUDIT.md",
+      "original_target": "artifacts/m1a_thumb_internal_segment_midpoint_candidate_v1/m1a_thumb_internal_segment_midpoint_candidate_v1.png",
+      "local_resource": "D:/UCBP/RL/Baselines/ViViDex/artifacts/m1a_thumb_internal_segment_midpoint_candidate_v1/m1a_thumb_internal_segment_midpoint_candidate_v1.png",
+      "local_exists": true
+    },
+    {
+      "document": "M1A_INPUT_GEOMETRY_AUDIT.md",
+      "original_target": "diagnostics/m1a_sharpa_left_fk_audit_v1.py",
+      "local_resource": "D:/UCBP/RL/Baselines/ViViDex/diagnostics/m1a_sharpa_left_fk_audit_v1.py",
+      "local_exists": true
+    },
+    {
+      "document": "M1A_INPUT_GEOMETRY_AUDIT.md",
+      "original_target": "artifacts/m1a_sharpa_left_fk_candidate_v1/m1a_sharpa_left_fk_audit_v1.json",
+      "local_resource": "D:/UCBP/RL/Baselines/ViViDex/artifacts/m1a_sharpa_left_fk_candidate_v1/m1a_sharpa_left_fk_audit_v1.json",
+      "local_exists": true
+    },
+    {
+      "document": "M1A_INPUT_GEOMETRY_AUDIT.md",
+      "original_target": "configs/m1a_sharpa_single_frame_solver_synthetic_candidate_v1.json",
+      "local_resource": "D:/UCBP/RL/Baselines/ViViDex/configs/m1a_sharpa_single_frame_solver_synthetic_candidate_v1.json",
+      "local_exists": true
+    },
+    {
+      "document": "M1A_INPUT_GEOMETRY_AUDIT.md",
+      "original_target": "diagnostics/m1a_sharpa_single_frame_solver_synthetic_audit_v1.py",
+      "local_resource": "D:/UCBP/RL/Baselines/ViViDex/diagnostics/m1a_sharpa_single_frame_solver_synthetic_audit_v1.py",
+      "local_exists": true
+    },
+    {
+      "document": "M1A_INPUT_GEOMETRY_AUDIT.md",
+      "original_target": "artifacts/m1a_sharpa_single_frame_solver_synthetic_candidate_v1/m1a_sharpa_single_frame_solver_synthetic_audit_v1.json",
+      "local_resource": "D:/UCBP/RL/Baselines/ViViDex/artifacts/m1a_sharpa_single_frame_solver_synthetic_candidate_v1/m1a_sharpa_single_frame_solver_synthetic_audit_v1.json",
+      "local_exists": true
+    },
+    {
+      "document": "M1A_INPUT_GEOMETRY_AUDIT.md",
+      "original_target": "configs/m1a_sharpa_single_frame_solver_synthetic_candidate_v2.json",
+      "local_resource": "D:/UCBP/RL/Baselines/ViViDex/configs/m1a_sharpa_single_frame_solver_synthetic_candidate_v2.json",
+      "local_exists": true
+    },
+    {
+      "document": "M1A_INPUT_GEOMETRY_AUDIT.md",
+      "original_target": "configs/m1a_nlopt_environment_v1.json",
+      "local_resource": "D:/UCBP/RL/Baselines/ViViDex/configs/m1a_nlopt_environment_v1.json",
+      "local_exists": true
+    },
+    {
+      "document": "M1A_INPUT_GEOMETRY_AUDIT.md",
+      "original_target": "configs/m1a_nlopt_v1_requirements.lock.txt",
+      "local_resource": "D:/UCBP/RL/Baselines/ViViDex/configs/m1a_nlopt_v1_requirements.lock.txt",
+      "local_exists": true
+    },
+    {
+      "document": "M1A_INPUT_GEOMETRY_AUDIT.md",
+      "original_target": "artifacts/m1a_sharpa_single_frame_solver_synthetic_candidate_v2/m1a_sharpa_single_frame_solver_synthetic_audit_v2.json",
+      "local_resource": "D:/UCBP/RL/Baselines/ViViDex/artifacts/m1a_sharpa_single_frame_solver_synthetic_candidate_v2/m1a_sharpa_single_frame_solver_synthetic_audit_v2.json",
+      "local_exists": true
+    },
+    {
+      "document": "M1A_INPUT_GEOMETRY_AUDIT.md",
+      "original_target": "artifacts/m1a_sharpa_single_frame_solver_synthetic_candidate_v2/m1a_nlopt_environment_and_execution_audit_v1.json",
+      "local_resource": "D:/UCBP/RL/Baselines/ViViDex/artifacts/m1a_sharpa_single_frame_solver_synthetic_candidate_v2/m1a_nlopt_environment_and_execution_audit_v1.json",
+      "local_exists": true
+    },
+    {
+      "document": "M1A_INPUT_GEOMETRY_AUDIT.md",
+      "original_target": "configs/m1a_real_mano_single_frame_candidate_diagnostic_v1.json",
+      "local_resource": "D:/UCBP/RL/Baselines/ViViDex/configs/m1a_real_mano_single_frame_candidate_diagnostic_v1.json",
+      "local_exists": true
+    },
+    {
+      "document": "M1A_INPUT_GEOMETRY_AUDIT.md",
+      "original_target": "artifacts/m1a_real_mano_single_frame_candidate_diagnostic_v1/real_mano_single_frame_candidate_geometry_preparation_v1.json",
+      "local_resource": "D:/UCBP/RL/Baselines/ViViDex/artifacts/m1a_real_mano_single_frame_candidate_diagnostic_v1/real_mano_single_frame_candidate_geometry_preparation_v1.json",
+      "local_exists": true
+    },
+    {
+      "document": "M1A_INPUT_GEOMETRY_AUDIT.md",
+      "original_target": "artifacts/m1a_real_mano_single_frame_candidate_diagnostic_v1/real_mano_single_frame_candidate_diagnostic_v1.json",
+      "local_resource": "D:/UCBP/RL/Baselines/ViViDex/artifacts/m1a_real_mano_single_frame_candidate_diagnostic_v1/real_mano_single_frame_candidate_diagnostic_v1.json",
+      "local_exists": true
+    },
+    {
+      "document": "M1A_INPUT_GEOMETRY_AUDIT.md",
+      "original_target": "artifacts/m1a_real_mano_single_frame_candidate_diagnostic_v1/real_mano_single_frame_candidate_diagnostic_samples_v1.npz",
+      "local_resource": "D:/UCBP/RL/Baselines/ViViDex/artifacts/m1a_real_mano_single_frame_candidate_diagnostic_v1/real_mano_single_frame_candidate_diagnostic_samples_v1.npz",
+      "local_exists": true
+    },
+    {
+      "document": "M1A_INPUT_GEOMETRY_AUDIT.md",
+      "original_target": "artifacts/m1a_real_mano_single_frame_candidate_diagnostic_v1/real_mano_single_frame_candidate_diagnostic_v1.png",
+      "local_resource": "D:/UCBP/RL/Baselines/ViViDex/artifacts/m1a_real_mano_single_frame_candidate_diagnostic_v1/real_mano_single_frame_candidate_diagnostic_v1.png",
+      "local_exists": true
+    },
+    {
+      "document": "M1A_INPUT_GEOMETRY_AUDIT.md",
+      "original_target": "configs/m1a_midpoint_anchor_effect_probe_v1.json",
+      "local_resource": "D:/UCBP/RL/Baselines/ViViDex/configs/m1a_midpoint_anchor_effect_probe_v1.json",
+      "local_exists": true
+    },
+    {
+      "document": "M1A_INPUT_GEOMETRY_AUDIT.md",
+      "original_target": "diagnostics/m1a_midpoint_anchor_effect_probe_v1.py",
+      "local_resource": "D:/UCBP/RL/Baselines/ViViDex/diagnostics/m1a_midpoint_anchor_effect_probe_v1.py",
+      "local_exists": true
+    },
+    {
+      "document": "M1A_INPUT_GEOMETRY_AUDIT.md",
+      "original_target": "artifacts/m1a_midpoint_anchor_effect_probe_v1/m1a_midpoint_anchor_effect_probe_v1.json",
+      "local_resource": "D:/UCBP/RL/Baselines/ViViDex/artifacts/m1a_midpoint_anchor_effect_probe_v1/m1a_midpoint_anchor_effect_probe_v1.json",
+      "local_exists": true
+    },
+    {
+      "document": "M1A_INPUT_GEOMETRY_AUDIT.md",
+      "original_target": "configs/m1a_short_sequence_candidate_diagnostic_v1.json",
+      "local_resource": "D:/UCBP/RL/Baselines/ViViDex/configs/m1a_short_sequence_candidate_diagnostic_v1.json",
+      "local_exists": true
+    },
+    {
+      "document": "M1A_INPUT_GEOMETRY_AUDIT.md",
+      "original_target": "artifacts/m1a_short_sequence_candidate_diagnostic_v1/short_sequence_candidate_geometry_preparation_v1.json",
+      "local_resource": "D:/UCBP/RL/Baselines/ViViDex/artifacts/m1a_short_sequence_candidate_diagnostic_v1/short_sequence_candidate_geometry_preparation_v1.json",
+      "local_exists": true
+    },
+    {
+      "document": "M1A_INPUT_GEOMETRY_AUDIT.md",
+      "original_target": "artifacts/m1a_short_sequence_candidate_diagnostic_v1/short_sequence_candidate_diagnostic_v1.json",
+      "local_resource": "D:/UCBP/RL/Baselines/ViViDex/artifacts/m1a_short_sequence_candidate_diagnostic_v1/short_sequence_candidate_diagnostic_v1.json",
+      "local_exists": true
+    },
+    {
+      "document": "M1A_INPUT_GEOMETRY_AUDIT.md",
+      "original_target": "artifacts/m1a_short_sequence_candidate_diagnostic_v1/short_sequence_candidate_diagnostic_arrays_v1.npz",
+      "local_resource": "D:/UCBP/RL/Baselines/ViViDex/artifacts/m1a_short_sequence_candidate_diagnostic_v1/short_sequence_candidate_diagnostic_arrays_v1.npz",
+      "local_exists": true
+    },
+    {
+      "document": "M1A_INPUT_GEOMETRY_AUDIT.md",
+      "original_target": "artifacts/m1a_short_sequence_candidate_diagnostic_v1/short_sequence_candidate_diagnostic_proposed_raw_pose_v1.png",
+      "local_resource": "D:/UCBP/RL/Baselines/ViViDex/artifacts/m1a_short_sequence_candidate_diagnostic_v1/short_sequence_candidate_diagnostic_proposed_raw_pose_v1.png",
+      "local_exists": true
+    },
+    {
+      "document": "M1A_INPUT_GEOMETRY_AUDIT.md",
+      "original_target": "artifacts/m1a_short_sequence_candidate_diagnostic_v1/short_sequence_candidate_diagnostic_proposed_plus_hands_mean_v1.png",
+      "local_resource": "D:/UCBP/RL/Baselines/ViViDex/artifacts/m1a_short_sequence_candidate_diagnostic_v1/short_sequence_candidate_diagnostic_proposed_plus_hands_mean_v1.png",
+      "local_exists": true
+    },
+    {
+      "document": "M1A_INPUT_GEOMETRY_AUDIT.md",
+      "original_target": "configs/m1a_fixed_target_recursion_candidate_diagnostic_v1.json",
+      "local_resource": "D:/UCBP/RL/Baselines/ViViDex/configs/m1a_fixed_target_recursion_candidate_diagnostic_v1.json",
+      "local_exists": true
+    },
+    {
+      "document": "M1A_INPUT_GEOMETRY_AUDIT.md",
+      "original_target": "artifacts/m1a_fixed_target_recursion_candidate_diagnostic_v1/fixed_target_recursion_candidate_diagnostic_v1.json",
+      "local_resource": "D:/UCBP/RL/Baselines/ViViDex/artifacts/m1a_fixed_target_recursion_candidate_diagnostic_v1/fixed_target_recursion_candidate_diagnostic_v1.json",
+      "local_exists": true
+    },
+    {
+      "document": "M1A_INPUT_GEOMETRY_AUDIT.md",
+      "original_target": "artifacts/m1a_fixed_target_recursion_candidate_diagnostic_v1/fixed_target_recursion_candidate_diagnostic_arrays_v1.npz",
+      "local_resource": "D:/UCBP/RL/Baselines/ViViDex/artifacts/m1a_fixed_target_recursion_candidate_diagnostic_v1/fixed_target_recursion_candidate_diagnostic_arrays_v1.npz",
+      "local_exists": true
+    },
+    {
+      "document": "M1A_INPUT_GEOMETRY_AUDIT.md",
+      "original_target": "artifacts/m1a_fixed_target_recursion_candidate_diagnostic_v1/fixed_target_recursion_candidate_diagnostic_proposed_raw_pose_v1.png",
+      "local_resource": "D:/UCBP/RL/Baselines/ViViDex/artifacts/m1a_fixed_target_recursion_candidate_diagnostic_v1/fixed_target_recursion_candidate_diagnostic_proposed_raw_pose_v1.png",
+      "local_exists": true
+    },
+    {
+      "document": "M1A_INPUT_GEOMETRY_AUDIT.md",
+      "original_target": "artifacts/m1a_fixed_target_recursion_candidate_diagnostic_v1/fixed_target_recursion_candidate_diagnostic_proposed_plus_hands_mean_v1.png",
+      "local_resource": "D:/UCBP/RL/Baselines/ViViDex/artifacts/m1a_fixed_target_recursion_candidate_diagnostic_v1/fixed_target_recursion_candidate_diagnostic_proposed_plus_hands_mean_v1.png",
+      "local_exists": true
+    },
+    {
+      "document": "M1A_INPUT_GEOMETRY_AUDIT.md",
+      "original_target": "configs/m1a_full_sequence_candidate_diagnostic_v1.json",
+      "local_resource": "D:/UCBP/RL/Baselines/ViViDex/configs/m1a_full_sequence_candidate_diagnostic_v1.json",
+      "local_exists": true
+    },
+    {
+      "document": "M1A_INPUT_GEOMETRY_AUDIT.md",
+      "original_target": "artifacts/m1a_full_sequence_candidate_diagnostic_v1/full_sequence_candidate_geometry_preparation_v1.json",
+      "local_resource": "D:/UCBP/RL/Baselines/ViViDex/artifacts/m1a_full_sequence_candidate_diagnostic_v1/full_sequence_candidate_geometry_preparation_v1.json",
+      "local_exists": true
+    },
+    {
+      "document": "M1A_INPUT_GEOMETRY_AUDIT.md",
+      "original_target": "artifacts/m1a_full_sequence_candidate_diagnostic_v1/full_sequence_candidate_diagnostic_v1.json",
+      "local_resource": "D:/UCBP/RL/Baselines/ViViDex/artifacts/m1a_full_sequence_candidate_diagnostic_v1/full_sequence_candidate_diagnostic_v1.json",
+      "local_exists": true
+    },
+    {
+      "document": "M1A_INPUT_GEOMETRY_AUDIT.md",
+      "original_target": "artifacts/m1a_full_sequence_candidate_diagnostic_v1/full_sequence_candidate_diagnostic_arrays_v1.npz",
+      "local_resource": "D:/UCBP/RL/Baselines/ViViDex/artifacts/m1a_full_sequence_candidate_diagnostic_v1/full_sequence_candidate_diagnostic_arrays_v1.npz",
+      "local_exists": true
+    },
+    {
+      "document": "M1A_INPUT_GEOMETRY_AUDIT.md",
+      "original_target": "artifacts/m1a_full_sequence_candidate_diagnostic_v1/full_sequence_candidate_diagnostic_proposed_raw_pose_curves_v1.png",
+      "local_resource": "D:/UCBP/RL/Baselines/ViViDex/artifacts/m1a_full_sequence_candidate_diagnostic_v1/full_sequence_candidate_diagnostic_proposed_raw_pose_curves_v1.png",
+      "local_exists": true
+    },
+    {
+      "document": "M1A_INPUT_GEOMETRY_AUDIT.md",
+      "original_target": "artifacts/m1a_full_sequence_candidate_diagnostic_v1/full_sequence_candidate_diagnostic_proposed_plus_hands_mean_curves_v1.png",
+      "local_resource": "D:/UCBP/RL/Baselines/ViViDex/artifacts/m1a_full_sequence_candidate_diagnostic_v1/full_sequence_candidate_diagnostic_proposed_plus_hands_mean_curves_v1.png",
+      "local_exists": true
+    },
+    {
+      "document": "M1A_INPUT_GEOMETRY_AUDIT.md",
+      "original_target": "artifacts/m1a_full_sequence_candidate_diagnostic_v1/full_sequence_candidate_diagnostic_proposed_raw_pose_static_v1.png",
+      "local_resource": "D:/UCBP/RL/Baselines/ViViDex/artifacts/m1a_full_sequence_candidate_diagnostic_v1/full_sequence_candidate_diagnostic_proposed_raw_pose_static_v1.png",
+      "local_exists": true
+    },
+    {
+      "document": "M1A_INPUT_GEOMETRY_AUDIT.md",
+      "original_target": "artifacts/m1a_full_sequence_candidate_diagnostic_v1/full_sequence_candidate_diagnostic_proposed_plus_hands_mean_static_v1.png",
+      "local_resource": "D:/UCBP/RL/Baselines/ViViDex/artifacts/m1a_full_sequence_candidate_diagnostic_v1/full_sequence_candidate_diagnostic_proposed_plus_hands_mean_static_v1.png",
+      "local_exists": true
+    },
+    {
+      "document": "M1A_INPUT_GEOMETRY_AUDIT.md",
+      "original_target": "configs/m1a_limit_residual_audit_v1.json",
+      "local_resource": "D:/UCBP/RL/Baselines/ViViDex/configs/m1a_limit_residual_audit_v1.json",
+      "local_exists": true
+    },
+    {
+      "document": "M1A_INPUT_GEOMETRY_AUDIT.md",
+      "original_target": "diagnostics/m1a_limit_residual_audit_v1.py",
+      "local_resource": "D:/UCBP/RL/Baselines/ViViDex/diagnostics/m1a_limit_residual_audit_v1.py",
+      "local_exists": true
+    },
+    {
+      "document": "M1A_INPUT_GEOMETRY_AUDIT.md",
+      "original_target": "artifacts/m1a_limit_residual_audit_v1/M1A_LIMIT_RESIDUAL_AUDIT_V1.md",
+      "local_resource": "D:/UCBP/RL/Baselines/ViViDex/artifacts/m1a_limit_residual_audit_v1/M1A_LIMIT_RESIDUAL_AUDIT_V1.md",
+      "local_exists": true
+    },
+    {
+      "document": "M1A_INPUT_GEOMETRY_AUDIT.md",
+      "original_target": "artifacts/m1a_limit_residual_audit_v1/m1a_limit_residual_audit_v1.json",
+      "local_resource": "D:/UCBP/RL/Baselines/ViViDex/artifacts/m1a_limit_residual_audit_v1/m1a_limit_residual_audit_v1.json",
+      "local_exists": true
+    },
+    {
+      "document": "M1A_INPUT_GEOMETRY_AUDIT.md",
+      "original_target": "artifacts/m1a_limit_residual_audit_v1/m1a_limit_residual_audit_arrays_v1.npz",
+      "local_resource": "D:/UCBP/RL/Baselines/ViViDex/artifacts/m1a_limit_residual_audit_v1/m1a_limit_residual_audit_arrays_v1.npz",
+      "local_exists": true
+    },
+    {
+      "document": "M1A_INPUT_GEOMETRY_AUDIT.md",
+      "original_target": "artifacts/m1a_limit_residual_audit_v1/m1a_limit_residual_audit_hashes_v1.json",
+      "local_resource": "D:/UCBP/RL/Baselines/ViViDex/artifacts/m1a_limit_residual_audit_v1/m1a_limit_residual_audit_hashes_v1.json",
+      "local_exists": true
+    },
+    {
+      "document": "M1A_INPUT_GEOMETRY_AUDIT.md",
+      "original_target": "configs/m1a_tip_middle_distance_compatibility_audit_v1.json",
+      "local_resource": "D:/UCBP/RL/Baselines/ViViDex/configs/m1a_tip_middle_distance_compatibility_audit_v1.json",
+      "local_exists": true
+    },
+    {
+      "document": "M1A_INPUT_GEOMETRY_AUDIT.md",
+      "original_target": "diagnostics/m1a_tip_middle_distance_compatibility_audit_v1.py",
+      "local_resource": "D:/UCBP/RL/Baselines/ViViDex/diagnostics/m1a_tip_middle_distance_compatibility_audit_v1.py",
+      "local_exists": true
+    },
+    {
+      "document": "M1A_INPUT_GEOMETRY_AUDIT.md",
+      "original_target": "artifacts/m1a_tip_middle_distance_compatibility_audit_v1/M1A_TIP_MIDDLE_DISTANCE_COMPATIBILITY_AUDIT_V1.md",
+      "local_resource": "D:/UCBP/RL/Baselines/ViViDex/artifacts/m1a_tip_middle_distance_compatibility_audit_v1/M1A_TIP_MIDDLE_DISTANCE_COMPATIBILITY_AUDIT_V1.md",
+      "local_exists": true
+    },
+    {
+      "document": "M1A_INPUT_GEOMETRY_AUDIT.md",
+      "original_target": "artifacts/m1a_tip_middle_distance_compatibility_audit_v1/m1a_tip_middle_distance_compatibility_audit_v1.json",
+      "local_resource": "D:/UCBP/RL/Baselines/ViViDex/artifacts/m1a_tip_middle_distance_compatibility_audit_v1/m1a_tip_middle_distance_compatibility_audit_v1.json",
+      "local_exists": true
+    },
+    {
+      "document": "M1A_INPUT_GEOMETRY_AUDIT.md",
+      "original_target": "artifacts/m1a_tip_middle_distance_compatibility_audit_v1/m1a_tip_middle_distance_compatibility_audit_arrays_v1.npz",
+      "local_resource": "D:/UCBP/RL/Baselines/ViViDex/artifacts/m1a_tip_middle_distance_compatibility_audit_v1/m1a_tip_middle_distance_compatibility_audit_arrays_v1.npz",
+      "local_exists": true
+    },
+    {
+      "document": "M1A_INPUT_GEOMETRY_AUDIT.md",
+      "original_target": "artifacts/m1a_tip_middle_distance_compatibility_audit_v1/m1a_tip_middle_distance_compatibility_audit_hashes_v1.json",
+      "local_resource": "D:/UCBP/RL/Baselines/ViViDex/artifacts/m1a_tip_middle_distance_compatibility_audit_v1/m1a_tip_middle_distance_compatibility_audit_hashes_v1.json",
+      "local_exists": true
+    },
+    {
+      "document": "M1A_INPUT_GEOMETRY_AUDIT.md",
+      "original_target": "configs/m1a_fixed_q_posthoc_rigid_alignment_audit_v1.json",
+      "local_resource": "D:/UCBP/RL/Baselines/ViViDex/configs/m1a_fixed_q_posthoc_rigid_alignment_audit_v1.json",
+      "local_exists": true
+    },
+    {
+      "document": "M1A_INPUT_GEOMETRY_AUDIT.md",
+      "original_target": "diagnostics/m1a_fixed_q_posthoc_rigid_alignment_audit_v1.py",
+      "local_resource": "D:/UCBP/RL/Baselines/ViViDex/diagnostics/m1a_fixed_q_posthoc_rigid_alignment_audit_v1.py",
+      "local_exists": true
+    },
+    {
+      "document": "M1A_INPUT_GEOMETRY_AUDIT.md",
+      "original_target": "artifacts/m1a_fixed_q_posthoc_rigid_alignment_audit_v1/M1A_FIXED_Q_POSTHOC_RIGID_ALIGNMENT_AUDIT_V1.md",
+      "local_resource": "D:/UCBP/RL/Baselines/ViViDex/artifacts/m1a_fixed_q_posthoc_rigid_alignment_audit_v1/M1A_FIXED_Q_POSTHOC_RIGID_ALIGNMENT_AUDIT_V1.md",
+      "local_exists": true
+    },
+    {
+      "document": "M1A_INPUT_GEOMETRY_AUDIT.md",
+      "original_target": "artifacts/m1a_fixed_q_posthoc_rigid_alignment_audit_v1/m1a_fixed_q_posthoc_rigid_alignment_audit_v1.json",
+      "local_resource": "D:/UCBP/RL/Baselines/ViViDex/artifacts/m1a_fixed_q_posthoc_rigid_alignment_audit_v1/m1a_fixed_q_posthoc_rigid_alignment_audit_v1.json",
+      "local_exists": true
+    },
+    {
+      "document": "M1A_INPUT_GEOMETRY_AUDIT.md",
+      "original_target": "artifacts/m1a_fixed_q_posthoc_rigid_alignment_audit_v1/m1a_fixed_q_posthoc_rigid_alignment_audit_arrays_v1.npz",
+      "local_resource": "D:/UCBP/RL/Baselines/ViViDex/artifacts/m1a_fixed_q_posthoc_rigid_alignment_audit_v1/m1a_fixed_q_posthoc_rigid_alignment_audit_arrays_v1.npz",
+      "local_exists": true
+    },
+    {
+      "document": "M1A_INPUT_GEOMETRY_AUDIT.md",
+      "original_target": "artifacts/m1a_fixed_q_posthoc_rigid_alignment_audit_v1/m1a_fixed_q_posthoc_rigid_alignment_audit_v1.png",
+      "local_resource": "D:/UCBP/RL/Baselines/ViViDex/artifacts/m1a_fixed_q_posthoc_rigid_alignment_audit_v1/m1a_fixed_q_posthoc_rigid_alignment_audit_v1.png",
+      "local_exists": true
+    },
+    {
+      "document": "M1A_INPUT_GEOMETRY_AUDIT.md",
+      "original_target": "artifacts/m1a_fixed_q_posthoc_rigid_alignment_audit_v1/m1a_fixed_q_posthoc_rigid_alignment_audit_hashes_v1.json",
+      "local_resource": "D:/UCBP/RL/Baselines/ViViDex/artifacts/m1a_fixed_q_posthoc_rigid_alignment_audit_v1/m1a_fixed_q_posthoc_rigid_alignment_audit_hashes_v1.json",
+      "local_exists": true
+    },
+    {
+      "document": "M1A_INPUT_GEOMETRY_AUDIT.md",
+      "original_target": "configs/m1a_fixed_A_construction_basis_audit_v1.json",
+      "local_resource": "D:/UCBP/RL/Baselines/ViViDex/configs/m1a_fixed_A_construction_basis_audit_v1.json",
+      "local_exists": true
+    },
+    {
+      "document": "M1A_INPUT_GEOMETRY_AUDIT.md",
+      "original_target": "diagnostics/m1a_fixed_A_construction_basis_audit_v1.py",
+      "local_resource": "D:/UCBP/RL/Baselines/ViViDex/diagnostics/m1a_fixed_A_construction_basis_audit_v1.py",
+      "local_exists": true
+    },
+    {
+      "document": "M1A_INPUT_GEOMETRY_AUDIT.md",
+      "original_target": "artifacts/m1a_fixed_A_construction_basis_audit_v1/M1A_FIXED_A_CONSTRUCTION_BASIS_AUDIT_V1.md",
+      "local_resource": "D:/UCBP/RL/Baselines/ViViDex/artifacts/m1a_fixed_A_construction_basis_audit_v1/M1A_FIXED_A_CONSTRUCTION_BASIS_AUDIT_V1.md",
+      "local_exists": true
+    },
+    {
+      "document": "M1A_INPUT_GEOMETRY_AUDIT.md",
+      "original_target": "artifacts/m1a_fixed_A_construction_basis_audit_v1/m1a_fixed_A_construction_basis_audit_v1.json",
+      "local_resource": "D:/UCBP/RL/Baselines/ViViDex/artifacts/m1a_fixed_A_construction_basis_audit_v1/m1a_fixed_A_construction_basis_audit_v1.json",
+      "local_exists": true
+    },
+    {
+      "document": "M1A_INPUT_GEOMETRY_AUDIT.md",
+      "original_target": "artifacts/m1a_fixed_A_construction_basis_audit_v1/m1a_fixed_A_construction_basis_audit_v1.png",
+      "local_resource": "D:/UCBP/RL/Baselines/ViViDex/artifacts/m1a_fixed_A_construction_basis_audit_v1/m1a_fixed_A_construction_basis_audit_v1.png",
+      "local_exists": true
+    },
+    {
+      "document": "M1A_INPUT_GEOMETRY_AUDIT.md",
+      "original_target": "artifacts/m1a_fixed_A_construction_basis_audit_v1/m1a_fixed_A_construction_basis_audit_hashes_v1.json",
+      "local_resource": "D:/UCBP/RL/Baselines/ViViDex/artifacts/m1a_fixed_A_construction_basis_audit_v1/m1a_fixed_A_construction_basis_audit_hashes_v1.json",
+      "local_exists": true
+    },
+    {
+      "document": "M1A_INPUT_GEOMETRY_AUDIT.md",
+      "original_target": "artifacts/m1a_full_mano_decode_audit_v4/m1a_full_mano_real_frames_candidates.png",
+      "local_resource": "D:/UCBP/RL/Baselines/ViViDex/artifacts/m1a_full_mano_decode_audit_v4/m1a_full_mano_real_frames_candidates.png",
+      "local_exists": true
+    },
+    {
+      "document": "M1A_INPUT_GEOMETRY_AUDIT.md",
+      "original_target": "artifacts/m1a_full_mano_decode_audit_v4/m1a_proposed_local_calibration.png",
+      "local_resource": "D:/UCBP/RL/Baselines/ViViDex/artifacts/m1a_full_mano_decode_audit_v4/m1a_proposed_local_calibration.png",
+      "local_exists": true
+    },
+    {
+      "document": "M1A_INPUT_GEOMETRY_AUDIT.md",
+      "original_target": "diagnostics/m1a_v4_evidence_binding_audit.py",
+      "local_resource": "D:/UCBP/RL/Baselines/ViViDex/diagnostics/m1a_v4_evidence_binding_audit.py",
+      "local_exists": true
+    },
+    {
+      "document": "M1A_INPUT_GEOMETRY_AUDIT.md",
+      "original_target": "artifacts/m1a_thumb_internal_segment_midpoint_candidate_v1/m1a_thumb_internal_segment_midpoint_audit_v1.json",
+      "local_resource": "D:/UCBP/RL/Baselines/ViViDex/artifacts/m1a_thumb_internal_segment_midpoint_candidate_v1/m1a_thumb_internal_segment_midpoint_audit_v1.json",
+      "local_exists": true
+    },
+    {
+      "document": "M1A_INPUT_GEOMETRY_AUDIT.md",
+      "original_target": "artifacts/m1a_short_sequence_candidate_diagnostic_v1/short_sequence_candidate_diagnostic_v1.json",
+      "local_resource": "D:/UCBP/RL/Baselines/ViViDex/artifacts/m1a_short_sequence_candidate_diagnostic_v1/short_sequence_candidate_diagnostic_v1.json",
+      "local_exists": true
+    },
+    {
+      "document": "M1A_INPUT_GEOMETRY_AUDIT.md",
+      "original_target": "artifacts/m1a_short_sequence_candidate_diagnostic_v1/short_sequence_candidate_diagnostic_arrays_v1.npz",
+      "local_resource": "D:/UCBP/RL/Baselines/ViViDex/artifacts/m1a_short_sequence_candidate_diagnostic_v1/short_sequence_candidate_diagnostic_arrays_v1.npz",
+      "local_exists": true
+    },
+    {
+      "document": "M1A_INPUT_GEOMETRY_AUDIT.md",
+      "original_target": "artifacts/m1a_short_sequence_candidate_diagnostic_v1/short_sequence_candidate_diagnostic_proposed_raw_pose_v1.png",
+      "local_resource": "D:/UCBP/RL/Baselines/ViViDex/artifacts/m1a_short_sequence_candidate_diagnostic_v1/short_sequence_candidate_diagnostic_proposed_raw_pose_v1.png",
+      "local_exists": true
+    },
+    {
+      "document": "M1A_INPUT_GEOMETRY_AUDIT.md",
+      "original_target": "artifacts/m1a_short_sequence_candidate_diagnostic_v1/short_sequence_candidate_diagnostic_proposed_plus_hands_mean_v1.png",
+      "local_resource": "D:/UCBP/RL/Baselines/ViViDex/artifacts/m1a_short_sequence_candidate_diagnostic_v1/short_sequence_candidate_diagnostic_proposed_plus_hands_mean_v1.png",
+      "local_exists": true
+    },
+    {
+      "document": "M1A_INPUT_GEOMETRY_AUDIT.md",
+      "original_target": "artifacts/m1a_fixed_target_recursion_candidate_diagnostic_v1/fixed_target_recursion_candidate_diagnostic_v1.json",
+      "local_resource": "D:/UCBP/RL/Baselines/ViViDex/artifacts/m1a_fixed_target_recursion_candidate_diagnostic_v1/fixed_target_recursion_candidate_diagnostic_v1.json",
+      "local_exists": true
+    },
+    {
+      "document": "M1A_INPUT_GEOMETRY_AUDIT.md",
+      "original_target": "artifacts/m1a_fixed_target_recursion_candidate_diagnostic_v1/fixed_target_recursion_candidate_diagnostic_arrays_v1.npz",
+      "local_resource": "D:/UCBP/RL/Baselines/ViViDex/artifacts/m1a_fixed_target_recursion_candidate_diagnostic_v1/fixed_target_recursion_candidate_diagnostic_arrays_v1.npz",
+      "local_exists": true
+    },
+    {
+      "document": "M1A_INPUT_GEOMETRY_AUDIT.md",
+      "original_target": "artifacts/m1a_fixed_target_recursion_candidate_diagnostic_v1/fixed_target_recursion_candidate_diagnostic_proposed_raw_pose_v1.png",
+      "local_resource": "D:/UCBP/RL/Baselines/ViViDex/artifacts/m1a_fixed_target_recursion_candidate_diagnostic_v1/fixed_target_recursion_candidate_diagnostic_proposed_raw_pose_v1.png",
+      "local_exists": true
+    },
+    {
+      "document": "M1A_INPUT_GEOMETRY_AUDIT.md",
+      "original_target": "artifacts/m1a_fixed_target_recursion_candidate_diagnostic_v1/fixed_target_recursion_candidate_diagnostic_proposed_plus_hands_mean_v1.png",
+      "local_resource": "D:/UCBP/RL/Baselines/ViViDex/artifacts/m1a_fixed_target_recursion_candidate_diagnostic_v1/fixed_target_recursion_candidate_diagnostic_proposed_plus_hands_mean_v1.png",
+      "local_exists": true
+    },
+    {
+      "document": "M1A_INPUT_GEOMETRY_AUDIT.md",
+      "original_target": "artifacts/m1a_full_sequence_candidate_diagnostic_v1/full_sequence_candidate_diagnostic_v1.json",
+      "local_resource": "D:/UCBP/RL/Baselines/ViViDex/artifacts/m1a_full_sequence_candidate_diagnostic_v1/full_sequence_candidate_diagnostic_v1.json",
+      "local_exists": true
+    },
+    {
+      "document": "M1A_INPUT_GEOMETRY_AUDIT.md",
+      "original_target": "artifacts/m1a_full_sequence_candidate_diagnostic_v1/full_sequence_candidate_diagnostic_arrays_v1.npz",
+      "local_resource": "D:/UCBP/RL/Baselines/ViViDex/artifacts/m1a_full_sequence_candidate_diagnostic_v1/full_sequence_candidate_diagnostic_arrays_v1.npz",
+      "local_exists": true
+    },
+    {
+      "document": "M1A_INPUT_GEOMETRY_AUDIT.md",
+      "original_target": "artifacts/m1a_full_sequence_candidate_diagnostic_v1/full_sequence_candidate_diagnostic_proposed_raw_pose_curves_v1.png",
+      "local_resource": "D:/UCBP/RL/Baselines/ViViDex/artifacts/m1a_full_sequence_candidate_diagnostic_v1/full_sequence_candidate_diagnostic_proposed_raw_pose_curves_v1.png",
+      "local_exists": true
+    },
+    {
+      "document": "M1A_INPUT_GEOMETRY_AUDIT.md",
+      "original_target": "artifacts/m1a_full_sequence_candidate_diagnostic_v1/full_sequence_candidate_diagnostic_proposed_plus_hands_mean_curves_v1.png",
+      "local_resource": "D:/UCBP/RL/Baselines/ViViDex/artifacts/m1a_full_sequence_candidate_diagnostic_v1/full_sequence_candidate_diagnostic_proposed_plus_hands_mean_curves_v1.png",
+      "local_exists": true
+    },
+    {
+      "document": "M1A_INPUT_GEOMETRY_AUDIT.md",
+      "original_target": "artifacts/m1a_full_sequence_candidate_diagnostic_v1/full_sequence_candidate_diagnostic_proposed_raw_pose_static_v1.png",
+      "local_resource": "D:/UCBP/RL/Baselines/ViViDex/artifacts/m1a_full_sequence_candidate_diagnostic_v1/full_sequence_candidate_diagnostic_proposed_raw_pose_static_v1.png",
+      "local_exists": true
+    },
+    {
+      "document": "M1A_INPUT_GEOMETRY_AUDIT.md",
+      "original_target": "artifacts/m1a_full_sequence_candidate_diagnostic_v1/full_sequence_candidate_diagnostic_proposed_plus_hands_mean_static_v1.png",
+      "local_resource": "D:/UCBP/RL/Baselines/ViViDex/artifacts/m1a_full_sequence_candidate_diagnostic_v1/full_sequence_candidate_diagnostic_proposed_plus_hands_mean_static_v1.png",
+      "local_exists": true
+    },
+    {
+      "document": "M1A_INPUT_GEOMETRY_AUDIT.md",
+      "original_target": "artifacts/m1a_limit_residual_audit_v1/M1A_LIMIT_RESIDUAL_AUDIT_V1.md",
+      "local_resource": "D:/UCBP/RL/Baselines/ViViDex/artifacts/m1a_limit_residual_audit_v1/M1A_LIMIT_RESIDUAL_AUDIT_V1.md",
+      "local_exists": true
+    },
+    {
+      "document": "M1A_INPUT_GEOMETRY_AUDIT.md",
+      "original_target": "artifacts/m1a_limit_residual_audit_v1/m1a_limit_residual_audit_v1.json",
+      "local_resource": "D:/UCBP/RL/Baselines/ViViDex/artifacts/m1a_limit_residual_audit_v1/m1a_limit_residual_audit_v1.json",
+      "local_exists": true
+    },
+    {
+      "document": "M1A_INPUT_GEOMETRY_AUDIT.md",
+      "original_target": "artifacts/m1a_limit_residual_audit_v1/m1a_limit_residual_audit_arrays_v1.npz",
+      "local_resource": "D:/UCBP/RL/Baselines/ViViDex/artifacts/m1a_limit_residual_audit_v1/m1a_limit_residual_audit_arrays_v1.npz",
+      "local_exists": true
+    },
+    {
+      "document": "M1A_INPUT_GEOMETRY_AUDIT.md",
+      "original_target": "artifacts/m1a_limit_residual_audit_v1/m1a_limit_residual_audit_hashes_v1.json",
+      "local_resource": "D:/UCBP/RL/Baselines/ViViDex/artifacts/m1a_limit_residual_audit_v1/m1a_limit_residual_audit_hashes_v1.json",
+      "local_exists": true
+    },
+    {
+      "document": "M1A_INPUT_GEOMETRY_AUDIT.md",
+      "original_target": "artifacts/m1a_tip_middle_distance_compatibility_audit_v1/M1A_TIP_MIDDLE_DISTANCE_COMPATIBILITY_AUDIT_V1.md",
+      "local_resource": "D:/UCBP/RL/Baselines/ViViDex/artifacts/m1a_tip_middle_distance_compatibility_audit_v1/M1A_TIP_MIDDLE_DISTANCE_COMPATIBILITY_AUDIT_V1.md",
+      "local_exists": true
+    },
+    {
+      "document": "M1A_INPUT_GEOMETRY_AUDIT.md",
+      "original_target": "artifacts/m1a_tip_middle_distance_compatibility_audit_v1/m1a_tip_middle_distance_compatibility_audit_arrays_v1.npz",
+      "local_resource": "D:/UCBP/RL/Baselines/ViViDex/artifacts/m1a_tip_middle_distance_compatibility_audit_v1/m1a_tip_middle_distance_compatibility_audit_arrays_v1.npz",
+      "local_exists": true
+    },
+    {
+      "document": "M1A_INPUT_GEOMETRY_AUDIT.md",
+      "original_target": "artifacts/m1a_tip_middle_distance_compatibility_audit_v1/m1a_tip_middle_distance_compatibility_audit_v1.json",
+      "local_resource": "D:/UCBP/RL/Baselines/ViViDex/artifacts/m1a_tip_middle_distance_compatibility_audit_v1/m1a_tip_middle_distance_compatibility_audit_v1.json",
+      "local_exists": true
+    },
+    {
+      "document": "M1A_INPUT_GEOMETRY_AUDIT.md",
+      "original_target": "artifacts/m1a_tip_middle_distance_compatibility_audit_v1/m1a_tip_middle_distance_compatibility_audit_hashes_v1.json",
+      "local_resource": "D:/UCBP/RL/Baselines/ViViDex/artifacts/m1a_tip_middle_distance_compatibility_audit_v1/m1a_tip_middle_distance_compatibility_audit_hashes_v1.json",
+      "local_exists": true
+    },
+    {
+      "document": "M1A_INPUT_GEOMETRY_AUDIT.md",
+      "original_target": "artifacts/m1a_fixed_q_posthoc_rigid_alignment_audit_v1/M1A_FIXED_Q_POSTHOC_RIGID_ALIGNMENT_AUDIT_V1.md",
+      "local_resource": "D:/UCBP/RL/Baselines/ViViDex/artifacts/m1a_fixed_q_posthoc_rigid_alignment_audit_v1/M1A_FIXED_Q_POSTHOC_RIGID_ALIGNMENT_AUDIT_V1.md",
+      "local_exists": true
+    },
+    {
+      "document": "M1A_INPUT_GEOMETRY_AUDIT.md",
+      "original_target": "artifacts/m1a_fixed_q_posthoc_rigid_alignment_audit_v1/m1a_fixed_q_posthoc_rigid_alignment_audit_v1.json",
+      "local_resource": "D:/UCBP/RL/Baselines/ViViDex/artifacts/m1a_fixed_q_posthoc_rigid_alignment_audit_v1/m1a_fixed_q_posthoc_rigid_alignment_audit_v1.json",
+      "local_exists": true
+    },
+    {
+      "document": "M1A_INPUT_GEOMETRY_AUDIT.md",
+      "original_target": "artifacts/m1a_fixed_q_posthoc_rigid_alignment_audit_v1/m1a_fixed_q_posthoc_rigid_alignment_audit_arrays_v1.npz",
+      "local_resource": "D:/UCBP/RL/Baselines/ViViDex/artifacts/m1a_fixed_q_posthoc_rigid_alignment_audit_v1/m1a_fixed_q_posthoc_rigid_alignment_audit_arrays_v1.npz",
+      "local_exists": true
+    },
+    {
+      "document": "M1A_INPUT_GEOMETRY_AUDIT.md",
+      "original_target": "artifacts/m1a_fixed_q_posthoc_rigid_alignment_audit_v1/m1a_fixed_q_posthoc_rigid_alignment_audit_hashes_v1.json",
+      "local_resource": "D:/UCBP/RL/Baselines/ViViDex/artifacts/m1a_fixed_q_posthoc_rigid_alignment_audit_v1/m1a_fixed_q_posthoc_rigid_alignment_audit_hashes_v1.json",
+      "local_exists": true
+    },
+    {
+      "document": "M1A_INPUT_GEOMETRY_AUDIT.md",
+      "original_target": "artifacts/m1a_fixed_A_construction_basis_audit_v1/M1A_FIXED_A_CONSTRUCTION_BASIS_AUDIT_V1.md",
+      "local_resource": "D:/UCBP/RL/Baselines/ViViDex/artifacts/m1a_fixed_A_construction_basis_audit_v1/M1A_FIXED_A_CONSTRUCTION_BASIS_AUDIT_V1.md",
+      "local_exists": true
+    },
+    {
+      "document": "M1A_INPUT_GEOMETRY_AUDIT.md",
+      "original_target": "artifacts/m1a_fixed_A_construction_basis_audit_v1/m1a_fixed_A_construction_basis_audit_v1.json",
+      "local_resource": "D:/UCBP/RL/Baselines/ViViDex/artifacts/m1a_fixed_A_construction_basis_audit_v1/m1a_fixed_A_construction_basis_audit_v1.json",
+      "local_exists": true
+    },
+    {
+      "document": "M1A_INPUT_GEOMETRY_AUDIT.md",
+      "original_target": "artifacts/m1a_fixed_A_construction_basis_audit_v1/m1a_fixed_A_construction_basis_audit_v1.png",
+      "local_resource": "D:/UCBP/RL/Baselines/ViViDex/artifacts/m1a_fixed_A_construction_basis_audit_v1/m1a_fixed_A_construction_basis_audit_v1.png",
+      "local_exists": true
+    },
+    {
+      "document": "M1A_INPUT_GEOMETRY_AUDIT.md",
+      "original_target": "artifacts/m1a_fixed_A_construction_basis_audit_v1/m1a_fixed_A_construction_basis_audit_hashes_v1.json",
+      "local_resource": "D:/UCBP/RL/Baselines/ViViDex/artifacts/m1a_fixed_A_construction_basis_audit_v1/m1a_fixed_A_construction_basis_audit_hashes_v1.json",
+      "local_exists": true
+    },
+    {
+      "document": "M1A_INPUT_GEOMETRY_AUDIT.md",
+      "original_target": "artifacts/m1a_full_sequence_candidate_geometry_visualization_delivery_v1/m1a_full_sequence_candidate_synchronized_skeleton_landmarks_v1.gif",
+      "local_resource": "D:/UCBP/RL/Baselines/ViViDex/artifacts/m1a_full_sequence_candidate_geometry_visualization_delivery_v1/m1a_full_sequence_candidate_synchronized_skeleton_landmarks_v1.gif",
+      "local_exists": true
+    },
+    {
+      "document": "M1A_INPUT_GEOMETRY_AUDIT.md",
+      "original_target": "artifacts/m1a_full_sequence_candidate_geometry_visualization_delivery_v1/m1a_full_sequence_candidate_fixed_frames_skeleton_landmarks_v1.png",
+      "local_resource": "D:/UCBP/RL/Baselines/ViViDex/artifacts/m1a_full_sequence_candidate_geometry_visualization_delivery_v1/m1a_full_sequence_candidate_fixed_frames_skeleton_landmarks_v1.png",
+      "local_exists": true
+    },
+    {
+      "document": "M1A_INPUT_GEOMETRY_AUDIT.md",
+      "original_target": "artifacts/m1a_full_sequence_candidate_geometry_visualization_delivery_v1/M1A_FULL_SEQUENCE_CANDIDATE_GEOMETRY_VISUALIZATION_DELIVERY_V1.md",
+      "local_resource": "D:/UCBP/RL/Baselines/ViViDex/artifacts/m1a_full_sequence_candidate_geometry_visualization_delivery_v1/M1A_FULL_SEQUENCE_CANDIDATE_GEOMETRY_VISUALIZATION_DELIVERY_V1.md",
+      "local_exists": true
+    },
+    {
+      "document": "M1A_INPUT_GEOMETRY_AUDIT.md",
+      "original_target": "artifacts/m1a_full_sequence_candidate_geometry_visualization_delivery_v1/m1a_full_sequence_candidate_geometry_visualization_delivery_hashes_v1.json",
+      "local_resource": "D:/UCBP/RL/Baselines/ViViDex/artifacts/m1a_full_sequence_candidate_geometry_visualization_delivery_v1/m1a_full_sequence_candidate_geometry_visualization_delivery_hashes_v1.json",
+      "local_exists": true
+    },
+    {
+      "document": "M1A_INPUT_GEOMETRY_AUDIT.md",
+      "original_target": "artifacts/m1a_sharpa_visual_mesh_exact_recovery_v1/M1A_SHARPA_VISUAL_MESH_EXACT_RECOVERY_V1.md",
+      "local_resource": "D:/UCBP/RL/Baselines/ViViDex/artifacts/m1a_sharpa_visual_mesh_exact_recovery_v1/M1A_SHARPA_VISUAL_MESH_EXACT_RECOVERY_V1.md",
+      "local_exists": true
+    },
+    {
+      "document": "M1A_INPUT_GEOMETRY_AUDIT.md",
+      "original_target": "artifacts/m1a_full_sequence_candidate_surface_visualization_delivery_v1/m1a_full_sequence_candidate_synchronized_surface_v1.gif",
+      "local_resource": "D:/UCBP/RL/Baselines/ViViDex/artifacts/m1a_full_sequence_candidate_surface_visualization_delivery_v1/m1a_full_sequence_candidate_synchronized_surface_v1.gif",
+      "local_exists": true
+    },
+    {
+      "document": "M1A_INPUT_GEOMETRY_AUDIT.md",
+      "original_target": "artifacts/m1a_full_sequence_candidate_surface_visualization_delivery_v1/m1a_full_sequence_candidate_fixed_frames_surface_v1.png",
+      "local_resource": "D:/UCBP/RL/Baselines/ViViDex/artifacts/m1a_full_sequence_candidate_surface_visualization_delivery_v1/m1a_full_sequence_candidate_fixed_frames_surface_v1.png",
+      "local_exists": true
+    },
+    {
+      "document": "M1A_INPUT_GEOMETRY_AUDIT.md",
+      "original_target": "artifacts/m1a_full_sequence_candidate_surface_visualization_delivery_v1/M1A_FULL_SEQUENCE_CANDIDATE_SURFACE_VISUALIZATION_DELIVERY_V1.md",
+      "local_resource": "D:/UCBP/RL/Baselines/ViViDex/artifacts/m1a_full_sequence_candidate_surface_visualization_delivery_v1/M1A_FULL_SEQUENCE_CANDIDATE_SURFACE_VISUALIZATION_DELIVERY_V1.md",
+      "local_exists": true
+    },
+    {
+      "document": "M1A_INPUT_GEOMETRY_AUDIT.md",
+      "original_target": "artifacts/m1a_full_sequence_candidate_surface_visualization_delivery_v1/m1a_full_sequence_candidate_surface_visualization_delivery_hashes_v1.json",
+      "local_resource": "D:/UCBP/RL/Baselines/ViViDex/artifacts/m1a_full_sequence_candidate_surface_visualization_delivery_v1/m1a_full_sequence_candidate_surface_visualization_delivery_hashes_v1.json",
+      "local_exists": true
+    }
+  ],
+  "archived_link_rewrites": {
+    "AGENTS.md": 0,
+    "REPRODUCTION_STATUS.md": 50,
+    "BASELINE_PLAN.md": 71,
+    "M1A_INPUT_GEOMETRY_AUDIT.md": 120,
+    "POUR_TWO_SEED_PROTOCOL.md": 0
+  },
+  "shared_files_coordination": [
+    "GPU_POLICY.md: root target once, coordinate with team leader; do not replace root AGENTS or other tracks"
+  ],
+  "self_hash_excluded": true,
+  "qa": {
+    "selected_file_count": 92,
+    "missing_files": [],
+    "duplicate_repository_paths": 0,
+    "credential_pattern_findings": [],
+    "syntax_errors": [],
+    "missing_relative_imports": [],
+    "unresolved_selected_document_links": [],
+    "deployed_files_matching": 71,
+    "deployed_files_total": 71,
+    "limitations": [
+      "Static checks only; no runtime or training launched",
+      "External assets/evaluator/MANO/archived diagnostics required as documented; clean-room install not tested",
+      "Pattern scan plus selected text review is not a cryptographic guarantee of absence of secrets"
+    ],
+    "archived_link_targets_existing_locally": true,
+    "wp1_config_input_paths_exist_locally": true,
+    "prepared_at_asia_shanghai": "2026-09-13T01:50:00+08:00",
+    "snapshot_cutoff_is_not_document_write_time": true
+  }
+}

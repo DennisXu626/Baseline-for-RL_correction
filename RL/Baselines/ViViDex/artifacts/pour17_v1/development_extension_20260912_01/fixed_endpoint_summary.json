@@ -1,0 +1,142 @@
+{
+  "stochastic": {
+    "before": {
+      "episodes": 25,
+      "boundary_episodes": 18,
+      "terminal_median_error_m": [
+        0.2403867244720459,
+        0.1740328073501587
+      ],
+      "terminal_mean_error_m": [
+        0.25383979320526123,
+        0.20756704702973366
+      ],
+      "boundary_median_error_m": [
+        0.2995298355817795,
+        0.25351013243198395
+      ],
+      "boundary_side_pass_count": [
+        0,
+        0
+      ],
+      "joint_pregrasp_pass_count": 0,
+      "early_contact_end_count": 7,
+      "arm_table_contact_count": 1,
+      "episode_length_mean": 35.6,
+      "ends": {
+        "pregrasp_threshold": 18,
+        "pregrasp_early_hand_contact": 7
+      },
+      "wall_s_including_kit": 23.510565121658146
+    },
+    "after": {
+      "episodes": 25,
+      "boundary_episodes": 21,
+      "terminal_median_error_m": [
+        0.18029312789440155,
+        0.20094172656536102
+      ],
+      "terminal_mean_error_m": [
+        0.18984196990728378,
+        0.21602536350488663
+      ],
+      "boundary_median_error_m": [
+        0.1957552134990692,
+        0.2189600169658661
+      ],
+      "boundary_side_pass_count": [
+        0,
+        0
+      ],
+      "joint_pregrasp_pass_count": 0,
+      "early_contact_end_count": 4,
+      "arm_table_contact_count": 9,
+      "episode_length_mean": 38.4,
+      "ends": {
+        "pregrasp_early_hand_contact": 4,
+        "pregrasp_threshold": 21
+      },
+      "wall_s_including_kit": 24.828081484884024
+    },
+    "paired": {
+      "all25_terminal_median_delta_m": [
+        -0.05627696216106415,
+        -0.012037202715873718
+      ],
+      "both_boundary_count": 15,
+      "both_boundary_median_delta_m": [
+        -0.06361448764801025,
+        -0.01875320076942444
+      ]
+    }
+  },
+  "deterministic": {
+    "before": {
+      "episodes": 25,
+      "boundary_episodes": 25,
+      "terminal_median_error_m": [
+        0.26146215200424194,
+        0.28581702709198
+      ],
+      "terminal_mean_error_m": [
+        0.26396538972854616,
+        0.28031768202781676
+      ],
+      "boundary_median_error_m": [
+        0.26146215200424194,
+        0.28581702709198
+      ],
+      "boundary_side_pass_count": [
+        0,
+        0
+      ],
+      "joint_pregrasp_pass_count": 0,
+      "early_contact_end_count": 0,
+      "arm_table_contact_count": 0,
+      "episode_length_mean": 40.0,
+      "ends": {
+        "pregrasp_threshold": 25
+      },
+      "wall_s_including_kit": 23.093641994986683
+    },
+    "after": {
+      "episodes": 25,
+      "boundary_episodes": 25,
+      "terminal_median_error_m": [
+        0.09684936702251434,
+        0.16368034482002258
+      ],
+      "terminal_mean_error_m": [
+        0.09640588074922561,
+        0.1528686213493347
+      ],
+      "boundary_median_error_m": [
+        0.09684936702251434,
+        0.16368034482002258
+      ],
+      "boundary_side_pass_count": [
+        3,
+        0
+      ],
+      "joint_pregrasp_pass_count": 0,
+      "early_contact_end_count": 0,
+      "arm_table_contact_count": 0,
+      "episode_length_mean": 40.0,
+      "ends": {
+        "pregrasp_threshold": 25
+      },
+      "wall_s_including_kit": 22.605158666148782
+    },
+    "paired": {
+      "all25_terminal_median_delta_m": [
+        -0.14980262517929077,
+        -0.1221366822719574
+      ],
+      "both_boundary_count": 25,
+      "both_boundary_median_delta_m": [
+        -0.14980262517929077,
+        -0.1221366822719574
+      ]
+    }
+  }
+}

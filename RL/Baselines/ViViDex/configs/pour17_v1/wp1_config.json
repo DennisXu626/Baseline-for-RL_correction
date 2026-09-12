@@ -1,0 +1,64 @@
+{
+  "status": "development_only_wp1",
+  "run_id": "wp1_20260912_01",
+  "paths": {
+    "bundle_archive": "D:/UCBP/pour17_baseline_bundle_20260829.tar.gz",
+    "mano_right": "D:/UCBP/RL/Baselines/ViViDex/upstream/vividex_sapien/mano/assets/MANO_RIGHT.pkl",
+    "mano_left": "D:/UCBP/RL/Baselines/ViViDex/upstream/vividex_sapien/mano/assets/MANO_LEFT.pkl",
+    "mano_layer_source": "D:/UCBP/RL/Baselines/ViViDex/upstream/vividex_sapien/mano/manolayer.py",
+    "decoder": "D:/UCBP/RL/Baselines/ViViDex/diagnostics/m1a_full_mano_decode_audit.py",
+    "fk_interface": "D:/UCBP/RL/Baselines/ViViDex/diagnostics/m1a_sharpa_left_fk_candidate_v1.py",
+    "single_frame_solver": "D:/UCBP/RL/Baselines/ViViDex/diagnostics/m1a_sharpa_single_frame_solver_candidate_v1.py",
+    "robot_urdf": "D:/UCBP/RL/Worktrees/RL-Correction-Step4-Publish/datasets/vega_urdf/vega_1p_sharpa/vega_1p_sharpa_fix.urdf",
+    "left_fk_config": "D:/UCBP/RL/Baselines/ViViDex/configs/m1a_sharpa_left_fk_candidate_v1.json",
+    "left_calibration": "D:/UCBP/RL/Baselines/ViViDex/configs/m1a_wrist_zero_hand_local_calibration_candidate_v2.json",
+    "left_candidate_arrays": "D:/UCBP/RL/Baselines/ViViDex/artifacts/m1a_full_sequence_candidate_diagnostic_v1/full_sequence_candidate_diagnostic_arrays_v1.npz",
+    "preik_reference": "D:/UCBP/RL/Baselines/ViViDex/artifacts/pour17_v1/wp1_20260912_01/reference_preik.npz",
+    "preik_manifest": "D:/UCBP/RL/Baselines/ViViDex/artifacts/pour17_v1/wp1_20260912_01/reference_preik_manifest.json"
+  },
+  "expected_sha256": {
+    "bundle_archive": "77edc03ca5be028fcbd8b6d978fd1a4072582b5c9904d603f5c86b29a70210f6",
+    "perception_member": "28e13c2454ec010945119e9611498bc72e733a519f8f9b6c6ad7a5a2f98234d7",
+    "mano_right": "45d60aa3b27ef9107a7afd4e00808f307fd91111e1cfa35afd5c4a62de264767",
+    "mano_left": "c4022f7083f2ca7c78b2b3d595abbab52debd32b09d372b16923a801f0ea6a30",
+    "mano_layer_source": "ac89167559ee134b37d0d0ac6f31ff50f2bfb33c56938c00f7bd4ed98bfaa2fe",
+    "decoder": "2f48bb2e1f0983ba3376ca3595a540b56eaf8fcf37bfe5cf0ad5ebcb2ef62ecd",
+    "fk_interface": "1824dd4eaeef280c6d19008e6707f25935889faa9f219960778617ebcbc82c64",
+    "single_frame_solver": "fd8c753a03664cbc426a91796b2a8e5befd295a007edea163df7af4f23acd89d",
+    "robot_urdf": "968b41f8647ddd6a6e1b51f7ee8702fc44c16965680d67cf2e9a70f9d60c76db",
+    "left_fk_config": "c6ff31d3961fe28714d4556f5fc503f29d745805c6666dcd11af386d0800312e",
+    "left_calibration": "7c37127838a94589af3d8b64cb860ea7efb74b77d2034710c27007364eb81c03",
+    "left_candidate_arrays": "5d9f59475ef8890d1ea176eb740af95ab1b3dcaec88dfb54a0b86a982cae852c"
+  },
+  "members": {
+    "perception": "pour17/perception/pour17_perception.npz",
+    "manifest": "pour17/world/world_manifest.json",
+    "canonical_reset": "pour17/world/canonical_reset_v1.json",
+    "evaluator": "pour17/evaluator/run_eval.py"
+  },
+  "manifest": {
+    "right_finger_slice": [14, 36],
+    "left_finger_slice": [36, 58]
+  },
+  "landmarks": [
+    {"name": "thumb_tip", "link": "left_thumb_fingertip", "local_m": [0.0, 0.0, 0.0]},
+    {"name": "thumb_middle", "link": "left_thumb_PP", "local_m": [0.0195, 0.0, 0.0]},
+    {"name": "index_tip", "link": "left_index_fingertip", "local_m": [0.0, 0.0, 0.0]},
+    {"name": "index_middle", "link": "left_index_MP", "local_m": [0.01575, 0.0, 0.0]},
+    {"name": "middle_tip", "link": "left_middle_fingertip", "local_m": [0.0, 0.0, 0.0]},
+    {"name": "middle_middle", "link": "left_middle_MP", "local_m": [0.01575, 0.0, 0.0]},
+    {"name": "ring_tip", "link": "left_ring_fingertip", "local_m": [0.0, 0.0, 0.0]},
+    {"name": "ring_middle", "link": "left_ring_MP", "local_m": [0.01575, 0.0, 0.0]},
+    {"name": "pinky_tip", "link": "left_pinky_fingertip", "local_m": [0.0, 0.0, 0.0]},
+    {"name": "pinky_middle", "link": "left_pinky_MP", "local_m": [0.01575, 0.0, 0.0]}
+  ],
+  "reference": {
+    "source_rate_hz": 15,
+    "control_rate_hz": 20,
+    "prefix_s": 2.0,
+    "suffix_s": 2.0,
+    "mean": "proposed_raw_pose",
+    "alpha": 0.004,
+    "world_alignment": "common_center_baseline_yaw_and_centroid_translation__development_candidate_not_frozen"
+  }
+}

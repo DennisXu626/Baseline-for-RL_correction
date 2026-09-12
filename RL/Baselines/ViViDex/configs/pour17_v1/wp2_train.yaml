@@ -1,0 +1,54 @@
+schema: pour17_state_v2
+status: development_only_pending_reviewer_training_release
+seed: 1701
+num_envs: 32
+n_steps: 128
+batch_size: 256
+n_epochs: 5
+gamma: 0.95
+gae_lambda: 0.95
+learning_rate: 0.00001
+ent_coef: 0.001
+vf_coef: 0.5
+clip_range: 0.2
+log_std_init: -1.60
+net_arch:
+  pi: [256, 128]
+  vf: [256, 128]
+activation: Tanh
+observation_dim: 544
+action_dim: 58
+physics_dt: 0.004166666666666667
+decimation: 12
+control_hz: 20
+camera_in_actor: false
+training_capture: false
+development_initial_transitions: 8192
+development_total_cap: 65536
+development_training_wall_cap_s: 3600
+formal_seed: 0
+formal_requested_transitions: 3000000
+formal_complete_update_transitions: 3002368
+formal_automatic_launch: false
+checkpoint_selection: last_complete_update
+reference: reference_s1_v2_bound.npz
+world_alignment: approved_W1_exact_registered_preik_manifest
+synthesis: approved_S1_cut46_key74_120deg_25hold_10bridge
+augmentation:
+  stage0: identity
+  stage1_2_x_m: [-0.06, 0.04]
+  stage1_2_y_m: [0.0, 0.1]
+  yaw_rad: 0
+  physical_objects: common_translation
+  robot_home_base: fixed
+  approach_return: reconnect_fixed_home
+curriculum:
+  episodes: 25
+  stochastic: true
+  seed_first: 100000
+  seed_last: 100024
+  threshold_strict_greater: 0.95
+  first_evaluation_complete_update: 4096
+  absolute_million_boundaries_rounded_up: true
+  formal_evaluation_steps: [4096, 1003520, 2002944, 3002368]
+  separate_physics_process: true
