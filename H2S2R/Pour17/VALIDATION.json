@@ -1,0 +1,22 @@
+{
+  "cutoff": "2026-09-13 01:45:00 Asia/Shanghai (UTC+08:00)",
+  "files": 116,
+  "source_files": 88,
+  "total_bytes": 938763,
+  "python_ast_pass": 76,
+  "missing_seed_files": [],
+  "markdown_broken_links": [],
+  "credential_pattern_hits": [],
+  "scope": "static only; no Isaac/import/runtime test; no full dependency lock; source SHA checked while downloading",
+  "server_process_snapshot": "2026-09-13 01:36:36 +08:00 no matching own V13/traceback Python process; not server-wide state",
+  "source_sha_match": true,
+  "total_bytes_excluding_self_validation": 1056313,
+  "limits": [
+    "not a clean-machine runtime test",
+    "full conda/pip lock unavailable",
+    "target GitHub layout and prior uploaded commit unverified",
+    "next training release not issued",
+    "large USD dependencies require authorized server access",
+    "snapshot only, no remote modification or GitHub push"
+  ]
+}

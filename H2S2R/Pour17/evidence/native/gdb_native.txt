@@ -1,0 +1,32 @@
+===== NATIVE DEBUG RUN START =====
+Disabling randomization of debuggee's virtual address space is off.
+CUDA_VISIBLE_DEVICES = 1
+RL_ISAAC_NO_GUARD = 1
+H2S2R_NATIVE_DEBUG_GUARD_TARGET = /home/kailang/experiments/baselines/rl_correction_h2s2r_adapter_v13_256_pilot_20260912/tasks/h2s2r_pour17/train_right_lstm.py
+H2S2R_NATIVE_DEBUG_GUARD_LINE = 585
+H2S2R_NATIVE_DEBUG_GUARD_MARKER = /media/msc-auto/HDD/users/kailang/h2s2r_training_pilot_20260912/native_debug_01/shared_gpu_resume_01/INIT_RETURNED.json
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/lib/x86_64-linux-gnu/libthread_db.so.1".
+[Detaching after vfork from child process 2518808]
+[Detaching after fork from child process 2518813]
+[Detaching after fork from child process 2518814]
+[Detaching after vfork from child process 2518910]
+[Detaching after fork from child process 2518943]
+[Detaching after vfork from child process 2519173]
+[Detaching after fork from child process 2519270]
+[Detaching after vfork from child process 2519290]
+[Detaching after vfork from child process 2519291]
+
+Thread 2 "python" received signal SIGSEGV, Segmentation fault.
+[Switching to Thread 0x7cef3dfff6c0 (LWP 2518774)]
+dump_frame (fd=4, frame=0x7cef3e83db68) at /usr/local/src/conda/python-3.11.15/Python/traceback.c:1264
+warning: 1264	/usr/local/src/conda/python-3.11.15/Python/traceback.c: No such file or directory
+
+===== NATIVE STOP SUMMARY =====
+Last stopped for thread 2 (Thread 0x7cef3dfff6c0 (LWP 2518774)).
+	Using the running image of child process 2518752.
+Program stopped at 0x5d00477faff1.
+It stopped with signal SIGSEGV, Segmentation fault.
+Signal        Stop	Print	Pass to program	Description
+/media/msc-auto/HDD/users/kailang/h2s2r_training_pilot_20260912/native_debug_01/shared_gpu_resume_01/support/gdb_capture_shared.gdb:24: Error in sourced command file:
+No symbol "SIGSEGV" in current context.

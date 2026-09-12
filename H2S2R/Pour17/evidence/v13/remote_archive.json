@@ -1,0 +1,22 @@
+{
+  "host": "kailang@128.32.164.89",
+  "evidence_root": "/media/msc-auto/HDD/users/kailang/h2s2r_training_pilot_20260912/right_training_256_01",
+  "file_count": 43,
+  "sha_index": {
+    "path": "/media/msc-auto/HDD/users/kailang/h2s2r_training_pilot_20260912/right_training_256_01/remote_sha256.txt",
+    "sha256": "0d1b71d33847b618345321cd2a23a3ae6ac6bed507b65cfd3ffac08dee575705"
+  },
+  "size_index": {
+    "path": "/media/msc-auto/HDD/users/kailang/h2s2r_training_pilot_20260912/right_training_256_01/remote_sizes.tsv",
+    "sha256": "5ba2ef3fec32d49a6084c204e301a108634bf31880407aba2ab0a65f0b12a92f"
+  },
+  "archive": {
+    "path": "/media/msc-auto/HDD/users/kailang/h2s2r_training_pilot_20260912/right_training_256_01_full.tar.gz",
+    "bytes": 800900,
+    "sha256": "1e7ea36942eb03dc4436927c4c80401e9472d2db9ceb85304e08f90967dceb24",
+    "gzip_test": "PASS"
+  },
+  "large_runtime_log": "/media/msc-auto/HDD/users/kailang/h2s2r_training_pilot_20260912/right_training_256_01/isaaclab_train01.log",
+  "trajectory_checkpoint_png_video": "NOT_GENERATED_BEFORE_ENVIRONMENT_RETURN",
+  "local_archive_downloaded": false
+}

@@ -1,0 +1,11 @@
+{
+  "exit_code": 86,
+  "line_before_execution": 585,
+  "pid": 2529242,
+  "policy_controls": 0,
+  "ppo_updates": 0,
+  "schema": "h2s2r_native_debug_init_return_guard_v1",
+  "status": "INIT_RETURNED_CRASH_NOT_REPRODUCED",
+  "target": "/home/kailang/experiments/baselines/rl_correction_h2s2r_adapter_v13_256_pilot_20260912/tasks/h2s2r_pour17/train_right_lstm.py",
+  "timestamp_utc": "2026-09-12T16:34:36.689490+00:00"
+}

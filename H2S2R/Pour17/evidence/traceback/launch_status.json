@@ -1,0 +1,33 @@
+{
+  "ended_utc": "2026-09-12T16:34:42.566827+00:00",
+  "full_capture_sections": true,
+  "gdb_return_code": 0,
+  "init_return_marker": {
+    "exit_code": 86,
+    "line_before_execution": 585,
+    "pid": 2529242,
+    "policy_controls": 0,
+    "ppo_updates": 0,
+    "schema": "h2s2r_native_debug_init_return_guard_v1",
+    "status": "INIT_RETURNED_CRASH_NOT_REPRODUCED",
+    "target": "/home/kailang/experiments/baselines/rl_correction_h2s2r_adapter_v13_256_pilot_20260912/tasks/h2s2r_pour17/train_right_lstm.py",
+    "timestamp_utc": "2026-09-12T16:34:36.689490+00:00"
+  },
+  "isaac_start_used": true,
+  "native_signal_seen": false,
+  "operational_environment": {
+    "CUDA_VISIBLE_DEVICES": "1",
+    "H2S2R_DISABLE_PERIODIC_TRACEBACK": "1",
+    "RL_ISAAC_NO_GUARD": "1"
+  },
+  "pid": 2529226,
+  "policy_controls": 0,
+  "ppo_updates": 0,
+  "schema": "h2s2r_traceback_intervention_launch_v1",
+  "selected_gpu_uuid": "GPU-f2ad0deb-49d8-33d9-3b4a-186e9f95ca41",
+  "selected_physical_gpu": 1,
+  "started_utc": "2026-09-12T16:32:20.694815+00:00",
+  "status": "INIT_RETURNED_WITH_PERIODIC_DUMP_DISABLED",
+  "stop_reason": null,
+  "wall_seconds": 141.87202403973788
+}

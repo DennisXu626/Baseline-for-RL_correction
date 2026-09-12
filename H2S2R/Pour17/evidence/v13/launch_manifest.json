@@ -1,0 +1,98 @@
+{
+  "schema": "h2s2r_v13_256_launch_with_root_v1",
+  "started_utc": "2026-09-12T14:19:37.169022+00:00",
+  "host": "mscauto-Lambda-Vector",
+  "wrapper": {
+    "path": "/home/kailang/experiments/baselines/rl_correction_h2s2r_adapter_v13_256_pilot_20260912/runtime/training_pilot_20260912/launch_with_root.py",
+    "sha256": "45ddcbc76d367fe88944be27199eb65dc1e97c792b8adcd26f8764ed3d9c7e70"
+  },
+  "entry_name": "train",
+  "entry": {
+    "path": "/home/kailang/experiments/baselines/rl_correction_h2s2r_adapter_v13_256_pilot_20260912/tasks/h2s2r_pour17/train_right_lstm.py",
+    "sha256": "2f8c347ebd3e445d802b8dea25238ed5ac190223ed63a190a10fe9f52199bce3"
+  },
+  "python": {
+    "path": "/home/kailang/.local/miniconda3/envs/rl-correction-pour/bin/python",
+    "resolved": "/home/kailang/.local/miniconda3/envs/rl-correction-pour/bin/python3.11"
+  },
+  "cwd": "/home/kailang/experiments/baselines/rl_correction_h2s2r_adapter_v13_256_pilot_20260912",
+  "argv": [
+    "/home/kailang/.local/miniconda3/envs/rl-correction-pour/bin/python",
+    "/home/kailang/experiments/baselines/rl_correction_h2s2r_adapter_v13_256_pilot_20260912/tasks/h2s2r_pour17/train_right_lstm.py",
+    "--bundle_root",
+    "/home/kailang/experiments/baselines/pour17_baseline_bundle_20260829/pour17",
+    "--name",
+    "V13_RIGHT_256_PILOT",
+    "--num_envs",
+    "256",
+    "--seed",
+    "42",
+    "--reference_start_index",
+    "14",
+    "--training_pilot",
+    "--pilot_output_root",
+    "/media/msc-auto/HDD/users/kailang/h2s2r_training_pilot_20260912/right_training_256_01/train01",
+    "--device",
+    "cuda:0",
+    "--headless"
+  ],
+  "public_environment": {
+    "PYTHONPATH": [
+      "/home/kailang/experiments/baselines/rl_correction_h2s2r_adapter_v13_256_pilot_20260912",
+      "/home/kailang/experiments/baselines/fabrics_h2s2r_reference/src",
+      "/home/kailang/experiments/baselines/rl_correction_h2s2r_adapter_v13_256_pilot_20260912/third_party/h2s2r_official"
+    ],
+    "CUDA_VISIBLE_DEVICES": "1",
+    "TMPDIR": "/home/kailang/experiments/baselines/rl_correction_h2s2r_adapter_v13_256_pilot_20260912/runtime/tmp"
+  },
+  "resolved_imports": {
+    "status": "NOT_RERUN",
+    "basis": "accepted init_trace identity; actual imports recorded in child"
+  },
+  "probe_only": false,
+  "attempt_id": "right_training_256_train01",
+  "input_identity": {
+    "entry_sha256": "2f8c347ebd3e445d802b8dea25238ed5ac190223ed63a190a10fe9f52199bce3",
+    "argv": [
+      "--bundle_root",
+      "/home/kailang/experiments/baselines/pour17_baseline_bundle_20260829/pour17",
+      "--name",
+      "V13_RIGHT_256_PILOT",
+      "--num_envs",
+      "256",
+      "--seed",
+      "42",
+      "--reference_start_index",
+      "14",
+      "--training_pilot",
+      "--pilot_output_root",
+      "/media/msc-auto/HDD/users/kailang/h2s2r_training_pilot_20260912/right_training_256_01/train01",
+      "--device",
+      "cuda:0",
+      "--headless"
+    ]
+  },
+  "pid": 2487779,
+  "return_code": -11,
+  "timed_out": false,
+  "timeout_reason": null,
+  "cleanup_over_deadline_seconds": 0.0,
+  "child_user_cpu_seconds": 54.54637,
+  "child_system_cpu_seconds": 16.341511,
+  "child_maxrss_kib": 4917344,
+  "maxrss_note": "host RAM high-water, not GPU memory; wrapper owns one child",
+  "wall_seconds": 32.31183949392289,
+  "stdout": {
+    "path": "/media/msc-auto/HDD/users/kailang/h2s2r_training_pilot_20260912/right_training_256_01/train01_launch/stdout.log",
+    "sha256": "f77c53306dc6b7f1bf6a7cdcd060ff64a45d4608d3760f9c96549a308f98503f"
+  },
+  "stderr": {
+    "path": "/media/msc-auto/HDD/users/kailang/h2s2r_training_pilot_20260912/right_training_256_01/train01_launch/stderr.log",
+    "sha256": "31e9e55c7c34f2e946aac190a7699de04de6549778b12199f2621663a69df0bc"
+  },
+  "status": "FAIL",
+  "task_status": "FAIL",
+  "process_return_code": -11,
+  "completion_record": null,
+  "ended_utc": "2026-09-12T14:20:09.483191+00:00"
+}

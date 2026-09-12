@@ -1,0 +1,28 @@
+{
+  "schema": "h2s2r_synergy_manifest_v1",
+  "input_archive": "perception/pour17_perception.npz",
+  "input_regime": "estimated",
+  "task_supervision_kind": "model_estimate",
+  "input_sha256": "b9d54abc81f210c9552728d3cfa58c297efe80646e727aa0cf5cb0b2abce1076",
+  "fit": {
+    "method": "PCA/SVD",
+    "components": 5,
+    "lower_percentile": 0.5,
+    "upper_percentile": 99.5,
+    "valid_rows_only": true
+  },
+  "outputs": {
+    "right": {
+      "path": "right_synergy_pca5.npz",
+      "sha256": "05fcf4968899f48928207c4a66b37628d511666fdba492dafd3c287108fcab73",
+      "rows_used": 142,
+      "source": "pour17_estimated_right_hand_q_valid_rows_pca5;input_sha256=b9d54abc81f210c9552728d3cfa58c297efe80646e727aa0cf5cb0b2abce1076"
+    },
+    "left": {
+      "path": "left_synergy_pca5.npz",
+      "sha256": "ee39d917dc51a0933a5fcf558d60a5534b14520cf1deff3a2aab031924032197",
+      "rows_used": 142,
+      "source": "pour17_estimated_left_hand_q_valid_rows_pca5;input_sha256=b9d54abc81f210c9552728d3cfa58c297efe80646e727aa0cf5cb0b2abce1076"
+    }
+  }
+}

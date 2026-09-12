@@ -1,0 +1,11 @@
+{
+  "changed_behavior": "skip only dump_traceback_later when H2S2R_DISABLE_PERIODIC_TRACEBACK=1",
+  "default_behavior_preserved": true,
+  "faulthandler_enable_preserved": true,
+  "schema": "h2s2r_traceback_overlay_identity_v1",
+  "sigusr1_registration_preserved": true,
+  "source": "/home/kailang/experiments/baselines/rl_correction_h2s2r_adapter_v13_256_pilot_20260912/runtime/training_pilot_20260912/resume_observation.py",
+  "source_sha256": "7fe7b1371a4c2aa493454ac74e27a84c8292f6f78e084673e674744f3030b9ab",
+  "target": "/media/msc-auto/HDD/users/kailang/h2s2r_training_pilot_20260912/traceback_intervention_01/overlay/runtime/training_pilot_20260912/resume_observation.py",
+  "target_sha256": "23122aad8cdb8d7ebfd1e31de584f9ded43ac14b34e45cd55fdccef0381dda30"
+}

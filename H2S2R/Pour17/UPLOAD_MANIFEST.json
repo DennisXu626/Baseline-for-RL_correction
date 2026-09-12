@@ -1,0 +1,1044 @@
+{
+  "cutoff": "2026-09-13 01:45:00 Asia/Shanghai (UTC+08:00)",
+  "files": [
+    {
+      "local": "D:\\UCBP\\reports\\H2S2R_GITHUB_HANDOFF_20260913\\upload\\H2S2R\\Pour17\\diagnostics\\traceback_intervention\\guard\\sitecustomize.py",
+      "target": "H2S2R/Pour17/diagnostics/traceback_intervention/guard/sitecustomize.py",
+      "purpose": "当前部署源码/依赖，原字节取回",
+      "updated": false,
+      "remote": "/media/msc-auto/HDD/users/kailang/h2s2r_training_pilot_20260912/native_debug_01/support/sitecustomize.py",
+      "original_local": "D:\\UCBP\\reports\\H2S2R_GITHUB_HANDOFF_20260913\\source_v13\\diagnostics\\traceback_intervention\\guard\\sitecustomize.py",
+      "sha256": "7cc53632fb0dca119dbd2f577196ec29b16e66afb4512891c00fa16d80abe41a"
+    },
+    {
+      "local": "D:\\UCBP\\reports\\H2S2R_GITHUB_HANDOFF_20260913\\upload\\H2S2R\\Pour17\\diagnostics\\traceback_intervention\\overlay\\runtime\\training_pilot_20260912\\resume_observation.py",
+      "target": "H2S2R/Pour17/diagnostics/traceback_intervention/overlay/runtime/training_pilot_20260912/resume_observation.py",
+      "purpose": "当前部署源码/依赖，原字节取回",
+      "updated": false,
+      "remote": "/media/msc-auto/HDD/users/kailang/h2s2r_training_pilot_20260912/traceback_intervention_01/overlay/runtime/training_pilot_20260912/resume_observation.py",
+      "original_local": "D:\\UCBP\\reports\\H2S2R_GITHUB_HANDOFF_20260913\\source_v13\\diagnostics\\traceback_intervention\\overlay\\runtime\\training_pilot_20260912\\resume_observation.py",
+      "sha256": "23122aad8cdb8d7ebfd1e31de584f9ded43ac14b34e45cd55fdccef0381dda30"
+    },
+    {
+      "local": "D:\\UCBP\\reports\\H2S2R_GITHUB_HANDOFF_20260913\\upload\\H2S2R\\Pour17\\diagnostics\\traceback_intervention\\support\\cpu_sigsegv_target.py",
+      "target": "H2S2R/Pour17/diagnostics/traceback_intervention/support/cpu_sigsegv_target.py",
+      "purpose": "当前部署源码/依赖，原字节取回",
+      "updated": false,
+      "remote": "/media/msc-auto/HDD/users/kailang/h2s2r_training_pilot_20260912/traceback_intervention_01/support/cpu_sigsegv_target.py",
+      "original_local": "D:\\UCBP\\reports\\H2S2R_GITHUB_HANDOFF_20260913\\source_v13\\diagnostics\\traceback_intervention\\support\\cpu_sigsegv_target.py",
+      "sha256": "4050342b9fe338772952fa8738d846c0945f019191e107828d29a7d46017e0db"
+    },
+    {
+      "local": "D:\\UCBP\\reports\\H2S2R_GITHUB_HANDOFF_20260913\\upload\\H2S2R\\Pour17\\diagnostics\\traceback_intervention\\support\\deploy_overlay.py",
+      "target": "H2S2R/Pour17/diagnostics/traceback_intervention/support/deploy_overlay.py",
+      "purpose": "当前部署源码/依赖，原字节取回",
+      "updated": false,
+      "remote": "/media/msc-auto/HDD/users/kailang/h2s2r_training_pilot_20260912/traceback_intervention_01/support/deploy_overlay.py",
+      "original_local": "D:\\UCBP\\reports\\H2S2R_GITHUB_HANDOFF_20260913\\source_v13\\diagnostics\\traceback_intervention\\support\\deploy_overlay.py",
+      "sha256": "c8b54c0e43e1dd4cc2c36cb468c93188f2a2a72e7e86f74118a1182e9a58553d"
+    },
+    {
+      "local": "D:\\UCBP\\reports\\H2S2R_GITHUB_HANDOFF_20260913\\upload\\H2S2R\\Pour17\\diagnostics\\traceback_intervention\\support\\gdb_capture_full.gdb",
+      "target": "H2S2R/Pour17/diagnostics/traceback_intervention/support/gdb_capture_full.gdb",
+      "purpose": "当前部署源码/依赖，原字节取回",
+      "updated": false,
+      "remote": "/media/msc-auto/HDD/users/kailang/h2s2r_training_pilot_20260912/traceback_intervention_01/support/gdb_capture_full.gdb",
+      "original_local": "D:\\UCBP\\reports\\H2S2R_GITHUB_HANDOFF_20260913\\source_v13\\diagnostics\\traceback_intervention\\support\\gdb_capture_full.gdb",
+      "sha256": "b3c74b5dcb7b82c21d5a392486c10776f4f81226d48654e47dee94cc2aa34499"
+    },
+    {
+      "local": "D:\\UCBP\\reports\\H2S2R_GITHUB_HANDOFF_20260913\\upload\\H2S2R\\Pour17\\diagnostics\\traceback_intervention\\support\\launch_intervention.py",
+      "target": "H2S2R/Pour17/diagnostics/traceback_intervention/support/launch_intervention.py",
+      "purpose": "当前部署源码/依赖，原字节取回",
+      "updated": false,
+      "remote": "/media/msc-auto/HDD/users/kailang/h2s2r_training_pilot_20260912/traceback_intervention_01/support/launch_intervention.py",
+      "original_local": "D:\\UCBP\\reports\\H2S2R_GITHUB_HANDOFF_20260913\\source_v13\\diagnostics\\traceback_intervention\\support\\launch_intervention.py",
+      "sha256": "2f9eda95ef130345fadc33dbd00536dd0c7512a18bbd85f27d184eb1d6a44f22"
+    },
+    {
+      "local": "D:\\UCBP\\reports\\H2S2R_GITHUB_HANDOFF_20260913\\upload\\H2S2R\\Pour17\\diagnostics\\traceback_intervention\\support\\shared_gpu_preflight.py",
+      "target": "H2S2R/Pour17/diagnostics/traceback_intervention/support/shared_gpu_preflight.py",
+      "purpose": "当前部署源码/依赖，原字节取回",
+      "updated": false,
+      "remote": "/media/msc-auto/HDD/users/kailang/h2s2r_training_pilot_20260912/traceback_intervention_01/support/shared_gpu_preflight.py",
+      "original_local": "D:\\UCBP\\reports\\H2S2R_GITHUB_HANDOFF_20260913\\source_v13\\diagnostics\\traceback_intervention\\support\\shared_gpu_preflight.py",
+      "sha256": "45a8c97a9cc0ae2891a5e69cc124595485297f2229e8935ea4e73501695e6a88"
+    },
+    {
+      "local": "D:\\UCBP\\reports\\H2S2R_GITHUB_HANDOFF_20260913\\upload\\H2S2R\\Pour17\\diagnostics\\traceback_intervention\\support\\test_full_gdb_script.py",
+      "target": "H2S2R/Pour17/diagnostics/traceback_intervention/support/test_full_gdb_script.py",
+      "purpose": "当前部署源码/依赖，原字节取回",
+      "updated": false,
+      "remote": "/media/msc-auto/HDD/users/kailang/h2s2r_training_pilot_20260912/traceback_intervention_01/support/test_full_gdb_script.py",
+      "original_local": "D:\\UCBP\\reports\\H2S2R_GITHUB_HANDOFF_20260913\\source_v13\\diagnostics\\traceback_intervention\\support\\test_full_gdb_script.py",
+      "sha256": "2668f98037b182f0b84294b6b08adc5b60715b397d5103b749d423ba29e9f84c"
+    },
+    {
+      "local": "D:\\UCBP\\reports\\H2S2R_GITHUB_HANDOFF_20260913\\upload\\H2S2R\\Pour17\\diagnostics\\traceback_intervention\\support\\test_periodic_disabled.py",
+      "target": "H2S2R/Pour17/diagnostics/traceback_intervention/support/test_periodic_disabled.py",
+      "purpose": "当前部署源码/依赖，原字节取回",
+      "updated": false,
+      "remote": "/media/msc-auto/HDD/users/kailang/h2s2r_training_pilot_20260912/traceback_intervention_01/support/test_periodic_disabled.py",
+      "original_local": "D:\\UCBP\\reports\\H2S2R_GITHUB_HANDOFF_20260913\\source_v13\\diagnostics\\traceback_intervention\\support\\test_periodic_disabled.py",
+      "sha256": "ae817ba413d3e892be9185cef24abb471398bde37bf4df745204d6435bf86e2a"
+    },
+    {
+      "local": "D:\\UCBP\\reports\\H2S2R_GITHUB_HANDOFF_20260913\\upload\\H2S2R\\Pour17\\rl_rebuild\\__init__.py",
+      "target": "H2S2R/Pour17/rl_rebuild/__init__.py",
+      "purpose": "当前部署源码/依赖，原字节取回",
+      "updated": false,
+      "remote": "/home/kailang/experiments/baselines/rl_correction_h2s2r_adapter_v13_256_pilot_20260912/rl_rebuild/__init__.py",
+      "original_local": "D:\\UCBP\\reports\\H2S2R_GITHUB_HANDOFF_20260913\\source_v13\\rl_rebuild\\__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "local": "D:\\UCBP\\reports\\H2S2R_GITHUB_HANDOFF_20260913\\upload\\H2S2R\\Pour17\\rl_rebuild\\baselines\\__init__.py",
+      "target": "H2S2R/Pour17/rl_rebuild/baselines/__init__.py",
+      "purpose": "当前部署源码/依赖，原字节取回",
+      "updated": false,
+      "remote": "/home/kailang/experiments/baselines/rl_correction_h2s2r_adapter_v13_256_pilot_20260912/rl_rebuild/baselines/__init__.py",
+      "original_local": "D:\\UCBP\\reports\\H2S2R_GITHUB_HANDOFF_20260913\\source_v13\\rl_rebuild\\baselines\\__init__.py",
+      "sha256": "6c74416ce88add0ef3642d26a89e8dbfb288eff46eb477d8c1cdcab19307f7ad"
+    },
+    {
+      "local": "D:\\UCBP\\reports\\H2S2R_GITHUB_HANDOFF_20260913\\upload\\H2S2R\\Pour17\\rl_rebuild\\baselines\\h2s2r\\__init__.py",
+      "target": "H2S2R/Pour17/rl_rebuild/baselines/h2s2r/__init__.py",
+      "purpose": "当前部署源码/依赖，原字节取回",
+      "updated": false,
+      "remote": "/home/kailang/experiments/baselines/rl_correction_h2s2r_adapter_v13_256_pilot_20260912/rl_rebuild/baselines/h2s2r/__init__.py",
+      "original_local": "D:\\UCBP\\reports\\H2S2R_GITHUB_HANDOFF_20260913\\source_v13\\rl_rebuild\\baselines\\h2s2r\\__init__.py",
+      "sha256": "0b31943d6f96ff80c6aadbead39dceee398b1eec72d3311686d490f540483c42"
+    },
+    {
+      "local": "D:\\UCBP\\reports\\H2S2R_GITHUB_HANDOFF_20260913\\upload\\H2S2R\\Pour17\\rl_rebuild\\baselines\\h2s2r\\assets\\vega_sharpa_left_fabric.urdf",
+      "target": "H2S2R/Pour17/rl_rebuild/baselines/h2s2r/assets/vega_sharpa_left_fabric.urdf",
+      "purpose": "当前部署源码/依赖，原字节取回",
+      "updated": false,
+      "remote": "/home/kailang/experiments/baselines/rl_correction_h2s2r_adapter_v13_256_pilot_20260912/rl_rebuild/baselines/h2s2r/assets/vega_sharpa_left_fabric.urdf",
+      "original_local": "D:\\UCBP\\reports\\H2S2R_GITHUB_HANDOFF_20260913\\source_v13\\rl_rebuild\\baselines\\h2s2r\\assets\\vega_sharpa_left_fabric.urdf",
+      "sha256": "e3bf25fe1316491cc919ce68586893c2ebfc82cf5cebd62b3d57d2761dc2287d"
+    },
+    {
+      "local": "D:\\UCBP\\reports\\H2S2R_GITHUB_HANDOFF_20260913\\upload\\H2S2R\\Pour17\\rl_rebuild\\baselines\\h2s2r\\assets\\vega_sharpa_right_fabric.urdf",
+      "target": "H2S2R/Pour17/rl_rebuild/baselines/h2s2r/assets/vega_sharpa_right_fabric.urdf",
+      "purpose": "当前部署源码/依赖，原字节取回",
+      "updated": false,
+      "remote": "/home/kailang/experiments/baselines/rl_correction_h2s2r_adapter_v13_256_pilot_20260912/rl_rebuild/baselines/h2s2r/assets/vega_sharpa_right_fabric.urdf",
+      "original_local": "D:\\UCBP\\reports\\H2S2R_GITHUB_HANDOFF_20260913\\source_v13\\rl_rebuild\\baselines\\h2s2r\\assets\\vega_sharpa_right_fabric.urdf",
+      "sha256": "181272687b5d38fc0177304f74aa0a195036f3831dd30b434e27b094c7f69e6e"
+    },
+    {
+      "local": "D:\\UCBP\\reports\\H2S2R_GITHUB_HANDOFF_20260913\\upload\\H2S2R\\Pour17\\rl_rebuild\\baselines\\h2s2r\\contract.py",
+      "target": "H2S2R/Pour17/rl_rebuild/baselines/h2s2r/contract.py",
+      "purpose": "当前部署源码/依赖，原字节取回",
+      "updated": false,
+      "remote": "/home/kailang/experiments/baselines/rl_correction_h2s2r_adapter_v13_256_pilot_20260912/rl_rebuild/baselines/h2s2r/contract.py",
+      "original_local": "D:\\UCBP\\reports\\H2S2R_GITHUB_HANDOFF_20260913\\source_v13\\rl_rebuild\\baselines\\h2s2r\\contract.py",
+      "sha256": "03ba63ae0e618e93c53a826c44695f0d1cd537417cb5900786ece190005f4afb"
+    },
+    {
+      "local": "D:\\UCBP\\reports\\H2S2R_GITHUB_HANDOFF_20260913\\upload\\H2S2R\\Pour17\\rl_rebuild\\baselines\\h2s2r\\controller.py",
+      "target": "H2S2R/Pour17/rl_rebuild/baselines/h2s2r/controller.py",
+      "purpose": "当前部署源码/依赖，原字节取回",
+      "updated": false,
+      "remote": "/home/kailang/experiments/baselines/rl_correction_h2s2r_adapter_v13_256_pilot_20260912/rl_rebuild/baselines/h2s2r/controller.py",
+      "original_local": "D:\\UCBP\\reports\\H2S2R_GITHUB_HANDOFF_20260913\\source_v13\\rl_rebuild\\baselines\\h2s2r\\controller.py",
+      "sha256": "65ed5d0c3ff5d13aec6914d59cf1092864a33f307d05f52e7480126a13626d4a"
+    },
+    {
+      "local": "D:\\UCBP\\reports\\H2S2R_GITHUB_HANDOFF_20260913\\upload\\H2S2R\\Pour17\\rl_rebuild\\baselines\\h2s2r\\fabric_params.py",
+      "target": "H2S2R/Pour17/rl_rebuild/baselines/h2s2r/fabric_params.py",
+      "purpose": "当前部署源码/依赖，原字节取回",
+      "updated": false,
+      "remote": "/home/kailang/experiments/baselines/rl_correction_h2s2r_adapter_v13_256_pilot_20260912/rl_rebuild/baselines/h2s2r/fabric_params.py",
+      "original_local": "D:\\UCBP\\reports\\H2S2R_GITHUB_HANDOFF_20260913\\source_v13\\rl_rebuild\\baselines\\h2s2r\\fabric_params.py",
+      "sha256": "9296ebdff5cc6755bf7e3f716cf44dcba4b59738c7a494a2246c70dc36fe2731"
+    },
+    {
+      "local": "D:\\UCBP\\reports\\H2S2R_GITHUB_HANDOFF_20260913\\upload\\H2S2R\\Pour17\\rl_rebuild\\baselines\\h2s2r\\official_ppo_adapter.py",
+      "target": "H2S2R/Pour17/rl_rebuild/baselines/h2s2r/official_ppo_adapter.py",
+      "purpose": "当前部署源码/依赖，原字节取回",
+      "updated": false,
+      "remote": "/home/kailang/experiments/baselines/rl_correction_h2s2r_adapter_v13_256_pilot_20260912/rl_rebuild/baselines/h2s2r/official_ppo_adapter.py",
+      "original_local": "D:\\UCBP\\reports\\H2S2R_GITHUB_HANDOFF_20260913\\source_v13\\rl_rebuild\\baselines\\h2s2r\\official_ppo_adapter.py",
+      "sha256": "7d1f78a93bbe2ae369a075e9284ff9e3bd2c06730dd6deb8ce99de7fc06dea9c"
+    },
+    {
+      "local": "D:\\UCBP\\reports\\H2S2R_GITHUB_HANDOFF_20260913\\upload\\H2S2R\\Pour17\\rl_rebuild\\baselines\\h2s2r\\pour17\\__init__.py",
+      "target": "H2S2R/Pour17/rl_rebuild/baselines/h2s2r/pour17/__init__.py",
+      "purpose": "当前部署源码/依赖，原字节取回",
+      "updated": false,
+      "remote": "/home/kailang/experiments/baselines/rl_correction_h2s2r_adapter_v13_256_pilot_20260912/rl_rebuild/baselines/h2s2r/pour17/__init__.py",
+      "original_local": "D:\\UCBP\\reports\\H2S2R_GITHUB_HANDOFF_20260913\\source_v13\\rl_rebuild\\baselines\\h2s2r\\pour17\\__init__.py",
+      "sha256": "253fd51cf8cfb92aac4bfdd76672bdf580fcb9079430adf5c51abdc5547ec448"
+    },
+    {
+      "local": "D:\\UCBP\\reports\\H2S2R_GITHUB_HANDOFF_20260913\\upload\\H2S2R\\Pour17\\rl_rebuild\\baselines\\h2s2r\\pour17\\bimanual.py",
+      "target": "H2S2R/Pour17/rl_rebuild/baselines/h2s2r/pour17/bimanual.py",
+      "purpose": "当前部署源码/依赖，原字节取回",
+      "updated": false,
+      "remote": "/home/kailang/experiments/baselines/rl_correction_h2s2r_adapter_v13_256_pilot_20260912/rl_rebuild/baselines/h2s2r/pour17/bimanual.py",
+      "original_local": "D:\\UCBP\\reports\\H2S2R_GITHUB_HANDOFF_20260913\\source_v13\\rl_rebuild\\baselines\\h2s2r\\pour17\\bimanual.py",
+      "sha256": "a8ee6b9f1943061e3ce87a18b379377c274194bb372c88565b27905bc4750e60"
+    },
+    {
+      "local": "D:\\UCBP\\reports\\H2S2R_GITHUB_HANDOFF_20260913\\upload\\H2S2R\\Pour17\\rl_rebuild\\baselines\\h2s2r\\pour17\\inputs.py",
+      "target": "H2S2R/Pour17/rl_rebuild/baselines/h2s2r/pour17/inputs.py",
+      "purpose": "当前部署源码/依赖，原字节取回",
+      "updated": false,
+      "remote": "/home/kailang/experiments/baselines/rl_correction_h2s2r_adapter_v13_256_pilot_20260912/rl_rebuild/baselines/h2s2r/pour17/inputs.py",
+      "original_local": "D:\\UCBP\\reports\\H2S2R_GITHUB_HANDOFF_20260913\\source_v13\\rl_rebuild\\baselines\\h2s2r\\pour17\\inputs.py",
+      "sha256": "559aaf77e5f4acb4a778efb7e4a5a18ea1147c64a05134baaccb8fe5bb45f436"
+    },
+    {
+      "local": "D:\\UCBP\\reports\\H2S2R_GITHUB_HANDOFF_20260913\\upload\\H2S2R\\Pour17\\rl_rebuild\\baselines\\h2s2r\\pour17\\observation.py",
+      "target": "H2S2R/Pour17/rl_rebuild/baselines/h2s2r/pour17/observation.py",
+      "purpose": "当前部署源码/依赖，原字节取回",
+      "updated": false,
+      "remote": "/home/kailang/experiments/baselines/rl_correction_h2s2r_adapter_v13_256_pilot_20260912/rl_rebuild/baselines/h2s2r/pour17/observation.py",
+      "original_local": "D:\\UCBP\\reports\\H2S2R_GITHUB_HANDOFF_20260913\\source_v13\\rl_rebuild\\baselines\\h2s2r\\pour17\\observation.py",
+      "sha256": "907a2f5684873e8c3926ee43f2bf7bf673e7340a5cb7ac05f25327f6f1a6b574"
+    },
+    {
+      "local": "D:\\UCBP\\reports\\H2S2R_GITHUB_HANDOFF_20260913\\upload\\H2S2R\\Pour17\\rl_rebuild\\baselines\\h2s2r\\pour17\\reset.py",
+      "target": "H2S2R/Pour17/rl_rebuild/baselines/h2s2r/pour17/reset.py",
+      "purpose": "当前部署源码/依赖，原字节取回",
+      "updated": false,
+      "remote": "/home/kailang/experiments/baselines/rl_correction_h2s2r_adapter_v13_256_pilot_20260912/rl_rebuild/baselines/h2s2r/pour17/reset.py",
+      "original_local": "D:\\UCBP\\reports\\H2S2R_GITHUB_HANDOFF_20260913\\source_v13\\rl_rebuild\\baselines\\h2s2r\\pour17\\reset.py",
+      "sha256": "313f28f8240724292eca6a6f95e80e3e342ec8a2c63b939ff7c356b2ee9d6f14"
+    },
+    {
+      "local": "D:\\UCBP\\reports\\H2S2R_GITHUB_HANDOFF_20260913\\upload\\H2S2R\\Pour17\\rl_rebuild\\baselines\\h2s2r\\pour17\\trajectory.py",
+      "target": "H2S2R/Pour17/rl_rebuild/baselines/h2s2r/pour17/trajectory.py",
+      "purpose": "当前部署源码/依赖，原字节取回",
+      "updated": false,
+      "remote": "/home/kailang/experiments/baselines/rl_correction_h2s2r_adapter_v13_256_pilot_20260912/rl_rebuild/baselines/h2s2r/pour17/trajectory.py",
+      "original_local": "D:\\UCBP\\reports\\H2S2R_GITHUB_HANDOFF_20260913\\source_v13\\rl_rebuild\\baselines\\h2s2r\\pour17\\trajectory.py",
+      "sha256": "34ce94302053f019bd5654d300d8a30ef79c8d2208ff7257ceebc82af9ab0582"
+    },
+    {
+      "local": "D:\\UCBP\\reports\\H2S2R_GITHUB_HANDOFF_20260913\\upload\\H2S2R\\Pour17\\rl_rebuild\\baselines\\h2s2r\\reward.py",
+      "target": "H2S2R/Pour17/rl_rebuild/baselines/h2s2r/reward.py",
+      "purpose": "当前部署源码/依赖，原字节取回",
+      "updated": false,
+      "remote": "/home/kailang/experiments/baselines/rl_correction_h2s2r_adapter_v13_256_pilot_20260912/rl_rebuild/baselines/h2s2r/reward.py",
+      "original_local": "D:\\UCBP\\reports\\H2S2R_GITHUB_HANDOFF_20260913\\source_v13\\rl_rebuild\\baselines\\h2s2r\\reward.py",
+      "sha256": "59eb270fae35cb80efcab4a5e15ecad525976ea01489e549c0202abd6150e711"
+    },
+    {
+      "local": "D:\\UCBP\\reports\\H2S2R_GITHUB_HANDOFF_20260913\\upload\\H2S2R\\Pour17\\rl_rebuild\\baselines\\h2s2r\\synergy.py",
+      "target": "H2S2R/Pour17/rl_rebuild/baselines/h2s2r/synergy.py",
+      "purpose": "当前部署源码/依赖，原字节取回",
+      "updated": false,
+      "remote": "/home/kailang/experiments/baselines/rl_correction_h2s2r_adapter_v13_256_pilot_20260912/rl_rebuild/baselines/h2s2r/synergy.py",
+      "original_local": "D:\\UCBP\\reports\\H2S2R_GITHUB_HANDOFF_20260913\\source_v13\\rl_rebuild\\baselines\\h2s2r\\synergy.py",
+      "sha256": "674afe38d5cf52892ede486fe09fbd03ad9f5a501466cd2742976f4f35700d67"
+    },
+    {
+      "local": "D:\\UCBP\\reports\\H2S2R_GITHUB_HANDOFF_20260913\\upload\\H2S2R\\Pour17\\rl_rebuild\\baselines\\h2s2r\\tools\\__init__.py",
+      "target": "H2S2R/Pour17/rl_rebuild/baselines/h2s2r/tools/__init__.py",
+      "purpose": "当前部署源码/依赖，原字节取回",
+      "updated": false,
+      "remote": "/home/kailang/experiments/baselines/rl_correction_h2s2r_adapter_v13_256_pilot_20260912/rl_rebuild/baselines/h2s2r/tools/__init__.py",
+      "original_local": "D:\\UCBP\\reports\\H2S2R_GITHUB_HANDOFF_20260913\\source_v13\\rl_rebuild\\baselines\\h2s2r\\tools\\__init__.py",
+      "sha256": "15605d1027d19d2d2e87ec8bd941cfaa246ced062eed0f5a2b2b454fe3e9863e"
+    },
+    {
+      "local": "D:\\UCBP\\reports\\H2S2R_GITHUB_HANDOFF_20260913\\upload\\H2S2R\\Pour17\\rl_rebuild\\baselines\\h2s2r\\tools\\generate_single_side_urdf.py",
+      "target": "H2S2R/Pour17/rl_rebuild/baselines/h2s2r/tools/generate_single_side_urdf.py",
+      "purpose": "当前部署源码/依赖，原字节取回",
+      "updated": false,
+      "remote": "/home/kailang/experiments/baselines/rl_correction_h2s2r_adapter_v13_256_pilot_20260912/rl_rebuild/baselines/h2s2r/tools/generate_single_side_urdf.py",
+      "original_local": "D:\\UCBP\\reports\\H2S2R_GITHUB_HANDOFF_20260913\\source_v13\\rl_rebuild\\baselines\\h2s2r\\tools\\generate_single_side_urdf.py",
+      "sha256": "3b07998b8c3691fbbb3878bc3958a6ec5f1c41c7a10a707c57f4047e0886341d"
+    },
+    {
+      "local": "D:\\UCBP\\reports\\H2S2R_GITHUB_HANDOFF_20260913\\upload\\H2S2R\\Pour17\\rl_rebuild\\baselines\\h2s2r\\vega_sharpa_fabric.py",
+      "target": "H2S2R/Pour17/rl_rebuild/baselines/h2s2r/vega_sharpa_fabric.py",
+      "purpose": "当前部署源码/依赖，原字节取回",
+      "updated": false,
+      "remote": "/home/kailang/experiments/baselines/rl_correction_h2s2r_adapter_v13_256_pilot_20260912/rl_rebuild/baselines/h2s2r/vega_sharpa_fabric.py",
+      "original_local": "D:\\UCBP\\reports\\H2S2R_GITHUB_HANDOFF_20260913\\source_v13\\rl_rebuild\\baselines\\h2s2r\\vega_sharpa_fabric.py",
+      "sha256": "d81874853e8b123235137d125565d66b5c6b569a14fd0012fd5c762ad47c9247"
+    },
+    {
+      "local": "D:\\UCBP\\reports\\H2S2R_GITHUB_HANDOFF_20260913\\upload\\H2S2R\\Pour17\\rl_rebuild\\correction\\__init__.py",
+      "target": "H2S2R/Pour17/rl_rebuild/correction/__init__.py",
+      "purpose": "当前部署源码/依赖，原字节取回",
+      "updated": false,
+      "remote": "/home/kailang/experiments/baselines/rl_correction_h2s2r_adapter_v13_256_pilot_20260912/rl_rebuild/correction/__init__.py",
+      "original_local": "D:\\UCBP\\reports\\H2S2R_GITHUB_HANDOFF_20260913\\source_v13\\rl_rebuild\\correction\\__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "local": "D:\\UCBP\\reports\\H2S2R_GITHUB_HANDOFF_20260913\\upload\\H2S2R\\Pour17\\rl_rebuild\\correction\\env\\__init__.py",
+      "target": "H2S2R/Pour17/rl_rebuild/correction/env/__init__.py",
+      "purpose": "当前部署源码/依赖，原字节取回",
+      "updated": false,
+      "remote": "/home/kailang/experiments/baselines/rl_correction_h2s2r_adapter_v13_256_pilot_20260912/rl_rebuild/correction/env/__init__.py",
+      "original_local": "D:\\UCBP\\reports\\H2S2R_GITHUB_HANDOFF_20260913\\source_v13\\rl_rebuild\\correction\\env\\__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "local": "D:\\UCBP\\reports\\H2S2R_GITHUB_HANDOFF_20260913\\upload\\H2S2R\\Pour17\\rl_rebuild\\correction\\env\\correction_env_cfg.py",
+      "target": "H2S2R/Pour17/rl_rebuild/correction/env/correction_env_cfg.py",
+      "purpose": "当前部署源码/依赖，原字节取回",
+      "updated": false,
+      "remote": "/home/kailang/experiments/baselines/rl_correction_h2s2r_adapter_v13_256_pilot_20260912/rl_rebuild/correction/env/correction_env_cfg.py",
+      "original_local": "D:\\UCBP\\reports\\H2S2R_GITHUB_HANDOFF_20260913\\source_v13\\rl_rebuild\\correction\\env\\correction_env_cfg.py",
+      "sha256": "25cd4582a5c195e1145f661beb05764d9738acd4b2744f0377cf55bd5e701a7c"
+    },
+    {
+      "local": "D:\\UCBP\\reports\\H2S2R_GITHUB_HANDOFF_20260913\\upload\\H2S2R\\Pour17\\rl_rebuild\\correction\\env\\dexmate_env_cfg.py",
+      "target": "H2S2R/Pour17/rl_rebuild/correction/env/dexmate_env_cfg.py",
+      "purpose": "当前部署源码/依赖，原字节取回",
+      "updated": false,
+      "remote": "/home/kailang/experiments/baselines/rl_correction_h2s2r_adapter_v13_256_pilot_20260912/rl_rebuild/correction/env/dexmate_env_cfg.py",
+      "original_local": "D:\\UCBP\\reports\\H2S2R_GITHUB_HANDOFF_20260913\\source_v13\\rl_rebuild\\correction\\env\\dexmate_env_cfg.py",
+      "sha256": "1717ad3bf492b427db05040860579ff999fe5fa10097dc92f78d22c024f823f8"
+    },
+    {
+      "local": "D:\\UCBP\\reports\\H2S2R_GITHUB_HANDOFF_20260913\\upload\\H2S2R\\Pour17\\rl_rebuild\\correction\\frames.py",
+      "target": "H2S2R/Pour17/rl_rebuild/correction/frames.py",
+      "purpose": "当前部署源码/依赖，原字节取回",
+      "updated": false,
+      "remote": "/home/kailang/experiments/baselines/rl_correction_h2s2r_adapter_v13_256_pilot_20260912/rl_rebuild/correction/frames.py",
+      "original_local": "D:\\UCBP\\reports\\H2S2R_GITHUB_HANDOFF_20260913\\source_v13\\rl_rebuild\\correction\\frames.py",
+      "sha256": "e4ca1abcfd28b5bc15694784b165b3e34cf91784132685d35f44fb30b7512247"
+    },
+    {
+      "local": "D:\\UCBP\\reports\\H2S2R_GITHUB_HANDOFF_20260913\\upload\\H2S2R\\Pour17\\rl_rebuild\\correction\\load_replay.py",
+      "target": "H2S2R/Pour17/rl_rebuild/correction/load_replay.py",
+      "purpose": "当前部署源码/依赖，原字节取回",
+      "updated": false,
+      "remote": "/home/kailang/experiments/baselines/rl_correction_h2s2r_adapter_v13_256_pilot_20260912/rl_rebuild/correction/load_replay.py",
+      "original_local": "D:\\UCBP\\reports\\H2S2R_GITHUB_HANDOFF_20260913\\source_v13\\rl_rebuild\\correction\\load_replay.py",
+      "sha256": "e62f92f5a3d6ac699a11f17531be5f1a3c5a36fed57539f3b57c92af289d2332"
+    },
+    {
+      "local": "D:\\UCBP\\reports\\H2S2R_GITHUB_HANDOFF_20260913\\upload\\H2S2R\\Pour17\\rl_rebuild\\correction\\paths.py",
+      "target": "H2S2R/Pour17/rl_rebuild/correction/paths.py",
+      "purpose": "当前部署源码/依赖，原字节取回",
+      "updated": false,
+      "remote": "/home/kailang/experiments/baselines/rl_correction_h2s2r_adapter_v13_256_pilot_20260912/rl_rebuild/correction/paths.py",
+      "original_local": "D:\\UCBP\\reports\\H2S2R_GITHUB_HANDOFF_20260913\\source_v13\\rl_rebuild\\correction\\paths.py",
+      "sha256": "f12130dce8e66f16b6edc5a2f91defab420ae526bc359f100de6669d29da3ca8"
+    },
+    {
+      "local": "D:\\UCBP\\reports\\H2S2R_GITHUB_HANDOFF_20260913\\upload\\H2S2R\\Pour17\\rl_rebuild\\correction\\schema.py",
+      "target": "H2S2R/Pour17/rl_rebuild/correction/schema.py",
+      "purpose": "当前部署源码/依赖，原字节取回",
+      "updated": false,
+      "remote": "/home/kailang/experiments/baselines/rl_correction_h2s2r_adapter_v13_256_pilot_20260912/rl_rebuild/correction/schema.py",
+      "original_local": "D:\\UCBP\\reports\\H2S2R_GITHUB_HANDOFF_20260913\\source_v13\\rl_rebuild\\correction\\schema.py",
+      "sha256": "4e79d65e4d7eea1371832b2177b59fec3257bcd37c4ed8a0c63b37a17675513d"
+    },
+    {
+      "local": "D:\\UCBP\\reports\\H2S2R_GITHUB_HANDOFF_20260913\\upload\\H2S2R\\Pour17\\rl_rebuild\\utils\\__init__.py",
+      "target": "H2S2R/Pour17/rl_rebuild/utils/__init__.py",
+      "purpose": "当前部署源码/依赖，原字节取回",
+      "updated": false,
+      "remote": "/home/kailang/experiments/baselines/rl_correction_h2s2r_adapter_v13_256_pilot_20260912/rl_rebuild/utils/__init__.py",
+      "original_local": "D:\\UCBP\\reports\\H2S2R_GITHUB_HANDOFF_20260913\\source_v13\\rl_rebuild\\utils\\__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "local": "D:\\UCBP\\reports\\H2S2R_GITHUB_HANDOFF_20260913\\upload\\H2S2R\\Pour17\\rl_rebuild\\utils\\gpu_guard.py",
+      "target": "H2S2R/Pour17/rl_rebuild/utils/gpu_guard.py",
+      "purpose": "当前部署源码/依赖，原字节取回",
+      "updated": false,
+      "remote": "/home/kailang/experiments/baselines/rl_correction_h2s2r_adapter_v13_256_pilot_20260912/rl_rebuild/utils/gpu_guard.py",
+      "original_local": "D:\\UCBP\\reports\\H2S2R_GITHUB_HANDOFF_20260913\\source_v13\\rl_rebuild\\utils\\gpu_guard.py",
+      "sha256": "0d6fdda06f04c4417997d032569358fd768482fd7b6de23a4f8603d23610e8f9"
+    },
+    {
+      "local": "D:\\UCBP\\reports\\H2S2R_GITHUB_HANDOFF_20260913\\upload\\H2S2R\\Pour17\\rl_rebuild\\wrapper\\sharpa_wave_env_wrapper.py",
+      "target": "H2S2R/Pour17/rl_rebuild/wrapper/sharpa_wave_env_wrapper.py",
+      "purpose": "当前部署源码/依赖，原字节取回",
+      "updated": false,
+      "remote": "/home/kailang/experiments/baselines/rl_correction_h2s2r_adapter_v13_256_pilot_20260912/rl_rebuild/wrapper/sharpa_wave_env_wrapper.py",
+      "original_local": "D:\\UCBP\\reports\\H2S2R_GITHUB_HANDOFF_20260913\\source_v13\\rl_rebuild\\wrapper\\sharpa_wave_env_wrapper.py",
+      "sha256": "0594043bdd36652c00959f3692aa8f82f1a5f26845e50bb0fc54078a5a4e5c74"
+    },
+    {
+      "local": "D:\\UCBP\\reports\\H2S2R_GITHUB_HANDOFF_20260913\\upload\\H2S2R\\Pour17\\rl_rebuild\\wrapper\\vec_env.py",
+      "target": "H2S2R/Pour17/rl_rebuild/wrapper/vec_env.py",
+      "purpose": "当前部署源码/依赖，原字节取回",
+      "updated": false,
+      "remote": "/home/kailang/experiments/baselines/rl_correction_h2s2r_adapter_v13_256_pilot_20260912/rl_rebuild/wrapper/vec_env.py",
+      "original_local": "D:\\UCBP\\reports\\H2S2R_GITHUB_HANDOFF_20260913\\source_v13\\rl_rebuild\\wrapper\\vec_env.py",
+      "sha256": "4cea1f22d498d76d00ef34facbf0abec256ce4266f679fb9dd185641bdca778b"
+    },
+    {
+      "local": "D:\\UCBP\\reports\\H2S2R_GITHUB_HANDOFF_20260913\\upload\\H2S2R\\Pour17\\runtime\\cadence_20260912_deploy\\sharpa_right_zero_margin_limits.py",
+      "target": "H2S2R/Pour17/runtime/cadence_20260912_deploy/sharpa_right_zero_margin_limits.py",
+      "purpose": "当前部署源码/依赖，原字节取回",
+      "updated": false,
+      "remote": "/home/kailang/experiments/baselines/rl_correction_h2s2r_adapter_v13_256_pilot_20260912/runtime/cadence_20260912_deploy/sharpa_right_zero_margin_limits.py",
+      "original_local": "D:\\UCBP\\reports\\H2S2R_GITHUB_HANDOFF_20260913\\source_v13\\runtime\\cadence_20260912_deploy\\sharpa_right_zero_margin_limits.py",
+      "sha256": "360d0955ab99c18a5694d1161c6d6ab6ec56c3dcf9ae3461692501af3e24f653"
+    },
+    {
+      "local": "D:\\UCBP\\reports\\H2S2R_GITHUB_HANDOFF_20260913\\upload\\H2S2R\\Pour17\\runtime\\training_pilot_20260912\\camera_delivery.py",
+      "target": "H2S2R/Pour17/runtime/training_pilot_20260912/camera_delivery.py",
+      "purpose": "当前部署源码/依赖，原字节取回",
+      "updated": false,
+      "remote": "/home/kailang/experiments/baselines/rl_correction_h2s2r_adapter_v13_256_pilot_20260912/runtime/training_pilot_20260912/camera_delivery.py",
+      "original_local": "D:\\UCBP\\reports\\H2S2R_GITHUB_HANDOFF_20260913\\source_v13\\runtime\\training_pilot_20260912\\camera_delivery.py",
+      "sha256": "baa4ad850abcef6e44bf5aaf2d8bb2d3037a706c40adcd9d246728ccb4fac2ca"
+    },
+    {
+      "local": "D:\\UCBP\\reports\\H2S2R_GITHUB_HANDOFF_20260913\\upload\\H2S2R\\Pour17\\runtime\\training_pilot_20260912\\endpoint_eval.py",
+      "target": "H2S2R/Pour17/runtime/training_pilot_20260912/endpoint_eval.py",
+      "purpose": "当前部署源码/依赖，原字节取回",
+      "updated": false,
+      "remote": "/home/kailang/experiments/baselines/rl_correction_h2s2r_adapter_v13_256_pilot_20260912/runtime/training_pilot_20260912/endpoint_eval.py",
+      "original_local": "D:\\UCBP\\reports\\H2S2R_GITHUB_HANDOFF_20260913\\source_v13\\runtime\\training_pilot_20260912\\endpoint_eval.py",
+      "sha256": "350ed95b4fe897f1c4c022a5ae977079b980b0448db1dc66583c521a88de5aa3"
+    },
+    {
+      "local": "D:\\UCBP\\reports\\H2S2R_GITHUB_HANDOFF_20260913\\upload\\H2S2R\\Pour17\\runtime\\training_pilot_20260912\\init_trace.py",
+      "target": "H2S2R/Pour17/runtime/training_pilot_20260912/init_trace.py",
+      "purpose": "当前部署源码/依赖，原字节取回",
+      "updated": false,
+      "remote": "/home/kailang/experiments/baselines/rl_correction_h2s2r_adapter_v13_256_pilot_20260912/runtime/training_pilot_20260912/init_trace.py",
+      "original_local": "D:\\UCBP\\reports\\H2S2R_GITHUB_HANDOFF_20260913\\source_v13\\runtime\\training_pilot_20260912\\init_trace.py",
+      "sha256": "bca30fddf8c60fe638bc138d0afa2b3040ebd2a28243ce757cfde7dc75cb62f9"
+    },
+    {
+      "local": "D:\\UCBP\\reports\\H2S2R_GITHUB_HANDOFF_20260913\\upload\\H2S2R\\Pour17\\runtime\\training_pilot_20260912\\launch_with_root.py",
+      "target": "H2S2R/Pour17/runtime/training_pilot_20260912/launch_with_root.py",
+      "purpose": "当前部署源码/依赖，原字节取回",
+      "updated": false,
+      "remote": "/home/kailang/experiments/baselines/rl_correction_h2s2r_adapter_v13_256_pilot_20260912/runtime/training_pilot_20260912/launch_with_root.py",
+      "original_local": "D:\\UCBP\\reports\\H2S2R_GITHUB_HANDOFF_20260913\\source_v13\\runtime\\training_pilot_20260912\\launch_with_root.py",
+      "sha256": "45ddcbc76d367fe88944be27199eb65dc1e97c792b8adcd26f8764ed3d9c7e70"
+    },
+    {
+      "local": "D:\\UCBP\\reports\\H2S2R_GITHUB_HANDOFF_20260913\\upload\\H2S2R\\Pour17\\runtime\\training_pilot_20260912\\resume_observation.py",
+      "target": "H2S2R/Pour17/runtime/training_pilot_20260912/resume_observation.py",
+      "purpose": "当前部署源码/依赖，原字节取回",
+      "updated": false,
+      "remote": "/home/kailang/experiments/baselines/rl_correction_h2s2r_adapter_v13_256_pilot_20260912/runtime/training_pilot_20260912/resume_observation.py",
+      "original_local": "D:\\UCBP\\reports\\H2S2R_GITHUB_HANDOFF_20260913\\source_v13\\runtime\\training_pilot_20260912\\resume_observation.py",
+      "sha256": "7fe7b1371a4c2aa493454ac74e27a84c8292f6f78e084673e674744f3030b9ab"
+    },
+    {
+      "local": "D:\\UCBP\\reports\\H2S2R_GITHUB_HANDOFF_20260913\\upload\\H2S2R\\Pour17\\tasks\\__init__.py",
+      "target": "H2S2R/Pour17/tasks/__init__.py",
+      "purpose": "当前部署源码/依赖，原字节取回",
+      "updated": false,
+      "remote": "/home/kailang/experiments/baselines/rl_correction_h2s2r_adapter_v13_256_pilot_20260912/tasks/__init__.py",
+      "original_local": "D:\\UCBP\\reports\\H2S2R_GITHUB_HANDOFF_20260913\\source_v13\\tasks\\__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "local": "D:\\UCBP\\reports\\H2S2R_GITHUB_HANDOFF_20260913\\upload\\H2S2R\\Pour17\\tasks\\h2s2r_pour17\\__init__.py",
+      "target": "H2S2R/Pour17/tasks/h2s2r_pour17/__init__.py",
+      "purpose": "当前部署源码/依赖，原字节取回",
+      "updated": false,
+      "remote": "/home/kailang/experiments/baselines/rl_correction_h2s2r_adapter_v13_256_pilot_20260912/tasks/h2s2r_pour17/__init__.py",
+      "original_local": "D:\\UCBP\\reports\\H2S2R_GITHUB_HANDOFF_20260913\\source_v13\\tasks\\h2s2r_pour17\\__init__.py",
+      "sha256": "fe898ff930c76db7c1d68ab22009fb1bab8372f8ece39e3e3be2089a2e1b7768"
+    },
+    {
+      "local": "D:\\UCBP\\reports\\H2S2R_GITHUB_HANDOFF_20260913\\upload\\H2S2R\\Pour17\\tasks\\h2s2r_pour17\\artifacts\\synergies\\synergy_manifest.json",
+      "target": "H2S2R/Pour17/tasks/h2s2r_pour17/artifacts/synergies/synergy_manifest.json",
+      "purpose": "当前部署源码/依赖，原字节取回",
+      "updated": false,
+      "remote": "/home/kailang/experiments/baselines/rl_correction_h2s2r_adapter_v13_256_pilot_20260912/tasks/h2s2r_pour17/artifacts/synergies/synergy_manifest.json",
+      "original_local": "D:\\UCBP\\reports\\H2S2R_GITHUB_HANDOFF_20260913\\source_v13\\tasks\\h2s2r_pour17\\artifacts\\synergies\\synergy_manifest.json",
+      "sha256": "8f900bde7b3594be311d74f77c4dc339c27f4e97ef467a4c6ac2e590807a39ad"
+    },
+    {
+      "local": "D:\\UCBP\\reports\\H2S2R_GITHUB_HANDOFF_20260913\\upload\\H2S2R\\Pour17\\tasks\\h2s2r_pour17\\cfg.py",
+      "target": "H2S2R/Pour17/tasks/h2s2r_pour17/cfg.py",
+      "purpose": "当前部署源码/依赖，原字节取回",
+      "updated": false,
+      "remote": "/home/kailang/experiments/baselines/rl_correction_h2s2r_adapter_v13_256_pilot_20260912/tasks/h2s2r_pour17/cfg.py",
+      "original_local": "D:\\UCBP\\reports\\H2S2R_GITHUB_HANDOFF_20260913\\source_v13\\tasks\\h2s2r_pour17\\cfg.py",
+      "sha256": "4ec7615eef59867e09d0d1b693e5337aa4282e59c21707da85d4e45b47c71265"
+    },
+    {
+      "local": "D:\\UCBP\\reports\\H2S2R_GITHUB_HANDOFF_20260913\\upload\\H2S2R\\Pour17\\tasks\\h2s2r_pour17\\env.py",
+      "target": "H2S2R/Pour17/tasks/h2s2r_pour17/env.py",
+      "purpose": "当前部署源码/依赖，原字节取回",
+      "updated": false,
+      "remote": "/home/kailang/experiments/baselines/rl_correction_h2s2r_adapter_v13_256_pilot_20260912/tasks/h2s2r_pour17/env.py",
+      "original_local": "D:\\UCBP\\reports\\H2S2R_GITHUB_HANDOFF_20260913\\source_v13\\tasks\\h2s2r_pour17\\env.py",
+      "sha256": "8d5cb546d523fd5902f8e6392bdf9763f20eb7a847004bdd8537a35b0ccf9273"
+    },
+    {
+      "local": "D:\\UCBP\\reports\\H2S2R_GITHUB_HANDOFF_20260913\\upload\\H2S2R\\Pour17\\tasks\\h2s2r_pour17\\left_workspace_bounds.json",
+      "target": "H2S2R/Pour17/tasks/h2s2r_pour17/left_workspace_bounds.json",
+      "purpose": "当前部署源码/依赖，原字节取回",
+      "updated": false,
+      "remote": "/home/kailang/experiments/baselines/rl_correction_h2s2r_adapter_v13_256_pilot_20260912/tasks/h2s2r_pour17/left_workspace_bounds.json",
+      "original_local": "D:\\UCBP\\reports\\H2S2R_GITHUB_HANDOFF_20260913\\source_v13\\tasks\\h2s2r_pour17\\left_workspace_bounds.json",
+      "sha256": "c3cf5a5eb592ccaa9decd1fdb322afe093ee2a4baa9461779588205d2fa12183"
+    },
+    {
+      "local": "D:\\UCBP\\reports\\H2S2R_GITHUB_HANDOFF_20260913\\upload\\H2S2R\\Pour17\\tasks\\h2s2r_pour17\\ours_physics.py",
+      "target": "H2S2R/Pour17/tasks/h2s2r_pour17/ours_physics.py",
+      "purpose": "当前部署源码/依赖，原字节取回",
+      "updated": false,
+      "remote": "/home/kailang/experiments/baselines/rl_correction_h2s2r_adapter_v13_256_pilot_20260912/tasks/h2s2r_pour17/ours_physics.py",
+      "original_local": "D:\\UCBP\\reports\\H2S2R_GITHUB_HANDOFF_20260913\\source_v13\\tasks\\h2s2r_pour17\\ours_physics.py",
+      "sha256": "8625d0029275edccecd3eac1c97d0388c6a32bdf1ec6d469ed1e7a6e77b4e1a8"
+    },
+    {
+      "local": "D:\\UCBP\\reports\\H2S2R_GITHUB_HANDOFF_20260913\\upload\\H2S2R\\Pour17\\tasks\\h2s2r_pour17\\ours_physics_spec.json",
+      "target": "H2S2R/Pour17/tasks/h2s2r_pour17/ours_physics_spec.json",
+      "purpose": "当前部署源码/依赖，原字节取回",
+      "updated": false,
+      "remote": "/home/kailang/experiments/baselines/rl_correction_h2s2r_adapter_v13_256_pilot_20260912/tasks/h2s2r_pour17/ours_physics_spec.json",
+      "original_local": "D:\\UCBP\\reports\\H2S2R_GITHUB_HANDOFF_20260913\\source_v13\\tasks\\h2s2r_pour17\\ours_physics_spec.json",
+      "sha256": "d4dc1b16009f520a5f40e6947846bc11384ade2c31785ae84ed1a32d951d7e46"
+    },
+    {
+      "local": "D:\\UCBP\\reports\\H2S2R_GITHUB_HANDOFF_20260913\\upload\\H2S2R\\Pour17\\tasks\\h2s2r_pour17\\ppo_h2s2r_lstm.yaml",
+      "target": "H2S2R/Pour17/tasks/h2s2r_pour17/ppo_h2s2r_lstm.yaml",
+      "purpose": "当前部署源码/依赖，原字节取回",
+      "updated": false,
+      "remote": "/home/kailang/experiments/baselines/rl_correction_h2s2r_adapter_v13_256_pilot_20260912/tasks/h2s2r_pour17/ppo_h2s2r_lstm.yaml",
+      "original_local": "D:\\UCBP\\reports\\H2S2R_GITHUB_HANDOFF_20260913\\source_v13\\tasks\\h2s2r_pour17\\ppo_h2s2r_lstm.yaml",
+      "sha256": "b4e78f186073832685cc946fed77286442339533bedf8b40824a0cbde7da6d2b"
+    },
+    {
+      "local": "D:\\UCBP\\reports\\H2S2R_GITHUB_HANDOFF_20260913\\upload\\H2S2R\\Pour17\\tasks\\h2s2r_pour17\\prepare_synergies.py",
+      "target": "H2S2R/Pour17/tasks/h2s2r_pour17/prepare_synergies.py",
+      "purpose": "当前部署源码/依赖，原字节取回",
+      "updated": false,
+      "remote": "/home/kailang/experiments/baselines/rl_correction_h2s2r_adapter_v13_256_pilot_20260912/tasks/h2s2r_pour17/prepare_synergies.py",
+      "original_local": "D:\\UCBP\\reports\\H2S2R_GITHUB_HANDOFF_20260913\\source_v13\\tasks\\h2s2r_pour17\\prepare_synergies.py",
+      "sha256": "bb1f254b4ac80ab3b140080fc168e88711ca33a37545e03cff357d12a238a01c"
+    },
+    {
+      "local": "D:\\UCBP\\reports\\H2S2R_GITHUB_HANDOFF_20260913\\upload\\H2S2R\\Pour17\\tasks\\h2s2r_pour17\\right_env.py",
+      "target": "H2S2R/Pour17/tasks/h2s2r_pour17/right_env.py",
+      "purpose": "当前部署源码/依赖，原字节取回",
+      "updated": false,
+      "remote": "/home/kailang/experiments/baselines/rl_correction_h2s2r_adapter_v13_256_pilot_20260912/tasks/h2s2r_pour17/right_env.py",
+      "original_local": "D:\\UCBP\\reports\\H2S2R_GITHUB_HANDOFF_20260913\\source_v13\\tasks\\h2s2r_pour17\\right_env.py",
+      "sha256": "ebe50f6fd4446c092ee5e476b4ce4a70c0844f149ffc7dbe6e1e897e829a63c6"
+    },
+    {
+      "local": "D:\\UCBP\\reports\\H2S2R_GITHUB_HANDOFF_20260913\\upload\\H2S2R\\Pour17\\tasks\\h2s2r_pour17\\right_workspace.py",
+      "target": "H2S2R/Pour17/tasks/h2s2r_pour17/right_workspace.py",
+      "purpose": "当前部署源码/依赖，原字节取回",
+      "updated": false,
+      "remote": "/home/kailang/experiments/baselines/rl_correction_h2s2r_adapter_v13_256_pilot_20260912/tasks/h2s2r_pour17/right_workspace.py",
+      "original_local": "D:\\UCBP\\reports\\H2S2R_GITHUB_HANDOFF_20260913\\source_v13\\tasks\\h2s2r_pour17\\right_workspace.py",
+      "sha256": "ffe835ce10974a6a5c63877899a38b90f597944bd550a45dc486c3516b8deccd"
+    },
+    {
+      "local": "D:\\UCBP\\reports\\H2S2R_GITHUB_HANDOFF_20260913\\upload\\H2S2R\\Pour17\\tasks\\h2s2r_pour17\\right_workspace_bounds.json",
+      "target": "H2S2R/Pour17/tasks/h2s2r_pour17/right_workspace_bounds.json",
+      "purpose": "当前部署源码/依赖，原字节取回",
+      "updated": false,
+      "remote": "/home/kailang/experiments/baselines/rl_correction_h2s2r_adapter_v13_256_pilot_20260912/tasks/h2s2r_pour17/right_workspace_bounds.json",
+      "original_local": "D:\\UCBP\\reports\\H2S2R_GITHUB_HANDOFF_20260913\\source_v13\\tasks\\h2s2r_pour17\\right_workspace_bounds.json",
+      "sha256": "52003a0e99a7925c35227a0c359b3003095b4c71bca89cc1cc6d4f1837f1dc50"
+    },
+    {
+      "local": "D:\\UCBP\\reports\\H2S2R_GITHUB_HANDOFF_20260913\\upload\\H2S2R\\Pour17\\tasks\\h2s2r_pour17\\right_zero_margin_install.py",
+      "target": "H2S2R/Pour17/tasks/h2s2r_pour17/right_zero_margin_install.py",
+      "purpose": "当前部署源码/依赖，原字节取回",
+      "updated": false,
+      "remote": "/home/kailang/experiments/baselines/rl_correction_h2s2r_adapter_v13_256_pilot_20260912/tasks/h2s2r_pour17/right_zero_margin_install.py",
+      "original_local": "D:\\UCBP\\reports\\H2S2R_GITHUB_HANDOFF_20260913\\source_v13\\tasks\\h2s2r_pour17\\right_zero_margin_install.py",
+      "sha256": "d600727a938082b21db13963aa8bbe80d6da673ebfb6f7676e081d9ef29b0e26"
+    },
+    {
+      "local": "D:\\UCBP\\reports\\H2S2R_GITHUB_HANDOFF_20260913\\upload\\H2S2R\\Pour17\\tasks\\h2s2r_pour17\\test_right_only.py",
+      "target": "H2S2R/Pour17/tasks/h2s2r_pour17/test_right_only.py",
+      "purpose": "当前部署源码/依赖，原字节取回",
+      "updated": false,
+      "remote": "/home/kailang/experiments/baselines/rl_correction_h2s2r_adapter_v13_256_pilot_20260912/tasks/h2s2r_pour17/test_right_only.py",
+      "original_local": "D:\\UCBP\\reports\\H2S2R_GITHUB_HANDOFF_20260913\\source_v13\\tasks\\h2s2r_pour17\\test_right_only.py",
+      "sha256": "05622b51159d4364a61f42d932d2e36121743a79e65d7947ad0f4c45d3698af3"
+    },
+    {
+      "local": "D:\\UCBP\\reports\\H2S2R_GITHUB_HANDOFF_20260913\\upload\\H2S2R\\Pour17\\tasks\\h2s2r_pour17\\test_workspace_centering.py",
+      "target": "H2S2R/Pour17/tasks/h2s2r_pour17/test_workspace_centering.py",
+      "purpose": "当前部署源码/依赖，原字节取回",
+      "updated": false,
+      "remote": "/home/kailang/experiments/baselines/rl_correction_h2s2r_adapter_v13_256_pilot_20260912/tasks/h2s2r_pour17/test_workspace_centering.py",
+      "original_local": "D:\\UCBP\\reports\\H2S2R_GITHUB_HANDOFF_20260913\\source_v13\\tasks\\h2s2r_pour17\\test_workspace_centering.py",
+      "sha256": "a2ad56d4e180f7f1bb76df18209658fa93577d1d27e351a5641b8f8181883a52"
+    },
+    {
+      "local": "D:\\UCBP\\reports\\H2S2R_GITHUB_HANDOFF_20260913\\upload\\H2S2R\\Pour17\\tasks\\h2s2r_pour17\\train_right_lstm.py",
+      "target": "H2S2R/Pour17/tasks/h2s2r_pour17/train_right_lstm.py",
+      "purpose": "当前部署源码/依赖，原字节取回",
+      "updated": false,
+      "remote": "/home/kailang/experiments/baselines/rl_correction_h2s2r_adapter_v13_256_pilot_20260912/tasks/h2s2r_pour17/train_right_lstm.py",
+      "original_local": "D:\\UCBP\\reports\\H2S2R_GITHUB_HANDOFF_20260913\\source_v13\\tasks\\h2s2r_pour17\\train_right_lstm.py",
+      "sha256": "2f8c347ebd3e445d802b8dea25238ed5ac190223ed63a190a10fe9f52199bce3"
+    },
+    {
+      "local": "D:\\UCBP\\reports\\H2S2R_GITHUB_HANDOFF_20260913\\upload\\H2S2R\\Pour17\\tasks\\h2s2r_pour17\\training_pilot_audit.py",
+      "target": "H2S2R/Pour17/tasks/h2s2r_pour17/training_pilot_audit.py",
+      "purpose": "当前部署源码/依赖，原字节取回",
+      "updated": false,
+      "remote": "/home/kailang/experiments/baselines/rl_correction_h2s2r_adapter_v13_256_pilot_20260912/tasks/h2s2r_pour17/training_pilot_audit.py",
+      "original_local": "D:\\UCBP\\reports\\H2S2R_GITHUB_HANDOFF_20260913\\source_v13\\tasks\\h2s2r_pour17\\training_pilot_audit.py",
+      "sha256": "2aa5e311f32e2178da1a65158d5ab8449161aa7e51400fbfacc4c6fd8619edf3"
+    },
+    {
+      "local": "D:\\UCBP\\reports\\H2S2R_GITHUB_HANDOFF_20260913\\upload\\H2S2R\\Pour17\\third_party\\FABRICS_LICENSE",
+      "target": "H2S2R/Pour17/third_party/FABRICS_LICENSE",
+      "purpose": "当前部署源码/依赖，原字节取回",
+      "updated": false,
+      "remote": "/home/kailang/experiments/baselines/fabrics_h2s2r_reference/LICENSE",
+      "original_local": "D:\\UCBP\\reports\\H2S2R_GITHUB_HANDOFF_20260913\\source_v13\\third_party\\FABRICS_LICENSE",
+      "sha256": "900887413317ca2409e3d49df2308f3938fc304241a57808e0a63435d32547a5"
+    },
+    {
+      "local": "D:\\UCBP\\reports\\H2S2R_GITHUB_HANDOFF_20260913\\upload\\H2S2R\\Pour17\\third_party\\h2s2r_official\\LICENSE",
+      "target": "H2S2R/Pour17/third_party/h2s2r_official/LICENSE",
+      "purpose": "当前部署源码/依赖，原字节取回",
+      "updated": false,
+      "remote": "/home/kailang/experiments/baselines/rl_correction_h2s2r_adapter_v13_256_pilot_20260912/third_party/h2s2r_official/LICENSE",
+      "original_local": "D:\\UCBP\\reports\\H2S2R_GITHUB_HANDOFF_20260913\\source_v13\\third_party\\h2s2r_official\\LICENSE",
+      "sha256": "c6a3e25ba67566ef66e7dd0c3c28fd43bbdb8e9859f36b6c32ebe35288ff6603"
+    },
+    {
+      "local": "D:\\UCBP\\reports\\H2S2R_GITHUB_HANDOFF_20260913\\upload\\H2S2R\\Pour17\\third_party\\h2s2r_official\\SOURCE.md",
+      "target": "H2S2R/Pour17/third_party/h2s2r_official/SOURCE.md",
+      "purpose": "当前部署源码/依赖，原字节取回",
+      "updated": false,
+      "remote": "/home/kailang/experiments/baselines/rl_correction_h2s2r_adapter_v13_256_pilot_20260912/third_party/h2s2r_official/SOURCE.md",
+      "original_local": "D:\\UCBP\\reports\\H2S2R_GITHUB_HANDOFF_20260913\\source_v13\\third_party\\h2s2r_official\\SOURCE.md",
+      "sha256": "13f20e4238ba6f5913335a26e9ace73fd16ff0371299bd55026739b4d6dfad05"
+    },
+    {
+      "local": "D:\\UCBP\\reports\\H2S2R_GITHUB_HANDOFF_20260913\\upload\\H2S2R\\Pour17\\third_party\\h2s2r_official\\human2sim2robot\\ppo\\__init__.py",
+      "target": "H2S2R/Pour17/third_party/h2s2r_official/human2sim2robot/ppo/__init__.py",
+      "purpose": "当前部署源码/依赖，原字节取回",
+      "updated": false,
+      "remote": "/home/kailang/experiments/baselines/rl_correction_h2s2r_adapter_v13_256_pilot_20260912/third_party/h2s2r_official/human2sim2robot/ppo/__init__.py",
+      "original_local": "D:\\UCBP\\reports\\H2S2R_GITHUB_HANDOFF_20260913\\source_v13\\third_party\\h2s2r_official\\human2sim2robot\\ppo\\__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "local": "D:\\UCBP\\reports\\H2S2R_GITHUB_HANDOFF_20260913\\upload\\H2S2R\\Pour17\\third_party\\h2s2r_official\\human2sim2robot\\ppo\\ppo_agent.py",
+      "target": "H2S2R/Pour17/third_party/h2s2r_official/human2sim2robot/ppo/ppo_agent.py",
+      "purpose": "当前部署源码/依赖，原字节取回",
+      "updated": false,
+      "remote": "/home/kailang/experiments/baselines/rl_correction_h2s2r_adapter_v13_256_pilot_20260912/third_party/h2s2r_official/human2sim2robot/ppo/ppo_agent.py",
+      "original_local": "D:\\UCBP\\reports\\H2S2R_GITHUB_HANDOFF_20260913\\source_v13\\third_party\\h2s2r_official\\human2sim2robot\\ppo\\ppo_agent.py",
+      "sha256": "b4c2343627713cfedb40bdaee5091ccc3d69bddacba81b5fd0b4b92e137ef03c"
+    },
+    {
+      "local": "D:\\UCBP\\reports\\H2S2R_GITHUB_HANDOFF_20260913\\upload\\H2S2R\\Pour17\\third_party\\h2s2r_official\\human2sim2robot\\ppo\\ppo_player.py",
+      "target": "H2S2R/Pour17/third_party/h2s2r_official/human2sim2robot/ppo/ppo_player.py",
+      "purpose": "当前部署源码/依赖，原字节取回",
+      "updated": false,
+      "remote": "/home/kailang/experiments/baselines/rl_correction_h2s2r_adapter_v13_256_pilot_20260912/third_party/h2s2r_official/human2sim2robot/ppo/ppo_player.py",
+      "original_local": "D:\\UCBP\\reports\\H2S2R_GITHUB_HANDOFF_20260913\\source_v13\\third_party\\h2s2r_official\\human2sim2robot\\ppo\\ppo_player.py",
+      "sha256": "913a5bbd76e8f9ba7b080827bc82d25e6f8647a18751c734c4b30af97a4f7991"
+    },
+    {
+      "local": "D:\\UCBP\\reports\\H2S2R_GITHUB_HANDOFF_20260913\\upload\\H2S2R\\Pour17\\third_party\\h2s2r_official\\human2sim2robot\\ppo\\utils\\__init__.py",
+      "target": "H2S2R/Pour17/third_party/h2s2r_official/human2sim2robot/ppo/utils/__init__.py",
+      "purpose": "当前部署源码/依赖，原字节取回",
+      "updated": false,
+      "remote": "/home/kailang/experiments/baselines/rl_correction_h2s2r_adapter_v13_256_pilot_20260912/third_party/h2s2r_official/human2sim2robot/ppo/utils/__init__.py",
+      "original_local": "D:\\UCBP\\reports\\H2S2R_GITHUB_HANDOFF_20260913\\source_v13\\third_party\\h2s2r_official\\human2sim2robot\\ppo\\utils\\__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "local": "D:\\UCBP\\reports\\H2S2R_GITHUB_HANDOFF_20260913\\upload\\H2S2R\\Pour17\\third_party\\h2s2r_official\\human2sim2robot\\ppo\\utils\\asymmetric_critic.py",
+      "target": "H2S2R/Pour17/third_party/h2s2r_official/human2sim2robot/ppo/utils/asymmetric_critic.py",
+      "purpose": "当前部署源码/依赖，原字节取回",
+      "updated": false,
+      "remote": "/home/kailang/experiments/baselines/rl_correction_h2s2r_adapter_v13_256_pilot_20260912/third_party/h2s2r_official/human2sim2robot/ppo/utils/asymmetric_critic.py",
+      "original_local": "D:\\UCBP\\reports\\H2S2R_GITHUB_HANDOFF_20260913\\source_v13\\third_party\\h2s2r_official\\human2sim2robot\\ppo\\utils\\asymmetric_critic.py",
+      "sha256": "d492992808cd948a6b22c5488b4a57ae48c2c5361a507504a81fa16b08cc1eec"
+    },
+    {
+      "local": "D:\\UCBP\\reports\\H2S2R_GITHUB_HANDOFF_20260913\\upload\\H2S2R\\Pour17\\third_party\\h2s2r_official\\human2sim2robot\\ppo\\utils\\datasets.py",
+      "target": "H2S2R/Pour17/third_party/h2s2r_official/human2sim2robot/ppo/utils/datasets.py",
+      "purpose": "当前部署源码/依赖，原字节取回",
+      "updated": false,
+      "remote": "/home/kailang/experiments/baselines/rl_correction_h2s2r_adapter_v13_256_pilot_20260912/third_party/h2s2r_official/human2sim2robot/ppo/utils/datasets.py",
+      "original_local": "D:\\UCBP\\reports\\H2S2R_GITHUB_HANDOFF_20260913\\source_v13\\third_party\\h2s2r_official\\human2sim2robot\\ppo\\utils\\datasets.py",
+      "sha256": "042f18ee1add1384d30715599481a18a0cb3ab453846388068aa32cef117adb1"
+    },
+    {
+      "local": "D:\\UCBP\\reports\\H2S2R_GITHUB_HANDOFF_20260913\\upload\\H2S2R\\Pour17\\third_party\\h2s2r_official\\human2sim2robot\\ppo\\utils\\dict_to_dataclass.py",
+      "target": "H2S2R/Pour17/third_party/h2s2r_official/human2sim2robot/ppo/utils/dict_to_dataclass.py",
+      "purpose": "当前部署源码/依赖，原字节取回",
+      "updated": false,
+      "remote": "/home/kailang/experiments/baselines/rl_correction_h2s2r_adapter_v13_256_pilot_20260912/third_party/h2s2r_official/human2sim2robot/ppo/utils/dict_to_dataclass.py",
+      "original_local": "D:\\UCBP\\reports\\H2S2R_GITHUB_HANDOFF_20260913\\source_v13\\third_party\\h2s2r_official\\human2sim2robot\\ppo\\utils\\dict_to_dataclass.py",
+      "sha256": "f95a088ff91241f8060c292a2b183a0fbca99caf4593608a6c04152eedc38145"
+    },
+    {
+      "local": "D:\\UCBP\\reports\\H2S2R_GITHUB_HANDOFF_20260913\\upload\\H2S2R\\Pour17\\third_party\\h2s2r_official\\human2sim2robot\\ppo\\utils\\experience.py",
+      "target": "H2S2R/Pour17/third_party/h2s2r_official/human2sim2robot/ppo/utils/experience.py",
+      "purpose": "当前部署源码/依赖，原字节取回",
+      "updated": false,
+      "remote": "/home/kailang/experiments/baselines/rl_correction_h2s2r_adapter_v13_256_pilot_20260912/third_party/h2s2r_official/human2sim2robot/ppo/utils/experience.py",
+      "original_local": "D:\\UCBP\\reports\\H2S2R_GITHUB_HANDOFF_20260913\\source_v13\\third_party\\h2s2r_official\\human2sim2robot\\ppo\\utils\\experience.py",
+      "sha256": "915d97a3936a8ce55dff5530fe41381b46f6cf721d45ebc4734f88b7ff9b397c"
+    },
+    {
+      "local": "D:\\UCBP\\reports\\H2S2R_GITHUB_HANDOFF_20260913\\upload\\H2S2R\\Pour17\\third_party\\h2s2r_official\\human2sim2robot\\ppo\\utils\\helpers.py",
+      "target": "H2S2R/Pour17/third_party/h2s2r_official/human2sim2robot/ppo/utils/helpers.py",
+      "purpose": "当前部署源码/依赖，原字节取回",
+      "updated": false,
+      "remote": "/home/kailang/experiments/baselines/rl_correction_h2s2r_adapter_v13_256_pilot_20260912/third_party/h2s2r_official/human2sim2robot/ppo/utils/helpers.py",
+      "original_local": "D:\\UCBP\\reports\\H2S2R_GITHUB_HANDOFF_20260913\\source_v13\\third_party\\h2s2r_official\\human2sim2robot\\ppo\\utils\\helpers.py",
+      "sha256": "1300b922a6addfb944822d697bdbefa398ed13b7edd16825e84d5350d27e0606"
+    },
+    {
+      "local": "D:\\UCBP\\reports\\H2S2R_GITHUB_HANDOFF_20260913\\upload\\H2S2R\\Pour17\\third_party\\h2s2r_official\\human2sim2robot\\ppo\\utils\\layers\\__init__.py",
+      "target": "H2S2R/Pour17/third_party/h2s2r_official/human2sim2robot/ppo/utils/layers/__init__.py",
+      "purpose": "当前部署源码/依赖，原字节取回",
+      "updated": false,
+      "remote": "/home/kailang/experiments/baselines/rl_correction_h2s2r_adapter_v13_256_pilot_20260912/third_party/h2s2r_official/human2sim2robot/ppo/utils/layers/__init__.py",
+      "original_local": "D:\\UCBP\\reports\\H2S2R_GITHUB_HANDOFF_20260913\\source_v13\\third_party\\h2s2r_official\\human2sim2robot\\ppo\\utils\\layers\\__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "local": "D:\\UCBP\\reports\\H2S2R_GITHUB_HANDOFF_20260913\\upload\\H2S2R\\Pour17\\third_party\\h2s2r_official\\human2sim2robot\\ppo\\utils\\layers\\recurrent.py",
+      "target": "H2S2R/Pour17/third_party/h2s2r_official/human2sim2robot/ppo/utils/layers/recurrent.py",
+      "purpose": "当前部署源码/依赖，原字节取回",
+      "updated": false,
+      "remote": "/home/kailang/experiments/baselines/rl_correction_h2s2r_adapter_v13_256_pilot_20260912/third_party/h2s2r_official/human2sim2robot/ppo/utils/layers/recurrent.py",
+      "original_local": "D:\\UCBP\\reports\\H2S2R_GITHUB_HANDOFF_20260913\\source_v13\\third_party\\h2s2r_official\\human2sim2robot\\ppo\\utils\\layers\\recurrent.py",
+      "sha256": "da0d97f8f7b0e586f4d0b1f465162ea9d0c307689115dba1f2953b8305ab9992"
+    },
+    {
+      "local": "D:\\UCBP\\reports\\H2S2R_GITHUB_HANDOFF_20260913\\upload\\H2S2R\\Pour17\\third_party\\h2s2r_official\\human2sim2robot\\ppo\\utils\\models.py",
+      "target": "H2S2R/Pour17/third_party/h2s2r_official/human2sim2robot/ppo/utils/models.py",
+      "purpose": "当前部署源码/依赖，原字节取回",
+      "updated": false,
+      "remote": "/home/kailang/experiments/baselines/rl_correction_h2s2r_adapter_v13_256_pilot_20260912/third_party/h2s2r_official/human2sim2robot/ppo/utils/models.py",
+      "original_local": "D:\\UCBP\\reports\\H2S2R_GITHUB_HANDOFF_20260913\\source_v13\\third_party\\h2s2r_official\\human2sim2robot\\ppo\\utils\\models.py",
+      "sha256": "89563b43019cb09dad019ab3d00c7cae5c7fe7d7a0a7a88f95e5b1aa17489ba1"
+    },
+    {
+      "local": "D:\\UCBP\\reports\\H2S2R_GITHUB_HANDOFF_20260913\\upload\\H2S2R\\Pour17\\third_party\\h2s2r_official\\human2sim2robot\\ppo\\utils\\moving_mean_std.py",
+      "target": "H2S2R/Pour17/third_party/h2s2r_official/human2sim2robot/ppo/utils/moving_mean_std.py",
+      "purpose": "当前部署源码/依赖，原字节取回",
+      "updated": false,
+      "remote": "/home/kailang/experiments/baselines/rl_correction_h2s2r_adapter_v13_256_pilot_20260912/third_party/h2s2r_official/human2sim2robot/ppo/utils/moving_mean_std.py",
+      "original_local": "D:\\UCBP\\reports\\H2S2R_GITHUB_HANDOFF_20260913\\source_v13\\third_party\\h2s2r_official\\human2sim2robot\\ppo\\utils\\moving_mean_std.py",
+      "sha256": "8e9959361c0fd4569eab3b198eb75341b882d20634638b2a1ef9f0ca8f6140ed"
+    },
+    {
+      "local": "D:\\UCBP\\reports\\H2S2R_GITHUB_HANDOFF_20260913\\upload\\H2S2R\\Pour17\\third_party\\h2s2r_official\\human2sim2robot\\ppo\\utils\\network.py",
+      "target": "H2S2R/Pour17/third_party/h2s2r_official/human2sim2robot/ppo/utils/network.py",
+      "purpose": "当前部署源码/依赖，原字节取回",
+      "updated": false,
+      "remote": "/home/kailang/experiments/baselines/rl_correction_h2s2r_adapter_v13_256_pilot_20260912/third_party/h2s2r_official/human2sim2robot/ppo/utils/network.py",
+      "original_local": "D:\\UCBP\\reports\\H2S2R_GITHUB_HANDOFF_20260913\\source_v13\\third_party\\h2s2r_official\\human2sim2robot\\ppo\\utils\\network.py",
+      "sha256": "07374df073097e11b116e3d37592a7e9a6bdd8287819e99b38951fdae0d293de"
+    },
+    {
+      "local": "D:\\UCBP\\reports\\H2S2R_GITHUB_HANDOFF_20260913\\upload\\H2S2R\\Pour17\\third_party\\h2s2r_official\\human2sim2robot\\ppo\\utils\\rewards_shaper.py",
+      "target": "H2S2R/Pour17/third_party/h2s2r_official/human2sim2robot/ppo/utils/rewards_shaper.py",
+      "purpose": "当前部署源码/依赖，原字节取回",
+      "updated": false,
+      "remote": "/home/kailang/experiments/baselines/rl_correction_h2s2r_adapter_v13_256_pilot_20260912/third_party/h2s2r_official/human2sim2robot/ppo/utils/rewards_shaper.py",
+      "original_local": "D:\\UCBP\\reports\\H2S2R_GITHUB_HANDOFF_20260913\\source_v13\\third_party\\h2s2r_official\\human2sim2robot\\ppo\\utils\\rewards_shaper.py",
+      "sha256": "834e599168d1260e0d2352389c8a2ba58f6bcb0ad23d1f297109bfa98ba5d928"
+    },
+    {
+      "local": "D:\\UCBP\\reports\\H2S2R_GITHUB_HANDOFF_20260913\\upload\\H2S2R\\Pour17\\third_party\\h2s2r_official\\human2sim2robot\\ppo\\utils\\running_mean_std.py",
+      "target": "H2S2R/Pour17/third_party/h2s2r_official/human2sim2robot/ppo/utils/running_mean_std.py",
+      "purpose": "当前部署源码/依赖，原字节取回",
+      "updated": false,
+      "remote": "/home/kailang/experiments/baselines/rl_correction_h2s2r_adapter_v13_256_pilot_20260912/third_party/h2s2r_official/human2sim2robot/ppo/utils/running_mean_std.py",
+      "original_local": "D:\\UCBP\\reports\\H2S2R_GITHUB_HANDOFF_20260913\\source_v13\\third_party\\h2s2r_official\\human2sim2robot\\ppo\\utils\\running_mean_std.py",
+      "sha256": "1b95007c3116e784ba060692832f4dcc7f862813ed7d0da73d14baf37ae63ebd"
+    },
+    {
+      "local": "D:\\UCBP\\reports\\H2S2R_GITHUB_HANDOFF_20260913\\upload\\H2S2R\\Pour17\\third_party\\h2s2r_official\\human2sim2robot\\ppo\\utils\\schedulers.py",
+      "target": "H2S2R/Pour17/third_party/h2s2r_official/human2sim2robot/ppo/utils/schedulers.py",
+      "purpose": "当前部署源码/依赖，原字节取回",
+      "updated": false,
+      "remote": "/home/kailang/experiments/baselines/rl_correction_h2s2r_adapter_v13_256_pilot_20260912/third_party/h2s2r_official/human2sim2robot/ppo/utils/schedulers.py",
+      "original_local": "D:\\UCBP\\reports\\H2S2R_GITHUB_HANDOFF_20260913\\source_v13\\third_party\\h2s2r_official\\human2sim2robot\\ppo\\utils\\schedulers.py",
+      "sha256": "e5375e8629e49a49a869c23e0bd8402b2bcd24e1aeaacbcb6938db7beacf8817"
+    },
+    {
+      "local": "D:\\UCBP\\reports\\H2S2R_GITHUB_HANDOFF_20260913\\upload\\H2S2R\\Pour17\\third_party\\h2s2r_official\\human2sim2robot\\ppo\\utils\\torch_ext.py",
+      "target": "H2S2R/Pour17/third_party/h2s2r_official/human2sim2robot/ppo/utils/torch_ext.py",
+      "purpose": "当前部署源码/依赖，原字节取回",
+      "updated": false,
+      "remote": "/home/kailang/experiments/baselines/rl_correction_h2s2r_adapter_v13_256_pilot_20260912/third_party/h2s2r_official/human2sim2robot/ppo/utils/torch_ext.py",
+      "original_local": "D:\\UCBP\\reports\\H2S2R_GITHUB_HANDOFF_20260913\\source_v13\\third_party\\h2s2r_official\\human2sim2robot\\ppo\\utils\\torch_ext.py",
+      "sha256": "0a0034afd177ad5dc0e45e5fa5a0f3e4c31d2bb80f66f95eaad8280c2eb3350b"
+    },
+    {
+      "local": "D:\\UCBP\\reports\\H2S2R_GITHUB_HANDOFF_20260913\\upload\\H2S2R\\Pour17\\third_party\\h2s2r_official\\human2sim2robot\\ppo\\utils\\utils.py",
+      "target": "H2S2R/Pour17/third_party/h2s2r_official/human2sim2robot/ppo/utils/utils.py",
+      "purpose": "当前部署源码/依赖，原字节取回",
+      "updated": false,
+      "remote": "/home/kailang/experiments/baselines/rl_correction_h2s2r_adapter_v13_256_pilot_20260912/third_party/h2s2r_official/human2sim2robot/ppo/utils/utils.py",
+      "original_local": "D:\\UCBP\\reports\\H2S2R_GITHUB_HANDOFF_20260913\\source_v13\\third_party\\h2s2r_official\\human2sim2robot\\ppo\\utils\\utils.py",
+      "sha256": "e1b01e799c774eba9bd4d61b9893d91c924192fb52de09a8f0f3dd888e173570"
+    },
+    {
+      "local": "D:\\UCBP\\reports\\H2S2R_GITHUB_HANDOFF_20260913\\upload\\H2S2R\\Pour17\\README.md",
+      "target": "H2S2R/Pour17/README.md",
+      "purpose": "当前入口、运行边界、环境/资源/方法说明",
+      "updated": true,
+      "remote": null,
+      "original_local": "D:\\UCBP\\RL\\Baselines\\RL-Correction-H2S2R\\tasks\\h2s2r_pour17\\README.md",
+      "sha256": "38c268f5e760235e433d2997a89aecae6b1d78131e1f3a3775d37f74f9e23a1a"
+    },
+    {
+      "local": "D:\\UCBP\\reports\\H2S2R_GITHUB_HANDOFF_20260913\\upload\\H2S2R\\Pour17\\docs\\H2S2R_CURRENT_BASELINE_STATUS_20260912.md",
+      "target": "H2S2R/Pour17/docs/H2S2R_CURRENT_BASELINE_STATUS_20260912.md",
+      "purpose": "状态、决策及历史追溯",
+      "updated": true,
+      "remote": null,
+      "original_local": "D:\\UCBP\\reports\\H2S2R_CURRENT_BASELINE_STATUS_20260912.md",
+      "sha256": "5bd14ce3cd8bf5fe3adb37169ffbd4faf90d2df5cea92ce04f51b077a5b5ffed"
+    },
+    {
+      "local": "D:\\UCBP\\reports\\H2S2R_GITHUB_HANDOFF_20260913\\upload\\H2S2R\\Pour17\\docs\\H2S2R_REVIEWER_HANDOFF_20260912.md",
+      "target": "H2S2R/Pour17/docs/H2S2R_REVIEWER_HANDOFF_20260912.md",
+      "purpose": "状态、决策及历史追溯",
+      "updated": true,
+      "remote": null,
+      "original_local": "D:\\UCBP\\reports\\H2S2R_REVIEWER_HANDOFF_20260912.md",
+      "sha256": "a6403f3c4dc505689b3020906b7282c7a61d21be323a8c0fa383663ea7d031c9"
+    },
+    {
+      "local": "D:\\UCBP\\reports\\H2S2R_GITHUB_HANDOFF_20260913\\upload\\H2S2R\\Pour17\\docs\\H2S2R_ADAPTATION_CHANGELOG.md",
+      "target": "H2S2R/Pour17/docs/H2S2R_ADAPTATION_CHANGELOG.md",
+      "purpose": "状态、决策及历史追溯",
+      "updated": true,
+      "remote": null,
+      "original_local": "D:\\UCBP\\reports\\H2S2R_ADAPTATION_CHANGELOG.md",
+      "sha256": "7c829df59a84320caca3ad3792d80aa49c5a7d5a42be8a54047075a288e43c0f"
+    },
+    {
+      "local": "D:\\UCBP\\reports\\H2S2R_GITHUB_HANDOFF_20260913\\upload\\H2S2R\\Pour17\\docs\\H2S2R_REPRODUCTION_STATUS.md",
+      "target": "H2S2R/Pour17/docs/H2S2R_REPRODUCTION_STATUS.md",
+      "purpose": "状态、决策及历史追溯",
+      "updated": true,
+      "remote": null,
+      "original_local": "D:\\UCBP\\reports\\H2S2R_REPRODUCTION_STATUS.md",
+      "sha256": "9cfab2b220da0e60cd1f59dd8815f1c4511f607cb2047b5aafada00e9d2d3ad2"
+    },
+    {
+      "local": "D:\\UCBP\\reports\\H2S2R_GITHUB_HANDOFF_20260913\\upload\\H2S2R\\Pour17\\docs\\H2S2R_RIGHT_TRAINING_RESULT_PACKAGE_20260912.md",
+      "target": "H2S2R/Pour17/docs/H2S2R_RIGHT_TRAINING_RESULT_PACKAGE_20260912.md",
+      "purpose": "状态、决策及历史追溯",
+      "updated": true,
+      "remote": null,
+      "original_local": "D:\\UCBP\\reports\\H2S2R_RIGHT_TRAINING_RESULT_PACKAGE_20260912.md",
+      "sha256": "b6e039ae6e8e06417267bbde439b251695634883c1fd716fcce4061bae39acbf"
+    },
+    {
+      "local": "D:\\UCBP\\reports\\H2S2R_GITHUB_HANDOFF_20260913\\upload\\H2S2R\\Pour17\\docs\\H2S2R_TRACEBACK_INTERVENTION_20260913.md",
+      "target": "H2S2R/Pour17/docs/H2S2R_TRACEBACK_INTERVENTION_20260913.md",
+      "purpose": "状态、决策及历史追溯",
+      "updated": true,
+      "remote": null,
+      "original_local": "D:\\UCBP\\reports\\H2S2R_TRACEBACK_INTERVENTION_20260913.md",
+      "sha256": "01d9a9603d19ff84b1e3fdd63399ea1938f80e98ff584e1ddd4e38afe4f61eb5"
+    },
+    {
+      "local": "D:\\UCBP\\reports\\H2S2R_GITHUB_HANDOFF_20260913\\upload\\H2S2R\\Pour17\\LICENSE",
+      "target": "H2S2R/Pour17/LICENSE",
+      "purpose": "保留现有来源及许可",
+      "updated": false,
+      "remote": null,
+      "original_local": "D:\\UCBP\\RL\\Baselines\\RL-Correction-H2S2R\\LICENSE",
+      "sha256": "d0cd82ee372a02ee1812613a66493589fb84c1e6854546312f68385c00ca5ef8"
+    },
+    {
+      "local": "D:\\UCBP\\reports\\H2S2R_GITHUB_HANDOFF_20260913\\upload\\H2S2R\\Pour17\\NOTICE",
+      "target": "H2S2R/Pour17/NOTICE",
+      "purpose": "保留现有来源及许可",
+      "updated": false,
+      "remote": null,
+      "original_local": "D:\\UCBP\\RL\\Baselines\\RL-Correction-H2S2R\\NOTICE",
+      "sha256": "600557266c24fb3a3fe7294e4d738c6c3251ae78818081531c9541918de4ebb6"
+    },
+    {
+      "local": "D:\\UCBP\\reports\\H2S2R_GITHUB_HANDOFF_20260913\\upload\\H2S2R\\Pour17\\THIRD_PARTY_NOTICES.md",
+      "target": "H2S2R/Pour17/THIRD_PARTY_NOTICES.md",
+      "purpose": "保留现有来源及许可",
+      "updated": false,
+      "remote": null,
+      "original_local": "D:\\UCBP\\RL\\Baselines\\RL-Correction-H2S2R\\THIRD_PARTY_NOTICES.md",
+      "sha256": "5a62ec43e3ede865ac860396a74da4b0a00b05904ad7e36256ec31944d41f614"
+    },
+    {
+      "local": "D:\\UCBP\\reports\\H2S2R_GITHUB_HANDOFF_20260913\\upload\\GPU_POLICY.md",
+      "target": "GPU_POLICY.md",
+      "purpose": "唯一共享GPU运营规则，仓库根只放一份",
+      "updated": false,
+      "remote": null,
+      "original_local": "D:\\UCBP\\GPU_POLICY.md",
+      "sha256": "d5c675df77db48ac69ba406c9e8c13bcc6d0edecd39fb06da99377655de05dda"
+    },
+    {
+      "local": "D:\\UCBP\\reports\\H2S2R_GITHUB_HANDOFF_20260913\\upload\\H2S2R\\Pour17\\SOURCE_IDENTITY.json",
+      "target": "H2S2R/Pour17/SOURCE_IDENTITY.json",
+      "purpose": "88份源码/许可逐文件远端路径与SHA",
+      "updated": true,
+      "remote": null,
+      "original_local": "D:\\UCBP\\reports\\H2S2R_GITHUB_HANDOFF_20260913\\SOURCE_IDENTITY.json",
+      "sha256": "580b802d67ebafffa94000792be14c853aacad01eef9c5c06233cc9d3baffc64"
+    },
+    {
+      "local": "D:\\UCBP\\reports\\H2S2R_GITHUB_HANDOFF_20260913\\upload\\H2S2R\\Pour17\\evidence\\traceback\\RESULTS.md",
+      "target": "H2S2R/Pour17/evidence/traceback/RESULTS.md",
+      "purpose": "轻量运行证据/外部大文件索引",
+      "updated": false,
+      "remote": null,
+      "original_local": "D:\\UCBP\\reports\\H2S2R_TRACEBACK_INTERVENTION_20260913\\RESULTS.md",
+      "sha256": "58780c339e79db59ddd719d59b7661ddd1b2016036fc6b6f05dd01f4e57672ff"
+    },
+    {
+      "local": "D:\\UCBP\\reports\\H2S2R_GITHUB_HANDOFF_20260913\\upload\\H2S2R\\Pour17\\evidence\\traceback\\launch_status.json",
+      "target": "H2S2R/Pour17/evidence/traceback/launch_status.json",
+      "purpose": "轻量运行证据/外部大文件索引",
+      "updated": false,
+      "remote": null,
+      "original_local": "D:\\UCBP\\reports\\H2S2R_TRACEBACK_INTERVENTION_20260913\\remote_results\\launch_status.json",
+      "sha256": "9b449e72c302b904d9a067707cb3e5093dd772c6fdc5e6ff916f0625b526c62b"
+    },
+    {
+      "local": "D:\\UCBP\\reports\\H2S2R_GITHUB_HANDOFF_20260913\\upload\\H2S2R\\Pour17\\evidence\\traceback\\INIT_RETURNED.json",
+      "target": "H2S2R/Pour17/evidence/traceback/INIT_RETURNED.json",
+      "purpose": "轻量运行证据/外部大文件索引",
+      "updated": false,
+      "remote": null,
+      "original_local": "D:\\UCBP\\reports\\H2S2R_TRACEBACK_INTERVENTION_20260913\\remote_results\\INIT_RETURNED.json",
+      "sha256": "39d41d7efbab0c6def9070c2d5dfff79eb332ebf47c67d45387367a4fa03c673"
+    },
+    {
+      "local": "D:\\UCBP\\reports\\H2S2R_GITHUB_HANDOFF_20260913\\upload\\H2S2R\\Pour17\\evidence\\traceback\\overlay_identity.json",
+      "target": "H2S2R/Pour17/evidence/traceback/overlay_identity.json",
+      "purpose": "轻量运行证据/外部大文件索引",
+      "updated": false,
+      "remote": null,
+      "original_local": "D:\\UCBP\\reports\\H2S2R_TRACEBACK_INTERVENTION_20260913\\remote_results\\overlay_identity.json",
+      "sha256": "b3ff8992c696cc14baf7dc71c8a976ec64c79689cb8e6ed0dcf158e76221d333"
+    },
+    {
+      "local": "D:\\UCBP\\reports\\H2S2R_GITHUB_HANDOFF_20260913\\upload\\H2S2R\\Pour17\\evidence\\traceback\\validation.json",
+      "target": "H2S2R/Pour17/evidence/traceback/validation.json",
+      "purpose": "轻量运行证据/外部大文件索引",
+      "updated": false,
+      "remote": null,
+      "original_local": "D:\\UCBP\\reports\\H2S2R_TRACEBACK_INTERVENTION_20260913\\validation.json",
+      "sha256": "2c31ba6c4bd18e1a61c031f2822c1dd04972413cf0eadbb73adb92ffb4d1e139"
+    },
+    {
+      "local": "D:\\UCBP\\reports\\H2S2R_GITHUB_HANDOFF_20260913\\upload\\H2S2R\\Pour17\\evidence\\traceback\\costs.json",
+      "target": "H2S2R/Pour17/evidence/traceback/costs.json",
+      "purpose": "轻量运行证据/外部大文件索引",
+      "updated": false,
+      "remote": null,
+      "original_local": "D:\\UCBP\\reports\\H2S2R_TRACEBACK_INTERVENTION_20260913\\costs.json",
+      "sha256": "2d984cc816f04dd56fea5f4f65b8107eb9b05ed04b528eecd10123359f889faa"
+    },
+    {
+      "local": "D:\\UCBP\\reports\\H2S2R_GITHUB_HANDOFF_20260913\\upload\\H2S2R\\Pour17\\evidence\\traceback\\FILES.sha256",
+      "target": "H2S2R/Pour17/evidence/traceback/FILES.sha256",
+      "purpose": "轻量运行证据/外部大文件索引",
+      "updated": false,
+      "remote": null,
+      "original_local": "D:\\UCBP\\reports\\H2S2R_TRACEBACK_INTERVENTION_20260913\\FILES.sha256",
+      "sha256": "d1f644cdf52055dbb7572f677c8bae87183ae66e8b4cf7178533936fe8d58610"
+    },
+    {
+      "local": "D:\\UCBP\\reports\\H2S2R_GITHUB_HANDOFF_20260913\\upload\\H2S2R\\Pour17\\evidence\\runtime\\RESULTS.md",
+      "target": "H2S2R/Pour17/evidence/runtime/RESULTS.md",
+      "purpose": "轻量运行证据/外部大文件索引",
+      "updated": false,
+      "remote": null,
+      "original_local": "D:\\UCBP\\reports\\H2S2R_NATIVE_RUNTIME_EVIDENCE_20260912\\RESULTS.md",
+      "sha256": "956824d6fe5d6ff6e146de1a4b9b586595fd4696fce2555b43c5bc7bcc316163"
+    },
+    {
+      "local": "D:\\UCBP\\reports\\H2S2R_GITHUB_HANDOFF_20260913\\upload\\H2S2R\\Pour17\\evidence\\native\\gdb_native.txt",
+      "target": "H2S2R/Pour17/evidence/native/gdb_native.txt",
+      "purpose": "轻量运行证据/外部大文件索引",
+      "updated": false,
+      "remote": null,
+      "original_local": "D:\\UCBP\\reports\\H2S2R_NATIVE_DEBUG_20260912\\shared_gpu_resume_01\\remote_results\\gdb_native.txt",
+      "sha256": "4865d2d518c4488fafe93c13294ce6b10bd10827c85be2848da13eabe75094b6"
+    },
+    {
+      "local": "D:\\UCBP\\reports\\H2S2R_GITHUB_HANDOFF_20260913\\upload\\H2S2R\\Pour17\\evidence\\v13\\launch_manifest.json",
+      "target": "H2S2R/Pour17/evidence/v13/launch_manifest.json",
+      "purpose": "轻量运行证据/外部大文件索引",
+      "updated": false,
+      "remote": null,
+      "original_local": "D:\\UCBP\\reports\\H2S2R_TRAINING_PILOT_20260912\\right_training_256_01\\local_results\\train01_launch\\launch_manifest.json",
+      "sha256": "ceca5ea313dd833f6ea37b01be329277c61b1e1ffe75665f9e34298eb84b9030"
+    },
+    {
+      "local": "D:\\UCBP\\reports\\H2S2R_GITHUB_HANDOFF_20260913\\upload\\H2S2R\\Pour17\\evidence\\v13\\remote_archive.json",
+      "target": "H2S2R/Pour17/evidence/v13/remote_archive.json",
+      "purpose": "轻量运行证据/外部大文件索引",
+      "updated": false,
+      "remote": null,
+      "original_local": "D:\\UCBP\\reports\\H2S2R_TRAINING_PILOT_20260912\\right_training_256_01\\remote_archive.json",
+      "sha256": "946f851c914d88e7634a4f9a6f416f8516af27ed8beea6499a956535886b9bc9"
+    },
+    {
+      "local": "D:\\UCBP\\reports\\H2S2R_GITHUB_HANDOFF_20260913\\upload\\H2S2R\\Pour17\\evidence\\batch\\FILES.md",
+      "target": "H2S2R/Pour17/evidence/batch/FILES.md",
+      "purpose": "轻量运行证据/外部大文件索引",
+      "updated": false,
+      "remote": null,
+      "original_local": "D:\\UCBP\\reports\\H2S2R_TRAINING_PILOT_20260912\\batch_delivery_01\\FILES.md",
+      "sha256": "07b54f029c377988ac7249e8c66a12d2a56b87e980e2bf1359bd02aaeaf85af1"
+    },
+    {
+      "local": "D:\\UCBP\\reports\\H2S2R_GITHUB_HANDOFF_20260913\\upload\\H2S2R\\Pour17\\evidence\\batch\\RESULTS.md",
+      "target": "H2S2R/Pour17/evidence/batch/RESULTS.md",
+      "purpose": "轻量运行证据/外部大文件索引",
+      "updated": false,
+      "remote": null,
+      "original_local": "D:\\UCBP\\reports\\H2S2R_TRAINING_PILOT_20260912\\batch_delivery_01\\RESULTS.md",
+      "sha256": "a98ca3453a96a8384b4a34f64303727db3b51d39d3063f9ee98afb0acfb09b8a"
+    },
+    {
+      "local": "D:\\UCBP\\reports\\H2S2R_GITHUB_HANDOFF_20260913\\upload\\H2S2R\\Pour17\\third_party\\ISAACLAB_LICENSE",
+      "target": "H2S2R/Pour17/third_party/ISAACLAB_LICENSE",
+      "purpose": "保留派生VecEnv接口的IsaacLab BSD许可",
+      "updated": false,
+      "remote": "/home/kailang/opt/IsaacLab-5.1/LICENSE",
+      "original_local": "D:\\UCBP\\reports\\H2S2R_GITHUB_HANDOFF_20260913\\source_v13\\third_party\\ISAACLAB_LICENSE",
+      "sha256": "df351ebfa8af317bf5a9ad83df63a8b68e4f5c04b71f30767cdb27aa434eac62"
+    },
+    {
+      "local": "D:\\UCBP\\reports\\H2S2R_GITHUB_HANDOFF_20260913\\upload\\H2S2R\\Pour17\\UPLOAD_MANIFEST.md",
+      "target": "H2S2R/Pour17/UPLOAD_MANIFEST.md",
+      "purpose": "完整上传索引/交接静态核验",
+      "updated": true,
+      "original_local": "D:\\UCBP\\reports\\H2S2R_GITHUB_HANDOFF_20260913\\UPLOAD_MANIFEST.md"
+    },
+    {
+      "local": "D:\\UCBP\\reports\\H2S2R_GITHUB_HANDOFF_20260913\\upload\\H2S2R\\Pour17\\UPLOAD_MANIFEST.json",
+      "target": "H2S2R/Pour17/UPLOAD_MANIFEST.json",
+      "purpose": "完整上传索引/交接静态核验",
+      "updated": true,
+      "original_local": "D:\\UCBP\\reports\\H2S2R_GITHUB_HANDOFF_20260913\\UPLOAD_MANIFEST.json"
+    },
+    {
+      "local": "D:\\UCBP\\reports\\H2S2R_GITHUB_HANDOFF_20260913\\upload\\H2S2R\\Pour17\\VALIDATION.json",
+      "target": "H2S2R/Pour17/VALIDATION.json",
+      "purpose": "完整上传索引/交接静态核验",
+      "updated": true,
+      "original_local": "D:\\UCBP\\reports\\H2S2R_GITHUB_HANDOFF_20260913\\VALIDATION.json"
+    }
+  ],
+  "notes": "SHA字段不对自引用清单/最终验证文件作自校验；科学源以SOURCE_IDENTITY为准。文档导出仅调整链接。"
+}
