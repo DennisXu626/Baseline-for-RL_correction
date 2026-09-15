@@ -16,3 +16,9 @@ adapter.
 
 The untouched reference checkout is maintained outside this adaptation clone;
 this repository does not modify that checkout.
+
+The current `current_20260916/overlay/ours_stage1_overlay` modules are copied
+from the project team's RL-Correction repository at commit
+`43d5747587619d5538ec4503089da30ff9ccaafc`.  They implement the disclosed Ours
+Stage-1 initializer and are not represented as upstream H2S2R code.  Several
+PPO files retain their original MIT/rl_games attribution headers.
