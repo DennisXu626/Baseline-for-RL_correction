@@ -6,10 +6,10 @@ authorized teammate; choose a new run name and never overwrite an existing run.
 
 ## 1. Required inputs
 
-Verified runtime archive:
+Verified runtime archive (included in this repository):
 
 ```text
-/ssd/sy/kailang/unscrew17_clip17_runtime_inputs_20260916.tar.gz
+runtime_assets/unscrew17_clip17_runtime_inputs_20260916.tar.gz
 sha256 abf2cd67434491c10c49ef868e58ddd63d3e0d9e0b4b6c00c1a67f4429f8b338
 size   50806059 bytes
 ```
@@ -21,10 +21,10 @@ Original A6000 handoff source:
 sha256 4ab65d3683eb352aeeb2c7c17ddbf6854ff8471ddc8436f9d05545756b964aa0
 ```
 
-Local ground USD required to avoid network/S3 loading:
+Local ground USD required to avoid network/S3 loading (included):
 
 ```text
-/ssd/sy/kailang/pour17/bundle/pour17/world/default_environment.usd
+runtime_assets/default_environment.usd
 sha256 8a21c317d638d33a4e6c20c958a7ed8f4d8c5195efd7e20f1b85178b4a15638a
 ```
 
@@ -47,22 +47,22 @@ CODE_ROOT=$TASK_ROOT/direct58d_asymcritic_NEXT
 PACKAGE_ROOT=/path/to/Baseline-for-RL_correction/H2S2R/Unscrew17
 
 mkdir -p "$INPUT_ROOT" "$CODE_ROOT" "$CODE_ROOT/assets"
-tar -xzf /ssd/sy/kailang/unscrew17_clip17_runtime_inputs_20260916.tar.gz -C "$INPUT_ROOT"
+tar -xzf "$PACKAGE_ROOT/runtime_assets/unscrew17_clip17_runtime_inputs_20260916.tar.gz" -C "$INPUT_ROOT"
 cp -a "$INPUT_ROOT/repo/." "$CODE_ROOT/"
 cp -a "$PACKAGE_ROOT/overlay/." "$CODE_ROOT/"
-cp /ssd/sy/kailang/pour17/bundle/pour17/world/default_environment.usd "$CODE_ROOT/assets/default_environment.usd"
+cp "$PACKAGE_ROOT/runtime_assets/default_environment.usd" "$CODE_ROOT/assets/default_environment.usd"
 ```
 
 Verify the three external inputs before continuing:
 
 ```bash
-sha256sum /ssd/sy/kailang/unscrew17_clip17_runtime_inputs_20260916.tar.gz
-sha256sum "$CODE_ROOT/assets/default_environment.usd"
+sha256sum "$PACKAGE_ROOT/runtime_assets/unscrew17_clip17_runtime_inputs_20260916.tar.gz"
+sha256sum "$PACKAGE_ROOT/runtime_assets/default_environment.usd"
 sha256sum -c "$PACKAGE_ROOT/FILES.sha256"
 ```
 
-The last command must be run from `H2S2R/Unscrew17`; it verifies the GitHub
-package, not the extracted private assets.
+The last command must be run from `H2S2R/Unscrew17`; it verifies the complete
+GitHub handoff, including its packaged runtime assets and logs.
 
 ## 3. Hard preflight gates
 

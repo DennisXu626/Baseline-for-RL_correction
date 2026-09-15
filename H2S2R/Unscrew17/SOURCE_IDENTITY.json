@@ -12,14 +12,29 @@
   },
   "a800_runtime_archive": {
     "path": "/ssd/sy/kailang/unscrew17_clip17_runtime_inputs_20260916.tar.gz",
+    "repository_path": "runtime_assets/unscrew17_clip17_runtime_inputs_20260916.tar.gz",
     "size_bytes": 50806059,
     "sha256": "abf2cd67434491c10c49ef868e58ddd63d3e0d9e0b4b6c00c1a67f4429f8b338",
-    "included_in_git": false
+    "included_in_git": true
   },
   "local_ground_usd": {
     "source_path": "/ssd/sy/kailang/pour17/bundle/pour17/world/default_environment.usd",
+    "repository_path": "runtime_assets/default_environment.usd",
+    "size_bytes": 13622,
     "sha256": "8a21c317d638d33a4e6c20c958a7ed8f4d8c5195efd7e20f1b85178b4a15638a",
-    "included_in_git": false
+    "included_in_git": true
+  },
+  "smoke_checkpoint": {
+    "source_path": "/ssd/sy/kailang/unscrew17/handoff_export_20260916/ppo_smoke_1024_best.pth",
+    "size_bytes": 86210575,
+    "sha256": "cf7752e09580ec38f102eff0b560e9f56bb5879689a7d597a95b592b5048ecd2",
+    "included_in_git": false,
+    "note": "Optional smoke-only checkpoint; not a formal 5M checkpoint and not needed to start training."
+  },
+  "packaged_logs": {
+    "preflight_1env_retry8_train.log": "77159843a03e33d48d8b64ec3a74a7e703a5e511c3704559e541c18746dbbd4a",
+    "ppo_smoke_1024_train.log": "02354b55457f7c8158fb412789ea1d6d811996cd208fd491896c87214fa5f8a5",
+    "formal_5m_4096env_failure_excerpt.log": "399cfa3a3ecc88509a9a5725d6a7794fdc7a1fe50128fb1b36f076fe8525d1d7"
   },
   "validated_a800_tree": "/ssd/sy/kailang/unscrew17/direct58d_asymcritic_20260916",
   "formal_status": "stopped_before_PPO_due_to_full_root_filesystem",

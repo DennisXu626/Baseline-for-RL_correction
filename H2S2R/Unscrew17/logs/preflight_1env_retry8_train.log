@@ -1,0 +1,119 @@
+[INFO][AppLauncher]: Using device: cuda:1
+[INFO][AppLauncher]: Loading experience file: /ssd/sy/kailang/env/IsaacLab-5.1/apps/isaaclab.python.headless.kit
+Loading user config located at: '/ssd/sy/kailang/env/rl-correction-pour/lib/python3.11/site-packages/isaacsim/kit/data/Kit/Isaac-Sim/5.1/user.config.json'
+[Info] [carb] Logging to file: /ssd/sy/kailang/env/rl-correction-pour/lib/python3.11/site-packages/isaacsim/kit/logs/Kit/Isaac-Sim/5.1/kit_20260915_172323.log
+2026-09-15T17:23:23Z [172ms] [Warning] [omni.usd_config.extension] Enable omni.materialx.libs extension to use MaterialX
+2026-09-15T17:23:24Z [682ms] [Warning] [omni.platforminfo.plugin] failed to open the default display.  Can't verify X Server version.
+2026-09-15T17:23:24Z [936ms] [Warning] [carb] Acquiring non optional plugin interface which is not listed as dependency: [omni::physx::IPhysxBenchmarks v1.0] (plugin: <default plugin>), by client: omni.physics.physx.plugin. Add it to CARB_PLUGIN_IMPL_DEPS() macro of a client.
+2026-09-15T17:23:24Z [952ms] [Warning] [omni.isaac.dynamic_control] omni.isaac.dynamic_control is deprecated as of Isaac Sim 4.5. No action is needed from end-users.
+
+|---------------------------------------------------------------------------------------------|
+| Driver Version: 570.195.03    | Graphics API: Vulkan
+|=============================================================================================|
+| GPU | Name                             | Active | LDA | GPU Memory | Vendor-ID | LUID       |
+|     |                                  |        |     |            | Device-ID | UUID       |
+|     |                                  |        |     |            | Bus-ID    |            |
+|---------------------------------------------------------------------------------------------|
+| 0   | NVIDIA A800 80GB PCIe            | Yes: 0 |     | 81920   MB | 10de      | 0          |
+|     |                                  |        |     |            | 20f5      | e24fe30d.. |
+|     |                                  |        |     |            | 17        |            |
+|---------------------------------------------------------------------------------------------|
+| 1   | NVIDIA A800 80GB PCIe            | Yes: 1 |     | 81920   MB | 10de      | 0          |
+|     |                                  |        |     |            | 20f5      | 9f37e01b.. |
+|     |                                  |        |     |            | 98        |            |
+|=============================================================================================|
+| OS: 22.04.5 LTS (Jammy Jellyfish) ubuntu, Version: 22.04.5, Kernel: 5.15.0-127-generic
+| Processor: Intel(R) Xeon(R) Gold 6330 CPU @ 2.00GHz
+| Cores: 56 | Logical Cores: 112
+|---------------------------------------------------------------------------------------------|
+| Total Memory (MB): 515564 | Free Memory: 423583
+| Total Page/Swap (MB): 61439 | Free Page/Swap: 61270
+|---------------------------------------------------------------------------------------------|
+2026-09-15T17:23:30Z [7,170ms] [Warning] [gpu.foundation.plugin] CPU performance profile is set to powersave. This profile sets the CPU to the lowest frequency reducing performance.
+2026-09-15T17:23:30Z [7,186ms] [Warning] [gpu.foundation.plugin] ECC is enabled on physical device 0
+2026-09-15T17:23:30Z [7,186ms] [Warning] [gpu.foundation.plugin] ECC is enabled on physical device 1
+2026-09-15T17:23:31Z [7,505ms] [Warning] [omni.kvdb.plugin] Disabling key-value database because another kit process is locking it
+Gym has been unmaintained since 2022 and does not support NumPy 2.0 amongst other critical functionality.
+Please upgrade to Gymnasium, the maintained drop-in replacement of Gym, or contact the authors of your software and request that they upgrade.
+Users of this version of Gym should be able to simply replace 'import gym' with 'import gymnasium as gym' in the vast majority of cases.
+See the migration guide at https://gymnasium.farama.org/introduction/migration_guide/ for additional information.
+[H2S2R-UNSCREW17] importing frozen task_env from /ssd/sy/kailang/unscrew17/direct58d_asymcritic_20260916/tasks/Unscrew/part4/C_Wiring
+[dexmate base cfg] 可选的旧式臂残差标定文件不存在: /ssd/sy/kailang/unscrew17/direct58d_asymcritic_20260916/data/offline_ik/arm_residual_bound.json; 默认值为均一 0.88°。Unscrew17 direct-58D 不使用该残差界。
+[H2S2R-UNSCREW17] frozen task_env import complete
+[H2S2R-UNSCREW17] importing frozen task_env from /ssd/sy/kailang/unscrew17/direct58d_asymcritic_20260916/tasks/Unscrew/part4/C_Wiring
+[H2S2R-UNSCREW17] frozen task_env import complete
+[H2S2R-UNSCREW17] importing frozen task_env from /ssd/sy/kailang/unscrew17/direct58d_asymcritic_20260916/tasks/Unscrew/part4/C_Wiring
+[H2S2R-UNSCREW17] frozen task_env import complete
+[clips] 交互手=left: 接触传感器已重建 (['left_thumb_elastomer', 'left_index_elastomer', 'left_middle_elastomer', 'left_ring_elastomer', 'left_pinky_elastomer'])
+[H2S2R-UNSCREW17] log_dir=/ssd/sy/kailang/unscrew17/gates/shape_runtime_preflight_1env_gpu1_retry8_20260916/run/UNSCREW17_DIRECT58D_PREFLIGHT_RETRY8/2026-09-15_17-23-32 envs=1 kind=preflight
+[H2S2R-UNSCREW17] stage=construct_env begin
+
+[36m=========================================================================================================[0m
+[36m[1m[INFO][IsaacLab]: Logging to file: /tmp/rl_correction_isaaclab_1000/logs/isaaclab_2026-09-15_17-23-32.log[0m
+[36m=========================================================================================================[0m
+
+[33m17:23:32 [simulation_context.py] WARNING: The `enable_external_forces_every_iteration` parameter in the PhysxCfg is set to False. If you are experiencing noisy velocities, consider enabling this flag. You may need to slightly increase the number of velocity iterations (setting it to 1 or 2 rather than 0), together with this flag, to improve the accuracy of velocity updates.[0m
+[INFO]: Base environment:
+	Environment device    : cuda:1
+	Environment seed      : 42
+	Physics step-size     : 0.004166666666666667
+	Rendering step-size   : 0.008333333333333333
+	Environment step-size : 0.05
+[33m17:23:32 [direct_rl_env.py] WARNING: The render interval (2) is smaller than the decimation (12). Multiple render calls will happen for each environment step.If this is not intended, set the render interval to be equal to the decimation.[0m
+[33m17:23:33 [interactive_scene.py] WARNING: Collision filtering can only be automatically enabled when replicate_physics=True and using GPU simulation. Please call scene.filter_collisions(global_prim_paths) to filter collisions across environments.[0m
+[setup] 物体材质=/World/Materials/ClipObject×1 指尖SuperGrip×10 手身LowGrip×1
+[screw] 双物体装配就绪: primary=body | aux×1 mass=0.003kg friction=0.4 | pitch=3.18mm turns=0.1 travel=0.27mm
+[INFO]: Time taken for scene creation : 0.999478 seconds
+[INFO]: Scene manager:  <class InteractiveScene>
+	Number of environments: 1
+	Environment spacing   : 2.0
+	Source prim name      : /World/envs/env_0
+	Global prim paths     : []
+	Replicate physics     : False
+[INFO]: Starting the simulation. This may take a few seconds. Please wait...
+[INFO]: Time taken for simulation start : 1.983743 seconds
+[INFO]: Completed setting up the environment...
+[dexmate] 交互侧=left | 臂 ['L_arm_j1', 'L_arm_j2', 'L_arm_j3', 'L_arm_j4', 'L_arm_j5', 'L_arm_j6', 'L_arm_j7'] | 手 22 关节 | 末端 body=left_hand_C_MC
+[smooth] 剔除漂移帧 [19, 60, 62, 66, 67]   物体位置最大修正 1.27 cm
+[static] hand=left contact=23 placement=23 aligned=31 centre_xy=[-0.12370000034570694, 0.08879999816417694] gap=2.0mm table_margin=45.3cm
+[debug] hand bodies: [('vega_1p_mobile', 1.0), ('dummy_base_x', 9.999999747378752e-05), ('dummy_base_y', 9.999999747378752e-05), ('vega_1p_base', 88.43486785888672), ('B_base_cam', 0.0030900000128895044), ('F_base_cam', 0.0030900000128895044), ('L_base_cam', 0.0030900000128895044), ('R_base_cam', 0.0030900000128895044), ('vega_1p_back_lidar', 0.004230000078678131), ('vega_1p_front_lidar', 0.1509999930858612), ('vega_1p_torso_l1', 8.832340240478516), ('vega_1p_torso_l2', 14.589259147644043), ('vega_1p_torso_l3', 5.328859806060791), ('arm_center', 1.0), ('vega_1p_L_arm_l1', 1.4135099649429321), ('vega_1p_R_arm_l1', 1.4240100383758545), ('vega_1p_head_l1', 0.43780001997947693), ('L_arm_l2', 1.405940055847168), ('R_arm_l2', 1.4059499502182007), ('vega_1p_head_l2', 0.6077200174331665), ('L_arm_l3', 1.1609400510787964), ('R_arm_l3', 1.1607999801635742), ('vega_1p_head_l3', 0.6327800154685974), ('L_arm_l4', 0.9320400357246399), ('R_arm_l4', 0.9320400357246399), ('zed_left_camera', 1.0), ('zed_depth_frame', 1.0), ('zed_right_camera', 1.0), ('L_arm_l5', 0.6458200216293335), ('R_arm_l5', 0.6458200216293335), ('vega_1p_L_arm_l6', 0.5541999936103821), ('vega_1p_R_arm_l6', 0.5537199974060059), ('L_arm_l7', 0.35802000761032104), ('R_arm_l7', 0.35802000761032104), ('L_arm_l8', 0.2006399929523468), ('R_arm_l8', 0.2006399929523468), ('L_ee', 1.0), ('left_hand_C_MC', 0.650600016117096), ('R_ee', 1.0), ('right_hand_C_MC', 0.650600016117096), ('left_index_MCP_VL', 0.0022100000642240047), ('left_middle_MCP_VL', 0.0022100000642240047), ('left_pinky_MC', 0.12541000545024872), ('left_ring_MCP_VL', 0.0022100000642240047), ('left_thumb_CMC_VL', 0.0024999999441206455), ('right_index_MCP_VL', 0.0022100000642240047), ('right_middle_MCP_VL', 0.0022100000642240047), ('right_pinky_MC', 0.12541000545024872), ('right_ring_MCP_VL', 0.0022100000642240047), ('right_thumb_CMC_VL', 0.0024999999441206455), ('left_index_PP', 0.04741000011563301), ('left_middle_PP', 0.04741000011563301), ('left_pinky_MCP_VL', 0.0022100000642240047), ('left_ring_PP', 0.04741000011563301), ('left_thumb_MC', 0.13586999475955963), ('right_index_PP', 0.04741000011563301), ('right_middle_PP', 0.04741000011563301), ('right_pinky_MCP_VL', 0.0022100000642240047), ('right_ring_PP', 0.04741000011563301), ('right_thumb_MC', 0.13586999475955963), ('left_index_MP', 0.018239999189972878), ('left_middle_MP', 0.018239999189972878), ('left_pinky_PP', 0.04741000011563301), ('left_ring_MP', 0.018239999189972878), ('left_thumb_MCP_VL', 7.999999797903001e-05), ('right_index_MP', 0.018239999189972878), ('right_middle_MP', 0.018239999189972878), ('right_pinky_PP', 0.04741000011563301), ('right_ring_MP', 0.018239999189972878), ('right_thumb_MCP_VL', 7.999999797903001e-05), ('left_index_DP', 0.004550000187009573), ('left_middle_DP', 0.004550000187009573), ('left_pinky_MP', 0.018239999189972878), ('left_ring_DP', 0.004550000187009573), ('left_thumb_PP', 0.030780000612139702), ('right_index_DP', 0.004550000187009573), ('right_middle_DP', 0.004550000187009573), ('right_pinky_MP', 0.018239999189972878), ('right_ring_DP', 0.004550000187009573), ('right_thumb_PP', 0.030780000612139702), ('left_index_elastomer', 9.999999747378752e-05), ('left_middle_elastomer', 9.999999747378752e-05), ('left_pinky_DP', 0.004550000187009573), ('left_ring_elastomer', 9.999999747378752e-05), ('left_thumb_DP', 0.009879999794065952), ('right_index_elastomer', 9.999999747378752e-05), ('right_middle_elastomer', 9.999999747378752e-05), ('right_pinky_DP', 0.004550000187009573), ('right_ring_elastomer', 9.999999747378752e-05), ('right_thumb_DP', 0.00788000039756298), ('left_index_fingertip', 9.999999974752427e-07), ('left_middle_fingertip', 9.999999974752427e-07), ('left_pinky_elastomer', 9.999999747378752e-05), ('left_ring_fingertip', 9.999999974752427e-07), ('left_thumb_elastomer', 9.999999747378752e-05), ('right_index_fingertip', 9.999999974752427e-07), ('right_middle_fingertip', 9.999999974752427e-07), ('right_pinky_elastomer', 9.999999747378752e-05), ('right_ring_fingertip', 9.999999974752427e-07), ('right_thumb_elastomer', 9.999999747378752e-05), ('left_pinky_fingertip', 9.999999974752427e-07), ('left_thumb_fingertip', 9.999999974752427e-07), ('right_pinky_fingertip', 9.999999974752427e-07), ('right_thumb_fingertip', 9.999999974752427e-07)]
+[debug] hand 总质量 141.872 kg
+[reward] 手指模仿通道已关 (无 GraspPose, 参考手指不可信); 抓法由 contact/afford/lift 三项决定
+[affordance] 60000 点 heatmap∈[0.00,1.00] | lam_afford=0.4 loose_grip=0.05
+[finger] 累积残差: rate ±5.7°/步 | total ±68.8° | decay 1.0
+[dexmate] 躯干已在 USD 里锁死 (fixed joint), 无沉降过程
+[dexmate] place_mode=object_only | robot reference=default pose (no human replay / no IK) | object-centre reach 0.559m <= 0.750m
+[pregrasp] 表面法向已采样 (512, 3) (cent 用局部法向, 形状无关)
+[collide] 臂连杆 9 个 (['vega_1p_L_arm_l1', 'L_arm_l2', 'L_arm_l3', 'L_arm_l4', 'L_arm_l5', 'vega_1p_L_arm_l6', 'L_arm_l7', 'L_arm_l8', 'L_ee']) | 需避让 16 个 (躯干/头/另一臂)
+[score] 接触分数图已开: 512 个表面点; 只在 verify 斜坡到顶取快照, 按力占比加权
+[pregrasp] v2 稳定抓握+微抬升验证: 起点=PreGrasp(帧31) | 合拢参考 0.025/步 | 候选 ≥4垫 向心≥0.3 保持4步 | 验证升 10mm (4级) | episode ≤ 153 步
+[UnscrewEnv] 变体=HYB clip=17 (置信门控+指形指引)
+[UnscrewEnv] T2-48 timing=5, contact window from k=16; C sampling=0.0
+[UnscrewEnv] ★时钟在 k_sep 停住直到脱扣 (T2-41 ②)
+[UnscrewEnv] ★抓盖行换基 (T2-42): 行 221 母带腕 [-0.229 -0.166  0.98 ] 母带盖 [-0.146 -0.026  0.954]
+[UnscrewEnv] RSI出生表: ['t0', 'g1', 'g2', 'c']
+[UnscrewEnv] ★接触链塑形包 (T2-43): place 3.0 fsq 2.0 tau 3.0 rent 0.01/步
+[UnscrewEnv] ★右手放界 (T2-44): k>=k_sep 后右臂/右指累计残差上限 ×3
+[UnscrewEnv] ★拧盖收益放大 (T2-46): screw/pinchw/fsq/ftau/rent ×10
+[UnscrewEnv] 螺纹模型: 真实摩擦副 breakaway=0.04N·m kinetic=0.015 viscous=0.03 I_eff=0.0005
+[UnscrewEnv] 瓶 z 换基 Δz=+0.13cm (obj_rest_z=0.8720 vs 母带 0.8707)
+[UnscrewEnv] squeeze 剂量: βL=1.0 (Screw27_body 原始 squeeze，不外推) βR=1.0 (Screw27_cap squeeze，按数据到盖进度渐入)
+[UnscrewEnv] 手指门: 冻结 [0,161) 与 [289,末] | 全链 451 行 IA=[186,263]
+[H2S2R-UNSCREW17] stage=official_adapter complete
+current training device: cuda:1
+/ssd/sy/kailang/unscrew17/direct58d_asymcritic_20260916/third_party/h2s2r_official/human2sim2robot/ppo/ppo_agent.py:271: FutureWarning: `torch.cuda.amp.GradScaler(args...)` is deprecated. Please use `torch.amp.GradScaler('cuda', args...)` instead.
+  self.scaler = torch.cuda.amp.GradScaler(enabled=self.cfg.mixed_precision)
+RunningMeanStd:  (1,)
+RunningMeanStd:  (342,)
+Adding Asymmetric Critic Network
+RunningMeanStd:  (1,)
+RunningMeanStd:  (513,)
+[H2S2R-UNSCREW17] stage=train begin
+[33m17:23:42 [rigid_object.py] WARNING: The function 'set_external_force_and_torque' will be deprecated in a future release. Please use 'permanent_wrench_composer.set_forces_and_torques' instead.[0m
+/ssd/sy/kailang/unscrew17/direct58d_asymcritic_20260916/third_party/h2s2r_official/human2sim2robot/ppo/ppo_agent.py:1142: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with torch.cuda.amp.autocast(enabled=self.cfg.mixed_precision):
+fps step: 0 fps step and policy inference: 0 fps total: 0 epoch: 1/1 frames: 0
+[33m17:24:17 [x2num.py] WARNING: NaN or Inf found in input tensor.[0m
+WARNING: Max epochs reached before any env terminated at least once
+=> saving checkpoint '/ssd/sy/kailang/unscrew17/gates/shape_runtime_preflight_1env_gpu1_retry8_20260916/run/UNSCREW17_DIRECT58D_PREFLIGHT_RETRY8/2026-09-15_17-23-32/nn/last_ep_1_rew_-inf.pth'
+MAX EPOCHS NUM!

@@ -4,9 +4,9 @@ Status: implementation and smoke validation complete; formal training is
 stopped and must not be resumed from the failed launch.
 
 This directory transfers the H2S2R-PPO + Clip17/Ours Unscrew17 baseline built
-on 2026-09-16. It is an overlay for the verified Clip17 handoff, not a complete
-standalone simulator checkout and not a strict reproduction of the upstream
-H2S2R task environment.
+on 2026-09-16. It contains the verified Clip17 runtime-input archive plus the
+H2S2R overlay; it is not a strict reproduction of the upstream H2S2R task
+environment.
 
 Read in this order:
 
@@ -35,20 +35,26 @@ Read in this order:
 
 Included:
 
+- `runtime_assets/unscrew17_clip17_runtime_inputs_20260916.tar.gz`, containing
+  the USD/NPZ task inputs and the verified base runtime tree;
+- the local ground USD used by the validated A800 environment;
 - the complete policy adapter and training entry;
 - the two Clip17 runtime files changed for local/offline asset loading;
 - the exact upstream H2S2R PPO snapshot and MIT license;
+- the successful 1-env and 1024-env smoke logs;
+- a bounded first/last-lines excerpt of the failed 4096-env launch log;
 - deployment, launch, monitoring and method-identity documentation.
 
 Not included:
 
-- robot/object USD assets, Clip17 reference NPZ files or private task data;
-- checkpoints or run logs;
-- the 50.8 MB verified runtime archive.
+- the 6.58 GB raw failed-launch log, whose repeated filesystem errors exceed
+  GitHub's file limits and add no evidence beyond the included excerpt;
+- a formal-training checkpoint, because the formal launch never reached PPO;
+- the optional 1024-env smoke checkpoint. Its verified identity is recorded in
+  `SOURCE_IDENTITY.json`; it is not required to start formal training.
 
-Those inputs remain on the authorized servers and are identified by path and
-SHA256 in `SOURCE_IDENTITY.json`. Do not replace them with similarly named
-files without re-running the handoff verifier.
+Do not replace included or externally identified files with similarly named
+files without checking their SHA256 identities.
 
 ## Current stop condition
 

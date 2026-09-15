@@ -1,0 +1,802 @@
+===== BEGIN: first 400 lines =====
+[INFO][AppLauncher]: Using device: cuda:1
+[INFO][AppLauncher]: Loading experience file: /ssd/sy/kailang/env/IsaacLab-5.1/apps/isaaclab.python.headless.kit
+Loading user config located at: '/ssd/sy/kailang/env/rl-correction-pour/lib/python3.11/site-packages/isaacsim/kit/data/Kit/Isaac-Sim/5.1/user.config.json'
+[Info] [carb] Logging to file: /ssd/sy/kailang/env/rl-correction-pour/lib/python3.11/site-packages/isaacsim/kit/logs/Kit/Isaac-Sim/5.1/kit_20260915_173527.log
+2026-09-15T17:35:27Z [175ms] [Warning] [omni.usd_config.extension] Enable omni.materialx.libs extension to use MaterialX
+2026-09-15T17:35:27Z [699ms] [Warning] [omni.platforminfo.plugin] failed to open the default display.  Can't verify X Server version.
+2026-09-15T17:35:27Z [958ms] [Warning] [carb] Acquiring non optional plugin interface which is not listed as dependency: [omni::physx::IPhysxBenchmarks v1.0] (plugin: <default plugin>), by client: omni.physics.physx.plugin. Add it to CARB_PLUGIN_IMPL_DEPS() macro of a client.
+2026-09-15T17:35:28Z [973ms] [Warning] [omni.isaac.dynamic_control] omni.isaac.dynamic_control is deprecated as of Isaac Sim 4.5. No action is needed from end-users.
+
+|---------------------------------------------------------------------------------------------|
+| Driver Version: 570.195.03    | Graphics API: Vulkan
+|=============================================================================================|
+| GPU | Name                             | Active | LDA | GPU Memory | Vendor-ID | LUID       |
+|     |                                  |        |     |            | Device-ID | UUID       |
+|     |                                  |        |     |            | Bus-ID    |            |
+|---------------------------------------------------------------------------------------------|
+| 0   | NVIDIA A800 80GB PCIe            | Yes: 0 |     | 81920   MB | 10de      | 0          |
+|     |                                  |        |     |            | 20f5      | e24fe30d.. |
+|     |                                  |        |     |            | 17        |            |
+|---------------------------------------------------------------------------------------------|
+| 1   | NVIDIA A800 80GB PCIe            | Yes: 1 |     | 81920   MB | 10de      | 0          |
+|     |                                  |        |     |            | 20f5      | 9f37e01b.. |
+|     |                                  |        |     |            | 98        |            |
+|=============================================================================================|
+| OS: 22.04.5 LTS (Jammy Jellyfish) ubuntu, Version: 22.04.5, Kernel: 5.15.0-127-generic
+| Processor: Intel(R) Xeon(R) Gold 6330 CPU @ 2.00GHz
+| Cores: 56 | Logical Cores: 112
+|---------------------------------------------------------------------------------------------|
+| Total Memory (MB): 515564 | Free Memory: 416142
+| Total Page/Swap (MB): 61439 | Free Page/Swap: 61270
+|---------------------------------------------------------------------------------------------|
+2026-09-15T17:35:34Z [7,413ms] [Warning] [gpu.foundation.plugin] CPU performance profile is set to powersave. This profile sets the CPU to the lowest frequency reducing performance.
+2026-09-15T17:35:34Z [7,429ms] [Warning] [gpu.foundation.plugin] ECC is enabled on physical device 0
+2026-09-15T17:35:34Z [7,429ms] [Warning] [gpu.foundation.plugin] ECC is enabled on physical device 1
+2026-09-15T17:35:34Z [7,799ms] [Warning] [omni.kvdb.plugin] Disabling key-value database because another kit process is locking it
+Gym has been unmaintained since 2022 and does not support NumPy 2.0 amongst other critical functionality.
+Please upgrade to Gymnasium, the maintained drop-in replacement of Gym, or contact the authors of your software and request that they upgrade.
+Users of this version of Gym should be able to simply replace 'import gym' with 'import gymnasium as gym' in the vast majority of cases.
+See the migration guide at https://gymnasium.farama.org/introduction/migration_guide/ for additional information.
+[H2S2R-UNSCREW17] importing frozen task_env from /ssd/sy/kailang/unscrew17/direct58d_asymcritic_20260916/tasks/Unscrew/part4/C_Wiring
+[dexmate base cfg] 可选的旧式臂残差标定文件不存在: /ssd/sy/kailang/unscrew17/direct58d_asymcritic_20260916/data/offline_ik/arm_residual_bound.json; 默认值为均一 0.88°。Unscrew17 direct-58D 不使用该残差界。
+[H2S2R-UNSCREW17] frozen task_env import complete
+[H2S2R-UNSCREW17] importing frozen task_env from /ssd/sy/kailang/unscrew17/direct58d_asymcritic_20260916/tasks/Unscrew/part4/C_Wiring
+[H2S2R-UNSCREW17] frozen task_env import complete
+[H2S2R-UNSCREW17] importing frozen task_env from /ssd/sy/kailang/unscrew17/direct58d_asymcritic_20260916/tasks/Unscrew/part4/C_Wiring
+[H2S2R-UNSCREW17] frozen task_env import complete
+[clips] 交互手=left: 接触传感器已重建 (['left_thumb_elastomer', 'left_index_elastomer', 'left_middle_elastomer', 'left_ring_elastomer', 'left_pinky_elastomer'])
+[H2S2R-UNSCREW17] log_dir=/ssd/sy/kailang/unscrew17/gates/formal_5m_4096env_gpu1_20260916/run/UNSCREW17_DIRECT58D_FORMAL_5M_4096ENV/2026-09-15_17-35-35 envs=4096 kind=formal
+[H2S2R-UNSCREW17] stage=construct_env begin
+
+[36m=========================================================================================================[0m
+[36m[1m[INFO][IsaacLab]: Logging to file: /tmp/rl_correction_isaaclab_1000/logs/isaaclab_2026-09-15_17-35-36.log[0m
+[36m=========================================================================================================[0m
+
+[33m17:35:36 [simulation_context.py] WARNING: The `enable_external_forces_every_iteration` parameter in the PhysxCfg is set to False. If you are experiencing noisy velocities, consider enabling this flag. You may need to slightly increase the number of velocity iterations (setting it to 1 or 2 rather than 0), together with this flag, to improve the accuracy of velocity updates.[0m
+[INFO]: Base environment:
+	Environment device    : cuda:1
+	Environment seed      : 42
+	Physics step-size     : 0.004166666666666667
+	Rendering step-size   : 0.008333333333333333
+	Environment step-size : 0.05
+[33m17:35:36 [direct_rl_env.py] WARNING: The render interval (2) is smaller than the decimation (12). Multiple render calls will happen for each environment step.If this is not intended, set the render interval to be equal to the decimation.[0m
+[33m17:36:53 [interactive_scene.py] WARNING: Collision filtering can only be automatically enabled when replicate_physics=True and using GPU simulation. Please call scene.filter_collisions(global_prim_paths) to filter collisions across environments.[0m
+--- Logging error ---
+Traceback (most recent call last):
+  File "/ssd/sy/kailang/env/rl-correction-pour/lib/python3.11/logging/__init__.py", line 1114, in emit
+    self.flush()
+  File "/ssd/sy/kailang/env/rl-correction-pour/lib/python3.11/logging/__init__.py", line 1094, in flush
+    self.stream.flush()
+OSError: [Errno 28] No space left on device
+Call stack:
+  File "/ssd/sy/kailang/unscrew17/direct58d_asymcritic_20260916/tasks/h2s2r_unscrew17/train_direct58d_lstm.py", line 226, in <module>
+    main()
+  File "/ssd/sy/kailang/unscrew17/direct58d_asymcritic_20260916/tasks/h2s2r_unscrew17/train_direct58d_lstm.py", line 206, in main
+    raw = Unscrew17H2S2REnv(cfg)
+  File "/ssd/sy/kailang/unscrew17/direct58d_asymcritic_20260916/tasks/h2s2r_unscrew17/env.py", line 32, in __init__
+    super().__init__(cfg, **kwargs)
+  File "/ssd/sy/kailang/unscrew17/direct58d_asymcritic_20260916/tasks/Unscrew/part4/C_Wiring/task_env.py", line 157, in __init__
+    super().__init__(cfg, **kw)
+  File "/ssd/sy/kailang/unscrew17/direct58d_asymcritic_20260916/tasks/pregrasp/env.py", line 111, in __init__
+    super().__init__(cfg, render_mode, **kwargs)
+  File "/ssd/sy/kailang/unscrew17/direct58d_asymcritic_20260916/rl_rebuild/correction/env/dexmate_env.py", line 105, in __init__
+    super().__init__(cfg, render_mode, **kwargs)
+  File "/ssd/sy/kailang/unscrew17/direct58d_asymcritic_20260916/rl_rebuild/correction/env/correction_env.py", line 43, in __init__
+    super().__init__(cfg, render_mode, **kwargs)
+  File "/ssd/sy/kailang/env/IsaacLab-5.1/source/isaaclab/isaaclab/envs/direct_rl_env.py", line 135, in __init__
+    self._setup_scene()
+  File "/ssd/sy/kailang/unscrew17/direct58d_asymcritic_20260916/tasks/Unscrew/part4/C_Wiring/task_env.py", line 152, in _setup_scene
+    super()._setup_scene()
+  File "/ssd/sy/kailang/unscrew17/direct58d_asymcritic_20260916/tasks/pregrasp/env.py", line 541, in _setup_scene
+    super()._setup_scene()
+  File "/ssd/sy/kailang/unscrew17/direct58d_asymcritic_20260916/rl_rebuild/correction/env/correction_env.py", line 466, in _setup_scene
+    sim_utils.bind_physics_material(p, "/World/Materials/LowGrip",
+  File "/ssd/sy/kailang/env/IsaacLab-5.1/source/isaaclab/isaaclab/sim/utils/prims.py", line 644, in wrapper
+    success = func(child_prim_path, *args, **kwargs)
+  File "/ssd/sy/kailang/env/IsaacLab-5.1/source/isaaclab/isaaclab/sim/utils/prims.py", line 874, in bind_physics_material
+    logger.debug(
+Message: "Cannot apply physics material '/World/Materials/LowGrip' on prim '/World/envs/env_2035/Robot/vega_1p_R_arm_l1/visuals/vega_1p_R_arm_l1_visuals_R_arm_l1_mesh'. It is neither a PhysX scene, collider, a deformable body, nor a particle system."
+Arguments: ()
+--- Logging error ---
+Traceback (most recent call last):
+  File "/ssd/sy/kailang/env/rl-correction-pour/lib/python3.11/logging/__init__.py", line 1114, in emit
+    self.flush()
+  File "/ssd/sy/kailang/env/rl-correction-pour/lib/python3.11/logging/__init__.py", line 1094, in flush
+    self.stream.flush()
+OSError: [Errno 28] No space left on device
+Call stack:
+  File "/ssd/sy/kailang/unscrew17/direct58d_asymcritic_20260916/tasks/h2s2r_unscrew17/train_direct58d_lstm.py", line 226, in <module>
+    main()
+  File "/ssd/sy/kailang/unscrew17/direct58d_asymcritic_20260916/tasks/h2s2r_unscrew17/train_direct58d_lstm.py", line 206, in main
+    raw = Unscrew17H2S2REnv(cfg)
+  File "/ssd/sy/kailang/unscrew17/direct58d_asymcritic_20260916/tasks/h2s2r_unscrew17/env.py", line 32, in __init__
+    super().__init__(cfg, **kwargs)
+  File "/ssd/sy/kailang/unscrew17/direct58d_asymcritic_20260916/tasks/Unscrew/part4/C_Wiring/task_env.py", line 157, in __init__
+    super().__init__(cfg, **kw)
+  File "/ssd/sy/kailang/unscrew17/direct58d_asymcritic_20260916/tasks/pregrasp/env.py", line 111, in __init__
+    super().__init__(cfg, render_mode, **kwargs)
+  File "/ssd/sy/kailang/unscrew17/direct58d_asymcritic_20260916/rl_rebuild/correction/env/dexmate_env.py", line 105, in __init__
+    super().__init__(cfg, render_mode, **kwargs)
+  File "/ssd/sy/kailang/unscrew17/direct58d_asymcritic_20260916/rl_rebuild/correction/env/correction_env.py", line 43, in __init__
+    super().__init__(cfg, render_mode, **kwargs)
+  File "/ssd/sy/kailang/env/IsaacLab-5.1/source/isaaclab/isaaclab/envs/direct_rl_env.py", line 135, in __init__
+    self._setup_scene()
+  File "/ssd/sy/kailang/unscrew17/direct58d_asymcritic_20260916/tasks/Unscrew/part4/C_Wiring/task_env.py", line 152, in _setup_scene
+    super()._setup_scene()
+  File "/ssd/sy/kailang/unscrew17/direct58d_asymcritic_20260916/tasks/pregrasp/env.py", line 541, in _setup_scene
+    super()._setup_scene()
+  File "/ssd/sy/kailang/unscrew17/direct58d_asymcritic_20260916/rl_rebuild/correction/env/correction_env.py", line 466, in _setup_scene
+    sim_utils.bind_physics_material(p, "/World/Materials/LowGrip",
+  File "/ssd/sy/kailang/env/IsaacLab-5.1/source/isaaclab/isaaclab/sim/utils/prims.py", line 644, in wrapper
+    success = func(child_prim_path, *args, **kwargs)
+  File "/ssd/sy/kailang/env/IsaacLab-5.1/source/isaaclab/isaaclab/sim/utils/prims.py", line 874, in bind_physics_material
+    logger.debug(
+Message: "Cannot apply physics material '/World/Materials/LowGrip' on prim '/World/envs/env_2035/Robot/vega_1p_R_arm_l1/collisions/vega_1p_R_arm_l1_collisions_R_arm_l1_mesh'. It is neither a PhysX scene, collider, a deformable body, nor a particle system."
+Arguments: ()
+--- Logging error ---
+Traceback (most recent call last):
+  File "/ssd/sy/kailang/env/rl-correction-pour/lib/python3.11/logging/__init__.py", line 1114, in emit
+    self.flush()
+  File "/ssd/sy/kailang/env/rl-correction-pour/lib/python3.11/logging/__init__.py", line 1094, in flush
+    self.stream.flush()
+OSError: [Errno 28] No space left on device
+Call stack:
+  File "/ssd/sy/kailang/unscrew17/direct58d_asymcritic_20260916/tasks/h2s2r_unscrew17/train_direct58d_lstm.py", line 226, in <module>
+    main()
+  File "/ssd/sy/kailang/unscrew17/direct58d_asymcritic_20260916/tasks/h2s2r_unscrew17/train_direct58d_lstm.py", line 206, in main
+    raw = Unscrew17H2S2REnv(cfg)
+  File "/ssd/sy/kailang/unscrew17/direct58d_asymcritic_20260916/tasks/h2s2r_unscrew17/env.py", line 32, in __init__
+    super().__init__(cfg, **kwargs)
+  File "/ssd/sy/kailang/unscrew17/direct58d_asymcritic_20260916/tasks/Unscrew/part4/C_Wiring/task_env.py", line 157, in __init__
+    super().__init__(cfg, **kw)
+  File "/ssd/sy/kailang/unscrew17/direct58d_asymcritic_20260916/tasks/pregrasp/env.py", line 111, in __init__
+    super().__init__(cfg, render_mode, **kwargs)
+  File "/ssd/sy/kailang/unscrew17/direct58d_asymcritic_20260916/rl_rebuild/correction/env/dexmate_env.py", line 105, in __init__
+    super().__init__(cfg, render_mode, **kwargs)
+  File "/ssd/sy/kailang/unscrew17/direct58d_asymcritic_20260916/rl_rebuild/correction/env/correction_env.py", line 43, in __init__
+    super().__init__(cfg, render_mode, **kwargs)
+  File "/ssd/sy/kailang/env/IsaacLab-5.1/source/isaaclab/isaaclab/envs/direct_rl_env.py", line 135, in __init__
+    self._setup_scene()
+  File "/ssd/sy/kailang/unscrew17/direct58d_asymcritic_20260916/tasks/Unscrew/part4/C_Wiring/task_env.py", line 152, in _setup_scene
+    super()._setup_scene()
+  File "/ssd/sy/kailang/unscrew17/direct58d_asymcritic_20260916/tasks/pregrasp/env.py", line 541, in _setup_scene
+    super()._setup_scene()
+  File "/ssd/sy/kailang/unscrew17/direct58d_asymcritic_20260916/rl_rebuild/correction/env/correction_env.py", line 466, in _setup_scene
+    sim_utils.bind_physics_material(p, "/World/Materials/LowGrip",
+  File "/ssd/sy/kailang/env/IsaacLab-5.1/source/isaaclab/isaaclab/sim/utils/prims.py", line 644, in wrapper
+    success = func(child_prim_path, *args, **kwargs)
+  File "/ssd/sy/kailang/env/IsaacLab-5.1/source/isaaclab/isaaclab/sim/utils/prims.py", line 874, in bind_physics_material
+    logger.debug(
+Message: "Cannot apply physics material '/World/Materials/LowGrip' on prim '/World/envs/env_2035/Robot/vega_1p_R_arm_l1/collisions/col_0'. It is neither a PhysX scene, collider, a deformable body, nor a particle system."
+Arguments: ()
+--- Logging error ---
+Traceback (most recent call last):
+  File "/ssd/sy/kailang/env/rl-correction-pour/lib/python3.11/logging/__init__.py", line 1114, in emit
+    self.flush()
+  File "/ssd/sy/kailang/env/rl-correction-pour/lib/python3.11/logging/__init__.py", line 1094, in flush
+    self.stream.flush()
+OSError: [Errno 28] No space left on device
+Call stack:
+  File "/ssd/sy/kailang/unscrew17/direct58d_asymcritic_20260916/tasks/h2s2r_unscrew17/train_direct58d_lstm.py", line 226, in <module>
+    main()
+  File "/ssd/sy/kailang/unscrew17/direct58d_asymcritic_20260916/tasks/h2s2r_unscrew17/train_direct58d_lstm.py", line 206, in main
+    raw = Unscrew17H2S2REnv(cfg)
+  File "/ssd/sy/kailang/unscrew17/direct58d_asymcritic_20260916/tasks/h2s2r_unscrew17/env.py", line 32, in __init__
+    super().__init__(cfg, **kwargs)
+  File "/ssd/sy/kailang/unscrew17/direct58d_asymcritic_20260916/tasks/Unscrew/part4/C_Wiring/task_env.py", line 157, in __init__
+    super().__init__(cfg, **kw)
+  File "/ssd/sy/kailang/unscrew17/direct58d_asymcritic_20260916/tasks/pregrasp/env.py", line 111, in __init__
+    super().__init__(cfg, render_mode, **kwargs)
+  File "/ssd/sy/kailang/unscrew17/direct58d_asymcritic_20260916/rl_rebuild/correction/env/dexmate_env.py", line 105, in __init__
+    super().__init__(cfg, render_mode, **kwargs)
+  File "/ssd/sy/kailang/unscrew17/direct58d_asymcritic_20260916/rl_rebuild/correction/env/correction_env.py", line 43, in __init__
+    super().__init__(cfg, render_mode, **kwargs)
+  File "/ssd/sy/kailang/env/IsaacLab-5.1/source/isaaclab/isaaclab/envs/direct_rl_env.py", line 135, in __init__
+    self._setup_scene()
+  File "/ssd/sy/kailang/unscrew17/direct58d_asymcritic_20260916/tasks/Unscrew/part4/C_Wiring/task_env.py", line 152, in _setup_scene
+    super()._setup_scene()
+  File "/ssd/sy/kailang/unscrew17/direct58d_asymcritic_20260916/tasks/pregrasp/env.py", line 541, in _setup_scene
+    super()._setup_scene()
+  File "/ssd/sy/kailang/unscrew17/direct58d_asymcritic_20260916/rl_rebuild/correction/env/correction_env.py", line 466, in _setup_scene
+    sim_utils.bind_physics_material(p, "/World/Materials/LowGrip",
+  File "/ssd/sy/kailang/env/IsaacLab-5.1/source/isaaclab/isaaclab/sim/utils/prims.py", line 644, in wrapper
+    success = func(child_prim_path, *args, **kwargs)
+  File "/ssd/sy/kailang/env/IsaacLab-5.1/source/isaaclab/isaaclab/sim/utils/prims.py", line 874, in bind_physics_material
+    logger.debug(
+Message: "Cannot apply physics material '/World/Materials/LowGrip' on prim '/World/envs/env_2035/Robot/R_arm_l2/visuals/R_arm_l2_visuals_arm_l2_mesh'. It is neither a PhysX scene, collider, a deformable body, nor a particle system."
+Arguments: ()
+--- Logging error ---
+Traceback (most recent call last):
+  File "/ssd/sy/kailang/env/rl-correction-pour/lib/python3.11/logging/__init__.py", line 1114, in emit
+    self.flush()
+  File "/ssd/sy/kailang/env/rl-correction-pour/lib/python3.11/logging/__init__.py", line 1094, in flush
+    self.stream.flush()
+OSError: [Errno 28] No space left on device
+Call stack:
+  File "/ssd/sy/kailang/unscrew17/direct58d_asymcritic_20260916/tasks/h2s2r_unscrew17/train_direct58d_lstm.py", line 226, in <module>
+    main()
+  File "/ssd/sy/kailang/unscrew17/direct58d_asymcritic_20260916/tasks/h2s2r_unscrew17/train_direct58d_lstm.py", line 206, in main
+    raw = Unscrew17H2S2REnv(cfg)
+  File "/ssd/sy/kailang/unscrew17/direct58d_asymcritic_20260916/tasks/h2s2r_unscrew17/env.py", line 32, in __init__
+    super().__init__(cfg, **kwargs)
+  File "/ssd/sy/kailang/unscrew17/direct58d_asymcritic_20260916/tasks/Unscrew/part4/C_Wiring/task_env.py", line 157, in __init__
+    super().__init__(cfg, **kw)
+  File "/ssd/sy/kailang/unscrew17/direct58d_asymcritic_20260916/tasks/pregrasp/env.py", line 111, in __init__
+    super().__init__(cfg, render_mode, **kwargs)
+  File "/ssd/sy/kailang/unscrew17/direct58d_asymcritic_20260916/rl_rebuild/correction/env/dexmate_env.py", line 105, in __init__
+    super().__init__(cfg, render_mode, **kwargs)
+  File "/ssd/sy/kailang/unscrew17/direct58d_asymcritic_20260916/rl_rebuild/correction/env/correction_env.py", line 43, in __init__
+    super().__init__(cfg, render_mode, **kwargs)
+  File "/ssd/sy/kailang/env/IsaacLab-5.1/source/isaaclab/isaaclab/envs/direct_rl_env.py", line 135, in __init__
+    self._setup_scene()
+  File "/ssd/sy/kailang/unscrew17/direct58d_asymcritic_20260916/tasks/Unscrew/part4/C_Wiring/task_env.py", line 152, in _setup_scene
+    super()._setup_scene()
+  File "/ssd/sy/kailang/unscrew17/direct58d_asymcritic_20260916/tasks/pregrasp/env.py", line 541, in _setup_scene
+    super()._setup_scene()
+  File "/ssd/sy/kailang/unscrew17/direct58d_asymcritic_20260916/rl_rebuild/correction/env/correction_env.py", line 466, in _setup_scene
+    sim_utils.bind_physics_material(p, "/World/Materials/LowGrip",
+  File "/ssd/sy/kailang/env/IsaacLab-5.1/source/isaaclab/isaaclab/sim/utils/prims.py", line 644, in wrapper
+    success = func(child_prim_path, *args, **kwargs)
+  File "/ssd/sy/kailang/env/IsaacLab-5.1/source/isaaclab/isaaclab/sim/utils/prims.py", line 874, in bind_physics_material
+    logger.debug(
+Message: "Cannot apply physics material '/World/Materials/LowGrip' on prim '/World/envs/env_2035/Robot/R_arm_l2/collisions/R_arm_l2_collisions_arm_l2_mesh'. It is neither a PhysX scene, collider, a deformable body, nor a particle system."
+Arguments: ()
+--- Logging error ---
+Traceback (most recent call last):
+  File "/ssd/sy/kailang/env/rl-correction-pour/lib/python3.11/logging/__init__.py", line 1114, in emit
+    self.flush()
+  File "/ssd/sy/kailang/env/rl-correction-pour/lib/python3.11/logging/__init__.py", line 1094, in flush
+    self.stream.flush()
+OSError: [Errno 28] No space left on device
+Call stack:
+  File "/ssd/sy/kailang/unscrew17/direct58d_asymcritic_20260916/tasks/h2s2r_unscrew17/train_direct58d_lstm.py", line 226, in <module>
+    main()
+  File "/ssd/sy/kailang/unscrew17/direct58d_asymcritic_20260916/tasks/h2s2r_unscrew17/train_direct58d_lstm.py", line 206, in main
+    raw = Unscrew17H2S2REnv(cfg)
+  File "/ssd/sy/kailang/unscrew17/direct58d_asymcritic_20260916/tasks/h2s2r_unscrew17/env.py", line 32, in __init__
+    super().__init__(cfg, **kwargs)
+  File "/ssd/sy/kailang/unscrew17/direct58d_asymcritic_20260916/tasks/Unscrew/part4/C_Wiring/task_env.py", line 157, in __init__
+    super().__init__(cfg, **kw)
+  File "/ssd/sy/kailang/unscrew17/direct58d_asymcritic_20260916/tasks/pregrasp/env.py", line 111, in __init__
+    super().__init__(cfg, render_mode, **kwargs)
+  File "/ssd/sy/kailang/unscrew17/direct58d_asymcritic_20260916/rl_rebuild/correction/env/dexmate_env.py", line 105, in __init__
+    super().__init__(cfg, render_mode, **kwargs)
+  File "/ssd/sy/kailang/unscrew17/direct58d_asymcritic_20260916/rl_rebuild/correction/env/correction_env.py", line 43, in __init__
+    super().__init__(cfg, render_mode, **kwargs)
+  File "/ssd/sy/kailang/env/IsaacLab-5.1/source/isaaclab/isaaclab/envs/direct_rl_env.py", line 135, in __init__
+    self._setup_scene()
+  File "/ssd/sy/kailang/unscrew17/direct58d_asymcritic_20260916/tasks/Unscrew/part4/C_Wiring/task_env.py", line 152, in _setup_scene
+    super()._setup_scene()
+  File "/ssd/sy/kailang/unscrew17/direct58d_asymcritic_20260916/tasks/pregrasp/env.py", line 541, in _setup_scene
+    super()._setup_scene()
+  File "/ssd/sy/kailang/unscrew17/direct58d_asymcritic_20260916/rl_rebuild/correction/env/correction_env.py", line 466, in _setup_scene
+    sim_utils.bind_physics_material(p, "/World/Materials/LowGrip",
+  File "/ssd/sy/kailang/env/IsaacLab-5.1/source/isaaclab/isaaclab/sim/utils/prims.py", line 644, in wrapper
+    success = func(child_prim_path, *args, **kwargs)
+  File "/ssd/sy/kailang/env/IsaacLab-5.1/source/isaaclab/isaaclab/sim/utils/prims.py", line 874, in bind_physics_material
+    logger.debug(
+Message: "Cannot apply physics material '/World/Materials/LowGrip' on prim '/World/envs/env_2035/Robot/R_arm_l2/collisions/col_0'. It is neither a PhysX scene, collider, a deformable body, nor a particle system."
+Arguments: ()
+--- Logging error ---
+Traceback (most recent call last):
+  File "/ssd/sy/kailang/env/rl-correction-pour/lib/python3.11/logging/__init__.py", line 1114, in emit
+    self.flush()
+  File "/ssd/sy/kailang/env/rl-correction-pour/lib/python3.11/logging/__init__.py", line 1094, in flush
+    self.stream.flush()
+OSError: [Errno 28] No space left on device
+Call stack:
+  File "/ssd/sy/kailang/unscrew17/direct58d_asymcritic_20260916/tasks/h2s2r_unscrew17/train_direct58d_lstm.py", line 226, in <module>
+    main()
+  File "/ssd/sy/kailang/unscrew17/direct58d_asymcritic_20260916/tasks/h2s2r_unscrew17/train_direct58d_lstm.py", line 206, in main
+    raw = Unscrew17H2S2REnv(cfg)
+  File "/ssd/sy/kailang/unscrew17/direct58d_asymcritic_20260916/tasks/h2s2r_unscrew17/env.py", line 32, in __init__
+    super().__init__(cfg, **kwargs)
+  File "/ssd/sy/kailang/unscrew17/direct58d_asymcritic_20260916/tasks/Unscrew/part4/C_Wiring/task_env.py", line 157, in __init__
+    super().__init__(cfg, **kw)
+  File "/ssd/sy/kailang/unscrew17/direct58d_asymcritic_20260916/tasks/pregrasp/env.py", line 111, in __init__
+    super().__init__(cfg, render_mode, **kwargs)
+  File "/ssd/sy/kailang/unscrew17/direct58d_asymcritic_20260916/rl_rebuild/correction/env/dexmate_env.py", line 105, in __init__
+    super().__init__(cfg, render_mode, **kwargs)
+  File "/ssd/sy/kailang/unscrew17/direct58d_asymcritic_20260916/rl_rebuild/correction/env/correction_env.py", line 43, in __init__
+    super().__init__(cfg, render_mode, **kwargs)
+  File "/ssd/sy/kailang/env/IsaacLab-5.1/source/isaaclab/isaaclab/envs/direct_rl_env.py", line 135, in __init__
+    self._setup_scene()
+  File "/ssd/sy/kailang/unscrew17/direct58d_asymcritic_20260916/tasks/Unscrew/part4/C_Wiring/task_env.py", line 152, in _setup_scene
+    super()._setup_scene()
+  File "/ssd/sy/kailang/unscrew17/direct58d_asymcritic_20260916/tasks/pregrasp/env.py", line 541, in _setup_scene
+    super()._setup_scene()
+  File "/ssd/sy/kailang/unscrew17/direct58d_asymcritic_20260916/rl_rebuild/correction/env/correction_env.py", line 466, in _setup_scene
+    sim_utils.bind_physics_material(p, "/World/Materials/LowGrip",
+  File "/ssd/sy/kailang/env/IsaacLab-5.1/source/isaaclab/isaaclab/sim/utils/prims.py", line 644, in wrapper
+    success = func(child_prim_path, *args, **kwargs)
+  File "/ssd/sy/kailang/env/IsaacLab-5.1/source/isaaclab/isaaclab/sim/utils/prims.py", line 874, in bind_physics_material
+    logger.debug(
+Message: "Cannot apply physics material '/World/Materials/LowGrip' on prim '/World/envs/env_2035/Robot/R_arm_l3/visuals/R_arm_l3_visuals_arm_l3_mesh'. It is neither a PhysX scene, collider, a deformable body, nor a particle system."
+Arguments: ()
+--- Logging error ---
+Traceback (most recent call last):
+  File "/ssd/sy/kailang/env/rl-correction-pour/lib/python3.11/logging/__init__.py", line 1114, in emit
+    self.flush()
+  File "/ssd/sy/kailang/env/rl-correction-pour/lib/python3.11/logging/__init__.py", line 1094, in flush
+    self.stream.flush()
+OSError: [Errno 28] No space left on device
+Call stack:
+  File "/ssd/sy/kailang/unscrew17/direct58d_asymcritic_20260916/tasks/h2s2r_unscrew17/train_direct58d_lstm.py", line 226, in <module>
+    main()
+  File "/ssd/sy/kailang/unscrew17/direct58d_asymcritic_20260916/tasks/h2s2r_unscrew17/train_direct58d_lstm.py", line 206, in main
+    raw = Unscrew17H2S2REnv(cfg)
+  File "/ssd/sy/kailang/unscrew17/direct58d_asymcritic_20260916/tasks/h2s2r_unscrew17/env.py", line 32, in __init__
+    super().__init__(cfg, **kwargs)
+  File "/ssd/sy/kailang/unscrew17/direct58d_asymcritic_20260916/tasks/Unscrew/part4/C_Wiring/task_env.py", line 157, in __init__
+    super().__init__(cfg, **kw)
+  File "/ssd/sy/kailang/unscrew17/direct58d_asymcritic_20260916/tasks/pregrasp/env.py", line 111, in __init__
+    super().__init__(cfg, render_mode, **kwargs)
+  File "/ssd/sy/kailang/unscrew17/direct58d_asymcritic_20260916/rl_rebuild/correction/env/dexmate_env.py", line 105, in __init__
+    super().__init__(cfg, render_mode, **kwargs)
+  File "/ssd/sy/kailang/unscrew17/direct58d_asymcritic_20260916/rl_rebuild/correction/env/correction_env.py", line 43, in __init__
+    super().__init__(cfg, render_mode, **kwargs)
+  File "/ssd/sy/kailang/env/IsaacLab-5.1/source/isaaclab/isaaclab/envs/direct_rl_env.py", line 135, in __init__
+    self._setup_scene()
+  File "/ssd/sy/kailang/unscrew17/direct58d_asymcritic_20260916/tasks/Unscrew/part4/C_Wiring/task_env.py", line 152, in _setup_scene
+    super()._setup_scene()
+  File "/ssd/sy/kailang/unscrew17/direct58d_asymcritic_20260916/tasks/pregrasp/env.py", line 541, in _setup_scene
+    super()._setup_scene()
+  File "/ssd/sy/kailang/unscrew17/direct58d_asymcritic_20260916/rl_rebuild/correction/env/correction_env.py", line 466, in _setup_scene
+    sim_utils.bind_physics_material(p, "/World/Materials/LowGrip",
+  File "/ssd/sy/kailang/env/IsaacLab-5.1/source/isaaclab/isaaclab/sim/utils/prims.py", line 644, in wrapper
+    success = func(child_prim_path, *args, **kwargs)
+  File "/ssd/sy/kailang/env/IsaacLab-5.1/source/isaaclab/isaaclab/sim/utils/prims.py", line 874, in bind_physics_material
+    logger.debug(
+Message: "Cannot apply physics material '/World/Materials/LowGrip' on prim '/World/envs/env_2035/Robot/R_arm_l3/collisions/R_arm_l3_collisions_arm_l3_mesh'. It is neither a PhysX scene, collider, a deformable body, nor a particle system."
+Arguments: ()
+--- Logging error ---
+Traceback (most recent call last):
+  File "/ssd/sy/kailang/env/rl-correction-pour/lib/python3.11/logging/__init__.py", line 1114, in emit
+    self.flush()
+  File "/ssd/sy/kailang/env/rl-correction-pour/lib/python3.11/logging/__init__.py", line 1094, in flush
+    self.stream.flush()
+OSError: [Errno 28] No space left on device
+Call stack:
+  File "/ssd/sy/kailang/unscrew17/direct58d_asymcritic_20260916/tasks/h2s2r_unscrew17/train_direct58d_lstm.py", line 226, in <module>
+    main()
+  File "/ssd/sy/kailang/unscrew17/direct58d_asymcritic_20260916/tasks/h2s2r_unscrew17/train_direct58d_lstm.py", line 206, in main
+    raw = Unscrew17H2S2REnv(cfg)
+  File "/ssd/sy/kailang/unscrew17/direct58d_asymcritic_20260916/tasks/h2s2r_unscrew17/env.py", line 32, in __init__
+    super().__init__(cfg, **kwargs)
+  File "/ssd/sy/kailang/unscrew17/direct58d_asymcritic_20260916/tasks/Unscrew/part4/C_Wiring/task_env.py", line 157, in __init__
+    super().__init__(cfg, **kw)
+  File "/ssd/sy/kailang/unscrew17/direct58d_asymcritic_20260916/tasks/pregrasp/env.py", line 111, in __init__
+    super().__init__(cfg, render_mode, **kwargs)
+  File "/ssd/sy/kailang/unscrew17/direct58d_asymcritic_20260916/rl_rebuild/correction/env/dexmate_env.py", line 105, in __init__
+    super().__init__(cfg, render_mode, **kwargs)
+  File "/ssd/sy/kailang/unscrew17/direct58d_asymcritic_20260916/rl_rebuild/correction/env/correction_env.py", line 43, in __init__
+    super().__init__(cfg, render_mode, **kwargs)
+  File "/ssd/sy/kailang/env/IsaacLab-5.1/source/isaaclab/isaaclab/envs/direct_rl_env.py", line 135, in __init__
+    self._setup_scene()
+  File "/ssd/sy/kailang/unscrew17/direct58d_asymcritic_20260916/tasks/Unscrew/part4/C_Wiring/task_env.py", line 152, in _setup_scene
+    super()._setup_scene()
+  File "/ssd/sy/kailang/unscrew17/direct58d_asymcritic_20260916/tasks/pregrasp/env.py", line 541, in _setup_scene
+    super()._setup_scene()
+  File "/ssd/sy/kailang/unscrew17/direct58d_asymcritic_20260916/rl_rebuild/correction/env/correction_env.py", line 466, in _setup_scene
+    sim_utils.bind_physics_material(p, "/World/Materials/LowGrip",
+  File "/ssd/sy/kailang/env/IsaacLab-5.1/source/isaaclab/isaaclab/sim/utils/prims.py", line 644, in wrapper
+    success = func(child_prim_path, *args, **kwargs)
+  File "/ssd/sy/kailang/env/IsaacLab-5.1/source/isaaclab/isaaclab/sim/utils/prims.py", line 874, in bind_physics_material
+    logger.debug(
+Message: "Cannot apply physics material '/World/Materials/LowGrip' on prim '/World/envs/env_2035/Robot/R_arm_l3/collisions/col_0'. It is neither a PhysX scene, collider, a deformable body, nor a particle system."
+Arguments: ()
+--- Logging error ---
+Traceback (most recent call last):
+  File "/ssd/sy/kailang/env/rl-correction-pour/lib/python3.11/logging/__init__.py", line 1114, in emit
+    self.flush()
+  File "/ssd/sy/kailang/env/rl-correction-pour/lib/python3.11/logging/__init__.py", line 1094, in flush
+    self.stream.flush()
+OSError: [Errno 28] No space left on device
+Call stack:
+  File "/ssd/sy/kailang/unscrew17/direct58d_asymcritic_20260916/tasks/h2s2r_unscrew17/train_direct58d_lstm.py", line 226, in <module>
+    main()
+  File "/ssd/sy/kailang/unscrew17/direct58d_asymcritic_20260916/tasks/h2s2r_unscrew17/train_direct58d_lstm.py", line 206, in main
+    raw = Unscrew17H2S2REnv(cfg)
+  File "/ssd/sy/kailang/unscrew17/direct58d_asymcritic_20260916/tasks/h2s2r_unscrew17/env.py", line 32, in __init__
+===== END: last 400 lines =====
+    body.set_external_force_and_torque(
+  File "/ssd/sy/kailang/env/IsaacLab-5.1/source/isaaclab/isaaclab/assets/rigid_object/rigid_object.py", line 442, in set_external_force_and_torque
+    logger.warning(
+Message: "The function 'set_external_force_and_torque' will be deprecated in a future release. Please use 'permanent_wrench_composer.set_forces_and_torques' instead."
+Arguments: ()
+--- Logging error ---
+Traceback (most recent call last):
+  File "/ssd/sy/kailang/env/rl-correction-pour/lib/python3.11/logging/__init__.py", line 1114, in emit
+    self.flush()
+  File "/ssd/sy/kailang/env/rl-correction-pour/lib/python3.11/logging/__init__.py", line 1094, in flush
+    self.stream.flush()
+OSError: [Errno 28] No space left on device
+Call stack:
+  File "/ssd/sy/kailang/unscrew17/direct58d_asymcritic_20260916/tasks/h2s2r_unscrew17/train_direct58d_lstm.py", line 226, in <module>
+    main()
+  File "/ssd/sy/kailang/unscrew17/direct58d_asymcritic_20260916/tasks/h2s2r_unscrew17/train_direct58d_lstm.py", line 220, in main
+    agent.train()
+  File "/ssd/sy/kailang/unscrew17/direct58d_asymcritic_20260916/tasks/h2s2r_unscrew17/train_direct58d_lstm.py", line 158, in train
+    return super().train()
+  File "/ssd/sy/kailang/unscrew17/direct58d_asymcritic_20260916/third_party/h2s2r_official/human2sim2robot/ppo/ppo_agent.py", line 758, in train
+    ) = self.train_epoch()
+  File "/ssd/sy/kailang/unscrew17/direct58d_asymcritic_20260916/tasks/h2s2r_unscrew17/train_direct58d_lstm.py", line 89, in train_epoch
+    value = super().train_epoch()
+  File "/ssd/sy/kailang/unscrew17/direct58d_asymcritic_20260916/third_party/h2s2r_official/human2sim2robot/ppo/ppo_agent.py", line 1011, in train_epoch
+    batch_dict = self.play_steps_rnn()
+  File "/ssd/sy/kailang/unscrew17/direct58d_asymcritic_20260916/third_party/h2s2r_official/human2sim2robot/ppo/ppo_agent.py", line 1408, in play_steps_rnn
+    self.obs, rewards, self.dones, infos = self.env_step(res_dict["actions"])
+  File "/ssd/sy/kailang/unscrew17/direct58d_asymcritic_20260916/third_party/h2s2r_official/human2sim2robot/ppo/ppo_agent.py", line 660, in env_step
+    obs, rewards, dones, infos = self.env.step(actions)
+  File "/ssd/sy/kailang/unscrew17/direct58d_asymcritic_20260916/rl_rebuild/baselines/h2s2r/official_ppo_adapter.py", line 65, in step
+    observations, rewards, dones, extras = self.env.step(actions)
+  File "/ssd/sy/kailang/unscrew17/direct58d_asymcritic_20260916/rl_rebuild/wrapper/sharpa_wave_env_wrapper.py", line 161, in step
+    obs_dict, rew, terminated, truncated, extras = self.env.step(actions)
+  File "/ssd/sy/kailang/env/IsaacLab-5.1/source/isaaclab/isaaclab/envs/direct_rl_env.py", line 373, in step
+    self._apply_action()
+  File "/ssd/sy/kailang/unscrew17/direct58d_asymcritic_20260916/tasks/h2s2r_unscrew17/env.py", line 126, in _apply_action
+    self._SA.apply_screw(self)
+  File "/ssd/sy/kailang/unscrew17/direct58d_asymcritic_20260916/tasks/pregrasp/screw_assembly.py", line 683, in apply_screw
+    _thread_friction_finish(env, axis_w, written, body, cap)
+  File "/ssd/sy/kailang/unscrew17/direct58d_asymcritic_20260916/tasks/pregrasp/screw_assembly.py", line 428, in _thread_friction_finish
+    body.set_external_force_and_torque(
+  File "/ssd/sy/kailang/env/IsaacLab-5.1/source/isaaclab/isaaclab/assets/rigid_object/rigid_object.py", line 442, in set_external_force_and_torque
+    logger.warning(
+Message: "The function 'set_external_force_and_torque' will be deprecated in a future release. Please use 'permanent_wrench_composer.set_forces_and_torques' instead."
+Arguments: ()
+[33m18:28:06 [rigid_object.py] WARNING: The function 'set_external_force_and_torque' will be deprecated in a future release. Please use 'permanent_wrench_composer.set_forces_and_torques' instead.[0m
+--- Logging error ---
+Traceback (most recent call last):
+  File "/ssd/sy/kailang/env/rl-correction-pour/lib/python3.11/logging/__init__.py", line 1114, in emit
+    self.flush()
+  File "/ssd/sy/kailang/env/rl-correction-pour/lib/python3.11/logging/__init__.py", line 1094, in flush
+    self.stream.flush()
+OSError: [Errno 28] No space left on device
+Call stack:
+  File "/ssd/sy/kailang/unscrew17/direct58d_asymcritic_20260916/tasks/h2s2r_unscrew17/train_direct58d_lstm.py", line 226, in <module>
+    main()
+  File "/ssd/sy/kailang/unscrew17/direct58d_asymcritic_20260916/tasks/h2s2r_unscrew17/train_direct58d_lstm.py", line 220, in main
+    agent.train()
+  File "/ssd/sy/kailang/unscrew17/direct58d_asymcritic_20260916/tasks/h2s2r_unscrew17/train_direct58d_lstm.py", line 158, in train
+    return super().train()
+  File "/ssd/sy/kailang/unscrew17/direct58d_asymcritic_20260916/third_party/h2s2r_official/human2sim2robot/ppo/ppo_agent.py", line 758, in train
+    ) = self.train_epoch()
+  File "/ssd/sy/kailang/unscrew17/direct58d_asymcritic_20260916/tasks/h2s2r_unscrew17/train_direct58d_lstm.py", line 89, in train_epoch
+    value = super().train_epoch()
+  File "/ssd/sy/kailang/unscrew17/direct58d_asymcritic_20260916/third_party/h2s2r_official/human2sim2robot/ppo/ppo_agent.py", line 1011, in train_epoch
+    batch_dict = self.play_steps_rnn()
+  File "/ssd/sy/kailang/unscrew17/direct58d_asymcritic_20260916/third_party/h2s2r_official/human2sim2robot/ppo/ppo_agent.py", line 1408, in play_steps_rnn
+    self.obs, rewards, self.dones, infos = self.env_step(res_dict["actions"])
+  File "/ssd/sy/kailang/unscrew17/direct58d_asymcritic_20260916/third_party/h2s2r_official/human2sim2robot/ppo/ppo_agent.py", line 660, in env_step
+    obs, rewards, dones, infos = self.env.step(actions)
+  File "/ssd/sy/kailang/unscrew17/direct58d_asymcritic_20260916/rl_rebuild/baselines/h2s2r/official_ppo_adapter.py", line 65, in step
+    observations, rewards, dones, extras = self.env.step(actions)
+  File "/ssd/sy/kailang/unscrew17/direct58d_asymcritic_20260916/rl_rebuild/wrapper/sharpa_wave_env_wrapper.py", line 161, in step
+    obs_dict, rew, terminated, truncated, extras = self.env.step(actions)
+  File "/ssd/sy/kailang/env/IsaacLab-5.1/source/isaaclab/isaaclab/envs/direct_rl_env.py", line 373, in step
+    self._apply_action()
+  File "/ssd/sy/kailang/unscrew17/direct58d_asymcritic_20260916/tasks/h2s2r_unscrew17/env.py", line 126, in _apply_action
+    self._SA.apply_screw(self)
+  File "/ssd/sy/kailang/unscrew17/direct58d_asymcritic_20260916/tasks/pregrasp/screw_assembly.py", line 683, in apply_screw
+    _thread_friction_finish(env, axis_w, written, body, cap)
+  File "/ssd/sy/kailang/unscrew17/direct58d_asymcritic_20260916/tasks/pregrasp/screw_assembly.py", line 428, in _thread_friction_finish
+    body.set_external_force_and_torque(
+  File "/ssd/sy/kailang/env/IsaacLab-5.1/source/isaaclab/isaaclab/assets/rigid_object/rigid_object.py", line 442, in set_external_force_and_torque
+    logger.warning(
+Message: "The function 'set_external_force_and_torque' will be deprecated in a future release. Please use 'permanent_wrench_composer.set_forces_and_torques' instead."
+Arguments: ()
+--- Logging error ---
+Traceback (most recent call last):
+  File "/ssd/sy/kailang/env/rl-correction-pour/lib/python3.11/logging/__init__.py", line 1114, in emit
+    self.flush()
+  File "/ssd/sy/kailang/env/rl-correction-pour/lib/python3.11/logging/__init__.py", line 1094, in flush
+    self.stream.flush()
+OSError: [Errno 28] No space left on device
+Call stack:
+  File "/ssd/sy/kailang/unscrew17/direct58d_asymcritic_20260916/tasks/h2s2r_unscrew17/train_direct58d_lstm.py", line 226, in <module>
+    main()
+  File "/ssd/sy/kailang/unscrew17/direct58d_asymcritic_20260916/tasks/h2s2r_unscrew17/train_direct58d_lstm.py", line 220, in main
+    agent.train()
+  File "/ssd/sy/kailang/unscrew17/direct58d_asymcritic_20260916/tasks/h2s2r_unscrew17/train_direct58d_lstm.py", line 158, in train
+    return super().train()
+  File "/ssd/sy/kailang/unscrew17/direct58d_asymcritic_20260916/third_party/h2s2r_official/human2sim2robot/ppo/ppo_agent.py", line 758, in train
+    ) = self.train_epoch()
+  File "/ssd/sy/kailang/unscrew17/direct58d_asymcritic_20260916/tasks/h2s2r_unscrew17/train_direct58d_lstm.py", line 89, in train_epoch
+    value = super().train_epoch()
+  File "/ssd/sy/kailang/unscrew17/direct58d_asymcritic_20260916/third_party/h2s2r_official/human2sim2robot/ppo/ppo_agent.py", line 1011, in train_epoch
+    batch_dict = self.play_steps_rnn()
+  File "/ssd/sy/kailang/unscrew17/direct58d_asymcritic_20260916/third_party/h2s2r_official/human2sim2robot/ppo/ppo_agent.py", line 1408, in play_steps_rnn
+    self.obs, rewards, self.dones, infos = self.env_step(res_dict["actions"])
+  File "/ssd/sy/kailang/unscrew17/direct58d_asymcritic_20260916/third_party/h2s2r_official/human2sim2robot/ppo/ppo_agent.py", line 660, in env_step
+    obs, rewards, dones, infos = self.env.step(actions)
+  File "/ssd/sy/kailang/unscrew17/direct58d_asymcritic_20260916/rl_rebuild/baselines/h2s2r/official_ppo_adapter.py", line 65, in step
+    observations, rewards, dones, extras = self.env.step(actions)
+  File "/ssd/sy/kailang/unscrew17/direct58d_asymcritic_20260916/rl_rebuild/wrapper/sharpa_wave_env_wrapper.py", line 161, in step
+    obs_dict, rew, terminated, truncated, extras = self.env.step(actions)
+  File "/ssd/sy/kailang/env/IsaacLab-5.1/source/isaaclab/isaaclab/envs/direct_rl_env.py", line 373, in step
+    self._apply_action()
+  File "/ssd/sy/kailang/unscrew17/direct58d_asymcritic_20260916/tasks/h2s2r_unscrew17/env.py", line 126, in _apply_action
+    self._SA.apply_screw(self)
+  File "/ssd/sy/kailang/unscrew17/direct58d_asymcritic_20260916/tasks/pregrasp/screw_assembly.py", line 683, in apply_screw
+    _thread_friction_finish(env, axis_w, written, body, cap)
+  File "/ssd/sy/kailang/unscrew17/direct58d_asymcritic_20260916/tasks/pregrasp/screw_assembly.py", line 428, in _thread_friction_finish
+    body.set_external_force_and_torque(
+  File "/ssd/sy/kailang/env/IsaacLab-5.1/source/isaaclab/isaaclab/assets/rigid_object/rigid_object.py", line 442, in set_external_force_and_torque
+    logger.warning(
+Message: "The function 'set_external_force_and_torque' will be deprecated in a future release. Please use 'permanent_wrench_composer.set_forces_and_torques' instead."
+Arguments: ()
+--- Logging error ---
+Traceback (most recent call last):
+  File "/ssd/sy/kailang/env/rl-correction-pour/lib/python3.11/logging/__init__.py", line 1114, in emit
+    self.flush()
+  File "/ssd/sy/kailang/env/rl-correction-pour/lib/python3.11/logging/__init__.py", line 1094, in flush
+    self.stream.flush()
+OSError: [Errno 28] No space left on device
+Call stack:
+  File "/ssd/sy/kailang/unscrew17/direct58d_asymcritic_20260916/tasks/h2s2r_unscrew17/train_direct58d_lstm.py", line 226, in <module>
+    main()
+  File "/ssd/sy/kailang/unscrew17/direct58d_asymcritic_20260916/tasks/h2s2r_unscrew17/train_direct58d_lstm.py", line 220, in main
+    agent.train()
+  File "/ssd/sy/kailang/unscrew17/direct58d_asymcritic_20260916/tasks/h2s2r_unscrew17/train_direct58d_lstm.py", line 158, in train
+    return super().train()
+  File "/ssd/sy/kailang/unscrew17/direct58d_asymcritic_20260916/third_party/h2s2r_official/human2sim2robot/ppo/ppo_agent.py", line 758, in train
+    ) = self.train_epoch()
+  File "/ssd/sy/kailang/unscrew17/direct58d_asymcritic_20260916/tasks/h2s2r_unscrew17/train_direct58d_lstm.py", line 89, in train_epoch
+    value = super().train_epoch()
+  File "/ssd/sy/kailang/unscrew17/direct58d_asymcritic_20260916/third_party/h2s2r_official/human2sim2robot/ppo/ppo_agent.py", line 1011, in train_epoch
+    batch_dict = self.play_steps_rnn()
+  File "/ssd/sy/kailang/unscrew17/direct58d_asymcritic_20260916/third_party/h2s2r_official/human2sim2robot/ppo/ppo_agent.py", line 1408, in play_steps_rnn
+    self.obs, rewards, self.dones, infos = self.env_step(res_dict["actions"])
+  File "/ssd/sy/kailang/unscrew17/direct58d_asymcritic_20260916/third_party/h2s2r_official/human2sim2robot/ppo/ppo_agent.py", line 660, in env_step
+    obs, rewards, dones, infos = self.env.step(actions)
+  File "/ssd/sy/kailang/unscrew17/direct58d_asymcritic_20260916/rl_rebuild/baselines/h2s2r/official_ppo_adapter.py", line 65, in step
+    observations, rewards, dones, extras = self.env.step(actions)
+  File "/ssd/sy/kailang/unscrew17/direct58d_asymcritic_20260916/rl_rebuild/wrapper/sharpa_wave_env_wrapper.py", line 161, in step
+    obs_dict, rew, terminated, truncated, extras = self.env.step(actions)
+  File "/ssd/sy/kailang/env/IsaacLab-5.1/source/isaaclab/isaaclab/envs/direct_rl_env.py", line 373, in step
+    self._apply_action()
+  File "/ssd/sy/kailang/unscrew17/direct58d_asymcritic_20260916/tasks/h2s2r_unscrew17/env.py", line 126, in _apply_action
+    self._SA.apply_screw(self)
+  File "/ssd/sy/kailang/unscrew17/direct58d_asymcritic_20260916/tasks/pregrasp/screw_assembly.py", line 683, in apply_screw
+    _thread_friction_finish(env, axis_w, written, body, cap)
+  File "/ssd/sy/kailang/unscrew17/direct58d_asymcritic_20260916/tasks/pregrasp/screw_assembly.py", line 428, in _thread_friction_finish
+    body.set_external_force_and_torque(
+  File "/ssd/sy/kailang/env/IsaacLab-5.1/source/isaaclab/isaaclab/assets/rigid_object/rigid_object.py", line 442, in set_external_force_and_torque
+    logger.warning(
+Message: "The function 'set_external_force_and_torque' will be deprecated in a future release. Please use 'permanent_wrench_composer.set_forces_and_torques' instead."
+Arguments: ()
+--- Logging error ---
+Traceback (most recent call last):
+  File "/ssd/sy/kailang/env/rl-correction-pour/lib/python3.11/logging/__init__.py", line 1114, in emit
+    self.flush()
+  File "/ssd/sy/kailang/env/rl-correction-pour/lib/python3.11/logging/__init__.py", line 1094, in flush
+    self.stream.flush()
+OSError: [Errno 28] No space left on device
+Call stack:
+  File "/ssd/sy/kailang/unscrew17/direct58d_asymcritic_20260916/tasks/h2s2r_unscrew17/train_direct58d_lstm.py", line 226, in <module>
+    main()
+  File "/ssd/sy/kailang/unscrew17/direct58d_asymcritic_20260916/tasks/h2s2r_unscrew17/train_direct58d_lstm.py", line 220, in main
+    agent.train()
+  File "/ssd/sy/kailang/unscrew17/direct58d_asymcritic_20260916/tasks/h2s2r_unscrew17/train_direct58d_lstm.py", line 158, in train
+    return super().train()
+  File "/ssd/sy/kailang/unscrew17/direct58d_asymcritic_20260916/third_party/h2s2r_official/human2sim2robot/ppo/ppo_agent.py", line 758, in train
+    ) = self.train_epoch()
+  File "/ssd/sy/kailang/unscrew17/direct58d_asymcritic_20260916/tasks/h2s2r_unscrew17/train_direct58d_lstm.py", line 89, in train_epoch
+    value = super().train_epoch()
+  File "/ssd/sy/kailang/unscrew17/direct58d_asymcritic_20260916/third_party/h2s2r_official/human2sim2robot/ppo/ppo_agent.py", line 1011, in train_epoch
+    batch_dict = self.play_steps_rnn()
+  File "/ssd/sy/kailang/unscrew17/direct58d_asymcritic_20260916/third_party/h2s2r_official/human2sim2robot/ppo/ppo_agent.py", line 1408, in play_steps_rnn
+    self.obs, rewards, self.dones, infos = self.env_step(res_dict["actions"])
+  File "/ssd/sy/kailang/unscrew17/direct58d_asymcritic_20260916/third_party/h2s2r_official/human2sim2robot/ppo/ppo_agent.py", line 660, in env_step
+    obs, rewards, dones, infos = self.env.step(actions)
+  File "/ssd/sy/kailang/unscrew17/direct58d_asymcritic_20260916/rl_rebuild/baselines/h2s2r/official_ppo_adapter.py", line 65, in step
+    observations, rewards, dones, extras = self.env.step(actions)
+  File "/ssd/sy/kailang/unscrew17/direct58d_asymcritic_20260916/rl_rebuild/wrapper/sharpa_wave_env_wrapper.py", line 161, in step
+    obs_dict, rew, terminated, truncated, extras = self.env.step(actions)
+  File "/ssd/sy/kailang/env/IsaacLab-5.1/source/isaaclab/isaaclab/envs/direct_rl_env.py", line 373, in step
+    self._apply_action()
+  File "/ssd/sy/kailang/unscrew17/direct58d_asymcritic_20260916/tasks/h2s2r_unscrew17/env.py", line 126, in _apply_action
+    self._SA.apply_screw(self)
+  File "/ssd/sy/kailang/unscrew17/direct58d_asymcritic_20260916/tasks/pregrasp/screw_assembly.py", line 683, in apply_screw
+    _thread_friction_finish(env, axis_w, written, body, cap)
+  File "/ssd/sy/kailang/unscrew17/direct58d_asymcritic_20260916/tasks/pregrasp/screw_assembly.py", line 428, in _thread_friction_finish
+    body.set_external_force_and_torque(
+  File "/ssd/sy/kailang/env/IsaacLab-5.1/source/isaaclab/isaaclab/assets/rigid_object/rigid_object.py", line 442, in set_external_force_and_torque
+    logger.warning(
+Message: "The function 'set_external_force_and_torque' will be deprecated in a future release. Please use 'permanent_wrench_composer.set_forces_and_torques' instead."
+Arguments: ()
+--- Logging error ---
+Traceback (most recent call last):
+  File "/ssd/sy/kailang/env/rl-correction-pour/lib/python3.11/logging/__init__.py", line 1114, in emit
+    self.flush()
+  File "/ssd/sy/kailang/env/rl-correction-pour/lib/python3.11/logging/__init__.py", line 1094, in flush
+    self.stream.flush()
+OSError: [Errno 28] No space left on device
+Call stack:
+  File "/ssd/sy/kailang/unscrew17/direct58d_asymcritic_20260916/tasks/h2s2r_unscrew17/train_direct58d_lstm.py", line 226, in <module>
+    main()
+  File "/ssd/sy/kailang/unscrew17/direct58d_asymcritic_20260916/tasks/h2s2r_unscrew17/train_direct58d_lstm.py", line 220, in main
+    agent.train()
+  File "/ssd/sy/kailang/unscrew17/direct58d_asymcritic_20260916/tasks/h2s2r_unscrew17/train_direct58d_lstm.py", line 158, in train
+    return super().train()
+  File "/ssd/sy/kailang/unscrew17/direct58d_asymcritic_20260916/third_party/h2s2r_official/human2sim2robot/ppo/ppo_agent.py", line 758, in train
+    ) = self.train_epoch()
+  File "/ssd/sy/kailang/unscrew17/direct58d_asymcritic_20260916/tasks/h2s2r_unscrew17/train_direct58d_lstm.py", line 89, in train_epoch
+    value = super().train_epoch()
+  File "/ssd/sy/kailang/unscrew17/direct58d_asymcritic_20260916/third_party/h2s2r_official/human2sim2robot/ppo/ppo_agent.py", line 1011, in train_epoch
+    batch_dict = self.play_steps_rnn()
+  File "/ssd/sy/kailang/unscrew17/direct58d_asymcritic_20260916/third_party/h2s2r_official/human2sim2robot/ppo/ppo_agent.py", line 1408, in play_steps_rnn
+    self.obs, rewards, self.dones, infos = self.env_step(res_dict["actions"])
+  File "/ssd/sy/kailang/unscrew17/direct58d_asymcritic_20260916/third_party/h2s2r_official/human2sim2robot/ppo/ppo_agent.py", line 660, in env_step
+    obs, rewards, dones, infos = self.env.step(actions)
+  File "/ssd/sy/kailang/unscrew17/direct58d_asymcritic_20260916/rl_rebuild/baselines/h2s2r/official_ppo_adapter.py", line 65, in step
+    observations, rewards, dones, extras = self.env.step(actions)
+  File "/ssd/sy/kailang/unscrew17/direct58d_asymcritic_20260916/rl_rebuild/wrapper/sharpa_wave_env_wrapper.py", line 161, in step
+    obs_dict, rew, terminated, truncated, extras = self.env.step(actions)
+  File "/ssd/sy/kailang/env/IsaacLab-5.1/source/isaaclab/isaaclab/envs/direct_rl_env.py", line 373, in step
+    self._apply_action()
+  File "/ssd/sy/kailang/unscrew17/direct58d_asymcritic_20260916/tasks/h2s2r_unscrew17/env.py", line 126, in _apply_action
+    self._SA.apply_screw(self)
+  File "/ssd/sy/kailang/unscrew17/direct58d_asymcritic_20260916/tasks/pregrasp/screw_assembly.py", line 683, in apply_screw
+    _thread_friction_finish(env, axis_w, written, body, cap)
+  File "/ssd/sy/kailang/unscrew17/direct58d_asymcritic_20260916/tasks/pregrasp/screw_assembly.py", line 428, in _thread_friction_finish
+    body.set_external_force_and_torque(
+  File "/ssd/sy/kailang/env/IsaacLab-5.1/source/isaaclab/isaaclab/assets/rigid_object/rigid_object.py", line 442, in set_external_force_and_torque
+    logger.warning(
+Message: "The function 'set_external_force_and_torque' will be deprecated in a future release. Please use 'permanent_wrench_composer.set_forces_and_torques' instead."
+Arguments: ()
+[33m18:28:11 [rigid_object.py] WARNING: The function 'set_external_force_and_torque' will be deprecated in a future release. Please use 'permanent_wrench_composer.set_forces_and_torques' instead.[0m
+[33m18:28:16 [rigid_object.py] WARNING: The function 'set_external_force_and_torque' will be deprecated in a future release. Please use 'permanent_wrench_composer.set_forces_and_torques' instead.[0m
+fps step: 665 fps step and policy inference: 664 fps total: 656 epoch: 8 frames: 458752/5000000
+[33m18:28:23 [rigid_object.py] WARNING: The function 'set_external_force_and_torque' will be deprecated in a future release. Please use 'permanent_wrench_composer.set_forces_and_torques' instead.[0m
+[33m18:28:28 [rigid_object.py] WARNING: The function 'set_external_force_and_torque' will be deprecated in a future release. Please use 'permanent_wrench_composer.set_forces_and_torques' instead.[0m
+[33m18:28:34 [rigid_object.py] WARNING: The function 'set_external_force_and_torque' will be deprecated in a future release. Please use 'permanent_wrench_composer.set_forces_and_torques' instead.[0m
+[33m18:28:39 [rigid_object.py] WARNING: The function 'set_external_force_and_torque' will be deprecated in a future release. Please use 'permanent_wrench_composer.set_forces_and_torques' instead.[0m
+[33m18:28:44 [rigid_object.py] WARNING: The function 'set_external_force_and_torque' will be deprecated in a future release. Please use 'permanent_wrench_composer.set_forces_and_torques' instead.[0m
+[33m18:28:50 [rigid_object.py] WARNING: The function 'set_external_force_and_torque' will be deprecated in a future release. Please use 'permanent_wrench_composer.set_forces_and_torques' instead.[0m
+[33m18:28:55 [rigid_object.py] WARNING: The function 'set_external_force_and_torque' will be deprecated in a future release. Please use 'permanent_wrench_composer.set_forces_and_torques' instead.[0m
+[33m18:29:00 [rigid_object.py] WARNING: The function 'set_external_force_and_torque' will be deprecated in a future release. Please use 'permanent_wrench_composer.set_forces_and_torques' instead.[0m
+[33m18:29:05 [rigid_object.py] WARNING: The function 'set_external_force_and_torque' will be deprecated in a future release. Please use 'permanent_wrench_composer.set_forces_and_torques' instead.[0m
+[33m18:29:11 [rigid_object.py] WARNING: The function 'set_external_force_and_torque' will be deprecated in a future release. Please use 'permanent_wrench_composer.set_forces_and_torques' instead.[0m
+[33m18:29:17 [rigid_object.py] WARNING: The function 'set_external_force_and_torque' will be deprecated in a future release. Please use 'permanent_wrench_composer.set_forces_and_torques' instead.[0m
+[33m18:29:22 [rigid_object.py] WARNING: The function 'set_external_force_and_torque' will be deprecated in a future release. Please use 'permanent_wrench_composer.set_forces_and_torques' instead.[0m
+[33m18:29:27 [rigid_object.py] WARNING: The function 'set_external_force_and_torque' will be deprecated in a future release. Please use 'permanent_wrench_composer.set_forces_and_torques' instead.[0m
+[33m18:29:32 [rigid_object.py] WARNING: The function 'set_external_force_and_torque' will be deprecated in a future release. Please use 'permanent_wrench_composer.set_forces_and_torques' instead.[0m
+[33m18:29:38 [rigid_object.py] WARNING: The function 'set_external_force_and_torque' will be deprecated in a future release. Please use 'permanent_wrench_composer.set_forces_and_torques' instead.[0m
+[33m18:29:43 [rigid_object.py] WARNING: The function 'set_external_force_and_torque' will be deprecated in a future release. Please use 'permanent_wrench_composer.set_forces_and_torques' instead.[0m
+[33m18:29:48 [rigid_object.py] WARNING: The function 'set_external_force_and_torque' will be deprecated in a future release. Please use 'permanent_wrench_composer.set_forces_and_torques' instead.[0m
+[33m18:29:53 [rigid_object.py] WARNING: The function 'set_external_force_and_torque' will be deprecated in a future release. Please use 'permanent_wrench_composer.set_forces_and_torques' instead.[0m
+fps step: 687 fps step and policy inference: 686 fps total: 678 epoch: 9 frames: 524288/5000000
+[33m18:30:00 [rigid_object.py] WARNING: The function 'set_external_force_and_torque' will be deprecated in a future release. Please use 'permanent_wrench_composer.set_forces_and_torques' instead.[0m
+[33m18:30:05 [rigid_object.py] WARNING: The function 'set_external_force_and_torque' will be deprecated in a future release. Please use 'permanent_wrench_composer.set_forces_and_torques' instead.[0m
+[33m18:30:10 [rigid_object.py] WARNING: The function 'set_external_force_and_torque' will be deprecated in a future release. Please use 'permanent_wrench_composer.set_forces_and_torques' instead.[0m
+[33m18:30:16 [rigid_object.py] WARNING: The function 'set_external_force_and_torque' will be deprecated in a future release. Please use 'permanent_wrench_composer.set_forces_and_torques' instead.[0m
+[33m18:30:21 [rigid_object.py] WARNING: The function 'set_external_force_and_torque' will be deprecated in a future release. Please use 'permanent_wrench_composer.set_forces_and_torques' instead.[0m
+[33m18:30:26 [rigid_object.py] WARNING: The function 'set_external_force_and_torque' will be deprecated in a future release. Please use 'permanent_wrench_composer.set_forces_and_torques' instead.[0m
+[33m18:30:31 [rigid_object.py] WARNING: The function 'set_external_force_and_torque' will be deprecated in a future release. Please use 'permanent_wrench_composer.set_forces_and_torques' instead.[0m
+[33m18:30:36 [rigid_object.py] WARNING: The function 'set_external_force_and_torque' will be deprecated in a future release. Please use 'permanent_wrench_composer.set_forces_and_torques' instead.[0m
+[33m18:30:41 [rigid_object.py] WARNING: The function 'set_external_force_and_torque' will be deprecated in a future release. Please use 'permanent_wrench_composer.set_forces_and_torques' instead.[0m
+[33m18:30:47 [rigid_object.py] WARNING: The function 'set_external_force_and_torque' will be deprecated in a future release. Please use 'permanent_wrench_composer.set_forces_and_torques' instead.[0m
+[33m18:30:52 [rigid_object.py] WARNING: The function 'set_external_force_and_torque' will be deprecated in a future release. Please use 'permanent_wrench_composer.set_forces_and_torques' instead.[0m
+[33m18:30:57 [rigid_object.py] WARNING: The function 'set_external_force_and_torque' will be deprecated in a future release. Please use 'permanent_wrench_composer.set_forces_and_torques' instead.[0m
+[33m18:31:02 [rigid_object.py] WARNING: The function 'set_external_force_and_torque' will be deprecated in a future release. Please use 'permanent_wrench_composer.set_forces_and_torques' instead.[0m
+[33m18:31:07 [rigid_object.py] WARNING: The function 'set_external_force_and_torque' will be deprecated in a future release. Please use 'permanent_wrench_composer.set_forces_and_torques' instead.[0m
+[33m18:31:13 [rigid_object.py] WARNING: The function 'set_external_force_and_torque' will be deprecated in a future release. Please use 'permanent_wrench_composer.set_forces_and_torques' instead.[0m
+[33m18:31:18 [rigid_object.py] WARNING: The function 'set_external_force_and_torque' will be deprecated in a future release. Please use 'permanent_wrench_composer.set_forces_and_torques' instead.[0m
+[33m18:31:23 [rigid_object.py] WARNING: The function 'set_external_force_and_torque' will be deprecated in a future release. Please use 'permanent_wrench_composer.set_forces_and_torques' instead.[0m
+[33m18:31:28 [rigid_object.py] WARNING: The function 'set_external_force_and_torque' will be deprecated in a future release. Please use 'permanent_wrench_composer.set_forces_and_torques' instead.[0m
+[33m18:31:33 [rigid_object.py] WARNING: The function 'set_external_force_and_torque' will be deprecated in a future release. Please use 'permanent_wrench_composer.set_forces_and_torques' instead.[0m
+fps step: 695 fps step and policy inference: 694 fps total: 685 epoch: 10 frames: 589824/5000000
+[33m18:31:39 [rigid_object.py] WARNING: The function 'set_external_force_and_torque' will be deprecated in a future release. Please use 'permanent_wrench_composer.set_forces_and_torques' instead.[0m
+[33m18:31:44 [rigid_object.py] WARNING: The function 'set_external_force_and_torque' will be deprecated in a future release. Please use 'permanent_wrench_composer.set_forces_and_torques' instead.[0m
+[33m18:31:49 [rigid_object.py] WARNING: The function 'set_external_force_and_torque' will be deprecated in a future release. Please use 'permanent_wrench_composer.set_forces_and_torques' instead.[0m
+[33m18:31:54 [rigid_object.py] WARNING: The function 'set_external_force_and_torque' will be deprecated in a future release. Please use 'permanent_wrench_composer.set_forces_and_torques' instead.[0m
+[33m18:31:59 [rigid_object.py] WARNING: The function 'set_external_force_and_torque' will be deprecated in a future release. Please use 'permanent_wrench_composer.set_forces_and_torques' instead.[0m
+[33m18:32:05 [rigid_object.py] WARNING: The function 'set_external_force_and_torque' will be deprecated in a future release. Please use 'permanent_wrench_composer.set_forces_and_torques' instead.[0m
+[33m18:32:10 [rigid_object.py] WARNING: The function 'set_external_force_and_torque' will be deprecated in a future release. Please use 'permanent_wrench_composer.set_forces_and_torques' instead.[0m
+[33m18:32:16 [rigid_object.py] WARNING: The function 'set_external_force_and_torque' will be deprecated in a future release. Please use 'permanent_wrench_composer.set_forces_and_torques' instead.[0m
+[33m18:32:21 [rigid_object.py] WARNING: The function 'set_external_force_and_torque' will be deprecated in a future release. Please use 'permanent_wrench_composer.set_forces_and_torques' instead.[0m
+[33m18:32:27 [rigid_object.py] WARNING: The function 'set_external_force_and_torque' will be deprecated in a future release. Please use 'permanent_wrench_composer.set_forces_and_torques' instead.[0m
+[33m18:32:32 [rigid_object.py] WARNING: The function 'set_external_force_and_torque' will be deprecated in a future release. Please use 'permanent_wrench_composer.set_forces_and_torques' instead.[0m
+[33m18:32:37 [rigid_object.py] WARNING: The function 'set_external_force_and_torque' will be deprecated in a future release. Please use 'permanent_wrench_composer.set_forces_and_torques' instead.[0m
+[33m18:32:43 [rigid_object.py] WARNING: The function 'set_external_force_and_torque' will be deprecated in a future release. Please use 'permanent_wrench_composer.set_forces_and_torques' instead.[0m
+[33m18:32:48 [rigid_object.py] WARNING: The function 'set_external_force_and_torque' will be deprecated in a future release. Please use 'permanent_wrench_composer.set_forces_and_torques' instead.[0m
+[33m18:32:53 [rigid_object.py] WARNING: The function 'set_external_force_and_torque' will be deprecated in a future release. Please use 'permanent_wrench_composer.set_forces_and_torques' instead.[0m
+[33m18:32:58 [rigid_object.py] WARNING: The function 'set_external_force_and_torque' will be deprecated in a future release. Please use 'permanent_wrench_composer.set_forces_and_torques' instead.[0m
+[33m18:33:03 [rigid_object.py] WARNING: The function 'set_external_force_and_torque' will be deprecated in a future release. Please use 'permanent_wrench_composer.set_forces_and_torques' instead.[0m
+[33m18:33:09 [rigid_object.py] WARNING: The function 'set_external_force_and_torque' will be deprecated in a future release. Please use 'permanent_wrench_composer.set_forces_and_torques' instead.[0m
+fps step: 691 fps step and policy inference: 690 fps total: 682 epoch: 11 frames: 655360/5000000
+[33m18:33:14 [rigid_object.py] WARNING: The function 'set_external_force_and_torque' will be deprecated in a future release. Please use 'permanent_wrench_composer.set_forces_and_torques' instead.[0m
+[33m18:33:19 [rigid_object.py] WARNING: The function 'set_external_force_and_torque' will be deprecated in a future release. Please use 'permanent_wrench_composer.set_forces_and_torques' instead.[0m
+[33m18:33:25 [rigid_object.py] WARNING: The function 'set_external_force_and_torque' will be deprecated in a future release. Please use 'permanent_wrench_composer.set_forces_and_torques' instead.[0m
+[33m18:33:30 [rigid_object.py] WARNING: The function 'set_external_force_and_torque' will be deprecated in a future release. Please use 'permanent_wrench_composer.set_forces_and_torques' instead.[0m
+[33m18:33:36 [rigid_object.py] WARNING: The function 'set_external_force_and_torque' will be deprecated in a future release. Please use 'permanent_wrench_composer.set_forces_and_torques' instead.[0m
+[33m18:33:41 [rigid_object.py] WARNING: The function 'set_external_force_and_torque' will be deprecated in a future release. Please use 'permanent_wrench_composer.set_forces_and_torques' instead.[0m
+[33m18:33:46 [rigid_object.py] WARNING: The function 'set_external_force_and_torque' will be deprecated in a future release. Please use 'permanent_wrench_composer.set_forces_and_torques' instead.[0m
+[33m18:33:51 [rigid_object.py] WARNING: The function 'set_external_force_and_torque' will be deprecated in a future release. Please use 'permanent_wrench_composer.set_forces_and_torques' instead.[0m
+[33m18:33:56 [rigid_object.py] WARNING: The function 'set_external_force_and_torque' will be deprecated in a future release. Please use 'permanent_wrench_composer.set_forces_and_torques' instead.[0m
+[33m18:34:01 [rigid_object.py] WARNING: The function 'set_external_force_and_torque' will be deprecated in a future release. Please use 'permanent_wrench_composer.set_forces_and_torques' instead.[0m
+[33m18:34:07 [rigid_object.py] WARNING: The function 'set_external_force_and_torque' will be deprecated in a future release. Please use 'permanent_wrench_composer.set_forces_and_torques' instead.[0m
+[33m18:34:12 [rigid_object.py] WARNING: The function 'set_external_force_and_torque' will be deprecated in a future release. Please use 'permanent_wrench_composer.set_forces_and_torques' instead.[0m
+[33m18:34:17 [rigid_object.py] WARNING: The function 'set_external_force_and_torque' will be deprecated in a future release. Please use 'permanent_wrench_composer.set_forces_and_torques' instead.[0m
+[33m18:34:22 [rigid_object.py] WARNING: The function 'set_external_force_and_torque' will be deprecated in a future release. Please use 'permanent_wrench_composer.set_forces_and_torques' instead.[0m
+[33m18:34:28 [rigid_object.py] WARNING: The function 'set_external_force_and_torque' will be deprecated in a future release. Please use 'permanent_wrench_composer.set_forces_and_torques' instead.[0m
+[33m18:34:33 [rigid_object.py] WARNING: The function 'set_external_force_and_torque' will be deprecated in a future release. Please use 'permanent_wrench_composer.set_forces_and_torques' instead.[0m
+[33m18:34:39 [rigid_object.py] WARNING: The function 'set_external_force_and_torque' will be deprecated in a future release. Please use 'permanent_wrench_composer.set_forces_and_torques' instead.[0m
+fps step: 707 fps step and policy inference: 706 fps total: 698 epoch: 12 frames: 720896/5000000
+[33m18:34:46 [rigid_object.py] WARNING: The function 'set_external_force_and_torque' will be deprecated in a future release. Please use 'permanent_wrench_composer.set_forces_and_torques' instead.[0m
+[33m18:34:51 [rigid_object.py] WARNING: The function 'set_external_force_and_torque' will be deprecated in a future release. Please use 'permanent_wrench_composer.set_forces_and_torques' instead.[0m
+[33m18:34:56 [rigid_object.py] WARNING: The function 'set_external_force_and_torque' will be deprecated in a future release. Please use 'permanent_wrench_composer.set_forces_and_torques' instead.[0m
+[33m18:35:01 [rigid_object.py] WARNING: The function 'set_external_force_and_torque' will be deprecated in a future release. Please use 'permanent_wrench_composer.set_forces_and_torques' instead.[0m
+[33m18:35:06 [rigid_object.py] WARNING: The function 'set_external_force_and_torque' will be deprecated in a future release. Please use 'permanent_wrench_composer.set_forces_and_torques' instead.[0m
+[33m18:35:12 [rigid_object.py] WARNING: The function 'set_external_force_and_torque' will be deprecated in a future release. Please use 'permanent_wrench_composer.set_forces_and_torques' instead.[0m
+[33m18:35:17 [rigid_object.py] WARNING: The function 'set_external_force_and_torque' will be deprecated in a future release. Please use 'permanent_wrench_composer.set_forces_and_torques' instead.[0m
+[33m18:35:22 [rigid_object.py] WARNING: The function 'set_external_force_and_torque' will be deprecated in a future release. Please use 'permanent_wrench_composer.set_forces_and_torques' instead.[0m
+[33m18:35:28 [rigid_object.py] WARNING: The function 'set_external_force_and_torque' will be deprecated in a future release. Please use 'permanent_wrench_composer.set_forces_and_torques' instead.[0m
+[33m18:35:33 [rigid_object.py] WARNING: The function 'set_external_force_and_torque' will be deprecated in a future release. Please use 'permanent_wrench_composer.set_forces_and_torques' instead.[0m
+[33m18:35:39 [rigid_object.py] WARNING: The function 'set_external_force_and_torque' will be deprecated in a future release. Please use 'permanent_wrench_composer.set_forces_and_torques' instead.[0m
+[33m18:35:44 [rigid_object.py] WARNING: The function 'set_external_force_and_torque' will be deprecated in a future release. Please use 'permanent_wrench_composer.set_forces_and_torques' instead.[0m
+[33m18:35:49 [rigid_object.py] WARNING: The function 'set_external_force_and_torque' will be deprecated in a future release. Please use 'permanent_wrench_composer.set_forces_and_torques' instead.[0m
+[33m18:35:55 [rigid_object.py] WARNING: The function 'set_external_force_and_torque' will be deprecated in a future release. Please use 'permanent_wrench_composer.set_forces_and_torques' instead.[0m
+[33m18:36:00 [rigid_object.py] WARNING: The function 'set_external_force_and_torque' will be deprecated in a future release. Please use 'permanent_wrench_composer.set_forces_and_torques' instead.[0m
+[33m18:36:05 [rigid_object.py] WARNING: The function 'set_external_force_and_torque' will be deprecated in a future release. Please use 'permanent_wrench_composer.set_forces_and_torques' instead.[0m
+[33m18:36:11 [rigid_object.py] WARNING: The function 'set_external_force_and_torque' will be deprecated in a future release. Please use 'permanent_wrench_composer.set_forces_and_torques' instead.[0m
+[33m18:36:16 [rigid_object.py] WARNING: The function 'set_external_force_and_torque' will be deprecated in a future release. Please use 'permanent_wrench_composer.set_forces_and_torques' instead.[0m
+fps step: 713 fps step and policy inference: 712 fps total: 703 epoch: 13 frames: 786432/5000000
+[33m18:36:21 [rigid_object.py] WARNING: The function 'set_external_force_and_torque' will be deprecated in a future release. Please use 'permanent_wrench_composer.set_forces_and_torques' instead.[0m
+[33m18:36:26 [rigid_object.py] WARNING: The function 'set_external_force_and_torque' will be deprecated in a future release. Please use 'permanent_wrench_composer.set_forces_and_torques' instead.[0m
+[33m18:36:32 [rigid_object.py] WARNING: The function 'set_external_force_and_torque' will be deprecated in a future release. Please use 'permanent_wrench_composer.set_forces_and_torques' instead.[0m
+[33m18:36:37 [rigid_object.py] WARNING: The function 'set_external_force_and_torque' will be deprecated in a future release. Please use 'permanent_wrench_composer.set_forces_and_torques' instead.[0m
+[33m18:36:42 [rigid_object.py] WARNING: The function 'set_external_force_and_torque' will be deprecated in a future release. Please use 'permanent_wrench_composer.set_forces_and_torques' instead.[0m
+[33m18:36:48 [rigid_object.py] WARNING: The function 'set_external_force_and_torque' will be deprecated in a future release. Please use 'permanent_wrench_composer.set_forces_and_torques' instead.[0m
+[33m18:36:54 [rigid_object.py] WARNING: The function 'set_external_force_and_torque' will be deprecated in a future release. Please use 'permanent_wrench_composer.set_forces_and_torques' instead.[0m
+[33m18:36:59 [rigid_object.py] WARNING: The function 'set_external_force_and_torque' will be deprecated in a future release. Please use 'permanent_wrench_composer.set_forces_and_torques' instead.[0m
+[33m18:37:04 [rigid_object.py] WARNING: The function 'set_external_force_and_torque' will be deprecated in a future release. Please use 'permanent_wrench_composer.set_forces_and_torques' instead.[0m
+[33m18:37:10 [rigid_object.py] WARNING: The function 'set_external_force_and_torque' will be deprecated in a future release. Please use 'permanent_wrench_composer.set_forces_and_torques' instead.[0m
+[33m18:37:16 [rigid_object.py] WARNING: The function 'set_external_force_and_torque' will be deprecated in a future release. Please use 'permanent_wrench_composer.set_forces_and_torques' instead.[0m
+[33m18:37:22 [rigid_object.py] WARNING: The function 'set_external_force_and_torque' will be deprecated in a future release. Please use 'permanent_wrench_composer.set_forces_and_torques' instead.[0m
+[33m18:37:27 [rigid_object.py] WARNING: The function 'set_external_force_and_torque' will be deprecated in a future release. Please use 'permanent_wrench_composer.set_forces_and_torques' instead.[0m
+[33m18:37:33 [rigid_object.py] WARNING: The function 'set_external_force_and_torque' will be deprecated in a future release. Please use 'permanent_wrench_composer.set_forces_and_torques' instead.[0m
+[33m18:37:38 [rigid_object.py] WARNING: The function 'set_external_force_and_torque' will be deprecated in a future release. Please use 'permanent_wrench_composer.set_forces_and_torques' instead.[0m
+[33m18:37:44 [rigid_object.py] WARNING: The function 'set_external_force_and_torque' will be deprecated in a future release. Please use 'permanent_wrench_composer.set_forces_and_torques' instead.[0m
+[33m18:37:49 [rigid_object.py] WARNING: The function 'set_external_force_and_torque' will be deprecated in a future release. Please use 'permanent_wrench_composer.set_forces_and_torques' instead.[0m
+fps step: 708 fps step and policy inference: 707 fps total: 698 epoch: 14 frames: 851968/5000000
+[33m18:37:54 [rigid_object.py] WARNING: The function 'set_external_force_and_torque' will be deprecated in a future release. Please use 'permanent_wrench_composer.set_forces_and_torques' instead.[0m
+[33m18:37:59 [rigid_object.py] WARNING: The function 'set_external_force_and_torque' will be deprecated in a future release. Please use 'permanent_wrench_composer.set_forces_and_torques' instead.[0m
+[33m18:38:05 [rigid_object.py] WARNING: The function 'set_external_force_and_torque' will be deprecated in a future release. Please use 'permanent_wrench_composer.set_forces_and_torques' instead.[0m
+[33m18:38:10 [rigid_object.py] WARNING: The function 'set_external_force_and_torque' will be deprecated in a future release. Please use 'permanent_wrench_composer.set_forces_and_torques' instead.[0m
+[33m18:38:15 [rigid_object.py] WARNING: The function 'set_external_force_and_torque' will be deprecated in a future release. Please use 'permanent_wrench_composer.set_forces_and_torques' instead.[0m
+[33m18:38:21 [rigid_object.py] WARNING: The function 'set_external_force_and_torque' will be deprecated in a future release. Please use 'permanent_wrench_composer.set_forces_and_torques' instead.[0m
+[33m18:38:27 [rigid_object.py] WARNING: The function 'set_external_force_and_torque' will be deprecated in a future release. Please use 'permanent_wrench_composer.set_forces_and_torques' instead.[0m
+[33m18:38:32 [rigid_object.py] WARNING: The function 'set_external_force_and_torque' will be deprecated in a future release. Please use 'permanent_wrench_composer.set_forces_and_torques' instead.[0m
+[33m18:38:38 [rigid_object.py] WARNING: The function 'set_external_force_and_torque' will be deprecated in a future release. Please use 'permanent_wrench_composer.set_forces_and_torques' instead.[0m
+[33m18:38:43 [rigid_object.py] WARNING: The function 'set_external_force_and_torque' will be deprecated in a future release. Please use 'permanent_wrench_composer.set_forces_and_torques' instead.[0m
+[33m18:38:48 [rigid_object.py] WARNING: The function 'set_external_force_and_torque' will be deprecated in a future release. Please use 'permanent_wrench_composer.set_forces_and_torques' instead.[0m
+[33m18:38:53 [rigid_object.py] WARNING: The function 'set_external_force_and_torque' will be deprecated in a future release. Please use 'permanent_wrench_composer.set_forces_and_torques' instead.[0m
+[33m18:38:59 [rigid_object.py] WARNING: The function 'set_external_force_and_torque' will be deprecated in a future release. Please use 'permanent_wrench_composer.set_forces_and_torques' instead.[0m
+[33m18:39:04 [rigid_object.py] WARNING: The function 'set_external_force_and_torque' will be deprecated in a future release. Please use 'permanent_wrench_composer.set_forces_and_torques' instead.[0m
+[33m18:39:09 [rigid_object.py] WARNING: The function 'set_external_force_and_torque' will be deprecated in a future release. Please use 'permanent_wrench_composer.set_forces_and_torques' instead.[0m
+[33m18:39:14 [rigid_object.py] WARNING: The function 'set_external_force_and_torque' will be deprecated in a future release. Please use 'permanent_wrench_composer.set_forces_and_torques' instead.[0m
+[33m18:39:20 [rigid_object.py] WARNING: The function 'set_external_force_and_torque' will be deprecated in a future release. Please use 'permanent_wrench_composer.set_forces_and_torques' instead.[0m
+fps step: 721 fps step and policy inference: 720 fps total: 711 epoch: 15 frames: 917504/5000000
+[33m18:39:25 [rigid_object.py] WARNING: The function 'set_external_force_and_torque' will be deprecated in a future release. Please use 'permanent_wrench_composer.set_forces_and_torques' instead.[0m
+2026-09-15T18:39:29Z [3,842,818ms] [Error] [carb] 
+
+../../../source/plugins/carb.tasking/Mutex.cpp(103): void carb::tasking::Mutex::lock()(): Assertion (m_recursive) failed: Recursion not allowed
+
+Assertion Failed!
+The following assertion condition failed in the process 645712:
+	'm_recursive'
+
+at the location:
+	'../../../source/plugins/carb.tasking/Mutex.cpp'
+	on line 103
+	 in void carb::tasking::Mutex::lock()()
+
+with the message:
+	"Recursion not allowed"
+
+Press ABORT to exit.
+Press RETRY to debug (attach a debugger first).
+Press IGNORE to attempt to continue.

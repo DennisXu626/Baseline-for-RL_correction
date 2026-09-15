@@ -52,6 +52,8 @@ Result:
 - epoch 1/2/3, best and final checkpoints were saved;
 - no fatal traceback.
 
+Packaged evidence: `logs/ppo_smoke_1024_train.log`.
+
 One TensorBoard warning at frame zero was traced to four diagnostics whose
 denominator had no samples yet: `sr/cert_pass`, `diag/certfail_rise`,
 `diag/certfail_slip` and `diag/certfail_pads`. It was not model input, reward or
@@ -83,3 +85,9 @@ was stopped and no replacement process was launched.
 This is an infrastructure failure, not a failed 4096-env PPO update. A future
 run still needs a fresh 4096-env construction plus at least one PPO update to
 prove full-scale resource sufficiency.
+
+The raw failed-launch log is 6,583,926,214 bytes and mostly repeats the same
+filesystem failure. GitHub cannot accept it as one file. The package therefore
+contains `logs/formal_5m_4096env_failure_excerpt.log`, preserving the first and
+last 400 lines. The successful preflight log is also included at
+`logs/preflight_1env_retry8_train.log`.
