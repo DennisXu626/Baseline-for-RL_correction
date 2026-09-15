@@ -1,0 +1,27 @@
+{
+  "schema": "h2s2r_unscrew17_handoff_v1",
+  "created_date": "2026-09-16",
+  "method": "H2S2R official PPO/LSTM plus Pour-style direct-58D interface plus Clip17/Ours Unscrew environment",
+  "upstream_h2s2r": {
+    "repository": "https://github.com/tylerlum/human2sim2robot",
+    "commit": "894eae2ec3ae39a573b81bd1860d14cc6bdfa6df"
+  },
+  "source_handoff": {
+    "path": "/home/msc-auto/clip17_latest_handoff_20260914.zip",
+    "sha256": "4ab65d3683eb352aeeb2c7c17ddbf6854ff8471ddc8436f9d05545756b964aa0"
+  },
+  "a800_runtime_archive": {
+    "path": "/ssd/sy/kailang/unscrew17_clip17_runtime_inputs_20260916.tar.gz",
+    "size_bytes": 50806059,
+    "sha256": "abf2cd67434491c10c49ef868e58ddd63d3e0d9e0b4b6c00c1a67f4429f8b338",
+    "included_in_git": false
+  },
+  "local_ground_usd": {
+    "source_path": "/ssd/sy/kailang/pour17/bundle/pour17/world/default_environment.usd",
+    "sha256": "8a21c317d638d33a4e6c20c958a7ed8f4d8c5195efd7e20f1b85178b4a15638a",
+    "included_in_git": false
+  },
+  "validated_a800_tree": "/ssd/sy/kailang/unscrew17/direct58d_asymcritic_20260916",
+  "formal_status": "stopped_before_PPO_due_to_full_root_filesystem",
+  "formal_checkpoint": null
+}
