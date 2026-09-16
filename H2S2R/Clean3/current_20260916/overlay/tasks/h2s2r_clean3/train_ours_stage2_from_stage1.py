@@ -58,13 +58,14 @@ import yaml  # noqa: E402
 
 sys.path.insert(0, str(Path(args.v12_root).resolve()))
 sys.path.insert(0, str(runtime_root))
+sys.path.insert(0, str(runtime_root / "tasks"))
 sys.path.insert(0, str(Path(__file__).resolve().parents[2] / "ours_stage1_overlay"))
 
 from rl_rebuild.algo.ppo.ppo import PPO  # noqa: E402
 from rl_rebuild.wrapper.config_wrapper import ConfigWrapper  # noqa: E402
 from rl_rebuild.wrapper.sharpa_wave_env_wrapper import GymStyleEnvWrapper  # noqa: E402
-from tasks.h2s2r_clean3.cfg import build_cfg  # noqa: E402
-from tasks.h2s2r_clean3.env import Clean3H2S2REnv  # noqa: E402
+from h2s2r_clean3.cfg import build_cfg  # noqa: E402
+from h2s2r_clean3.env import Clean3H2S2REnv  # noqa: E402
 
 
 def sha256(path: Path) -> str:
