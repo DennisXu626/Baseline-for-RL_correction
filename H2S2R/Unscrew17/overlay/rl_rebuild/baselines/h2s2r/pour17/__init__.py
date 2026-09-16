@@ -1,12 +1,6 @@
-"""Pour17 task adapter for synchronized bimanual H2S2R."""
+"""Observation helpers reused by the Unscrew17 H2S2R adapter.
 
-from .inputs import InputRegime, PerceptionInput, load_inputs
-from .trajectory import ReferenceTrajectory, build_reference_trajectory
-
-__all__ = [
-    "InputRegime",
-    "PerceptionInput",
-    "ReferenceTrajectory",
-    "build_reference_trajectory",
-    "load_inputs",
-]
+The Unscrew17 handoff contains only the shared observation contract.  Keep the
+package initializer side-effect free so importing ``pour17.observation`` does
+not require Pour17-only input and trajectory modules.
+"""

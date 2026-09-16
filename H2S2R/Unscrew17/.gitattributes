@@ -1,0 +1,6 @@
+* text=auto eol=lf
+
+*.gz -text
+*.npz -text
+*.pth -text
+*.usd -text
