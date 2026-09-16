@@ -34,7 +34,7 @@ The Stage-1 checkpoint cannot be restored into the existing H2S2R LSTM entry:
 Stage-1 is a 367D actor with 22D privileged input, while that entry is a 342D
 actor with a 509D asymmetric critic and a different network topology.
 
-`train_ours_stage2_from_best.py` therefore keeps the checkpoint-compatible
+`train_ours_stage2_from_stage1.py` therefore keeps the checkpoint-compatible
 367D/22D Ours policy and the same bounded cumulative residual 58D controller.
 It restores model weights and input/value normalizers.  Optimizer state is not
 available in the Stage-1 checkpoint and starts fresh.  Within each episode:
@@ -66,7 +66,7 @@ mkdir -p /ssd/sy/kailang/clean3/checkpoints
 cp /path/received/latest_complete.pth \
   /ssd/sy/kailang/clean3/checkpoints/ours_stage1_latest_row35.pth
 
-bash scripts/run_stage2_from_best.sh smoke \
+bash scripts/run_stage2_from_stage1.sh smoke \
   /ssd/sy/kailang/clean3/checkpoints/ours_stage1_latest_row35.pth \
   /ssd/sy/kailang/clean3/gates/stage2_latest_smoke_RUN 0
 ```
@@ -76,7 +76,7 @@ The smoke must produce `training_exit.json`, must not produce
 input, and a restored checkpoint without missing/unexpected keys.  Only then:
 
 ```bash
-bash scripts/run_stage2_from_best.sh formal \
+bash scripts/run_stage2_from_stage1.sh formal \
   /ssd/sy/kailang/clean3/checkpoints/ours_stage1_latest_row35.pth \
   /ssd/sy/kailang/clean3/gates/stage2_latest_formal_150m_RUN 0
 ```
@@ -89,7 +89,7 @@ instead of inventing untested multi-GPU behavior.
 To use the rollback checkpoint deliberately, pass its SHA and row:
 
 ```bash
-bash scripts/run_stage2_from_best.sh smoke /path/best.pth /path/output 0 \
+bash scripts/run_stage2_from_stage1.sh smoke /path/best.pth /path/output 0 \
   d1777d8c981c700e463728048c2f96f694441bc9710fbd77d2472c41bca132d5 50
 ```
 

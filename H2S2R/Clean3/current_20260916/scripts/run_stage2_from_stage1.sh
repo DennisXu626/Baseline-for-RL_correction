@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 set -euo pipefail
-MODE="${1:?usage: run_stage2_from_best.sh smoke|formal CHECKPOINT OUTPUT [GPU] [SHA256] [RELEASE_ROW]}"
+MODE="${1:?usage: run_stage2_from_stage1.sh smoke|formal CHECKPOINT OUTPUT [GPU] [SHA256] [RELEASE_ROW]}"
 CHECKPOINT="${2:?missing checkpoint}"
 OUT="${3:?missing output}"
 GPU="${4:-0}"
@@ -17,7 +17,7 @@ test -f "$CHECKPOINT" && test ! -e "$OUT" && test ! -e "$OUT.log"
 printf '%s  %s\n' "$EXPECTED_SHA" "$CHECKPOINT" | sha256sum -c -
 cd "$RUNTIME" && source /ssd/sy/kailang/tmp/cuda_env.sh
 KIT="--/renderer/multiGpu/enabled=false --/renderer/activeGpu=$GPU"
-common=(tasks/h2s2r_clean3/train_ours_stage2_from_best.py --runtime_root "$RUNTIME" --v12_root "$V12" --output_root "$OUT" --checkpoint "$CHECKPOINT" --checkpoint_sha256 "$EXPECTED_SHA" --release_row "$RELEASE_ROW" --seed 42 --device cuda:0 --headless "--kit_args=$KIT")
+common=(tasks/h2s2r_clean3/train_ours_stage2_from_stage1.py --runtime_root "$RUNTIME" --v12_root "$V12" --output_root "$OUT" --checkpoint "$CHECKPOINT" --checkpoint_sha256 "$EXPECTED_SHA" --release_row "$RELEASE_ROW" --seed 42 --device cuda:0 --headless "--kit_args=$KIT")
 case "$MODE" in
  smoke) command=("${common[@]}" --num_envs 512 --smoke_epochs 3);;
  formal) command=("${common[@]}" --num_envs 4096 --max_agent_steps 150000000);;
