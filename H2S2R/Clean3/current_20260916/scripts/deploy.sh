@@ -2,10 +2,12 @@
 set -euo pipefail
 BUNDLE="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
 TARGET="${1:-/ssd/sy/kailang/clean3/curriculum_20260915}"
-case "$TARGET" in /ssd/sy/kailang/*) ;; *) echo "target outside kailang" >&2; exit 2;; esac
+ALLOWED_ROOT="${ALLOWED_ROOT:-/ssd/sy/kailang}"
+V12="${V12_ROOT:-/ssd/sy/kailang/pour17/direct58d}"
+case "$TARGET" in "$ALLOWED_ROOT"/*) ;; *) echo "target outside allowed root" >&2; exit 2;; esac
 test -f "$TARGET/assets/retarget/object_0_textured.usd"
 test -f "$TARGET/assets/retarget/object_1_textured.usd"
-test -d /ssd/sy/kailang/pour17/direct58d
+test -d "$V12"
 cd "$BUNDLE" && sha256sum -c FILES.sha256
 STAMP="$(date -u +%Y%m%dT%H%M%SZ)"
 BACKUP="$TARGET/backups/clean3_before_current_20260916_$STAMP"

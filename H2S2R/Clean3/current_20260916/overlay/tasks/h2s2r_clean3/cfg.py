@@ -194,24 +194,27 @@ def build_cfg(
     terminate_on_grasp_drop: bool | None = None,
     ours_stage1_contract: bool = False,
     ours_stage2_contract: bool = False,
+    robot_usd: str | Path | None = None,
 ) -> Clean3H2S2REnvCfg:
     root = Path(runtime_root).resolve()
     v12 = Path(v12_root).resolve()
+    robot_path = Path(robot_usd).resolve() if robot_usd else ROBOT_ASSET_PATH
+    ground_plane_path = robot_path.parent / "default_environment.usd"
     required = {
         "inputs": root / "data/clean3_c3p1_runtime_inputs.npz",
         "residual_inputs": root / "data/clean3_residual_controller_inputs.npz",
         "plate": root / "assets/retarget/object_0_textured.usd",
         "sponge": root / "assets/retarget/object_1_textured.usd",
-        "robot": ROBOT_ASSET_PATH,
+        "robot": robot_path,
         # Checked up front so an offline host fails here with a path, rather than
         # deep inside spawn_ground_plane with an S3 URL.
-        "ground_plane": GROUND_PLANE_ASSET_PATH,
+        "ground_plane": ground_plane_path,
     }
     missing = [f"{name}:{path}" for name, path in required.items() if not path.is_file()]
     if missing:
         raise FileNotFoundError(f"Clean3 C3-P1R2 deployment incomplete: {missing}")
     cfg = Clean3H2S2REnvCfg()
-    cfg.ground_plane_usd = str(GROUND_PLANE_ASSET_PATH)
+    cfg.ground_plane_usd = str(required["ground_plane"])
     cfg.runtime_root = str(root)
     cfg.runtime_inputs_npz = str(required["inputs"])
     cfg.residual_controller_inputs_npz = str(required["residual_inputs"])

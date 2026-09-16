@@ -26,6 +26,8 @@ parser.add_argument("--v12_root", required=True)
 parser.add_argument("--output_root", required=True)
 parser.add_argument("--checkpoint", required=True)
 parser.add_argument("--checkpoint_sha256", required=True)
+parser.add_argument("--allowed_root", default="/ssd/sy/kailang")
+parser.add_argument("--robot_usd")
 parser.add_argument("--num_envs", type=int, default=4096)
 parser.add_argument("--seed", type=int, default=42)
 parser.add_argument("--release_row", type=int, default=50)
@@ -39,7 +41,9 @@ if not args.headless:
 runtime_root = Path(args.runtime_root).resolve()
 output_root = Path(args.output_root).resolve()
 checkpoint = Path(args.checkpoint).resolve()
-allowed_root = Path("/ssd/sy/kailang").resolve()
+allowed_root = Path(args.allowed_root).resolve()
+if not allowed_root.is_dir():
+    raise FileNotFoundError(f"allowed root does not exist: {allowed_root}")
 for path in (runtime_root, output_root, checkpoint):
     if allowed_root not in (path, *path.parents):
         raise ValueError(f"path outside /ssd/sy/kailang: {path}")
@@ -138,6 +142,7 @@ try:
         release_row_start=args.release_row,
         terminate_on_grasp_drop=True,
         ours_stage2_contract=True,
+        robot_usd=args.robot_usd,
     )
     raw_env = Clean3H2S2REnv(cfg)
     env = GymStyleEnvWrapper(raw_env, clip_actions=1.0)
@@ -165,6 +170,8 @@ try:
             "max_agent_steps": int(algorithm["max_agent_steps"]),
             "optimizer_state_restored": False,
             "strict_stage1_gate_passed": False,
+            "allowed_root": str(allowed_root),
+            "robot_usd": str(Path(args.robot_usd).resolve()) if args.robot_usd else None,
         },
     )
     agent = Stage2PPO(
