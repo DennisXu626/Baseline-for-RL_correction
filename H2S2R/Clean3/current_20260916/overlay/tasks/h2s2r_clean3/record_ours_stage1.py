@@ -1,4 +1,4 @@
-"""Record one deterministic, true-episode three-view Ours Stage-1 replay."""
+"""Record one deterministic, true-episode three-view Ours replay."""
 
 from __future__ import annotations
 
@@ -19,19 +19,22 @@ parser.add_argument("--checkpoint", type=Path, required=True)
 parser.add_argument("--output_root", type=Path, required=True)
 parser.add_argument("--release_row", type=int, required=True)
 parser.add_argument("--controls", type=int, default=300)
+parser.add_argument("--stage2", action="store_true")
+parser.add_argument("--allowed_root", default="/ssd/sy/kailang")
+parser.add_argument("--robot_usd")
 AppLauncher.add_app_launcher_args(parser)
 args = parser.parse_args()
 args.enable_cameras = True
 
-allowed_root = Path("/ssd/sy/kailang").resolve()
+allowed_root = Path(args.allowed_root).resolve()
 for candidate in (
     args.runtime_root.resolve(),
-    args.v12_root.resolve(),
     args.checkpoint.resolve(),
     args.output_root.resolve(),
+    *(tuple([Path(args.robot_usd).resolve()]) if args.robot_usd else ()),
 ):
     if allowed_root not in (candidate, *candidate.parents):
-        raise ValueError(f"path outside /ssd/sy/kailang: {candidate}")
+        raise ValueError(f"path outside allowed root {allowed_root}: {candidate}")
 
 output = args.output_root.resolve()
 output.mkdir(parents=True, exist_ok=False)
@@ -47,13 +50,14 @@ import yaml  # noqa: E402
 runtime_root = args.runtime_root.resolve()
 sys.path.insert(0, str(args.v12_root.resolve()))
 sys.path.insert(0, str(runtime_root))
+sys.path.insert(0, str(runtime_root / "tasks"))
 sys.path.insert(0, str(runtime_root / "ours_stage1_overlay"))
 
 from rl_rebuild.algo.ppo.ppo import PPO  # noqa: E402
 from rl_rebuild.wrapper.config_wrapper import ConfigWrapper  # noqa: E402
 from rl_rebuild.wrapper.sharpa_wave_env_wrapper import GymStyleEnvWrapper  # noqa: E402
-from tasks.h2s2r_clean3.cfg import build_cfg  # noqa: E402
-from tasks.h2s2r_clean3.env import Clean3H2S2REnv  # noqa: E402
+from h2s2r_clean3.cfg import build_cfg  # noqa: E402
+from h2s2r_clean3.env import Clean3H2S2REnv  # noqa: E402
 
 
 def sha256(path: Path) -> str:
@@ -81,10 +85,13 @@ try:
         grasp_curriculum=True,
         release_row_start=args.release_row,
         terminate_on_grasp_drop=True,
-        ours_stage1_contract=True,
+        ours_stage1_contract=not args.stage2,
+        ours_stage2_contract=args.stage2,
+        robot_usd=args.robot_usd,
     )
     cfg.sim.device = args.device
     cfg.sim.render_interval = 1
+    cfg.sim.log_dir = str(output / "isaaclab_logs")
     raw = Clean3H2S2REnv(cfg, render_mode="rgb_array")
     env = GymStyleEnvWrapper(raw, clip_actions=1.0)
     agent = PPO(
@@ -164,7 +171,11 @@ try:
     result = {
         "checkpoint": str(args.checkpoint.resolve()),
         "checkpoint_sha256": sha256(args.checkpoint.resolve()),
-        "policy_contract": "Ours Stage-1 367D actor + 22D privileged critic",
+        "policy_contract": (
+            "Ours Stage-2 367D actor + 22D privileged critic"
+            if args.stage2
+            else "Ours Stage-1 367D actor + 22D privileged critic"
+        ),
         "deterministic": True,
         "requested_max_controls": args.controls,
         "controls": len(rows),
