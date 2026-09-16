@@ -6,6 +6,7 @@ OUT="${3:?missing output}"
 GPU="${4:-0}"
 RUNTIME="${RUNTIME_ROOT:-/ssd/sy/kailang/clean3/curriculum_20260915}"
 V12="${V12_ROOT:-/ssd/sy/kailang/pour17/direct58d}"
+BASE_RL_REBUILD="${BASE_RL_REBUILD:-$V12/rl_rebuild}"
 PYTHON="${PYTHON_BIN:-/ssd/sy/kailang/env/rl-correction-pour/bin/python}"
 ALLOWED_ROOT="${ALLOWED_ROOT:-/ssd/sy/kailang}"
 ROBOT_USD="${ROBOT_USD:-}"
@@ -17,6 +18,10 @@ RELEASE_ROW="${6:-35}"
 case "$CHECKPOINT" in "$ALLOWED_ROOT"/*) ;; *) echo "checkpoint outside allowed root" >&2; exit 2;; esac
 case "$OUT" in "$ALLOWED_ROOT"/*) ;; *) echo "output outside allowed root" >&2; exit 2;; esac
 test -f "$CHECKPOINT" && test ! -e "$OUT" && test ! -e "$OUT.log"
+test -f "$BASE_RL_REBUILD/baselines/h2s2r/contract.py"
+test -f "$BASE_RL_REBUILD/baselines/h2s2r/pour17/observation.py"
+test -f "$BASE_RL_REBUILD/baselines/h2s2r/pour17/bimanual.py"
+test -f "$BASE_RL_REBUILD/correction/env/dexmate_env_cfg.py"
 printf '%s  %s\n' "$EXPECTED_SHA" "$CHECKPOINT" | sha256sum -c -
 cd "$RUNTIME"
 if test -n "$CUDA_ENV" && test -f "$CUDA_ENV"; then source "$CUDA_ENV"; fi
@@ -28,5 +33,5 @@ case "$MODE" in
  formal) command=("${common[@]}" --num_envs 4096 --max_agent_steps 150000000);;
  *) echo "invalid mode" >&2; exit 2;;
 esac
-nohup env CUDA_VISIBLE_DEVICES="$GPU" VK_DRIVER_FILES=/usr/share/vulkan/icd.d/nvidia_icd.json VK_ICD_FILENAMES=/usr/share/vulkan/icd.d/nvidia_icd.json RL_ISAAC_NO_GUARD=1 SHARPA_WANDB=0 "$PYTHON" -B -u "${command[@]}" >"$OUT.log" 2>&1 &
+nohup env CUDA_VISIBLE_DEVICES="$GPU" VK_DRIVER_FILES=/usr/share/vulkan/icd.d/nvidia_icd.json VK_ICD_FILENAMES=/usr/share/vulkan/icd.d/nvidia_icd.json RL_ISAAC_NO_GUARD=1 SHARPA_WANDB=0 H2S2R_BASE_RL_REBUILD="$BASE_RL_REBUILD" "$PYTHON" -B -u "${command[@]}" >"$OUT.log" 2>&1 &
 echo "$!"
