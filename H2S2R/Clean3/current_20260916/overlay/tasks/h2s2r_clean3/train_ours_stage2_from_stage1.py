@@ -145,6 +145,7 @@ try:
         ours_stage2_contract=True,
         robot_usd=args.robot_usd,
     )
+    cfg.sim.log_dir = str(output_root / "isaaclab_logs")
     raw_env = Clean3H2S2REnv(cfg)
     env = GymStyleEnvWrapper(raw_env, clip_actions=1.0)
     observation = env.reset()
