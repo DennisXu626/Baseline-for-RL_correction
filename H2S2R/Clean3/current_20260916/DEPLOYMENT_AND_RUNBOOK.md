@@ -50,3 +50,8 @@ Do not start Stage-2 merely because 5M ended. Require row 10, EMA >= 0.70 for te
 windows at row 10, deterministic video PASS, state-bank/rebase tests, and a
 Stage-2 smoke proving zero-action continuity plus 342D actor/509D critic shapes.
 The state-bank/rebase implementation is pending in this snapshot.
+
+For the separately authorized time-limited handoff that proceeds despite this
+failed strict gate, read `TIME_LIMITED_STAGE2_HANDOFF.md`.  It adds a
+checkpoint-compatible 367D/22D continuation entry and defaults to the final
+row-35 `latest_complete.pth`; it does not make the original strict gate PASS.

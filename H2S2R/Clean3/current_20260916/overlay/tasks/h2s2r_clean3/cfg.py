@@ -59,6 +59,10 @@ class Clean3H2S2REnvCfg(DexmateCorrectionEnvCfg):
     # Isolated exact Ours Stage-1 learning contract.  The default stays the
     # H2S2R-derived 342D actor + 509D critic route.
     ours_stage1_contract = False
+    # Time-limited handoff route: keep the Ours 367D/22D policy contract while
+    # enabling the post-grasp H2S2R tracking tail.  This is intentionally
+    # separate from the exact Stage-1-only contract above.
+    ours_stage2_contract = False
 
     table_size = (1.2192, 1.8288, 0.04)
     table_top_z = 0.87
@@ -189,6 +193,7 @@ def build_cfg(
     release_row_start: int | None = None,
     terminate_on_grasp_drop: bool | None = None,
     ours_stage1_contract: bool = False,
+    ours_stage2_contract: bool = False,
 ) -> Clean3H2S2REnvCfg:
     root = Path(runtime_root).resolve()
     v12 = Path(v12_root).resolve()
@@ -215,14 +220,18 @@ def build_cfg(
     cfg.record_cameras = bool(record_cameras)
     if grasp_curriculum is not None:
         cfg.grasp_curriculum = bool(grasp_curriculum)
+    if ours_stage1_contract and ours_stage2_contract:
+        raise ValueError("Ours Stage-1-only and Stage-2 contracts are mutually exclusive")
     cfg.ours_stage1_contract = bool(ours_stage1_contract)
-    if cfg.ours_stage1_contract:
+    cfg.ours_stage2_contract = bool(ours_stage2_contract)
+    if cfg.ours_stage1_contract or cfg.ours_stage2_contract:
         if not cfg.grasp_curriculum:
-            raise ValueError("Ours Stage-1 contract requires the grasp curriculum")
+            raise ValueError("Ours policy contracts require the grasp curriculum")
         cfg.observation_space = OURS_STAGE1_OBSERVATION_DIM
         cfg.state_space = 0
         cfg.priv_info_dim = OURS_STAGE1_PRIVILEGED_DIM
         cfg.clip_obs = 10.0
+    if cfg.ours_stage1_contract:
         # Exact Stage-1 has no moving-reference task tail.  It terminates at the
         # fixed RELEASE_MAX + HOLD_ROWS boundary used by the teammate run.
         cfg.task_rows = 0

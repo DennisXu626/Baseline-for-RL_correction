@@ -18,8 +18,13 @@ therefore has two explicitly separated stages:
    task reference, and reward.
 
 Ours Stage-1 is an initialization adaptation and must be disclosed. It must not
-be described as part of original H2S2R. Stage-2 is not released in this snapshot
-because the state-bank/rebased-controller handoff has not passed its smoke gate.
+be described as part of original H2S2R. The strict state-bank/rebased-controller
+Stage-2 route remains unreleased. Because the paper deadline no longer permits
+another Stage-1 run, a separately authorized checkpoint-compatible continuation
+is included. It keeps the Ours 367D/22D network and residual controller, then
+switches to the H2S2R task reward after grasp success. See
+[TIME_LIMITED_STAGE2_HANDOFF.md](TIME_LIMITED_STAGE2_HANDOFF.md); this exception
+must not be reported as a strict Stage-1 gate pass or as original H2S2R.
 
 ## Current contract
 

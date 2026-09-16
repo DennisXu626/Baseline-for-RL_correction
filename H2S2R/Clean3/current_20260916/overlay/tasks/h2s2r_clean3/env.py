@@ -1041,9 +1041,16 @@ class Clean3H2S2REnv(DirectRLEnv):
         super().close()
 
     def _get_ours_stage1_observations(self):
-        """Exact 367D actor and 22D privileged blocks used by Ours Stage-1."""
+        """Checkpoint-compatible 367D actor and 22D privileged blocks.
+
+        Stage-1 always exposes error to the fixed hold pose.  In the explicitly
+        disclosed Stage-2 handoff, those same 6D slots switch to error against
+        the current task goal only after grasp success.  The input shape and all
+        pre-success semantics therefore remain checkpoint-compatible.
+        """
 
         plate, sponge = self._object_poses()
+        goal_plate, goal_sponge = self._goal_poses()
         joint_q = self.hand.data.joint_pos[:, self.sim_joint_ids]
         joint_qd = self.hand.data.joint_vel[:, self.sim_joint_ids]
         blocks = [
@@ -1055,9 +1062,9 @@ class Clean3H2S2REnv(DirectRLEnv):
         ]
         deviations = []
         force_columns = []
-        for side, object_pose, rigid, object_id in (
-            (ControlledSide.LEFT, plate, self.object, 0),
-            (ControlledSide.RIGHT, sponge, self.aux, 1),
+        for side, object_pose, task_goal, rigid, object_id in (
+            (ControlledSide.LEFT, plate, goal_plate, self.object, 0),
+            (ControlledSide.RIGHT, sponge, goal_sponge, self.aux, 1),
         ):
             palm_position, palm_quaternion = self._wrist(side)
             relative_position = quat_apply(
@@ -1068,6 +1075,10 @@ class Clean3H2S2REnv(DirectRLEnv):
                 quat_conjugate(palm_quaternion), object_pose[:, 3:]
             )
             nominal = self._hold_goal[object_id]
+            if self.cfg.ours_stage2_contract:
+                nominal = torch.where(
+                    self._grasp_success.unsqueeze(1), task_goal, nominal
+                )
             delta_quaternion = quat_mul(
                 quat_conjugate(nominal[:, 3:]), object_pose[:, 3:]
             )
@@ -1139,7 +1150,7 @@ class Clean3H2S2REnv(DirectRLEnv):
         return {"policy": policy, "priv_info": privileged}
 
     def _get_observations(self):
-        if self.cfg.ours_stage1_contract:
+        if self.cfg.ours_stage1_contract or self.cfg.ours_stage2_contract:
             return self._get_ours_stage1_observations()
         plate, sponge = self._object_poses()
         goal_plate, goal_sponge = self._goal_poses()
